@@ -1,4 +1,4 @@
-# Capstone_Team4
+# Capstone Team 4
 
 ## Init
 
