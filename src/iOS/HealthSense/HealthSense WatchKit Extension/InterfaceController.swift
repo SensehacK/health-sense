@@ -12,6 +12,12 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet weak var heartRateLabel: WKInterfaceLabel!
+    
+    @IBOutlet weak var workoutButton: WKInterfaceButton!
+    
+    var isWorkoutInProgress = false
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
@@ -28,4 +34,17 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    
+    @IBAction func didButtonTap() {
+        print("Button tapped")
+        if isWorkoutInProgress {
+            print("End Workout")
+        } else {
+            print("Start Workout")
+        }
+        isWorkoutInProgress = !isWorkoutInProgress
+        self.workoutButton.setTitle(isWorkoutInProgress ? "End Workout" : "Start Workout")
+        
+    }
+    
 }

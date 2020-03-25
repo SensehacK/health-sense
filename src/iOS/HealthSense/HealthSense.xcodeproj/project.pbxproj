@@ -25,6 +25,8 @@
 		FB51DC08242A789700FD0B7B /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51DC07242A789700FD0B7B /* ComplicationController.swift */; };
 		FB51DC0A242A789900FD0B7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB51DC09242A789900FD0B7B /* Assets.xcassets */; };
 		FB51DC23242A795400FD0B7B /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB51DC22242A795400FD0B7B /* HealthKit.framework */; };
+		FB9EFE31242A8C4400913776 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9EFE2E242A863F00913776 /* HealthManager.swift */; };
+		FB9EFE33242A8C5100913776 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9EFE2E242A863F00913776 /* HealthManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +114,7 @@
 		FB51DC0C242A789900FD0B7B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		FB51DC20242A795400FD0B7B /* HealthSense.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HealthSense.entitlements; sourceTree = "<group>"; };
 		FB51DC22242A795400FD0B7B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		FB9EFE2E242A863F00913776 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				FB51DBC5242A789000FD0B7B /* HealthSense */,
+				FB9EFE30242A8B7900913776 /* Shared */,
 				FB51DBDC242A789500FD0B7B /* HealthSenseTests */,
 				FB51DBE7242A789500FD0B7B /* HealthSenseUITests */,
 				FB51DBF1242A789600FD0B7B /* HealthSense WatchKit App */,
@@ -235,6 +239,14 @@
 				FB51DC22242A795400FD0B7B /* HealthKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB9EFE30242A8B7900913776 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				FB9EFE2E242A863F00913776 /* HealthManager.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,6 +444,7 @@
 				FB51DBCB242A789100FD0B7B /* ViewController.swift in Sources */,
 				FB51DBC7242A789100FD0B7B /* AppDelegate.swift in Sources */,
 				FB51DBC9242A789100FD0B7B /* SceneDelegate.swift in Sources */,
+				FB9EFE31242A8C4400913776 /* HealthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +472,7 @@
 				FB51DC08242A789700FD0B7B /* ComplicationController.swift in Sources */,
 				FB51DC04242A789700FD0B7B /* ExtensionDelegate.swift in Sources */,
 				FB51DC02242A789700FD0B7B /* InterfaceController.swift in Sources */,
+				FB9EFE33242A8C5100913776 /* HealthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
