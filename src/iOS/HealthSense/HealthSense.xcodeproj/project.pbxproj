@@ -25,8 +25,8 @@
 		FB51DC08242A789700FD0B7B /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51DC07242A789700FD0B7B /* ComplicationController.swift */; };
 		FB51DC0A242A789900FD0B7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB51DC09242A789900FD0B7B /* Assets.xcassets */; };
 		FB51DC23242A795400FD0B7B /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB51DC22242A795400FD0B7B /* HealthKit.framework */; };
-		FB9EFE31242A8C4400913776 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9EFE2E242A863F00913776 /* HealthManager.swift */; };
-		FB9EFE33242A8C5100913776 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9EFE2E242A863F00913776 /* HealthManager.swift */; };
+		FBC3EE91242C29FE006DCE06 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3EE90242C29FE006DCE06 /* HealthManager.swift */; };
+		FBC3EE92242C2A04006DCE06 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3EE90242C29FE006DCE06 /* HealthManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,7 +114,7 @@
 		FB51DC0C242A789900FD0B7B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		FB51DC20242A795400FD0B7B /* HealthSense.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HealthSense.entitlements; sourceTree = "<group>"; };
 		FB51DC22242A795400FD0B7B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
-		FB9EFE2E242A863F00913776 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		FBC3EE90242C29FE006DCE06 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HealthManager.swift; path = HealthSense/HealthManager.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,7 +244,7 @@
 		FB9EFE30242A8B7900913776 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				FB9EFE2E242A863F00913776 /* HealthManager.swift */,
+				FBC3EE90242C29FE006DCE06 /* HealthManager.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -444,7 +444,7 @@
 				FB51DBCB242A789100FD0B7B /* ViewController.swift in Sources */,
 				FB51DBC7242A789100FD0B7B /* AppDelegate.swift in Sources */,
 				FB51DBC9242A789100FD0B7B /* SceneDelegate.swift in Sources */,
-				FB9EFE31242A8C4400913776 /* HealthManager.swift in Sources */,
+				FBC3EE91242C29FE006DCE06 /* HealthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,7 +472,7 @@
 				FB51DC08242A789700FD0B7B /* ComplicationController.swift in Sources */,
 				FB51DC04242A789700FD0B7B /* ExtensionDelegate.swift in Sources */,
 				FB51DC02242A789700FD0B7B /* InterfaceController.swift in Sources */,
-				FB9EFE33242A8C5100913776 /* HealthManager.swift in Sources */,
+				FBC3EE92242C2A04006DCE06 /* HealthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

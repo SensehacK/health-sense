@@ -16,6 +16,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        healthKitManager.authorizeHealthKit { (success, error) in
+            print("Was healthkit successful? \(success)")
+        }
     }
 
 
