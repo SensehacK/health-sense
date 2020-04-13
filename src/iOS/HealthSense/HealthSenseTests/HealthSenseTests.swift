@@ -13,6 +13,8 @@ class HealthSenseTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        print("Hello SEnsehack tests")
+//        testExample()
     }
 
     override func tearDown() {
@@ -22,6 +24,11 @@ class HealthSenseTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let test = 3
+        let squareResult = test * test
+    
+        XCTAssertEqual(squareResult, 9)
+        
     }
 
     func testPerformanceExample() {
