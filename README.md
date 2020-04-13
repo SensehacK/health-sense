@@ -39,21 +39,37 @@ Pull request needs to be created for reviewing new changes to existing codebase.
 ## Test
 ### iOS
 We are incorporating Unit tests as our default workflow.
-The tests could be found in 
+The tests could be found in test branch and tests folder.
 
 ## Issues
 
 We would use JIRA, Git Issues or any Issue tracker.
 
 ## Timeline
-
 Schedule for deliverables.
 
 ## Environment
 
+- OS:
+	- Mac: Catalina 10.15
+	- Windows: Windows 10
+
+- IDE: 
+	- Xcode 11.2.1
+	- VS Code
+
+
+- Browsers:
+	- Firefox Nightly /Dev /Main
+	- Safari /Technical Preview
+	- Microsoft Edge Dev ( Chromium )
+	
 - Version Control : Git
 - Team management : JIRA, Github Project
-- Internal documents : Google docs
+- Documents : Google docs
+- Terminal : iTerm
+- Writer: iA Writer
+- Terminal : iTerm
 
 ## Shared Links
 
