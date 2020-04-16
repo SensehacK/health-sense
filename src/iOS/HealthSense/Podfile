@@ -1,0 +1,37 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'HealthSense' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for HealthSense
+
+  pod 'SwiftLint'
+
+  target 'HealthSenseTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'HealthSenseUITests' do
+    # Pods for testing
+  end
+
+end
+
+target 'HealthSense WatchKit App' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for HealthSense WatchKit App
+
+end
+
+target 'HealthSense WatchKit Extension' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for HealthSense WatchKit Extension
+
+end

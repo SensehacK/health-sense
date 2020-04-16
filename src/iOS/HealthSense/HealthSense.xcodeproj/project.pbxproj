@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13025DDA163B33BDB1077ECF /* Pods_HealthSense_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E968CEEB7D6181F6CD374C21 /* Pods_HealthSense_WatchKit_Extension.framework */; };
+		34D8104EFCE0364CBF147F07 /* Pods_HealthSense_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CE43D09282CA30C5B7184D /* Pods_HealthSense_WatchKit_App.framework */; };
+		3FA1A9F75DCB17F18DD1729A /* Pods_HealthSenseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756B346B6AB9B2DDABF06E4A /* Pods_HealthSenseTests.framework */; };
+		88D4B4C59B31F021C7C4BC29 /* Pods_HealthSense.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4D6DCBDB95A37BA0D85A7B /* Pods_HealthSense.framework */; };
+		94131300FFFF3C0907B49180 /* Pods_HealthSense_HealthSenseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553EF7D84CADD9F5E01C0C3A /* Pods_HealthSense_HealthSenseUITests.framework */; };
 		FB51DBC7242A789100FD0B7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51DBC6242A789100FD0B7B /* AppDelegate.swift */; };
 		FB51DBC9242A789100FD0B7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51DBC8242A789100FD0B7B /* SceneDelegate.swift */; };
 		FB51DBCB242A789100FD0B7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51DBCA242A789100FD0B7B /* ViewController.swift */; };
@@ -86,6 +91,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2F50CDDBEC759DCD5E4BEEEC /* Pods-HealthSense.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSense.release.xcconfig"; path = "Target Support Files/Pods-HealthSense/Pods-HealthSense.release.xcconfig"; sourceTree = "<group>"; };
+		30F85BF1E85193032ACA697A /* Pods-HealthSense WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSense WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-HealthSense WatchKit Extension/Pods-HealthSense WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		4AEEFA33C5AAEEC58E4C54EA /* Pods-HealthSense WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSense WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-HealthSense WatchKit App/Pods-HealthSense WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		553EF7D84CADD9F5E01C0C3A /* Pods_HealthSense_HealthSenseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthSense_HealthSenseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F4D6DCBDB95A37BA0D85A7B /* Pods_HealthSense.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthSense.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		756B346B6AB9B2DDABF06E4A /* Pods_HealthSenseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthSenseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F47F23C261C899CBAB379CB /* Pods-HealthSense-HealthSenseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSense-HealthSenseUITests.release.xcconfig"; path = "Target Support Files/Pods-HealthSense-HealthSenseUITests/Pods-HealthSense-HealthSenseUITests.release.xcconfig"; sourceTree = "<group>"; };
+		801864310BC54E349232A2C9 /* Pods-HealthSense WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSense WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-HealthSense WatchKit Extension/Pods-HealthSense WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		978AA109E15E6ED8C93436BA /* Pods-HealthSense-HealthSenseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSense-HealthSenseUITests.debug.xcconfig"; path = "Target Support Files/Pods-HealthSense-HealthSenseUITests/Pods-HealthSense-HealthSenseUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A4139BFE2AA899AC51B7C73 /* Pods-HealthSense WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSense WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-HealthSense WatchKit App/Pods-HealthSense WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		AC73716CEE540C95E8BC8A5A /* Pods-HealthSense.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSense.debug.xcconfig"; path = "Target Support Files/Pods-HealthSense/Pods-HealthSense.debug.xcconfig"; sourceTree = "<group>"; };
+		C0CE43D09282CA30C5B7184D /* Pods_HealthSense_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthSense_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E968CEEB7D6181F6CD374C21 /* Pods_HealthSense_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthSense_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEEA271C2DBCAFD4CF448365 /* Pods-HealthSenseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSenseTests.release.xcconfig"; path = "Target Support Files/Pods-HealthSenseTests/Pods-HealthSenseTests.release.xcconfig"; sourceTree = "<group>"; };
+		F29CE389FE9403AB07368686 /* Pods-HealthSenseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSenseTests.debug.xcconfig"; path = "Target Support Files/Pods-HealthSenseTests/Pods-HealthSenseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FB51DBC3242A789000FD0B7B /* HealthSense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthSense.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB51DBC6242A789100FD0B7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB51DBC8242A789100FD0B7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,11 +138,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E848B79ED159515B40E7D1F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34D8104EFCE0364CBF147F07 /* Pods_HealthSense_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FB51DBC0242A789000FD0B7B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FB51DC23242A795400FD0B7B /* HealthKit.framework in Frameworks */,
+				88D4B4C59B31F021C7C4BC29 /* Pods_HealthSense.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +159,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA1A9F75DCB17F18DD1729A /* Pods_HealthSenseTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94131300FFFF3C0907B49180 /* Pods_HealthSense_HealthSenseUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,12 +175,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13025DDA163B33BDB1077ECF /* Pods_HealthSense_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ABB337DA3568F906D2EB4818 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC73716CEE540C95E8BC8A5A /* Pods-HealthSense.debug.xcconfig */,
+				2F50CDDBEC759DCD5E4BEEEC /* Pods-HealthSense.release.xcconfig */,
+				4AEEFA33C5AAEEC58E4C54EA /* Pods-HealthSense WatchKit App.debug.xcconfig */,
+				9A4139BFE2AA899AC51B7C73 /* Pods-HealthSense WatchKit App.release.xcconfig */,
+				801864310BC54E349232A2C9 /* Pods-HealthSense WatchKit Extension.debug.xcconfig */,
+				30F85BF1E85193032ACA697A /* Pods-HealthSense WatchKit Extension.release.xcconfig */,
+				978AA109E15E6ED8C93436BA /* Pods-HealthSense-HealthSenseUITests.debug.xcconfig */,
+				7F47F23C261C899CBAB379CB /* Pods-HealthSense-HealthSenseUITests.release.xcconfig */,
+				F29CE389FE9403AB07368686 /* Pods-HealthSenseTests.debug.xcconfig */,
+				EEEA271C2DBCAFD4CF448365 /* Pods-HealthSenseTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FB51DBBA242A789000FD0B7B = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +210,7 @@
 				FB51DC00242A789700FD0B7B /* HealthSense WatchKit Extension */,
 				FB51DBC4242A789000FD0B7B /* Products */,
 				FB51DC21242A795400FD0B7B /* Frameworks */,
+				ABB337DA3568F906D2EB4818 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -179,6 +229,7 @@
 		FB51DBC5242A789000FD0B7B /* HealthSense */ = {
 			isa = PBXGroup;
 			children = (
+				FB73C4DD2446839E00E30D7D /* config */,
 				FB51DC20242A795400FD0B7B /* HealthSense.entitlements */,
 				FB51DBC6242A789100FD0B7B /* AppDelegate.swift */,
 				FB51DBC8242A789100FD0B7B /* SceneDelegate.swift */,
@@ -237,8 +288,20 @@
 			isa = PBXGroup;
 			children = (
 				FB51DC22242A795400FD0B7B /* HealthKit.framework */,
+				6F4D6DCBDB95A37BA0D85A7B /* Pods_HealthSense.framework */,
+				C0CE43D09282CA30C5B7184D /* Pods_HealthSense_WatchKit_App.framework */,
+				E968CEEB7D6181F6CD374C21 /* Pods_HealthSense_WatchKit_Extension.framework */,
+				553EF7D84CADD9F5E01C0C3A /* Pods_HealthSense_HealthSenseUITests.framework */,
+				756B346B6AB9B2DDABF06E4A /* Pods_HealthSenseTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB73C4DD2446839E00E30D7D /* config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = config;
 			sourceTree = "<group>";
 		};
 		FB9EFE30242A8B7900913776 /* Shared */ = {
@@ -256,10 +319,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB51DC17242A789900FD0B7B /* Build configuration list for PBXNativeTarget "HealthSense" */;
 			buildPhases = (
+				5DE1327128D1E04D79D81897 /* [CP] Check Pods Manifest.lock */,
 				FB51DBBF242A789000FD0B7B /* Sources */,
 				FB51DBC0242A789000FD0B7B /* Frameworks */,
 				FB51DBC1242A789000FD0B7B /* Resources */,
 				FB51DC16242A789900FD0B7B /* Embed Watch Content */,
+				FB73C4DC2446814900E30D7D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -275,6 +340,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB51DC1A242A789900FD0B7B /* Build configuration list for PBXNativeTarget "HealthSenseTests" */;
 			buildPhases = (
+				1358DC26C7F8B5BFC2076B14 /* [CP] Check Pods Manifest.lock */,
 				FB51DBD5242A789500FD0B7B /* Sources */,
 				FB51DBD6242A789500FD0B7B /* Frameworks */,
 				FB51DBD7242A789500FD0B7B /* Resources */,
@@ -293,6 +359,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB51DC1D242A789900FD0B7B /* Build configuration list for PBXNativeTarget "HealthSenseUITests" */;
 			buildPhases = (
+				54C90E3644B4ACC032F296F1 /* [CP] Check Pods Manifest.lock */,
 				FB51DBE0242A789500FD0B7B /* Sources */,
 				FB51DBE1242A789500FD0B7B /* Frameworks */,
 				FB51DBE2242A789500FD0B7B /* Resources */,
@@ -311,8 +378,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB51DC13242A789900FD0B7B /* Build configuration list for PBXNativeTarget "HealthSense WatchKit App" */;
 			buildPhases = (
+				C54A5E40166C227DD8A5DB41 /* [CP] Check Pods Manifest.lock */,
 				FB51DBEB242A789600FD0B7B /* Resources */,
 				FB51DC12242A789900FD0B7B /* Embed App Extensions */,
+				E848B79ED159515B40E7D1F3 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -328,6 +397,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB51DC0F242A789900FD0B7B /* Build configuration list for PBXNativeTarget "HealthSense WatchKit Extension" */;
 			buildPhases = (
+				3231EE05FB51DBB0F810C6DD /* [CP] Check Pods Manifest.lock */,
 				FB51DBF8242A789700FD0B7B /* Sources */,
 				FB51DBF9242A789700FD0B7B /* Frameworks */,
 				FB51DBFA242A789700FD0B7B /* Resources */,
@@ -435,6 +505,136 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1358DC26C7F8B5BFC2076B14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealthSenseTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3231EE05FB51DBB0F810C6DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealthSense WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54C90E3644B4ACC032F296F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealthSense-HealthSenseUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DE1327128D1E04D79D81897 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealthSense-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C54A5E40166C227DD8A5DB41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealthSense WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB73C4DC2446814900E30D7D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FB51DBBF242A789000FD0B7B /* Sources */ = {
@@ -645,6 +845,7 @@
 		};
 		FB51DC10242A789900FD0B7B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 801864310BC54E349232A2C9 /* Pods-HealthSense WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -667,6 +868,7 @@
 		};
 		FB51DC11242A789900FD0B7B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30F85BF1E85193032ACA697A /* Pods-HealthSense WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -689,6 +891,7 @@
 		};
 		FB51DC14242A789900FD0B7B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AEEFA33C5AAEEC58E4C54EA /* Pods-HealthSense WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -708,6 +911,7 @@
 		};
 		FB51DC15242A789900FD0B7B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A4139BFE2AA899AC51B7C73 /* Pods-HealthSense WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -727,6 +931,7 @@
 		};
 		FB51DC18242A789900FD0B7B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC73716CEE540C95E8BC8A5A /* Pods-HealthSense.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HealthSense/HealthSense.entitlements;
@@ -746,6 +951,7 @@
 		};
 		FB51DC19242A789900FD0B7B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F50CDDBEC759DCD5E4BEEEC /* Pods-HealthSense.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HealthSense/HealthSense.entitlements;
@@ -765,6 +971,7 @@
 		};
 		FB51DC1B242A789900FD0B7B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F29CE389FE9403AB07368686 /* Pods-HealthSenseTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -787,6 +994,7 @@
 		};
 		FB51DC1C242A789900FD0B7B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEEA271C2DBCAFD4CF448365 /* Pods-HealthSenseTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -809,6 +1017,7 @@
 		};
 		FB51DC1E242A789900FD0B7B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 978AA109E15E6ED8C93436BA /* Pods-HealthSense-HealthSenseUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -829,6 +1038,7 @@
 		};
 		FB51DC1F242A789900FD0B7B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F47F23C261C899CBAB379CB /* Pods-HealthSense-HealthSenseUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
