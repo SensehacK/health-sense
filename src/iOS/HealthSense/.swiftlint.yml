@@ -1,0 +1,25 @@
+disabled_rules: # rule identifiers to exclude from running
+  - trailing_whitespace
+  - control_statement
+
+opt_in_rules: # some rules are only opt-in
+  - empty_count
+  # Find all the available rules by running:
+  # swiftlint rules
+
+# included:# paths to include during linting. `--path` is ignored if present.
+# - Source
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Pods
+
+vertical_whitespace:
+  max_empty_lines: 3
+
+# or they can set both explicitly
+file_length:
+  warning: 500
+  error: 1200
+
+line_length:
+  warning: 200
+  error: 220
