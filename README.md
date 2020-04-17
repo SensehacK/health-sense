@@ -100,8 +100,8 @@ You could find our milestones [here](https://github.com/SensehacK/capstone-team4
 
 ### Team
 
-Abbas Shamshi(Front End Dev, Database Designer)
-Endri Zylali(Android Dev, Back End Dev)
+[Abbas Shamshi](https://www.linkedin.com/in/abbas-shamshi/)(Front End Dev, Database Designer)
+[Endri Zylali](https://www.linkedin.com/in/endri-zylali/)(Android Dev, Back End Dev)
 [Kautilya Save](https://www.linkedin.com/in/kautilyasave/)(iOS Dev, Architect)
-Manasi Tayade(Business Analyst, Designer)
-Rushikesh Nage(Project Manager, Scrum Master, Tester)
+[Manasi Tayade](https://www.linkedin.com/in/manasitayade5/)(Business Analyst, Designer)
+[Rushikesh Nage](https://www.linkedin.com/in/rushikesh-nage06/)(Project Manager, Scrum Master, Tester)
