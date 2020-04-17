@@ -19,9 +19,9 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build
       run: cd $PWD && ls
-    - name: Build2
-      run: cd src/iOS/HealthSense &&  ls
-      working-directory: ./src/iOS/HealthSense
+#     - name: Build2
+#       run: cd src/iOS/HealthSense &&  ls
+#       working-directory: ./src/iOS/HealthSense
     - name: Build3
       run: xcodebuild -list -project  HealthSense.xcodeproj
     - name: Build4
