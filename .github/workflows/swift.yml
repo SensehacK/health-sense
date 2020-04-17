@@ -24,10 +24,11 @@ jobs:
 #       working-directory: ./src/iOS/HealthSense
     - name: Build3
       run: xcodebuild -list -project  HealthSense.xcodeproj
-    - name: Build4
-      run: xcodebuild -list
+
     - name: Build6
-      run: xcodebuild -scheme HealthSense -project HealthSense.xcodeproj/ build -allowProvisioningUpdates 
+      run:  xcodebuild -scheme HealthSense -workspace HealthSense.xcworkspace/ build -allowProvisioningUpdates
+    - name: Build4
+      run: pod --version
     - name: Build5
       run: xcodebuild -scheme HealthSense -project HealthSense.xcodeproj/ -allowProvisioningUpdates  build
    
