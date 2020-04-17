@@ -18,9 +18,19 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build
+      run: cd $PWD && ls
+    - name: Build2
+      run: cd src/iOS/HealthSense &&  ls
       working-directory: ./src/iOS/HealthSense
-      shell: bash
-      run: echo $PATH && swift build -v  
+    - name: Build3
+      run: xcodebuild -list -project  HealthSense.xcodeproj
+    - name: Build4
+      run: xcodebuild -list
+    - name: Build6
+      run: xcodebuild -scheme HealthSense -project HealthSense.xcodeproj/ build -allowProvisioningUpdates 
+    - name: Build5
+      run: xcodebuild -scheme HealthSense -project HealthSense.xcodeproj/ -allowProvisioningUpdates  build
+   
     - name: Run tests
       run: swift test -v
 # working-directory: ./src/iOS/HealthSense
