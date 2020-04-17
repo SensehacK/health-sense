@@ -18,7 +18,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build
-      run: swift build -v
+      working-directory: ./src/iOS/HealthSense
+      shell: bash
+      run: echo $PATH && swift build -v  
     - name: Run tests
       run: swift test -v
 # working-directory: ./src/iOS/HealthSense
