@@ -6,14 +6,17 @@ on:
   pull_request:
     branches: [ master ]
 
+defaults:
+  run:
+    shell: bash
+    working-directory: ./src/iOS/HealthSense
+
 jobs:
   build:
-
     runs-on: macos-latest
 
     steps:
-    - uses: ./src/iOS/HealthSense
-    - uses: actions/checkout@master
+    - uses: actions/checkout@v2
     - name: Build
       run: swift build -v
     - name: Run tests
