@@ -25,15 +25,15 @@ jobs:
     
     - name: Dependencies
       run: pod install
-    - name: CocoaPods Action
-      uses: ty0x2333/cocoapods-action@0.2.0
-      with:
-        # .xcworkspace file
-        workspace: src/iOS/HealthSense/HealthSense.xcworkspace
-        # Shared scheme
-        scheme: HealthSenseCI
-        # Additional xcodebuild params
-        additional_build_params: -destination "platform=iOS Simulator,OS=13.3,name=iPhone 11" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO -skip-testing:HealthSenseUITests
+#     - name: CocoaPods Action
+#       uses: ty0x2333/cocoapods-action@0.2.0
+#       with:
+#         # .xcworkspace file
+#         workspace: src/iOS/HealthSense/HealthSense.xcworkspace
+#         # Shared scheme
+#         scheme: HealthSenseCI
+#         # Additional xcodebuild params
+#         additional_build_params: -destination "platform=iOS Simulator,OS=13.3,name=iPhone 11" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO -skip-testing:HealthSenseUITests
     
     - name: Build3
       run: xcodebuild -list -project  HealthSense.xcodeproj
