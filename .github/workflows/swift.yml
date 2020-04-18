@@ -23,6 +23,10 @@ jobs:
 #       run: cd src/iOS/HealthSense &&  ls
 #       working-directory: ./src/iOS/HealthSense
     
+    - name: Dependencies
+      run: |
+          pod install
+          bundle exec pod install
     - name: CocoaPods Action
       uses: ty0x2333/cocoapods-action@0.2.0
       with:
