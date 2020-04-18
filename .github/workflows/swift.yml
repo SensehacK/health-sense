@@ -17,13 +17,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build
+    - name: Shell Info
       run: cd $PWD && ls
 #     - name: Build2
 #       run: cd src/iOS/HealthSense &&  ls
 #       working-directory: ./src/iOS/HealthSense
     
-    - name: Dependencies
+    - name: Dependency installation
       run: pod install
 #     - name: CocoaPods Action
 #       uses: ty0x2333/cocoapods-action@0.2.0
@@ -35,16 +35,16 @@ jobs:
 #         # Additional xcodebuild params
 #         additional_build_params: -destination "platform=iOS Simulator,OS=13.3,name=iPhone 11" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO -skip-testing:HealthSenseUITests
     
-    - name: Build3
+    - name: Xcode list project structure
       run: xcodebuild -list -project  HealthSense.xcodeproj
-    - name: Build4
+    - name: Xcode Actual Build
       run: xcodebuild clean build test -workspace HealthSense.xcworkspace -scheme HealthSenseCI -destination "platform=iOS Simulator,OS=13.3,name=iPhone 11" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO -skip-testing:HealthSenseUITests
 #     - name: Build5
 #       run:  xcodebuild -scheme HealthSense -workspace HealthSense.xcworkspace/ build -allowProvisioningUpdates
-    - name: Build6
+    - name: Displays cocoapods version
       run: pod --version
-    - name: Build7
-      run: xcodebuild -scheme HealthSense -project HealthSense.xcodeproj/ -allowProvisioningUpdates  build
+#     - name: Build7
+#       run: xcodebuild -scheme HealthSense -project HealthSense.xcodeproj/ -allowProvisioningUpdates  build
     - name: Run tests
       run: swift test -v
 # working-directory: ./src/iOS/HealthSense
