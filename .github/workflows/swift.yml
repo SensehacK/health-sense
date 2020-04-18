@@ -27,7 +27,7 @@ jobs:
       uses: ty0x2333/cocoapods-action@0.2.0
       with:
         # .xcworkspace file
-        workspace: HealthSense.xcworkspace
+        workspace: src/iOS/HealthSense/HealthSense.xcworkspace
         # Shared scheme
         scheme: HealthSenseCI
         # Additional xcodebuild params
