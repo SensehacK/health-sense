@@ -1,0 +1,33 @@
+{
+  "name": "health-well-being",
+  "version": "1.0.0",
+  "description": "## Init",
+  "main": "src/web/index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SensehacK/capstone-team4.git"
+  },
+  "keywords": [
+    "ios"
+  ],
+  "author": "Kautilya Save",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SensehacK/capstone-team4/issues"
+  },
+  "homepage": "https://github.com/SensehacK/capstone-team4#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
