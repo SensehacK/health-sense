@@ -24,12 +24,13 @@ jobs:
 #       working-directory: ./src/iOS/HealthSense
     - name: Build3
       run: xcodebuild -list -project  HealthSense.xcodeproj
-
-    - name: Build6
-      run:  xcodebuild -scheme HealthSense -workspace HealthSense.xcworkspace/ build -allowProvisioningUpdates
     - name: Build4
-      run: pod --version
+      run: xcodebuild clean build test -workspace src/iOS/HealthSense/HealthSense.xcworkspace -scheme HealthSenseCI -destination "platform=iOS Simulator,OS=13.3,name=iPhone 11" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO -skip-testing:HealthSenseUITests
     - name: Build5
+      run:  xcodebuild -scheme HealthSense -workspace HealthSense.xcworkspace/ build -allowProvisioningUpdates
+    - name: Build6
+      run: pod --version
+    - name: Build7
       run: xcodebuild -scheme HealthSense -project HealthSense.xcodeproj/ -allowProvisioningUpdates  build
    
     - name: Run tests
