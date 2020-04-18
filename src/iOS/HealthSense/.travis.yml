@@ -5,7 +5,7 @@ language: swift
 before_install: gem install cocoapods
 
 podfile: src/iOS/HealthSense/Podfile
-xcode_project: src/iOS/HealthSense.xcodeproj
+xcode_project: src/iOS/HealthSense/HealthSense.xcodeproj
 
 # Build the main app, which happens to depend on the test cases.
 script: xcodebuild clean build test -workspace HealthSense.xcworkspace -scheme HealthSenseCI -destination "platform=iOS Simulator,OS=13.3,name=iPhone 11" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO -skip-testing:HealthSenseUITests
