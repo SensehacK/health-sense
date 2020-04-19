@@ -27,7 +27,9 @@ assignees: ""
 - **Please tell us about your environment:**
 
   - Version: 0.0.0-beta.X
+  - IDE: [Xcode | Visual Studio Code | Android Studio]
   - Browser: [all | Chrome XX | Firefox XX | IE XX | Safari XX | Mobile Chrome XX | Android X.X Web Browser | iOS XX Safari | iOS XX UIWebView | iOS XX WKWebView ]
   - Language: [all | Swift | Kotlin]
+  - Dependency: [NPM | Yarn]
 
 * **Other information** (e.g. detailed explanation, stacktraces, related issues, suggestions how to fix, links for us to have context, eg. stackoverflow, gitter, etc)

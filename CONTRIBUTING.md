@@ -179,6 +179,16 @@ These sections are not necessary, but can help streamline the contributions you 
 
 ### Explain if you use any commit message conventions
 
+Please try to label your commit messages and description as much as possible.
+
+- feat: A new feature
+- fix: A bug fix
+- docs: Documentation only changes
+- style: Changes that do not affect the meaning of the code (white-space, for
+  matting, missing semi-colons, etc)
+- refactor: A code change that neither fixes a bug nor adds a feature
+- perf: A code change that improves performance
+
 **Need inspiration?** [1][angular](https://github.com/angular/material/blob/master/.github/CONTRIBUTING.md#submit) [2][node.js](https://github.com/nodejs/node/blob/master/CONTRIBUTING.md#step-3-commit)
 
 ### Explain if you use any labeling conventions for issues
