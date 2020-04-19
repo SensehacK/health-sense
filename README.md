@@ -1,5 +1,7 @@
 # Health Well Being
 
+[![Build Status](https://travis-ci.com/SensehacK/capstone-team4.svg?branch=master)](https://travis-ci.com/SensehacK/capstone-team4)
+
 ## Description
 
 Smart mobile devices are one of the best gifts of technology! The most important characteristics of our era may be the transformation, transmission and dominion of information. We live in an information society where the leading role has been given to new technologies, especially those devoted to information. Undoubtedly, smart phones have made significant contribution in human life and progress. This advancement is to make life easy and to increase human comfort at home and at work. With a rapid increase in the health industry being challenging on human’s well-being this application grants an opportunity to its members to get instant access to important health plan information. It also minimizes the need to install multiple health app to track health information thus, providing the members to get all the information in one app at a glance. A cross platform application which works on both Android and iOS platform for the users to get all required notifications of their daily routine and workout therefore making it viable.
@@ -100,8 +102,8 @@ You could find our milestones [here](https://github.com/SensehacK/capstone-team4
 
 ### Team
 
-[Abbas Shamshi](https://www.linkedin.com/in/abbas-shamshi/)(Front End Dev, Database Designer)
-[Endri Zylali](https://www.linkedin.com/in/endri-zylali/)(Android Dev, Back End Dev)
-[Kautilya Save](https://www.linkedin.com/in/kautilyasave/)(iOS Dev, Architect)
-[Manasi Tayade](https://www.linkedin.com/in/manasitayade5/)(Business Analyst, Designer)
-[Rushikesh Nage](https://www.linkedin.com/in/rushikesh-nage06/)(Project Manager, Scrum Master, Tester)
+- [Abbas Shamshi](https://www.linkedin.com/in/abbas-shamshi/)(Front End Dev, Database Designer)
+- [Endri Zylali](https://www.linkedin.com/in/endri-zylali/)(Android Dev, Back End Dev)
+- [Kautilya Save](https://www.linkedin.com/in/kautilyasave/)(iOS Dev, Architect)
+- [Manasi Tayade](https://www.linkedin.com/in/manasitayade5/)(Business Analyst, Designer)
+- [Rushikesh Nage](https://www.linkedin.com/in/rushikesh-nage06/)(Project Manager, Scrum Master, Tester)

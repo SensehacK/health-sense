@@ -18,7 +18,8 @@ class HealthKitManager: NSObject {
     
     let healthStore = HKHealthStore()
     
-    func authorizeHealthKit(_ completion:  @escaping ((_ success: Bool, _ error: Error?)-> Void)) {
+    func authorizeHealthKit(_ completion:  @escaping ((_ success: Bool, _ error: Error?)
+        -> Void)) {
         
         guard let heartRateType: HKQuantityType = HKQuantityType.quantityType(forIdentifier: .heartRate) else {
             return
