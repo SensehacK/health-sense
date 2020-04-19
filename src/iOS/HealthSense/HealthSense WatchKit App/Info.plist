@@ -14,6 +14,10 @@
 	<string>6.0</string>
 	<key>CFBundleName</key>
 	<string>$(PRODUCT_NAME)</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>HealthSense needs permissions of your health data to display in the app!</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>HealthSense needs permissions of your health data to write in the app!</string>
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
