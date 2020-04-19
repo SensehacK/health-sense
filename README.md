@@ -1,4 +1,4 @@
-# Health Well Being
+# Health Sense
 
 [![Build Status](https://travis-ci.com/SensehacK/capstone-team4.svg?branch=master)](https://travis-ci.com/SensehacK/capstone-team4)
 
