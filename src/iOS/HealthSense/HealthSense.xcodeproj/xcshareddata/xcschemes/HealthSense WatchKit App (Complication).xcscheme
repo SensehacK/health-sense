@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
    LastUpgradeVersion = "1130"
-   version = "1.3">
-	<BuildAction
+   version = "2.0">
+   <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
-		<BuildActionEntries>
-			<BuildActionEntry
+      <BuildActionEntries>
+         <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
             buildForProfiling = "YES"
             buildForArchiving = "YES"
             buildForAnalyzing = "YES">
-				<BuildableReference
+            <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FB51DBEC242A789600FD0B7B"
                BuildableName = "HealthSense WatchKit App.app"
                BlueprintName = "HealthSense WatchKit App"
                ReferencedContainer = "container:HealthSense.xcodeproj">
-				</BuildableReference>
-			</BuildActionEntry>
-			<BuildActionEntry
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
             buildForProfiling = "YES"
             buildForArchiving = "YES"
             buildForAnalyzing = "YES">
-				<BuildableReference
+            <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FB51DBC2242A789000FD0B7B"
                BuildableName = "HealthSense.app"
                BlueprintName = "HealthSense"
                ReferencedContainer = "container:HealthSense.xcodeproj">
-				</BuildableReference>
-			</BuildActionEntry>
-		</BuildActionEntries>
-	</BuildAction>
-	<TestAction
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
-		<Testables>
-		</Testables>
-	</TestAction>
-	<LaunchAction
+      <Testables>
+      </Testables>
+   </TestAction>
+   <LaunchAction
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
@@ -54,53 +54,54 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
-      notificationPayloadFile = "HealthSense WatchKit Extension/PushNotificationPayload.apns">
-		<RemoteRunnable
+      launchAutomaticallySubstyle = "32">
+      <RemoteRunnable
          runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.Carousel"
          RemotePath = "/HealthSense WatchKit App">
-			<BuildableReference
+         <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FB51DBEC242A789600FD0B7B"
             BuildableName = "HealthSense WatchKit App.app"
             BlueprintName = "HealthSense WatchKit App"
             ReferencedContainer = "container:HealthSense.xcodeproj">
-			</BuildableReference>
-		</RemoteRunnable>
-	</LaunchAction>
-	<ProfileAction
+         </BuildableReference>
+      </RemoteRunnable>
+   </LaunchAction>
+   <ProfileAction
       buildConfiguration = "Release"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      debugDocumentVersioning = "YES">
-		<RemoteRunnable
+      debugDocumentVersioning = "YES"
+      launchAutomaticallySubstyle = "32">
+      <RemoteRunnable
          runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.Carousel"
          RemotePath = "/HealthSense WatchKit App">
-			<BuildableReference
+         <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FB51DBEC242A789600FD0B7B"
             BuildableName = "HealthSense WatchKit App.app"
             BlueprintName = "HealthSense WatchKit App"
             ReferencedContainer = "container:HealthSense.xcodeproj">
-			</BuildableReference>
-		</RemoteRunnable>
-		<MacroExpansion>
-			<BuildableReference
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FB51DBEC242A789600FD0B7B"
             BuildableName = "HealthSense WatchKit App.app"
             BlueprintName = "HealthSense WatchKit App"
             ReferencedContainer = "container:HealthSense.xcodeproj">
-			</BuildableReference>
-		</MacroExpansion>
-	</ProfileAction>
-	<AnalyzeAction
+         </BuildableReference>
+      </MacroExpansion>
+   </ProfileAction>
+   <AnalyzeAction
       buildConfiguration = "Debug">
-	</AnalyzeAction>
-	<ArchiveAction
+   </AnalyzeAction>
+   <ArchiveAction
       buildConfiguration = "Release"
       revealArchiveInOrganizer = "YES">
-	</ArchiveAction>
+   </ArchiveAction>
 </Scheme>
