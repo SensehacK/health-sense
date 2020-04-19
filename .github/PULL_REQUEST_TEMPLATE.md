@@ -6,6 +6,8 @@
 * [ ] My code follows the code style of this project.
 * [ ] I have read the **CONTRIBUTING** document.
 
+* [ ] Fixed merge conflicts with Master branch as base.
+
 - Documentation
 
 * [ ] My change requires a change to the documentation.
@@ -32,6 +34,9 @@ Fixes #...
 - **What is the new behavior (if this is a feature change)?**
 
 - **Does this PR introduce a breaking change?** (What changes might users need to make in their application due to this PR?)
+
+* [ ] Github Actions
+* [ ] Travis CI
 
 **Checklist**
 
