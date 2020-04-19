@@ -188,6 +188,8 @@ Please try to label your commit messages and description as much as possible.
   matting, missing semi-colons, etc)
 - refactor: A code change that neither fixes a bug nor adds a feature
 - perf: A code change that improves performance
+- chore: Unrelated to code or removing (white-space, commented code, formatting, missing semi-colons, etc)
+- build: Build related changes
 
 **Need inspiration?** [1][angular](https://github.com/angular/material/blob/master/.github/CONTRIBUTING.md#submit) [2][node.js](https://github.com/nodejs/node/blob/master/CONTRIBUTING.md#step-3-commit)
 
