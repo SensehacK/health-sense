@@ -1,4 +1,4 @@
-# Health Well Being
+# Health Sense
 
 [![Build Status](https://travis-ci.com/SensehacK/capstone-team4.svg?branch=master)](https://travis-ci.com/SensehacK/capstone-team4)
 
@@ -52,6 +52,13 @@ Pull request needs to be created for reviewing new changes to existing codebase.
 
 We are incorporating Unit tests as our default workflow.
 The tests could be found in test branch and tests folder.
+
+## CI/CD
+
+We are utilizing Travis CI for checking our test cases while there is a pull request or master branch code commits.
+[Travis CI iOS Doc](https://docs.travis-ci.com/user/languages/objective-c/#objective-c-vs-swift)
+We are also trying to incorporate Github Actions but there are some hiccups with setting up our Cocoapods and linking with our Xcode build commands. If you could help us the PR is this [Actions](https://github.com/SensehacK/capstone-team4/actions?query=workflow%3ASwift)
+[PR](https://github.com/SensehacK/capstone-team4/pull/19)
 
 ## Issues
 

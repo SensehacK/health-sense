@@ -2,9 +2,9 @@
 
 ## You're the Hero we all Need but don't Deserve
 
-> First off, thank you for considering contributing to Health Well Being. It's people like you that make Health Well Being such a great tool.
+> First off, thank you for considering contributing to Health Sense. It's people like you that make Health Sense such a great tool.
 
-[source: [Health Well Being](https://github.com/SensehacK/capstone-team4/blob/master/CONTRIBUTING.md)] **Need more inspiration?** [1][read the docs](http://read-the-docs.readthedocs.org/en/latest/contribute.html) [2][mustache.js](https://github.com/janl/mustache.js/#contributing)
+[source: [Health Sense](https://github.com/SensehacK/capstone-team4/blob/master/CONTRIBUTING.md)] **Need more inspiration?** [1][read the docs](http://read-the-docs.readthedocs.org/en/latest/contribute.html) [2][mustache.js](https://github.com/janl/mustache.js/#contributing)
 
 ### Guidelines
 
@@ -30,14 +30,14 @@ Again, defining this up front means less work for you. If someone ignores your g
 
 ## Ground Rules
 
-### Better Transparency (yours, and theirs).
+### Better Transparency
 
 This includes not just how to communicate with others (being respectful, considerate, etc) but also technical responsibilities (importance of testing, project dependencies, etc). Mention and link to your code of conduct, if you have one.
 
 > Responsibilities
 >
 > - Ensure cross-platform compatibility for every change that's accepted. Windows, Mac, Debian & Ubuntu Linux.
-> - Ensure that code that goes into core meets all requirements in this checklist: https://gist.github.com/audreyr/4feef90445b9680475f2
+> - Ensure that code that goes into core meets all requirements in this checklist:[Link](https://gist.github.com/audreyr/4feef90445b9680475f2)
 > - Create issues for any major changes and enhancements that you wish to make. Discuss things transparently and get community feedback.
 > - Don't add any classes to the codebase unless absolutely needed. Err on the side of using functions.
 > - Keep feature versions as small as possible, preferably one new feature per version.
@@ -62,7 +62,7 @@ Here are a couple of friendly tutorials you can include: http://makeapullrequest
 
 [source: [React](https://github.com/facebook/react/blob/master/CONTRIBUTING.md#pull-requests)]
 
-As a side note, it helps to use newcomer-friendly language throughout the rest of your document. Here are a couple of examples from [Health Well Being](https://github.com/SensehacK/capstone-team4/blob/master/CONTRIBUTING.md):
+As a side note, it helps to use newcomer-friendly language throughout the rest of your document. Here are a couple of examples from [Health Sense](https://github.com/SensehacK/capstone-team4/blob/master/CONTRIBUTING.md):
 
 > At this point, you're ready to make your changes! Feel free to ask for help; everyone is a beginner at first :smile_cat:
 >
@@ -139,7 +139,7 @@ This information will give contributors context before they make suggestions tha
 >
 > Express does not force you to use any specific ORM or template engine. With support for over 14 template engines via Consolidate.js, you can quickly craft your perfect framework.
 
-[source: [Express](https://github.com/expressjs/express#philosophy)] **Need more inspiration?** [Health Well Being](https://github.com/SensehacK/capstone-team4#goals)
+[source: [Express](https://github.com/expressjs/express#philosophy)] **Need more inspiration?** [Health Sense](https://github.com/SensehacK/capstone-team4#goals)
 
 ### Explain your desired process for suggesting a feature
 
@@ -178,6 +178,18 @@ These sections are not necessary, but can help streamline the contributions you 
 **Need inspiration?** [1][requirejs](http://requirejs.org/docs/contributing.html#codestyle) [2][elasticsearch](https://github.com/elastic/elasticsearch/blob/master/CONTRIBUTING.md#contributing-to-the-elasticsearch-codebase)
 
 ### Explain if you use any commit message conventions
+
+Please try to label your commit messages and description as much as possible.
+
+- feat: A new feature
+- fix: A bug fix
+- docs: Documentation only changes
+- style: Changes that do not affect the meaning of the code (white-space, for
+  matting, missing semi-colons, etc)
+- refactor: A code change that neither fixes a bug nor adds a feature
+- perf: A code change that improves performance
+- chore: Unrelated to code or removing (white-space, commented code, formatting, missing semi-colons, etc)
+- build: Build related changes
 
 **Need inspiration?** [1][angular](https://github.com/angular/material/blob/master/.github/CONTRIBUTING.md#submit) [2][node.js](https://github.com/nodejs/node/blob/master/CONTRIBUTING.md#step-3-commit)
 
