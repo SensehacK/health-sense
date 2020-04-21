@@ -1,9 +1,10 @@
 ---
-name: "Conversational"
-about: "If you need to have more discussion about certain issue request  "
-title: ""
-labels: "i: bug, i: needs triage"
-assignees: ""
+name: Conversational
+about: 'If you need to have more discussion about certain issue request  '
+title: ''
+labels: ''
+assignees: ''
+
 ---
 
 **Note: for support questions, please use stackoverflow**. This repository's issues are reserved for feature requests and bug reports.

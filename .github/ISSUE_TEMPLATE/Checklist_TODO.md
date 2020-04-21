@@ -1,9 +1,10 @@
 ---
-name: "Checklist TODO"
-about: "Small checklist todo"
-title: ""
-labels: "i: bug, i: needs triage"
-assignees: ""
+name: Checklist TODO
+about: Small checklist todo
+title: ''
+labels: 'i: bug, i: needs triage'
+assignees: ''
+
 ---
 
 ### Prerequisites
