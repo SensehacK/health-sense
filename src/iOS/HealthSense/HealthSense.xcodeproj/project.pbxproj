@@ -232,15 +232,16 @@
 		FB51DBC5242A789000FD0B7B /* HealthSense */ = {
 			isa = PBXGroup;
 			children = (
-				FB73C4DD2446839E00E30D7D /* config */,
-				FB51DC20242A795400FD0B7B /* HealthSense.entitlements */,
-				FB51DBC6242A789100FD0B7B /* AppDelegate.swift */,
+				FB6DA841244E6FA00086A030 /* Misc */,
+				FB6DA840244E6F890086A030 /* Storyboard */,
+				FB6DA83F244E6F6C0086A030 /* Main */,
+				FB6DA83E244E6F1F0086A030 /* Controller */,
+				FB6DA83D244E6F190086A030 /* View */,
+				FB6DA83C244E6F120086A030 /* Model */,
+				FB6DA83B244E6ED20086A030 /* Utilities */,
+				FB73C4DD2446839E00E30D7D /* Config */,
 				FB51DBC8242A789100FD0B7B /* SceneDelegate.swift */,
-				FB51DBCA242A789100FD0B7B /* ViewController.swift */,
-				FB51DBCC242A789100FD0B7B /* Main.storyboard */,
 				FB51DBCF242A789500FD0B7B /* Assets.xcassets */,
-				FB51DBD1242A789500FD0B7B /* LaunchScreen.storyboard */,
-				FB51DBD4242A789500FD0B7B /* Info.plist */,
 			);
 			path = HealthSense;
 			sourceTree = "<group>";
@@ -301,11 +302,66 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FB73C4DD2446839E00E30D7D /* config */ = {
+		FB6DA83B244E6ED20086A030 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = config;
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FB6DA83C244E6F120086A030 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB6DA83D244E6F190086A030 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FB6DA83E244E6F1F0086A030 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FB51DBCA242A789100FD0B7B /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FB6DA83F244E6F6C0086A030 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FB51DBC6242A789100FD0B7B /* AppDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FB6DA840244E6F890086A030 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FB51DBCC242A789100FD0B7B /* Main.storyboard */,
+				FB51DBD1242A789500FD0B7B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		FB6DA841244E6FA00086A030 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				FB51DC20242A795400FD0B7B /* HealthSense.entitlements */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		FB73C4DD2446839E00E30D7D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				FB51DBD4242A789500FD0B7B /* Info.plist */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		FB9EFE30242A8B7900913776 /* Shared */ = {
@@ -942,10 +998,10 @@
 			baseConfigurationReference = AC73716CEE540C95E8BC8A5A /* Pods-HealthSense.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = HealthSense/HealthSense.entitlements;
+				CODE_SIGN_ENTITLEMENTS = HealthSense/Misc/HealthSense.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LGQH99U6M2;
-				INFOPLIST_FILE = HealthSense/Info.plist;
+				INFOPLIST_FILE = HealthSense/Config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -962,10 +1018,10 @@
 			baseConfigurationReference = 2F50CDDBEC759DCD5E4BEEEC /* Pods-HealthSense.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = HealthSense/HealthSense.entitlements;
+				CODE_SIGN_ENTITLEMENTS = HealthSense/Misc/HealthSense.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LGQH99U6M2;
-				INFOPLIST_FILE = HealthSense/Info.plist;
+				INFOPLIST_FILE = HealthSense/Config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
