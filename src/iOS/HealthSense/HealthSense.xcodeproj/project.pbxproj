@@ -32,6 +32,7 @@
 		FB51DC23242A795400FD0B7B /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB51DC22242A795400FD0B7B /* HealthKit.framework */; };
 		FB6DA843244E716C0086A030 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6DA842244E716C0086A030 /* Constants.swift */; };
 		FB6DA845244E73360086A030 /* UITabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6DA844244E73360086A030 /* UITabBarViewController.swift */; };
+		FB6DA849244E97DD0086A030 /* InfoBak.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB6DA848244E97DD0086A030 /* InfoBak.plist */; };
 		FBA35B3A244CAAAF00A6639A /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA35B39244CAAAF00A6639A /* HealthKit.framework */; };
 		FBC3EE91242C29FE006DCE06 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3EE90242C29FE006DCE06 /* HealthManager.swift */; };
 		FBC3EE92242C2A04006DCE06 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3EE90242C29FE006DCE06 /* HealthManager.swift */; };
@@ -139,6 +140,7 @@
 		FB51DC22242A795400FD0B7B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		FB6DA842244E716C0086A030 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FB6DA844244E73360086A030 /* UITabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarViewController.swift; sourceTree = "<group>"; };
+		FB6DA848244E97DD0086A030 /* InfoBak.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InfoBak.plist; sourceTree = "<group>"; };
 		FBA35B39244CAAAF00A6639A /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		FBC3EE90242C29FE006DCE06 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HealthManager.swift; path = HealthSense/HealthManager.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -245,6 +247,7 @@
 				FB6DA841244E6FA00086A030 /* Misc */,
 				FB73C4DD2446839E00E30D7D /* Config */,
 				FB51DBC8242A789100FD0B7B /* SceneDelegate.swift */,
+				FB51DBD4242A789500FD0B7B /* Info.plist */,
 				FB51DBCF242A789500FD0B7B /* Assets.xcassets */,
 			);
 			path = HealthSense;
@@ -373,7 +376,7 @@
 		FB73C4DD2446839E00E30D7D /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				FB51DBD4242A789500FD0B7B /* Info.plist */,
+				FB6DA848244E97DD0086A030 /* InfoBak.plist */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -398,7 +401,9 @@
 				FB51DBC0242A789000FD0B7B /* Frameworks */,
 				FB51DBC1242A789000FD0B7B /* Resources */,
 				FB51DC16242A789900FD0B7B /* Embed Watch Content */,
-				FB73C4DC2446814900E30D7D /* ShellScript */,
+				FB73C4DC2446814900E30D7D /* Swift Lint */,
+				FB6DA847244E8ACB0086A030 /* Xcode iOS Build Bump */,
+				FB6DA84A244E98680086A030 /* Xcode iOS Version Bump */,
 			);
 			buildRules = (
 			);
@@ -456,6 +461,8 @@
 				FB51DBEB242A789600FD0B7B /* Resources */,
 				FB51DC12242A789900FD0B7B /* Embed App Extensions */,
 				E848B79ED159515B40E7D1F3 /* Frameworks */,
+				FB6DA84B244E9B2F0086A030 /* Xcode WatchApp Build Bump */,
+				FB6DA84C244E9BDA0086A030 /* Xcode WatchApp Version Bump */,
 			);
 			buildRules = (
 			);
@@ -542,6 +549,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB51DBD3242A789500FD0B7B /* LaunchScreen.storyboard in Resources */,
+				FB6DA849244E97DD0086A030 /* InfoBak.plist in Resources */,
 				FB51DBD0242A789500FD0B7B /* Assets.xcassets in Resources */,
 				FB51DBCE242A789100FD0B7B /* Main.storyboard in Resources */,
 			);
@@ -691,7 +699,43 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FB73C4DC2446814900E30D7D /* ShellScript */ = {
+		FB6DA847244E8ACB0086A030 /* Xcode iOS Build Bump */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Xcode iOS Build Bump";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$PRODUCT_SETTINGS_PATH\")\n# Setting \"Date\" + Build Number\n#buildNumber=$(cut -d'.' -f2 <<<$buildNumber)\n#buildNumber=$(date +\"%y%m%d\")\".\"$(($buildNumber + 1))\n# Setting \"Git commits\" + Build Number\n#buildNumber=$(git rev-list --count HEAD)\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$PRODUCT_SETTINGS_PATH\"\n";
+		};
+		FB6DA84A244E98680086A030 /* Xcode iOS Version Bump */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Xcode iOS Version Bump";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# This splits a two-decimal version string, such as \"0.45.123\", allowing us to increment the third position.\nVERSIONNUM=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nNEWSUBVERSION=`echo $VERSIONNUM | awk -F \".\" '{print $3}'`\nNEWSUBVERSION=$(($NEWSUBVERSION + 1))\nNEWVERSIONSTRING=`echo $VERSIONNUM | awk -F \".\" '{print $1 \".\" $2 \".'$NEWSUBVERSION'\" }'`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString $NEWVERSIONSTRING\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
+		};
+		FB6DA84B244E9B2F0086A030 /* Xcode WatchApp Build Bump */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -700,6 +744,43 @@
 			);
 			inputPaths = (
 			);
+			name = "Xcode WatchApp Build Bump";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$PRODUCT_SETTINGS_PATH\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$PRODUCT_SETTINGS_PATH\"\n";
+		};
+		FB6DA84C244E9BDA0086A030 /* Xcode WatchApp Version Bump */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Xcode WatchApp Version Bump";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# This splits a two-decimal version string, such as \"0.45.123\", allowing us to increment the third position.\nVERSIONNUM=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nNEWSUBVERSION=`echo $VERSIONNUM | awk -F \".\" '{print $3}'`\nNEWSUBVERSION=$(($NEWSUBVERSION + 1))\nNEWVERSIONSTRING=`echo $VERSIONNUM | awk -F \".\" '{print $1 \".\" $2 \".'$NEWSUBVERSION'\" }'`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString $NEWVERSIONSTRING\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
+		};
+		FB73C4DC2446814900E30D7D /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -979,6 +1060,7 @@
 				DEVELOPMENT_TEAM = LGQH99U6M2;
 				IBSC_MODULE = HealthSense_WatchKit_Extension;
 				INFOPLIST_FILE = "HealthSense WatchKit App/Info.plist";
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kautilya.HealthSense.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -999,6 +1081,7 @@
 				DEVELOPMENT_TEAM = LGQH99U6M2;
 				IBSC_MODULE = HealthSense_WatchKit_Extension;
 				INFOPLIST_FILE = "HealthSense WatchKit App/Info.plist";
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kautilya.HealthSense.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -1017,11 +1100,12 @@
 				CODE_SIGN_ENTITLEMENTS = HealthSense/Misc/HealthSense.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LGQH99U6M2;
-				INFOPLIST_FILE = HealthSense/Config/Info.plist;
+				INFOPLIST_FILE = HealthSense/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kautilya.HealthSense;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1037,11 +1121,12 @@
 				CODE_SIGN_ENTITLEMENTS = HealthSense/Misc/HealthSense.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LGQH99U6M2;
-				INFOPLIST_FILE = HealthSense/Config/Info.plist;
+				INFOPLIST_FILE = HealthSense/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kautilya.HealthSense;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
