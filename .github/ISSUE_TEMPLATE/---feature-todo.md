@@ -1,37 +1,43 @@
 ---
-name: iOS Feature TODO
-about: Idea Checklist for this iOS project
+name: "\U0001F389 Feature TODO"
+about: Small checklist todo☑︎.
 title: ''
-labels: checklist, feature, iOS
-assignees: SensehacK
+labels: checklist, feature
+assignees: ''
 
 ---
 
+### Prerequisites
+
+- [ ] Are you running the latest version?
+
+For more information, see the `CONTRIBUTING` guide.
+
 ### Description
 
-Functionality of adding a feature for iOS application which would add in
 [Description of the feature]
+
 
 ### Other options
 
 
 **Expected behavior:** [What you expected to happen]
- iOS application
+ application
 
 **Actual behavior:** [What actually happened]
 
 
 ### Dependency
-1. Xcode , iOS v+
+1. IDE , OS v+
 2. Library
 3. Patience
 4. Intelligence
 
 ### Process
-- [ ] Cocoapods install
+- [ ] Tool install
 - [ ] Library Pod
 - [ ] Story Complete #
-- [ ] Read  Documentation
+- [ ] Read Documentation
 - [ ] Implement your understanding
 
 
