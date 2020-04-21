@@ -30,6 +30,8 @@
 		FB51DC08242A789700FD0B7B /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51DC07242A789700FD0B7B /* ComplicationController.swift */; };
 		FB51DC0A242A789900FD0B7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB51DC09242A789900FD0B7B /* Assets.xcassets */; };
 		FB51DC23242A795400FD0B7B /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB51DC22242A795400FD0B7B /* HealthKit.framework */; };
+		FB6DA843244E716C0086A030 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6DA842244E716C0086A030 /* Constants.swift */; };
+		FB6DA845244E73360086A030 /* UITabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6DA844244E73360086A030 /* UITabBarViewController.swift */; };
 		FBA35B3A244CAAAF00A6639A /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA35B39244CAAAF00A6639A /* HealthKit.framework */; };
 		FBC3EE91242C29FE006DCE06 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3EE90242C29FE006DCE06 /* HealthManager.swift */; };
 		FBC3EE92242C2A04006DCE06 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3EE90242C29FE006DCE06 /* HealthManager.swift */; };
@@ -135,6 +137,8 @@
 		FB51DC0C242A789900FD0B7B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		FB51DC20242A795400FD0B7B /* HealthSense.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HealthSense.entitlements; sourceTree = "<group>"; };
 		FB51DC22242A795400FD0B7B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		FB6DA842244E716C0086A030 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FB6DA844244E73360086A030 /* UITabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarViewController.swift; sourceTree = "<group>"; };
 		FBA35B39244CAAAF00A6639A /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		FBC3EE90242C29FE006DCE06 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HealthManager.swift; path = HealthSense/HealthManager.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -232,13 +236,13 @@
 		FB51DBC5242A789000FD0B7B /* HealthSense */ = {
 			isa = PBXGroup;
 			children = (
-				FB6DA841244E6FA00086A030 /* Misc */,
+				FB6DA83C244E6F120086A030 /* Model */,
+				FB6DA83D244E6F190086A030 /* View */,
+				FB6DA83E244E6F1F0086A030 /* Controller */,
 				FB6DA840244E6F890086A030 /* Storyboard */,
 				FB6DA83F244E6F6C0086A030 /* Main */,
-				FB6DA83E244E6F1F0086A030 /* Controller */,
-				FB6DA83D244E6F190086A030 /* View */,
-				FB6DA83C244E6F120086A030 /* Model */,
 				FB6DA83B244E6ED20086A030 /* Utilities */,
+				FB6DA841244E6FA00086A030 /* Misc */,
 				FB73C4DD2446839E00E30D7D /* Config */,
 				FB51DBC8242A789100FD0B7B /* SceneDelegate.swift */,
 				FB51DBCF242A789500FD0B7B /* Assets.xcassets */,
@@ -305,6 +309,7 @@
 		FB6DA83B244E6ED20086A030 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				FB6DA842244E716C0086A030 /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -319,6 +324,8 @@
 		FB6DA83D244E6F190086A030 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FB6DA846244E7A070086A030 /* CustomViews */,
+				FB6DA844244E73360086A030 /* UITabBarViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -354,6 +361,13 @@
 				FB51DC20242A795400FD0B7B /* HealthSense.entitlements */,
 			);
 			path = Misc;
+			sourceTree = "<group>";
+		};
+		FB6DA846244E7A070086A030 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		FB73C4DD2446839E00E30D7D /* Config */ = {
@@ -701,6 +715,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB6DA845244E73360086A030 /* UITabBarViewController.swift in Sources */,
+				FB6DA843244E716C0086A030 /* Constants.swift in Sources */,
 				FB51DBCB242A789100FD0B7B /* ViewController.swift in Sources */,
 				FB51DBC7242A789100FD0B7B /* AppDelegate.swift in Sources */,
 				FB51DBC9242A789100FD0B7B /* SceneDelegate.swift in Sources */,

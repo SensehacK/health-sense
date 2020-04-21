@@ -15,10 +15,27 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        view.backgroundColor = Colors.sensehackDarkGrey
+        
+        // Trying out UI using coding.
+        let initText = UILabel()
+        initText.text = "Hello Sensehack!"
+        //NOTE: Just due to one method not being falsed the rest of the programmatic constraint wasn't working
+        initText.translatesAutoresizingMaskIntoConstraints = false
+         view.addSubview(initText)
+               
+        var xConstraint = NSLayoutConstraint(item: initText, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1, constant: 0)
+        var YConstraint = NSLayoutConstraint(item: initText, attribute: .centerY, relatedBy: .equal, toItem: view, attribute: .centerY, multiplier: 1, constant: 0)
+               
+        view.addConstraints([xConstraint, YConstraint])
+        
         // Do any additional setup after loading the view.
         healthKitManager.authorizeHealthKit { (success, error) in
             print("Was healthkit successful? \(success)")
         }
+        
+        
     }
 
 
