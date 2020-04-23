@@ -1,6 +1,6 @@
 ---
-name: Conversational
-about: 'If you need to have more discussion about certain issue request  '
+name: "\U0001F4DAConversational"
+about: "If you need to have more discussion about certain issue request \U0001F4D6."
 title: ''
 labels: ''
 assignees: ''

@@ -1,6 +1,6 @@
 ---
-name: iOS Feature TODO
-about: Idea Checklist for this iOS project
+name: "\U0001F4F1 iOS Feature TODO"
+about: "Idea Checklist for this iOS project\U0001F468\U0001F3FB‍\U0001F4BB."
 title: ''
 labels: checklist, feature, iOS
 assignees: SensehacK
