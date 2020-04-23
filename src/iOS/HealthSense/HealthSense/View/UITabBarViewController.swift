@@ -10,15 +10,7 @@ import UIKit
 
 class UITabBarViewController: UITabBarController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        print("In UITab Var VC")
-        view.backgroundColor = Colors.sensehackDarkGrey
-        view.backgroundColor = .darkGray
-        view.backgroundColor = .green
-        
+    fileprivate func setupUIInit() {
         //TODO: Have different view controller seggregation.
         
         let initText = UILabel()
@@ -26,10 +18,22 @@ class UITabBarViewController: UITabBarController {
         initText.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(initText)
         
-        var xConstraint = NSLayoutConstraint(item: initText, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1, constant: 0)
-        var YConstraint = NSLayoutConstraint(item: initText, attribute: .centerY, relatedBy: .equal, toItem: view, attribute: .centerY, multiplier: 1, constant: 0)
+        let xConstraint = NSLayoutConstraint(item: initText, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1, constant: 0)
+        let YConstraint = NSLayoutConstraint(item: initText, attribute: .centerY, relatedBy: .equal, toItem: view, attribute: .centerY, multiplier: 1, constant: 0)
         
         view.addConstraints([xConstraint, YConstraint])
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+        print("In UITab Var VC")
+//        view.backgroundColor = Colors.sensehackDarkGrey
+//        view.backgroundColor = .darkGray
+//        view.backgroundColor = .green
+        
+//        setupUIInit()
         
     }
     
