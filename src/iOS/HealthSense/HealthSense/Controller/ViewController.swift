@@ -32,6 +32,10 @@ class ViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         healthKitManager.authorizeHealthKit { (success, error) in
+            
+            if let error = error {
+                print("Error in healthkit access \(error)")
+            }
             print("Was healthkit successful? \(success)")
         }
         

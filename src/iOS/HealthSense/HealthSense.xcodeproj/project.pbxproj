@@ -36,6 +36,8 @@
 		FBA35B3A244CAAAF00A6639A /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA35B39244CAAAF00A6639A /* HealthKit.framework */; };
 		FBC3EE91242C29FE006DCE06 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3EE90242C29FE006DCE06 /* HealthManager.swift */; };
 		FBC3EE92242C2A04006DCE06 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3EE90242C29FE006DCE06 /* HealthManager.swift */; };
+		FBFA6D64245136A7000A4592 /* Summary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFA6D63245136A7000A4592 /* Summary.storyboard */; };
+		FBFA6D6924513F08000A4592 /* HealthBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFA6D6724513F08000A4592 /* HealthBook.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +145,8 @@
 		FB6DA848244E97DD0086A030 /* InfoBak.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InfoBak.plist; sourceTree = "<group>"; };
 		FBA35B39244CAAAF00A6639A /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		FBC3EE90242C29FE006DCE06 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HealthManager.swift; path = HealthSense/HealthManager.swift; sourceTree = SOURCE_ROOT; };
+		FBFA6D63245136A7000A4592 /* Summary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Summary.storyboard; sourceTree = "<group>"; };
+		FBFA6D6824513F08000A4592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HealthBook.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -352,8 +356,10 @@
 		FB6DA840244E6F890086A030 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				FBFA6D6724513F08000A4592 /* HealthBook.storyboard */,
 				FB51DBCC242A789100FD0B7B /* Main.storyboard */,
 				FB51DBD1242A789500FD0B7B /* LaunchScreen.storyboard */,
+				FBFA6D63245136A7000A4592 /* Summary.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -551,7 +557,9 @@
 				FB51DBD3242A789500FD0B7B /* LaunchScreen.storyboard in Resources */,
 				FB6DA849244E97DD0086A030 /* InfoBak.plist in Resources */,
 				FB51DBD0242A789500FD0B7B /* Assets.xcassets in Resources */,
+				FBFA6D6924513F08000A4592 /* HealthBook.storyboard in Resources */,
 				FB51DBCE242A789100FD0B7B /* Main.storyboard in Resources */,
+				FBFA6D64245136A7000A4592 /* Summary.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -881,6 +889,14 @@
 				FB51DBF3242A789600FD0B7B /* Base */,
 			);
 			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		FBFA6D6724513F08000A4592 /* HealthBook.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBFA6D6824513F08000A4592 /* Base */,
+			);
+			name = HealthBook.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
