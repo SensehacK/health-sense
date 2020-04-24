@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JL4-bz-0PJ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Summary-->
+        <scene sceneID="QH7-Uy-g4l">
+            <objects>
+                <viewController id="JL4-bz-0PJ" customClass="SummaryViewController" customModule="HealthSense" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lz0-Zz-cy5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome Kautilya," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePy-3C-QC1">
+                                <rect key="frame" x="20" y="44" width="222" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLaunch" translatesAutoresizingMaskIntoConstraints="NO" id="Sfs-tQ-Rel">
+                                <rect key="frame" x="20" y="100" width="374" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="375" id="gA7-eD-i6L"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="2QO-ky-84M">
+                                <rect key="frame" x="20" y="513" width="374" height="272"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4MM-l6-v2R">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="272"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello Kautilya!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iks-Zg-otS">
+                                                <rect key="frame" x="133" y="60" width="109" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0m6-2E-J5E">
+                                                <rect key="frame" x="149" y="121" width="76" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="View Chart"/>
+                                                <connections>
+                                                    <action selector="chartButtonPressed:" destination="JL4-bz-0PJ" eventType="touchUpInside" id="uwh-LP-eVf"/>
+                                                    <segue destination="ih1-ga-9gB" kind="show" id="TWI-Wb-8iW"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Sfs-tQ-Rel" firstAttribute="top" secondItem="xIM-XQ-1vc" secondAttribute="top" constant="56" id="0Wd-lY-vbI"/>
+                            <constraint firstItem="Sfs-tQ-Rel" firstAttribute="leading" secondItem="xIM-XQ-1vc" secondAttribute="leading" constant="20" id="2L5-ge-pxh"/>
+                            <constraint firstItem="Sfs-tQ-Rel" firstAttribute="centerX" secondItem="lz0-Zz-cy5" secondAttribute="centerX" id="Toq-kr-Y5S"/>
+                            <constraint firstItem="xIM-XQ-1vc" firstAttribute="trailing" secondItem="2QO-ky-84M" secondAttribute="trailing" constant="20" id="XYB-dm-aLq"/>
+                            <constraint firstItem="xIM-XQ-1vc" firstAttribute="bottom" secondItem="2QO-ky-84M" secondAttribute="bottom" constant="28" id="e2V-mc-kXy"/>
+                            <constraint firstItem="xIM-XQ-1vc" firstAttribute="trailing" secondItem="Sfs-tQ-Rel" secondAttribute="trailing" constant="20" id="hER-Rr-Psd"/>
+                            <constraint firstItem="2QO-ky-84M" firstAttribute="top" secondItem="Sfs-tQ-Rel" secondAttribute="bottom" constant="38" id="js0-Nu-Ll7"/>
+                            <constraint firstItem="2QO-ky-84M" firstAttribute="leading" secondItem="xIM-XQ-1vc" secondAttribute="leading" constant="20" id="pDx-M2-xOE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xIM-XQ-1vc"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Summary" image="anonymous" id="NCQ-hU-MWi"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="chartLabel" destination="Iks-Zg-otS" id="LAE-G0-jZk"/>
+                        <outlet property="chartView" destination="4MM-l6-v2R" id="xxM-aB-0EK"/>
+                        <outlet property="imageView" destination="Sfs-tQ-Rel" id="uML-vR-srj"/>
+                        <outlet property="userTitle" destination="ePy-3C-QC1" id="WhT-bA-ujh"/>
+                        <outlet property="viewChartButton" destination="0m6-2E-J5E" id="JEy-wM-IOj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AxO-vH-esn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1239.1304347826087" y="740.625"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sa9-bS-vSZ">
+            <objects>
+                <viewController id="ih1-ga-9gB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K8Z-NJ-Sqi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="KMd-yZ-OlV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3d3-Qy-5KF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QIn-Hr-D1M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10" y="741"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AppLaunch" width="256" height="256"/>
+        <image name="anonymous" width="30" height="30"/>
+    </resources>
+</document>

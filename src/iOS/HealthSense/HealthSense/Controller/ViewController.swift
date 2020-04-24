@@ -25,17 +25,34 @@ class ViewController: UIViewController {
         initText.translatesAutoresizingMaskIntoConstraints = false
          view.addSubview(initText)
                
-        var xConstraint = NSLayoutConstraint(item: initText, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1, constant: 0)
-        var YConstraint = NSLayoutConstraint(item: initText, attribute: .centerY, relatedBy: .equal, toItem: view, attribute: .centerY, multiplier: 1, constant: 0)
+        let xConstraint = NSLayoutConstraint(item: initText, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1, constant: 0)
+        let YConstraint = NSLayoutConstraint(item: initText, attribute: .centerY, relatedBy: .equal, toItem: view, attribute: .centerY, multiplier: 1, constant: 0)
                
         view.addConstraints([xConstraint, YConstraint])
         
         // Do any additional setup after loading the view.
         healthKitManager.authorizeHealthKit { (success, error) in
+            
+            if let error = error {
+                print("Error in healthkit access \(error)")
+            }
             print("Was healthkit successful? \(success)")
         }
         
         
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "onboarding" {
+            
+            /* Manually presenting the View controller segue with fullscreen. But it throws stack error saying Storyboard can't find FirstOnboardingVC & also Console log warning message.
+            let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
+            let myVC = storyboard.instantiateViewController(withIdentifier: "FirstOnboardingVC")
+            myVC.modalPresentationStyle = .fullScreen
+            self.present(myVC, animated: true, completion: nil)
+            */
+        }
     }
 
 
