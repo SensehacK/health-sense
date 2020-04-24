@@ -10,7 +10,8 @@ import Foundation
 import UIKit
 
 
-struct Colors {
+struct HSColors {
+    // Colors
     static let sensehackDarkGrey = UIColor(red: 69/255, green: 69/255, blue: 69/255, alpha: 1)
     
     static let primaryColor1 = UIColor(red: 69/255, green: 69/255, blue: 69/255, alpha: 1)
@@ -25,64 +26,77 @@ struct Colors {
     
 }
 
-struct Fonts {
-    static let avenirNextMedium = "AvenirNext-Medium"
+struct HSFonts {
+    // Font
+    static let kAvenirNextMedium = "AvenirNext-Medium"
 }
 
 
-struct HealthKit {
-    static let heartRate = "HKHeartRate"
-    static let pulseRate = "HKPulseRate"
-    static let calories = "HKCalories"
-    static let water = "HKHydration"
-    static let sleep = "HKSleep"
-    static let workout = "HKWorkout"
-    static let height = "HKHeight"
-    static let weight = "HKWeight"
-    static let dob = "HKDateOfBirth"
+struct HSHealthKit {
+    // HealthKit data types
+    static let kHeartRate = "HKHeartRate"
+    static let kPulseRate = "HKPulseRate"
+    static let kCalories = "HKCalories"
+    static let kWater = "HKHydration"
+    static let kSleep = "HKSleep"
+    static let kWorkout = "HKWorkout"
+    static let kHeight = "HKHeight"
+    static let kWeight = "HKWeight"
+    static let kDob = "HKDateOfBirth"
 }
 
 
-enum CustomViewController: String {
-    case summaryVC = "SummaryViewController"
-    case healthVC = "HealthBookViewController"
-    case settingsVC = "SettingsViewController"
-    case onboardingVC = "OnboardingViewController"
-    case launchVC = "LaunchScreen"
-    case homeVC = "ViewController"
-    case tabBarVCVC = "UITabBarViewController"
+enum HSCustomViewController: String {
+    // Custom VCs
+    case kSummaryVC = "SummaryViewController"
+    case kHealthVC = "HealthBookViewController"
+    case kSettingsVC = "SettingsViewController"
+    case kOnboardingVC = "OnboardingViewController"
+    case kLaunchVC = "LaunchScreen"
+    case kHomeVC = "ViewController"
+    case kTabBarVC = "UITabBarViewController"
 }
 
-enum OnboardViewController: String {
-    case firstVC = "FirstOnboardingVC"
-    case secondVC = "SecondOnboardingVC"
-    case thirdVC = "ThirdOnboardingVC"
-}
-
-
-enum HttpStatusCode: Int {
-    case statusSuccess              = 200
-    case statusBadRequest           = 400
-    case statusSessionExpired       = 401
-    case statusForbidden            = 403
-    case statusNotFound             = 404
-    case statusInternalError        = 500
-    case statusServiceUnavilable    = 503
-    case statusTimeout              = -1001
-    case statusResourceNotFound     = -1003
-    case statusServerUnavialable    = -1004
-    case statusServerdown           = -1005
-    case statusNoNetConnection      = -1009
+enum HSOnboardViewController: String {
+    // Onboarding VCs
+    case kFirstVC = "FirstOnboardingVC"
+    case kSecondVC = "SecondOnboardingVC"
+    case kThirdVC = "ThirdOnboardingVC"
 }
 
 
-enum SenseMotivationQuotes: String {
-    case sensehack1 = "Just be yourself!"
-    case sensehack2 = "Stay Original!"
-    case sensehack3 = "Live your life!"
-    case sensehack4 = "Express yourself!"
-    case sensehack5 = "Enjoy yourself!"
-    case sensehack6 = "Don't Regret!"
-    case sensehack7 = "You're unique!"
+enum HSHttpStatusCode: Int {
+    // HTTPS response Codes
+    case kStatusSuccess              = 200
+    case kStatusBadRequest           = 400
+    case kStatusSessionExpired       = 401
+    case kStatusForbidden            = 403
+    case kStatusNotFound             = 404
+    case kStatusInternalError        = 500
+    case kStatusServiceUnavilable    = 503
+    case kStatusTimeout              = -1001
+    case kStatusResourceNotFound     = -1003
+    case kStatusServerUnavialable    = -1004
+    case kStatusServerdown           = -1005
+    case kStatusNoNetConnection      = -1009
 }
 
+
+enum HSSenseMotivationQuotes: String {
+    // Motivation strings
+    case kSensehack1 = "Just be yourself!"
+    case kSensehack2 = "Stay Original!"
+    case kSensehack3 = "Live your life!"
+    case kSensehack4 = "Express yourself!"
+    case kSensehack5 = "Enjoy yourself!"
+    case kSensehack6 = "Don't Regret!"
+    case kSensehack7 = "You're unique!"
+}
+
+
+struct HSUserDefaults {
+    // User Defaults
+    
+    static let kFirstLaunch = "FirstLaunch"
+    
+}

@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--First Onboarding View Controller-->
         <scene sceneID="P3P-Nb-3Sc">
             <objects>
-                <viewController storyboardIdentifier="FirstOnboardingVC" id="NcJ-pG-tJd" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstOnboardingVC" id="NcJ-pG-tJd" customClass="FirstOnboardingViewController" customModule="HealthSense" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ulG-qM-nuR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,15 +29,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8aJ-GR-IVN"/>
                     </view>
+                    <connections>
+                        <outlet property="customLabel" destination="R7x-Ys-Ftm" id="AlA-KX-Tth"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ti6-Yt-jeh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1045" y="767"/>
         </scene>
-        <!--View Controller-->
+        <!--Second Onboarding View Controller-->
         <scene sceneID="Y2Q-46-I0N">
             <objects>
-                <viewController storyboardIdentifier="SecondOnboardingVC" id="BYl-sV-w5v" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondOnboardingVC" id="BYl-sV-w5v" customClass="SecondOnboardingViewController" customModule="HealthSense" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r6J-t7-NKI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="145" y="767"/>
         </scene>
-        <!--View Controller-->
+        <!--Third Onboarding View Controller-->
         <scene sceneID="ahC-3U-no4">
             <objects>
-                <viewController storyboardIdentifier="ThirdOnboardingVC" id="G53-FP-cJN" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ThirdOnboardingVC" id="G53-FP-cJN" customClass="ThirdOnboardingViewController" customModule="HealthSense" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7SV-tL-sm8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,6 +78,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zM7-Nn-RvQ">
+                                <rect key="frame" x="176" y="742" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Continue"/>
+                                <connections>
+                                    <action selector="continueBtnPressed:" destination="G53-FP-cJN" eventType="touchUpInside" id="lrb-B7-eVV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>

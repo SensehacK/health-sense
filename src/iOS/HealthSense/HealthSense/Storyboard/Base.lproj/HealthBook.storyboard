@@ -25,6 +25,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pht-1T-NHG">
+                                <rect key="frame" x="175" y="537" width="64" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Welcome"/>
+                                <connections>
+                                    <action selector="welcomeButton:" destination="RYs-eV-hX0" eventType="touchUpInside" id="a37-Dw-sBp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="omz-db-0K3"/>
@@ -32,10 +40,22 @@
                     <tabBarItem key="tabBarItem" title="HealthBook" image="browse" id="NfT-7d-RLm"/>
                     <navigationItem key="navigationItem" id="sOh-cL-gJO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mainButton" destination="37z-g3-aR9" id="E5Z-TC-3O3"/>
+                        <segue destination="JGY-DW-hhR" kind="presentation" identifier="goToOnboarding" modalPresentationStyle="fullScreen" id="oUT-bR-RZq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xOo-fd-YpI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1242.0289855072465" y="799.55357142857144"/>
+        </scene>
+        <!--Onboarding-->
+        <scene sceneID="BB0-SK-9Sd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Onboarding" id="JGY-DW-hhR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RbX-OQ-mmz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1243" y="1238"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CwM-q7-EpU">

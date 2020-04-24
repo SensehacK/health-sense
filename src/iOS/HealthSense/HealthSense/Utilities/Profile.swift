@@ -18,15 +18,15 @@ class Profile {
     
 
     
-    
-    // MARK: User Details
-    struct User {
-        let firstName: String?
-        let lastName: String?
-        let age: Int?
-    }
 
 }
 
-
+// MARK: User Details
+struct User {
+    
+    static var displayName:String?
+    let firstName: String?
+    let lastName: String?
+    let age: Int?
+}
 

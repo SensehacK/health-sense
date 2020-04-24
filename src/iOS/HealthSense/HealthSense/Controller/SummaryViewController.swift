@@ -19,7 +19,7 @@ class SummaryViewController: UIViewController {
     
     
     // Variables declaration
-    let user = "Sensehack"
+    let user = User.displayName ?? "Sensehack"
     
     // Get user details from User
 //    let userObj = User(firstName: "Kautilya", lastName: "Save", age: 24)
@@ -33,12 +33,15 @@ class SummaryViewController: UIViewController {
         // Do any additional setup after loading the view.
         print("SummaryViewController VDL")
 //        view.backgroundColor = Colors.sensehackDarkGrey
-        
+        print("Display Name", User.displayName)
         print("Base URL",Settings.shared().baseURL)
         print("Singleton",Settings.shared())
         print("Dark mode s ? \(SettingsStruct.isDarkMode)")
         SettingsStruct.isDarkMode = true
         print("Dark mode e ? \(SettingsStruct.isDarkMode)")
+        
+        // Setting userDisplay Name to Profile Constant
+        User.displayName = user
     }
     
     
@@ -47,6 +50,8 @@ class SummaryViewController: UIViewController {
         print("Button Chart Button pressed")
         userTitle.text = "Welcome \(user)"
         chartLabel.text = "Kautilya Save"
+        
+        User.displayName = chartLabel.text
         
 //        print(userObj.firstName)
         
