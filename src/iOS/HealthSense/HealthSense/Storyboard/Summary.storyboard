@@ -15,6 +15,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome Kautilya," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePy-3C-QC1">
+                                <rect key="frame" x="20" y="44" width="269" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLaunch" translatesAutoresizingMaskIntoConstraints="NO" id="Sfs-tQ-Rel">
                                 <rect key="frame" x="20" y="100" width="374" height="375"/>
                                 <constraints>
@@ -34,6 +41,15 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0m6-2E-J5E">
+                                                <rect key="frame" x="149" y="121" width="76" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="View Chart"/>
+                                                <connections>
+                                                    <action selector="chartButtonPressed:" destination="JL4-bz-0PJ" eventType="touchUpInside" id="uwh-LP-eVf"/>
+                                                    <segue destination="ih1-ga-9gB" kind="showDetail" id="TWI-Wb-8iW"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
@@ -57,12 +73,31 @@
                     <tabBarItem key="tabBarItem" title="Summary" image="anonymous" id="NCQ-hU-MWi"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="chartLabel" destination="Iks-Zg-otS" id="LAE-G0-jZk"/>
+                        <outlet property="chartView" destination="4MM-l6-v2R" id="xxM-aB-0EK"/>
                         <outlet property="imageView" destination="Sfs-tQ-Rel" id="uML-vR-srj"/>
+                        <outlet property="userTitle" destination="ePy-3C-QC1" id="WhT-bA-ujh"/>
+                        <outlet property="viewChartButton" destination="0m6-2E-J5E" id="JEy-wM-IOj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AxO-vH-esn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1239.1304347826087" y="740.625"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sa9-bS-vSZ">
+            <objects>
+                <viewController id="ih1-ga-9gB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K8Z-NJ-Sqi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="KMd-yZ-OlV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QIn-Hr-D1M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10" y="741"/>
         </scene>
     </scenes>
     <resources>

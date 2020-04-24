@@ -36,6 +36,10 @@
 		FBA35B3A244CAAAF00A6639A /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA35B39244CAAAF00A6639A /* HealthKit.framework */; };
 		FBC3EE91242C29FE006DCE06 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3EE90242C29FE006DCE06 /* HealthManager.swift */; };
 		FBC3EE92242C2A04006DCE06 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3EE90242C29FE006DCE06 /* HealthManager.swift */; };
+		FBE338F524521DC800B56A53 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE338F424521DC800B56A53 /* Onboarding.storyboard */; };
+		FBE338F7245220C000B56A53 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE338F6245220C000B56A53 /* OnboardingViewController.swift */; };
+		FBE338F92452234200B56A53 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE338F82452234200B56A53 /* Profile.swift */; };
+		FBE338FB245239D500B56A53 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE338FA245239D500B56A53 /* Settings.swift */; };
 		FBFA6D64245136A7000A4592 /* Summary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFA6D63245136A7000A4592 /* Summary.storyboard */; };
 		FBFA6D6924513F08000A4592 /* HealthBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFA6D6724513F08000A4592 /* HealthBook.storyboard */; };
 		FBFA6D6B24513F71000A4592 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFA6D6A24513F71000A4592 /* Settings.storyboard */; };
@@ -149,6 +153,10 @@
 		FB6DA848244E97DD0086A030 /* InfoBak.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InfoBak.plist; sourceTree = "<group>"; };
 		FBA35B39244CAAAF00A6639A /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		FBC3EE90242C29FE006DCE06 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HealthManager.swift; path = HealthSense/HealthManager.swift; sourceTree = SOURCE_ROOT; };
+		FBE338F424521DC800B56A53 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		FBE338F6245220C000B56A53 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnboardingViewController.swift; path = HealthSense/View/OnboardingViewController.swift; sourceTree = SOURCE_ROOT; };
+		FBE338F82452234200B56A53 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		FBE338FA245239D500B56A53 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		FBFA6D63245136A7000A4592 /* Summary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Summary.storyboard; sourceTree = "<group>"; };
 		FBFA6D6824513F08000A4592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HealthBook.storyboard; sourceTree = "<group>"; };
 		FBFA6D6A24513F71000A4592 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = SOURCE_ROOT; };
@@ -325,6 +333,8 @@
 			isa = PBXGroup;
 			children = (
 				FB6DA842244E716C0086A030 /* Constants.swift */,
+				FBE338F82452234200B56A53 /* Profile.swift */,
+				FBE338FA245239D500B56A53 /* Settings.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -341,6 +351,7 @@
 			children = (
 				FB6DA846244E7A070086A030 /* CustomViews */,
 				FB6DA844244E73360086A030 /* UITabBarViewController.swift */,
+				FBE338F6245220C000B56A53 /* OnboardingViewController.swift */,
 				FBFA6D6C2451423C000A4592 /* SummaryViewController.swift */,
 				FBFA6D92245149A5000A4592 /* HealthBookViewController.swift */,
 				FBFA6D902451491D000A4592 /* SettingsViewController.swift */,
@@ -368,6 +379,7 @@
 			isa = PBXGroup;
 			children = (
 				FB51DBCC242A789100FD0B7B /* Main.storyboard */,
+				FBE338F424521DC800B56A53 /* Onboarding.storyboard */,
 				FBFA6D63245136A7000A4592 /* Summary.storyboard */,
 				FBFA6D6724513F08000A4592 /* HealthBook.storyboard */,
 				FBFA6D6A24513F71000A4592 /* Settings.storyboard */,
@@ -573,6 +585,7 @@
 				FB51DBCE242A789100FD0B7B /* Main.storyboard in Resources */,
 				FBFA6D64245136A7000A4592 /* Summary.storyboard in Resources */,
 				FBFA6D6B24513F71000A4592 /* Settings.storyboard in Resources */,
+				FBE338F524521DC800B56A53 /* Onboarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -823,7 +836,10 @@
 				FB51DBC7242A789100FD0B7B /* AppDelegate.swift in Sources */,
 				FB51DBC9242A789100FD0B7B /* SceneDelegate.swift in Sources */,
 				FBFA6D6D2451423C000A4592 /* SummaryViewController.swift in Sources */,
+				FBE338FB245239D500B56A53 /* Settings.swift in Sources */,
 				FBC3EE91242C29FE006DCE06 /* HealthManager.swift in Sources */,
+				FBE338F7245220C000B56A53 /* OnboardingViewController.swift in Sources */,
+				FBE338F92452234200B56A53 /* Profile.swift in Sources */,
 				FBFA6D912451491D000A4592 /* SettingsViewController.swift in Sources */,
 				FBFA6D93245149A5000A4592 /* HealthBookViewController.swift in Sources */,
 			);

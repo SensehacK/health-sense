@@ -10,7 +10,15 @@ import UIKit
 
 class SummaryViewController: UIViewController {
 
+    // IBOutlets
+    @IBOutlet weak var userTitle: UILabel!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var chartView: UIView!
+    @IBOutlet weak var chartLabel: UILabel!
+    @IBOutlet weak var viewChartButton: UIButton!
+    
+    
+    // Variables declaration
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,8 +28,14 @@ class SummaryViewController: UIViewController {
         
     }
     
-
-    /*
+    
+    @IBAction func chartButtonPressed(_ sender: Any) {
+        
+        print("Button Chart Button pressed")
+        userTitle.text = "Welcome \(user)"
+        chartLabel.text = "Kautilya Save"
+    }
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -29,6 +43,6 @@ class SummaryViewController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
+
 
 }
