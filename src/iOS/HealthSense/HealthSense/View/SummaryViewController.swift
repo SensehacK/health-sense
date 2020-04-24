@@ -19,6 +19,14 @@ class SummaryViewController: UIViewController {
     
     
     // Variables declaration
+    let user = "Sensehack"
+    
+    // Get user details from User
+//    let userObj = User(firstName: "Kautilya", lastName: "Save", age: 24)
+//    Profile.user = userObj
+//
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,6 +34,11 @@ class SummaryViewController: UIViewController {
         print("SummaryViewController VDL")
 //        view.backgroundColor = Colors.sensehackDarkGrey
         
+        print("Base URL",Settings.shared().baseURL)
+        print("Singleton",Settings.shared())
+        print("Dark mode s ? \(SettingsStruct.isDarkMode)")
+        SettingsStruct.isDarkMode = true
+        print("Dark mode e ? \(SettingsStruct.isDarkMode)")
     }
     
     
@@ -34,6 +47,9 @@ class SummaryViewController: UIViewController {
         print("Button Chart Button pressed")
         userTitle.text = "Welcome \(user)"
         chartLabel.text = "Kautilya Save"
+        
+//        print(userObj.firstName)
+        
     }
     
     // MARK: - Navigation
