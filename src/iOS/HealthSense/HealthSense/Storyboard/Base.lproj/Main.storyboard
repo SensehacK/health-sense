@@ -14,13 +14,33 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URA-aB-mfS">
+                                <rect key="frame" x="178" y="310" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Onboard"/>
+                                <connections>
+                                    <segue destination="T1z-Uk-HxZ" kind="presentation" identifier="onboarding" modalPresentationStyle="fullScreen" id="QLi-cU-rHk"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Uee-0j-aNJ"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2988" y="-96"/>
+            <point key="canvasLocation" x="-1471" y="-66"/>
+        </scene>
+        <!--Onboarding-->
+        <scene sceneID="OSS-0Q-5xy">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Onboarding" id="T1z-Uk-HxZ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="qGi-JO-57W"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ItB-Gw-dYF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1470" y="428"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="hHf-fl-wlI">

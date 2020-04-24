@@ -41,6 +41,19 @@ class ViewController: UIViewController {
         
         
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "onboarding" {
+            
+            /* Manually presenting the View controller segue with fullscreen. But it throws stack error saying Storyboard can't find FirstOnboardingVC & also Console log warning message.
+            let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
+            let myVC = storyboard.instantiateViewController(withIdentifier: "FirstOnboardingVC")
+            myVC.modalPresentationStyle = .fullScreen
+            self.present(myVC, animated: true, completion: nil)
+            */
+        }
+    }
 
 
 }

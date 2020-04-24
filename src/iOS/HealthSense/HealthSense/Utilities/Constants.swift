@@ -53,6 +53,12 @@ enum CustomViewController: String {
     case tabBarVCVC = "UITabBarViewController"
 }
 
+enum OnboardViewController: String {
+    case firstVC = "FirstOnboardingVC"
+    case secondVC = "SecondOnboardingVC"
+    case thirdVC = "ThirdOnboardingVC"
+}
+
 
 enum HttpStatusCode: Int {
     case statusSuccess              = 200

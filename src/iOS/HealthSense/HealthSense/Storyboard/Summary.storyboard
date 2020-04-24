@@ -47,7 +47,7 @@
                                                 <state key="normal" title="View Chart"/>
                                                 <connections>
                                                     <action selector="chartButtonPressed:" destination="JL4-bz-0PJ" eventType="touchUpInside" id="uwh-LP-eVf"/>
-                                                    <segue destination="ih1-ga-9gB" kind="showDetail" id="TWI-Wb-8iW"/>
+                                                    <segue destination="ih1-ga-9gB" kind="show" id="TWI-Wb-8iW"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -94,6 +94,7 @@
                         <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="KMd-yZ-OlV"/>
                     </view>
+                    <navigationItem key="navigationItem" id="3d3-Qy-5KF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QIn-Hr-D1M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
