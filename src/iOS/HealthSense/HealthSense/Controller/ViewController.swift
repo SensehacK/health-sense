@@ -16,7 +16,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        view.backgroundColor = Colors.sensehackDarkGrey
+        print("Hi viewDidLoad ViewController")
+        view.backgroundColor = HSColors.sensehackDarkGrey
+        
         
         // Trying out UI using coding.
         let initText = UILabel()
@@ -37,6 +39,27 @@ class ViewController: UIViewController {
                 print("Error in healthkit access \(error)")
             }
             print("Was healthkit successful? \(success)")
+        }
+        
+        
+    }
+    
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        if SettingsStruct.defaultScreen == "welcome2" {
+            let onboardStoryboard = UIStoryboard(name: "Onboarding", bundle: nil)
+            let viewC = onboardStoryboard.instantiateViewController(identifier: "OnboardingViewController")
+            print("Hi if  did appear running 2")
+            
+            self.present(viewC, animated: true)
+        } else {
+            let onboardStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let viewC = onboardStoryboard.instantiateViewController(identifier: "UITabBarViewController")
+            print("Hi else view")
+            viewC.modalPresentationStyle = .fullScreen
+            self.present(viewC, animated: false)
         }
         
         

@@ -102,7 +102,7 @@
         <!--Onboarding View Controller-->
         <scene sceneID="Tvb-kT-OVo">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="qiG-27-AJH" customClass="OnboardingViewController" customModule="HealthSense" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="OnboardingViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="qiG-27-AJH" customClass="OnboardingViewController" customModule="HealthSense" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xws-Q0-hi6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="146" y="19"/>

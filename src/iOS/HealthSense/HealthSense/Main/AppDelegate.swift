@@ -12,10 +12,19 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
+    var window: UIWindow?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        return true
+        
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let viewC = storyboard.instantiateViewController(identifier: "UITabBarViewController")
+        print("Hi running")
+//        self.window?.addSubview(viewC.view)
+//        self.present(viewC, animated: true)
+        
+
+            return true
     }
 
     // MARK: UISceneSession Lifecycle
