@@ -1,6 +1,6 @@
 # Health Sense
 
-[![Build Status](https://travis-ci.com/SensehacK/capstone-team4.svg?branch=master)](https://travis-ci.com/SensehacK/capstone-team4)
+[![Build Status](https://travis-ci.com/SensehacK/health-sense.svg?branch=master)](https://travis-ci.com/SensehacK/health-sense)
 
 ## Description
 
