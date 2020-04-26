@@ -32,6 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         // Calling Analytics class
+        //TODO: Could be moved to lazy class invokation after the initial loading of Screens are done.
         Analytics()
         
         return true

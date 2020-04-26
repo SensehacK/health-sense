@@ -24,7 +24,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         window?.rootViewController = ViewController()
         window?.makeKeyAndVisible()
-        //TODO: Maybe we can dynamically assign views control flow in SceneDelegate itself. 1 sec Black screen
+        //TODO: Maybe we can dynamically assign views control flow in SceneDelegate itself.
+       // 1 sec Black screen compared to Viewcontroller function viewDidLoad() and then viewDidAppear(), so there are already 4 extra overhead calls
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

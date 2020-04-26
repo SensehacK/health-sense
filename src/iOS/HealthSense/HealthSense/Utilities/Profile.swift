@@ -16,15 +16,4 @@ class Profile {
     
     let user: User? = nil
     
-
 }
-
-// MARK: User Details
-struct User {
-    
-    static var displayName: String?
-    let firstName: String?
-    let lastName: String?
-    let age: Int?
-}
-

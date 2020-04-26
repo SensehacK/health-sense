@@ -19,7 +19,8 @@ class SummaryViewController: UIViewController {
     
     
     // Variables declaration
-    let user = User.displayName ?? "Sensehack"
+    let user = UserStruct.displayName ?? "Sensehack"
+    let healthKitManager = HealthKitManager.sharedInstance
     
     // Get user details from User
 //    let userObj = User(firstName: "Kautilya", lastName: "Save", age: 24)
@@ -27,24 +28,36 @@ class SummaryViewController: UIViewController {
 //
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    
+    
+    fileprivate func initialSetup() {
+        
+        //        view.backgroundColor = Colors.sensehackDarkGrey
+        // Debug Logs
         print("SummaryViewController VDL")
-//        view.backgroundColor = Colors.sensehackDarkGrey
-        print("Display Name \(User.displayName ?? "Kautilya")")
+        
+        print("Display Name \(UserStruct.displayName ?? "Kautilya")")
         print("Base URL", Settings.sharedInstance)
         print("Singleton", Settings.sharedInstance.appVersion)
         print("Dark mode s ? \(SettingsStruct.isDarkMode)")
-        
-//        Settings.sharedInstance.saf
         print("Settings Static variables.", Settings.saf)
-        SettingsStruct.isDarkMode = true
         print("Dark mode e after  ? \(SettingsStruct.isDarkMode)")
         
+        
+        SettingsStruct.isDarkMode = true
         // Setting userDisplay Name to Profile Constant
-        User.displayName = user
+        UserStruct.displayName = user
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // func for small init setup
+        initialSetup()
+        
+        // Healthkit permissions
+        healthAuthorization()
+        
     }
     
     
@@ -54,11 +67,23 @@ class SummaryViewController: UIViewController {
         userTitle.text = "Welcome \(user)"
         chartLabel.text = "Kautilya Save"
         
-        User.displayName = chartLabel.text
+        UserStruct.displayName = chartLabel.text
         
 //        print(userObj.firstName)
         self.dismiss(animated: true, completion: nil)
         
+    }
+    
+    
+    fileprivate func healthAuthorization() {
+        // Do any additional setup after loading the view.
+        healthKitManager.authorizeHealthKit { (success, error) in
+            
+            if let error = error {
+                print("Error in healthkit access \(error)")
+            }
+            print("Was healthkit successful? \(success)")
+        }
     }
     
     // MARK: - Navigation
