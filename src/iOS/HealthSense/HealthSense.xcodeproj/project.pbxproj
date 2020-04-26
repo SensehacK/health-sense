@@ -34,6 +34,7 @@
 		FB6DA845244E73360086A030 /* UITabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6DA844244E73360086A030 /* UITabBarViewController.swift */; };
 		FB6DA849244E97DD0086A030 /* InfoBak.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB6DA848244E97DD0086A030 /* InfoBak.plist */; };
 		FBA35B3A244CAAAF00A6639A /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA35B39244CAAAF00A6639A /* HealthKit.framework */; };
+		FBB3D5AE24551F25007DE952 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3D5AD24551F25007DE952 /* Analytics.swift */; };
 		FBC3EE91242C29FE006DCE06 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3EE90242C29FE006DCE06 /* HealthManager.swift */; };
 		FBC3EE92242C2A04006DCE06 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3EE90242C29FE006DCE06 /* HealthManager.swift */; };
 		FBD385E0245362C900983106 /* FirstOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD385DF245362C900983106 /* FirstOnboardingViewController.swift */; };
@@ -155,6 +156,7 @@
 		FB6DA844244E73360086A030 /* UITabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarViewController.swift; sourceTree = "<group>"; };
 		FB6DA848244E97DD0086A030 /* InfoBak.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InfoBak.plist; sourceTree = "<group>"; };
 		FBA35B39244CAAAF00A6639A /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		FBB3D5AD24551F25007DE952 /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
 		FBC3EE90242C29FE006DCE06 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HealthManager.swift; path = HealthSense/HealthManager.swift; sourceTree = SOURCE_ROOT; };
 		FBD385DF245362C900983106 /* FirstOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstOnboardingViewController.swift; sourceTree = "<group>"; };
 		FBD385E1245362DA00983106 /* SecondOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondOnboardingViewController.swift; sourceTree = "<group>"; };
@@ -274,7 +276,7 @@
 				FB73C4DD2446839E00E30D7D /* Config */,
 				FB51DBC8242A789100FD0B7B /* SceneDelegate.swift */,
 				FB51DBD4242A789500FD0B7B /* Info.plist */,
-				FB51DBCF242A789500FD0B7B /* Assets.xcassets */,
+				FBB3D5AC24550F17007DE952 /* Supporting Files */,
 			);
 			path = HealthSense;
 			sourceTree = "<group>";
@@ -341,6 +343,7 @@
 				FB6DA842244E716C0086A030 /* Constants.swift */,
 				FBE338F82452234200B56A53 /* Profile.swift */,
 				FBE338FA245239D500B56A53 /* Settings.swift */,
+				FBB3D5AD24551F25007DE952 /* Analytics.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -389,7 +392,6 @@
 				FBFA6D63245136A7000A4592 /* Summary.storyboard */,
 				FBFA6D6724513F08000A4592 /* HealthBook.storyboard */,
 				FBFA6D6A24513F71000A4592 /* Settings.storyboard */,
-				FB51DBD1242A789500FD0B7B /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -423,6 +425,15 @@
 				FBC3EE90242C29FE006DCE06 /* HealthManager.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		FBB3D5AC24550F17007DE952 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB51DBD1242A789500FD0B7B /* LaunchScreen.storyboard */,
+				FB51DBCF242A789500FD0B7B /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		FBD385DE245361AF00983106 /* Onboarding */ = {
@@ -849,6 +860,7 @@
 			files = (
 				FB6DA845244E73360086A030 /* UITabBarViewController.swift in Sources */,
 				FB6DA843244E716C0086A030 /* Constants.swift in Sources */,
+				FBB3D5AE24551F25007DE952 /* Analytics.swift in Sources */,
 				FB51DBCB242A789100FD0B7B /* ViewController.swift in Sources */,
 				FB51DBC7242A789100FD0B7B /* AppDelegate.swift in Sources */,
 				FBD385E4245362E900983106 /* ThirdOnboardingViewController.swift in Sources */,
