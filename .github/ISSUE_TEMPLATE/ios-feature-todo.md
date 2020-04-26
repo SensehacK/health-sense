@@ -1,7 +1,7 @@
 ---
 name: "\U0001F4F1 iOS Feature TODO"
 about: "Idea Checklist for this iOS project\U0001F468\U0001F3FB‍\U0001F4BB."
-title: ''
+title: iOS
 labels: checklist, feature, iOS
 assignees: SensehacK
 
@@ -30,9 +30,10 @@ Functionality of adding a feature for iOS application which would add in
 ### Process
 - [ ] Cocoapods install
 - [ ] Library Pod
-- [ ] Story Complete #
+- [ ] Story Dependency #
 - [ ] Read  Documentation
 - [ ] Implement your understanding
+- [ ] Story Future Roadmap #
 
 
 Documentation
