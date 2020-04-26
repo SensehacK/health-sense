@@ -10,15 +10,34 @@ import UIKit
 
 class ThirdOnboardingViewController: UIViewController {
 
+    let healthKitManager = HealthKitManager.sharedInstance
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        print("#### ThirdOnboardingVC  ####")
+
     }
     
     @IBAction func continueBtnPressed(_ sender: Any) {
-        print("Button continue pressed")
-        self.dismiss(animated: true, completion: nil)
+        
+        // Do any additional setup after loading the view.
+        healthKitManager.authorizeHealthKit { (success, error) in
+            
+            if let error = error {
+                print("Error in healthkit access \(error)")
+            }
+            print("Was healthkit successful? \(success)")
+        }
+        
+        print("Button continue pressed ThirdOnboardingVC")
+//        self.dismiss(animated: true, completion: nil)
+        
+        let onboardStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewC = onboardStoryboard.instantiateViewController(identifier: "UITabBarViewController")
+        print("continueBtnPressed ")
+        viewC.modalPresentationStyle = .fullScreen
+        self.present(viewC, animated: false)
     }
     
     /*

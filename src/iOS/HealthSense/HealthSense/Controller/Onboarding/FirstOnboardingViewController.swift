@@ -17,7 +17,7 @@ class FirstOnboardingViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        self.customLabel.text = User.displayName
+        self.customLabel.text = User.displayName ?? "Kautilya"
         
     }
     

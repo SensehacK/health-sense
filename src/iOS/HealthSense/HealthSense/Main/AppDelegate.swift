@@ -12,19 +12,29 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-    var window: UIWindow?
-    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
         // Override point for customization after application launch.
+        print("#### App Delegate")
         
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let viewC = storyboard.instantiateViewController(identifier: "UITabBarViewController")
-        print("Hi running")
-//        self.window?.addSubview(viewC.view)
-//        self.present(viewC, animated: true)
+        if UserDefaults.standard.bool(forKey: "FirstLaunch") {
+            
+            print("Default launch")
+            SettingsStruct.defaultScreen = "default"
+            
+        } else {
+            
+            print("First launch")
+            SettingsStruct.defaultScreen = "welcome"
+            UserDefaults.standard.set(true, forKey: "FirstLaunch")
+            UserDefaults.standard.set(1, forKey: "AppOpen")
+            
+        }
         
-
-            return true
+        // Calling Analytics class
+        Analytics()
+        
+        return true
     }
 
     // MARK: UISceneSession Lifecycle

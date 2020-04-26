@@ -33,12 +33,15 @@ class SummaryViewController: UIViewController {
         // Do any additional setup after loading the view.
         print("SummaryViewController VDL")
 //        view.backgroundColor = Colors.sensehackDarkGrey
-        print("Display Name", User.displayName)
-        print("Base URL",Settings.shared().baseURL)
-        print("Singleton",Settings.shared())
+        print("Display Name \(User.displayName ?? "Kautilya")")
+        print("Base URL", Settings.sharedInstance)
+        print("Singleton", Settings.sharedInstance.appVersion)
         print("Dark mode s ? \(SettingsStruct.isDarkMode)")
+        
+//        Settings.sharedInstance.saf
+        print("Settings Static variables.", Settings.saf)
         SettingsStruct.isDarkMode = true
-        print("Dark mode e ? \(SettingsStruct.isDarkMode)")
+        print("Dark mode e after  ? \(SettingsStruct.isDarkMode)")
         
         // Setting userDisplay Name to Profile Constant
         User.displayName = user
@@ -54,6 +57,7 @@ class SummaryViewController: UIViewController {
         User.displayName = chartLabel.text
         
 //        print(userObj.firstName)
+        self.dismiss(animated: true, completion: nil)
         
     }
     

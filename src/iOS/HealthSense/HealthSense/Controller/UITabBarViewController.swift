@@ -40,11 +40,7 @@ class UITabBarViewController: UITabBarController {
     
     
     override func viewDidAppear(_ animated: Bool) {
-        let onboardStoryboard = UIStoryboard(name: "Onboarding", bundle: nil)
-        let viewC = onboardStoryboard.instantiateViewController(identifier: "OnboardingViewController")
-        print("Hi view did appear running 2")
-        
-//        self.present(viewC, animated: true)
+        print("View Did Appear")
     }
     
 
