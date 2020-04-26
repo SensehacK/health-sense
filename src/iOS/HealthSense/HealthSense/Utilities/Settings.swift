@@ -42,4 +42,10 @@ struct SettingsStruct {
     static var isHealthkitAccess = false
     static var cloudDataSharing = false
     static var defaultScreen = "welcome"
+    
+}
+
+struct AnalyticsStruct {
+    // Analytics Global space
+    static var appOpen = 1
 }
