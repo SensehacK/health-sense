@@ -1,9 +1,9 @@
 ---
 name: "\U0001F389 Feature TODO"
 about: Small checklist todo☑︎.
-title: ''
+title: Feat
 labels: checklist, feature
-assignees: ''
+assignees: Abbas-shamshi, endri969
 
 ---
 
@@ -36,9 +36,10 @@ For more information, see the `CONTRIBUTING` guide.
 ### Process
 - [ ] Tool install
 - [ ] Library Pod
-- [ ] Story Complete #
+- [ ] Story Dependency #
 - [ ] Read Documentation
 - [ ] Implement your understanding
+- [ ] Story Future Roadmap #
 
 
 Documentation
