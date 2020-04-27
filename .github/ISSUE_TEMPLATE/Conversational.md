@@ -2,12 +2,10 @@
 name: "\U0001F4DAConversational"
 about: "If you need to have more discussion about certain issue request \U0001F4D6."
 title: ''
-labels: ''
-assignees: ''
+labels: brainstorm, deep dive
+assignees: ManasiTayade
 
 ---
-
-**Note: for support questions, please use stackoverflow**. This repository's issues are reserved for feature requests and bug reports.
 
 - **I'm submitting a ...**
   - [ ] bug report
