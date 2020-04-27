@@ -16,6 +16,8 @@ class SummaryViewController: UIViewController {
     @IBOutlet weak var chartView: UIView!
     @IBOutlet weak var chartLabel: UILabel!
     @IBOutlet weak var viewChartButton: UIButton!
+    @IBOutlet weak var ageLabel: UILabel!
+    @IBOutlet weak var bloodType: UILabel!
     
     
     // Variables declaration
@@ -26,8 +28,6 @@ class SummaryViewController: UIViewController {
 //    let userObj = User(firstName: "Kautilya", lastName: "Save", age: 24)
 //    Profile.user = userObj
 //
-    
-    
     
     
     fileprivate func initialSetup() {
@@ -57,6 +57,15 @@ class SummaryViewController: UIViewController {
         
         // Healthkit permissions
         healthAuthorization()
+        
+        let dob = ReadProfile.sharedInstance.getDOB()
+        ageLabel.text = "Age: \(dob)"
+        
+        let bloodT = ReadProfile.sharedInstance.getBloodType()
+        bloodType.text = "Blood: \(bloodT)"
+        
+        let gender = ReadProfile.sharedInstance.getGender()
+        chartLabel.text = "Gender: \(gender)"
         
     }
     

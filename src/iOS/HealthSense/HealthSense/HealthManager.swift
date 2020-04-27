@@ -25,6 +25,11 @@ class HealthKitManager: NSObject {
             return
         }
         
+        
+        guard let dateOfBirth: HKObjectType = HKObjectType.characteristicType(forIdentifier: .dateOfBirth) else { return }
+        guard let bloodType: HKObjectType = HKObjectType.characteristicType(forIdentifier: .bloodType)  else { return }
+        guard let gender: HKObjectType = HKObjectType.characteristicType(forIdentifier: .biologicalSex)  else { return }
+        
         let heightData: HKQuantityType = HKQuantityType.quantityType(forIdentifier: .height)!
        
         let typesToShare = Set([HKObjectType.workoutType(), heartRateType, heightData])

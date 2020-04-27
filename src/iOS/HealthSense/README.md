@@ -20,6 +20,37 @@ Open _.xcworkspace_ after package dependency has been installed.
 Change the project with specific bundle identifier and run it on the simulator.
 Alternatively you can run it on your phone given you have Apple Developer account.
 
+## User Experience
+
+### First Launch
+
+Within first launch we would display onboarding screen comprising of 3 pages which will welcome our user with different information about the app usage and what data we collect, what permissions we require in order to proper functioning of app.
+
+### Default Launch
+
+Will directly display the main summary page which will show case the health information in chronograph format for easy glance of your health well being.
+
+### Settings
+
+- Dark Mode
+Our app would support changing appearance according to the end user preferences.
+
+- Reset Settings
+The app will default all of the settings, so the end user would have first launch experience.
+
+- Telemetry
+Options to turn off telemetry stuff related to the app usage.
+
+- In App Statistics
+Options of turning off first party app usage tracking as well.
+
+- Build Info
+Information displayed about the app build meta data.
+
+- About
+Information about the app production members. Tools we used and assets we incorporated in the project.
+
+
 ## Develop
 
 ### iOS
