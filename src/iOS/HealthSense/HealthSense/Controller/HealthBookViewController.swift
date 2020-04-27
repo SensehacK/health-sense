@@ -10,21 +10,31 @@ import UIKit
 
 class HealthBookViewController: UIViewController {
 
+    
+    @IBOutlet weak var mainButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
+    @IBAction func welcomeButton(_ sender: Any) {
+        print("welcome button pressed")
+        performSegue(withIdentifier: "goToOnboarding", sender: self)
+    }
+    
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
+        print("In prepare Segue method", segue)
     }
-    */
+    
 
 }

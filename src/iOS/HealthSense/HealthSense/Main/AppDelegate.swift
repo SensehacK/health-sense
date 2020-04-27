@@ -12,9 +12,29 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
         // Override point for customization after application launch.
+        print("#### App Delegate")
+        
+        if UserDefaults.standard.bool(forKey: "FirstLaunch") {
+            
+            print("Default launch")
+            SettingsStruct.defaultScreen = "default"
+            
+        } else {
+            
+            print("First launch")
+            SettingsStruct.defaultScreen = "welcome"
+            UserDefaults.standard.set(true, forKey: "FirstLaunch")
+            UserDefaults.standard.set(1, forKey: "AppOpen")
+            
+        }
+        
+        // Calling Analytics class
+        //TODO: Could be moved to lazy class invokation after the initial loading of Screens are done.
+        Analytics()
+        
         return true
     }
 

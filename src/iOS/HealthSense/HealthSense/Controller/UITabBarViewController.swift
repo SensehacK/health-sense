@@ -35,6 +35,12 @@ class UITabBarViewController: UITabBarController {
         
 //        setupUIInit()
         
+       
+    }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print("View Did Appear")
     }
     
 

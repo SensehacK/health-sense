@@ -12,6 +12,7 @@
 		3FA1A9F75DCB17F18DD1729A /* Pods_HealthSenseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756B346B6AB9B2DDABF06E4A /* Pods_HealthSenseTests.framework */; };
 		88D4B4C59B31F021C7C4BC29 /* Pods_HealthSense.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4D6DCBDB95A37BA0D85A7B /* Pods_HealthSense.framework */; };
 		94131300FFFF3C0907B49180 /* Pods_HealthSense_HealthSenseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553EF7D84CADD9F5E01C0C3A /* Pods_HealthSense_HealthSenseUITests.framework */; };
+		FB3EC3BE24561DB2003318DF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3EC3BD24561DB2003318DF /* User.swift */; };
 		FB51DBC7242A789100FD0B7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51DBC6242A789100FD0B7B /* AppDelegate.swift */; };
 		FB51DBC9242A789100FD0B7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51DBC8242A789100FD0B7B /* SceneDelegate.swift */; };
 		FB51DBCB242A789100FD0B7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51DBCA242A789100FD0B7B /* ViewController.swift */; };
@@ -34,8 +35,12 @@
 		FB6DA845244E73360086A030 /* UITabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6DA844244E73360086A030 /* UITabBarViewController.swift */; };
 		FB6DA849244E97DD0086A030 /* InfoBak.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB6DA848244E97DD0086A030 /* InfoBak.plist */; };
 		FBA35B3A244CAAAF00A6639A /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA35B39244CAAAF00A6639A /* HealthKit.framework */; };
+		FBB3D5AE24551F25007DE952 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3D5AD24551F25007DE952 /* Analytics.swift */; };
 		FBC3EE91242C29FE006DCE06 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3EE90242C29FE006DCE06 /* HealthManager.swift */; };
 		FBC3EE92242C2A04006DCE06 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3EE90242C29FE006DCE06 /* HealthManager.swift */; };
+		FBD385E0245362C900983106 /* FirstOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD385DF245362C900983106 /* FirstOnboardingViewController.swift */; };
+		FBD385E2245362DA00983106 /* SecondOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD385E1245362DA00983106 /* SecondOnboardingViewController.swift */; };
+		FBD385E4245362E900983106 /* ThirdOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD385E3245362E900983106 /* ThirdOnboardingViewController.swift */; };
 		FBE338F524521DC800B56A53 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE338F424521DC800B56A53 /* Onboarding.storyboard */; };
 		FBE338F7245220C000B56A53 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE338F6245220C000B56A53 /* OnboardingViewController.swift */; };
 		FBE338F92452234200B56A53 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE338F82452234200B56A53 /* Profile.swift */; };
@@ -120,6 +125,7 @@
 		E968CEEB7D6181F6CD374C21 /* Pods_HealthSense_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthSense_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEEA271C2DBCAFD4CF448365 /* Pods-HealthSenseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSenseTests.release.xcconfig"; path = "Target Support Files/Pods-HealthSenseTests/Pods-HealthSenseTests.release.xcconfig"; sourceTree = "<group>"; };
 		F29CE389FE9403AB07368686 /* Pods-HealthSenseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSenseTests.debug.xcconfig"; path = "Target Support Files/Pods-HealthSenseTests/Pods-HealthSenseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FB3EC3BD24561DB2003318DF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FB51DBC3242A789000FD0B7B /* HealthSense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthSense.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB51DBC6242A789100FD0B7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB51DBC8242A789100FD0B7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,9 +158,13 @@
 		FB6DA844244E73360086A030 /* UITabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarViewController.swift; sourceTree = "<group>"; };
 		FB6DA848244E97DD0086A030 /* InfoBak.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InfoBak.plist; sourceTree = "<group>"; };
 		FBA35B39244CAAAF00A6639A /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		FBB3D5AD24551F25007DE952 /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
 		FBC3EE90242C29FE006DCE06 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HealthManager.swift; path = HealthSense/HealthManager.swift; sourceTree = SOURCE_ROOT; };
+		FBD385DF245362C900983106 /* FirstOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstOnboardingViewController.swift; sourceTree = "<group>"; };
+		FBD385E1245362DA00983106 /* SecondOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondOnboardingViewController.swift; sourceTree = "<group>"; };
+		FBD385E3245362E900983106 /* ThirdOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdOnboardingViewController.swift; sourceTree = "<group>"; };
 		FBE338F424521DC800B56A53 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
-		FBE338F6245220C000B56A53 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnboardingViewController.swift; path = HealthSense/View/OnboardingViewController.swift; sourceTree = SOURCE_ROOT; };
+		FBE338F6245220C000B56A53 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnboardingViewController.swift; path = HealthSense/Controller/Onboarding/OnboardingViewController.swift; sourceTree = SOURCE_ROOT; };
 		FBE338F82452234200B56A53 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		FBE338FA245239D500B56A53 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		FBFA6D63245136A7000A4592 /* Summary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Summary.storyboard; sourceTree = "<group>"; };
@@ -258,17 +268,16 @@
 		FB51DBC5242A789000FD0B7B /* HealthSense */ = {
 			isa = PBXGroup;
 			children = (
+				FB6DA83F244E6F6C0086A030 /* Main */,
 				FB6DA83C244E6F120086A030 /* Model */,
 				FB6DA83D244E6F190086A030 /* View */,
 				FB6DA83E244E6F1F0086A030 /* Controller */,
 				FB6DA840244E6F890086A030 /* Storyboard */,
-				FB6DA83F244E6F6C0086A030 /* Main */,
 				FB6DA83B244E6ED20086A030 /* Utilities */,
 				FB6DA841244E6FA00086A030 /* Misc */,
 				FB73C4DD2446839E00E30D7D /* Config */,
-				FB51DBC8242A789100FD0B7B /* SceneDelegate.swift */,
 				FB51DBD4242A789500FD0B7B /* Info.plist */,
-				FB51DBCF242A789500FD0B7B /* Assets.xcassets */,
+				FBB3D5AC24550F17007DE952 /* Supporting Files */,
 			);
 			path = HealthSense;
 			sourceTree = "<group>";
@@ -335,6 +344,8 @@
 				FB6DA842244E716C0086A030 /* Constants.swift */,
 				FBE338F82452234200B56A53 /* Profile.swift */,
 				FBE338FA245239D500B56A53 /* Settings.swift */,
+				FB3EC3BD24561DB2003318DF /* User.swift */,
+				FBB3D5AD24551F25007DE952 /* Analytics.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -350,11 +361,6 @@
 			isa = PBXGroup;
 			children = (
 				FB6DA846244E7A070086A030 /* CustomViews */,
-				FB6DA844244E73360086A030 /* UITabBarViewController.swift */,
-				FBE338F6245220C000B56A53 /* OnboardingViewController.swift */,
-				FBFA6D6C2451423C000A4592 /* SummaryViewController.swift */,
-				FBFA6D92245149A5000A4592 /* HealthBookViewController.swift */,
-				FBFA6D902451491D000A4592 /* SettingsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -362,7 +368,13 @@
 		FB6DA83E244E6F1F0086A030 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FBD385DE245361AF00983106 /* Onboarding */,
 				FB51DBCA242A789100FD0B7B /* ViewController.swift */,
+				FB6DA844244E73360086A030 /* UITabBarViewController.swift */,
+				FBFA6D6C2451423C000A4592 /* SummaryViewController.swift */,
+				FBFA6D92245149A5000A4592 /* HealthBookViewController.swift */,
+				FBFA6D902451491D000A4592 /* SettingsViewController.swift */,
+				FB3EC3BF24562098003318DF /* Heathkit */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -371,6 +383,7 @@
 			isa = PBXGroup;
 			children = (
 				FB51DBC6242A789100FD0B7B /* AppDelegate.swift */,
+				FB51DBC8242A789100FD0B7B /* SceneDelegate.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -383,7 +396,6 @@
 				FBFA6D63245136A7000A4592 /* Summary.storyboard */,
 				FBFA6D6724513F08000A4592 /* HealthBook.storyboard */,
 				FBFA6D6A24513F71000A4592 /* Settings.storyboard */,
-				FB51DBD1242A789500FD0B7B /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -417,6 +429,26 @@
 				FBC3EE90242C29FE006DCE06 /* HealthManager.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		FBB3D5AC24550F17007DE952 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB51DBD1242A789500FD0B7B /* LaunchScreen.storyboard */,
+				FB51DBCF242A789500FD0B7B /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBD385DE245361AF00983106 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				FBE338F6245220C000B56A53 /* OnboardingViewController.swift */,
+				FBD385DF245362C900983106 /* FirstOnboardingViewController.swift */,
+				FBD385E1245362DA00983106 /* SecondOnboardingViewController.swift */,
+				FBD385E3245362E900983106 /* ThirdOnboardingViewController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -832,14 +864,19 @@
 			files = (
 				FB6DA845244E73360086A030 /* UITabBarViewController.swift in Sources */,
 				FB6DA843244E716C0086A030 /* Constants.swift in Sources */,
+				FBB3D5AE24551F25007DE952 /* Analytics.swift in Sources */,
 				FB51DBCB242A789100FD0B7B /* ViewController.swift in Sources */,
 				FB51DBC7242A789100FD0B7B /* AppDelegate.swift in Sources */,
+				FBD385E4245362E900983106 /* ThirdOnboardingViewController.swift in Sources */,
 				FB51DBC9242A789100FD0B7B /* SceneDelegate.swift in Sources */,
+				FB3EC3BE24561DB2003318DF /* User.swift in Sources */,
 				FBFA6D6D2451423C000A4592 /* SummaryViewController.swift in Sources */,
 				FBE338FB245239D500B56A53 /* Settings.swift in Sources */,
+				FBD385E0245362C900983106 /* FirstOnboardingViewController.swift in Sources */,
 				FBC3EE91242C29FE006DCE06 /* HealthManager.swift in Sources */,
 				FBE338F7245220C000B56A53 /* OnboardingViewController.swift in Sources */,
 				FBE338F92452234200B56A53 /* Profile.swift in Sources */,
+				FBD385E2245362DA00983106 /* SecondOnboardingViewController.swift in Sources */,
 				FBFA6D912451491D000A4592 /* SettingsViewController.swift in Sources */,
 				FBFA6D93245149A5000A4592 /* HealthBookViewController.swift in Sources */,
 			);

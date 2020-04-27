@@ -16,30 +16,54 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        view.backgroundColor = Colors.sensehackDarkGrey
+        print("Main viewDidLoad ViewController")
         
-        // Trying out UI using coding.
-        let initText = UILabel()
-        initText.text = "Hello Sensehack!"
-        //NOTE: Just due to one method not being falsed the rest of the programmatic constraint wasn't working
-        initText.translatesAutoresizingMaskIntoConstraints = false
-         view.addSubview(initText)
-               
-        let xConstraint = NSLayoutConstraint(item: initText, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1, constant: 0)
-        let YConstraint = NSLayoutConstraint(item: initText, attribute: .centerY, relatedBy: .equal, toItem: view, attribute: .centerY, multiplier: 1, constant: 0)
-               
-        view.addConstraints([xConstraint, YConstraint])
+//        commented function for programmatic UI
+//        programmaticUI()
         
-        // Do any additional setup after loading the view.
-        healthKitManager.authorizeHealthKit { (success, error) in
+    }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        
+        // Dynamic UI Screen Presenter
+        if SettingsStruct.defaultScreen == "default" {
+         
+            print("Default screen flow")
+            let onboardStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let viewC = onboardStoryboard.instantiateViewController(identifier: "UITabBarViewController")
+            viewC.modalPresentationStyle = .fullScreen
+            self.present(viewC, animated: false)
             
-            if let error = error {
-                print("Error in healthkit access \(error)")
-            }
-            print("Was healthkit successful? \(success)")
+        } else if SettingsStruct.defaultScreen == "welcome" {
+           
+            print("Welcome screen flow")
+            let onboardStoryboard = UIStoryboard(name: "Onboarding", bundle: nil)
+            let viewC = onboardStoryboard.instantiateViewController(identifier: "OnboardingViewController")
+            viewC.modalPresentationStyle = .fullScreen
+            self.present(viewC, animated: true)
+            
         }
         
         
+    }
+    
+    
+    fileprivate func programmaticUI() {
+        view.backgroundColor = HSColors.sensehackDarkGrey
+        // Trying out UI using coding.
+        let initText = UILabel()
+        initText.text = "Hello Sensehack!"
+        
+        //NOTE: Just due to one method not being falsed the rest of the programmatic constraint wasn't working
+        initText.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(initText)
+        
+        let xConstraint = NSLayoutConstraint(item: initText, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1, constant: 0)
+        let YConstraint = NSLayoutConstraint(item: initText, attribute: .centerY, relatedBy: .equal, toItem: view, attribute: .centerY, multiplier: 1, constant: 0)
+        
+        view.addConstraints([xConstraint, YConstraint])
     }
     
     

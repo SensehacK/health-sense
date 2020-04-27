@@ -1,19 +1,24 @@
 //
-//  SettingsViewController.swift
+//  FirstOnboardingViewController.swift
 //  HealthSense
 //
-//  Created by Sensehack on 4/22/20.
+//  Created by Sensehack on 4/24/20.
 //  Copyright © 2020 Sensehack. All rights reserved.
 //
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class FirstOnboardingViewController: UIViewController {
 
+    @IBOutlet weak var customLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        self.customLabel.text = UserStruct.displayName ?? "Kautilya"
+        
     }
     
 

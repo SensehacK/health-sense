@@ -9,29 +9,21 @@
 import Foundation
 
 
-class Settings {
+class Settings: NSObject {
     
     //TODO: Shared Instance Singleton
-    private static var sharedSetting: Settings = {
-           let networkManager = Settings(baseURL: "Kautilya" )
-           // Configuration
-           return networkManager
-       }()
-
-       // MARK: -
-
-       let baseURL: String
-
-       // Initialization
-
-       private init(baseURL: String) {
-           self.baseURL = baseURL
-       }
-
+    static let sharedInstance = Settings()
+    
+    private override init() {}
+    
+    let appVersion: Double = 1.0
+    let buildNumber: String = "276"
+    static let saf = 12
+    
        // MARK: - Accessors
 
-       class func shared() -> Settings {
-           return sharedSetting
+       func settingsDict() -> SettingsStruct {
+        return SettingsStruct()
        }
     
     
@@ -49,4 +41,11 @@ struct SettingsStruct {
     static var appLanguage = "en"
     static var isHealthkitAccess = false
     static var cloudDataSharing = false
+    static var defaultScreen = "welcome"
+    
+}
+
+struct AnalyticsStruct {
+    // Analytics Global space
+    static var appOpen = 1
 }
