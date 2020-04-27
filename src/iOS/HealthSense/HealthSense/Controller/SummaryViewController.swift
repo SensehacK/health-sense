@@ -67,6 +67,18 @@ class SummaryViewController: UIViewController {
         let gender = ReadProfile.sharedInstance.getGender()
         chartLabel.text = "Gender: \(gender)"
         
+        
+        // Calling the closure properly , currently dont know
+//        let helperObj = Helper()
+//        helperObj.readBodyMass((recentQ?, error) -> Void,  in
+//
+//            )
+        
+        let helperObj = Helper()
+        helperObj.readBodyMass()
+        let weight = UserStruct.weight
+        chartLabel.text = "Weight: \(weight)"
+        
     }
     
     

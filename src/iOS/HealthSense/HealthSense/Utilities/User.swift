@@ -27,10 +27,12 @@ class User: NSObject {
 
 // MARK: User Details
 struct UserStruct {
+    
     // App User
-      static var displayName: String?
-      static var firstName: String?
-      static var lastName: String?
-      static var age: Int?
+    static var displayName: String?
+    static var firstName: String?
+    static var lastName: String?
+    static var age: Int?
+    static var weight: Int?
     
 }
