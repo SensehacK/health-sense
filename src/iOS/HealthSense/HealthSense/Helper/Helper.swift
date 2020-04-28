@@ -33,7 +33,7 @@ class Helper {
 //        let weightType = healthKitManager.healthStore.HKRead
         guard let weightType = HKSampleType.quantityType(forIdentifier: HKQuantityTypeIdentifier.bodyMass) else { return }
         
-        
+        print("Debug readBodyMassWithComp Completion func Body Mass with Comp")
         
         let query = HKSampleQuery(sampleType: weightType, predicate: nil, limit: HKObjectQueryNoLimit, sortDescriptors: nil) { (query, results, error) in
             if let results = results?.last as? HKQuantitySample {
@@ -49,6 +49,7 @@ class Helper {
             }
             
         }
+        healthKitManager.healthStore.execute(query)
     
     }
     

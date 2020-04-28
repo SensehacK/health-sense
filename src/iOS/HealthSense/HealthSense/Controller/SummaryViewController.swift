@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import HealthKit
 
 class SummaryViewController: UIViewController {
 
@@ -75,9 +76,28 @@ class SummaryViewController: UIViewController {
 //            )
         
         let helperObj = Helper()
-        helperObj.readBodyMass()
-        let weight = UserStruct.weight
-        chartLabel.text = "Weight: \(weight)"
+        // Normal helper call
+//        helperObj.readBodyMass()
+//        let weight = UserStruct.weight
+//        chartLabel.text = "Weight: \(String(describing: weight))"
+        
+        
+        // Completion handler call
+        func completed(quantity: HKQuantity?, error: Error?) {
+        print("In function completed completion handler")
+        let bodyWeight = quantity
+        let weightUnit = HKUnit.pound()
+        if let bodyWeight = bodyWeight {
+           let usersWeight: Double = bodyWeight.doubleValue(for: weightUnit)
+            UserStruct.weight = Int(usersWeight)
+            DispatchQueue.main.async {
+                self.chartLabel.text = "Weight: \(String(describing: usersWeight))"
+            }
+            
+        }
+        }
+        
+        helperObj.readBodyMassWithComp(completion: completed)
         
     }
     
