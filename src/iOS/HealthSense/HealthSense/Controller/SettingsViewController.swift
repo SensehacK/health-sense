@@ -10,14 +10,22 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+    @IBOutlet weak var darkModeLabel: UILabel!
+    @IBOutlet weak var appOpenLabel: UILabel!
+    @IBOutlet weak var settingButton: UIButton!
+    @IBOutlet weak var creditLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.\
         
-        print("In Settings VC")
+        print("##### Settings VC")
         print(SettingsStruct.isDarkMode)
-        
+        creditLabel.text = "Made with 💚 by Kautilya"
+        print("App run how many times: \(AnalyticsStruct.appOpen)")
+        appOpenLabel.text = "App ranned:\(AnalyticsStruct.appOpen)times"
     }
     
 
