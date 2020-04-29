@@ -25,18 +25,11 @@ class SummaryViewController: UIViewController {
     let user = UserStruct.displayName ?? "Sensehack"
     let healthKitManager = HealthKitManager.sharedInstance
     
-    // Get user details from User
-//    let userObj = User(firstName: "Kautilya", lastName: "Save", age: 24)
-//    Profile.user = userObj
-//
-    
-    
     fileprivate func initialSetup() {
         
-        //        view.backgroundColor = Colors.sensehackDarkGrey
         // Debug Logs
-        print("SummaryViewController VDL")
-        
+        print("##### SummaryViewController VDL")
+
         print("Display Name \(UserStruct.displayName ?? "Kautilya")")
         print("Base URL", Settings.sharedInstance)
         print("Singleton", Settings.sharedInstance.appVersion)
@@ -45,8 +38,8 @@ class SummaryViewController: UIViewController {
         print("Dark mode e after  ? \(SettingsStruct.isDarkMode)")
         
         
+        // Setting some details to Constant structures
         SettingsStruct.isDarkMode = true
-        // Setting userDisplay Name to Profile Constant
         UserStruct.displayName = user
     }
     
@@ -59,45 +52,31 @@ class SummaryViewController: UIViewController {
         // Healthkit permissions
         healthAuthorization()
         
+        // Profile Age function call
         let dob = ReadProfile.sharedInstance.getDOB()
         ageLabel.text = "Age: \(dob)"
         
+        // Profile Blood group function call
         let bloodT = ReadProfile.sharedInstance.getBloodType()
         bloodType.text = "Blood: \(bloodT)"
         
+        // Profile Gender function call
         let gender = ReadProfile.sharedInstance.getGender()
         chartLabel.text = "Gender: \(gender)"
         
-        
-        // Calling the closure properly , currently dont know
-//        let helperObj = Helper()
-//        helperObj.readBodyMass((recentQ?, error) -> Void,  in
-//
-//            )
-        
+        // Body Weight function call
         let helperObj = Helper()
-        // Normal helper call
-//        helperObj.readBodyMass()
-//        let weight = UserStruct.weight
-//        chartLabel.text = "Weight: \(String(describing: weight))"
-        
-        
-        // Completion handler call
-        func completed(quantity: HKQuantity?, error: Error?) {
-        print("In function completed completion handler")
-        let bodyWeight = quantity
-        let weightUnit = HKUnit.pound()
-        if let bodyWeight = bodyWeight {
-           let usersWeight: Double = bodyWeight.doubleValue(for: weightUnit)
-            UserStruct.weight = Int(usersWeight)
-            DispatchQueue.main.async {
-                self.chartLabel.text = "Weight: \(String(describing: usersWeight))"
+        helperObj.readBodyMassWithComp { (quantity, error) in
+            guard error == nil else { return print("Error in: \(String(describing: error))") }
+            if let bodyWeight = quantity {
+                let usersWeight: Double = bodyWeight.doubleValue(for: HKUnit.pound())
+                UserStruct.weight = usersWeight
+                DispatchQueue.main.async {
+                    self.chartLabel.text = "Weight: \(String(describing: usersWeight))"
+                }
+                
             }
-            
         }
-        }
-        
-        helperObj.readBodyMassWithComp(completion: completed)
         
     }
     
@@ -110,7 +89,6 @@ class SummaryViewController: UIViewController {
         
         UserStruct.displayName = chartLabel.text
         
-//        print(userObj.firstName)
         self.dismiss(animated: true, completion: nil)
         
     }
@@ -137,3 +115,40 @@ class SummaryViewController: UIViewController {
 
 
 }
+
+
+
+
+
+// Commented code
+
+
+/*
+        //        view.backgroundColor = Colors.sensehackDarkGrey
+ 
+     // Get user details from User
+ //    let userObj = User(firstName: "Kautilya", lastName: "Save", age: 24)
+ //    Profile.user = userObj
+ //
+        // Normal helper call
+        //        helperObj.readBodyMass()
+        //        let weight = UserStruct.weight
+        //        chartLabel.text = "Weight: \(String(describing: weight))"
+        
+        
+       // Completion handler call
+       
+       func completed(quantity: HKQuantity?, error: Error?) {
+       print("In function completed completion handler")
+       let weightUnit = HKUnit.pound()
+       if let bodyWeight = quantity {
+          let usersWeight: Double = bodyWeight.doubleValue(for: weightUnit)
+           UserStruct.weight = usersWeight
+           DispatchQueue.main.async {
+               self.chartLabel.text = "Weight: \(String(describing: usersWeight))"
+           }
+           
+       }
+       }
+
+*/

@@ -38,10 +38,8 @@ class Helper {
         let query = HKSampleQuery(sampleType: weightType, predicate: nil, limit: HKObjectQueryNoLimit, sortDescriptors: nil) { (query, results, error) in
             if let results = results?.last as? HKQuantitySample {
                 print("Weight: \(results.quantity)")
+                print("Query: \(query)")
                 let bodyWeight = results.quantity
-                let weightUnit = HKUnit.pound()
-                let usersWeight: Double = bodyWeight.doubleValue(for: weightUnit)
-                UserStruct.weight = Int(usersWeight)
                 completion(bodyWeight, nil)
             } else {
                 print("Couldn't get Weight data \(String(describing: error))")
@@ -62,10 +60,11 @@ class Helper {
         let query = HKSampleQuery(sampleType: weightType, predicate: nil, limit: HKObjectQueryNoLimit, sortDescriptors: nil) { (query, results, error) in
                 if let results = results?.last as? HKQuantitySample {
                     print("Weight: \(results.quantity)")
+                    print("Query: \(query)")
                     let bodyWeight = results.quantity
                     let weightUnit = HKUnit.pound()
                     let usersWeight: Double = bodyWeight.doubleValue(for: weightUnit)
-                    UserStruct.weight = Int(usersWeight)
+                    UserStruct.weight = usersWeight
 
                 } else {
                     print("Couldn't get Weight data \(String(describing: error))")
