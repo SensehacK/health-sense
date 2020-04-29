@@ -19,6 +19,7 @@ class SummaryViewController: UIViewController {
     @IBOutlet weak var viewChartButton: UIButton!
     @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var bloodType: UILabel!
+    @IBOutlet weak var heightLabel: UILabel!
     
     
     // Variables declaration
@@ -73,6 +74,21 @@ class SummaryViewController: UIViewController {
                 UserStruct.weight = usersWeight
                 DispatchQueue.main.async {
                     self.chartLabel.text = "Weight: \(String(describing: usersWeight))"
+                }
+                
+            }
+        }
+        
+        helperObj.readHeight { (quantity, error) in
+            guard error == nil else { return print("Error in: \(String(describing: error))") }
+            if let bodyHeight = quantity {
+//                let usersHeight: Int = bodyHeight.doubleValue(for: LengthFormatter.init centimeter)
+                let heightCM = HKUnit.init(from: .centimeter)
+                let usersHeight: Int = Int(bodyHeight.doubleValue(for: heightCM))
+//                HKUnit.init(from: .centimeter)
+                UserStruct.height = usersHeight
+                DispatchQueue.main.async {
+                    self.heightLabel.text = "Height:\(String(describing: usersHeight))cms"
                 }
                 
             }

@@ -26,7 +26,7 @@ class Helper {
         
     }
     
-    func readBodyMassWithComp( completion: @escaping CompletionHandler) {
+    func readBodyMassWithComp(completion: @escaping CompletionHandler) {
         
 //        var bodyWeight: HKQuantity
         
@@ -72,6 +72,33 @@ class Helper {
             
             }
         healthKitManager.healthStore.execute(query)
+        }
+    
+    
+    
+     func readHeight(completion: @escaping CompletionHandler) {
+            
+    //        var bodyWeight: HKQuantity
+            
+    //        let weightType = healthKitManager.healthStore.HKRead
+        guard let heightType = HKSampleType.quantityType(forIdentifier: HKQuantityTypeIdentifier.height) else { return }
+            
+            print("Debug readHeight Completion func readHeight")
+            
+            let query = HKSampleQuery(sampleType: heightType, predicate: nil, limit: HKObjectQueryNoLimit, sortDescriptors: nil) { (query, results, error) in
+                if let results = results?.last as? HKQuantitySample {
+                    print("Height: \(results.quantity)")
+                    print("Query: \(query)")
+                    let height = results.quantity
+                    completion(height, nil)
+                } else {
+                    print("Couldn't get height data \(String(describing: error))")
+                    completion(nil, error)
+                }
+                
+            }
+            healthKitManager.healthStore.execute(query)
+        
         }
     
 }

@@ -34,5 +34,6 @@ struct UserStruct {
     static var lastName: String?
     static var age: Int?
     static var weight: Double?
+    static var height: Int?
     
 }
