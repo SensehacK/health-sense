@@ -11,7 +11,7 @@ import Foundation
 
 class Settings: NSObject {
     
-    //TODO: Shared Instance Singleton
+    // TODO: Shared Instance Singleton
     static let sharedInstance = Settings()
     
     private override init() {}

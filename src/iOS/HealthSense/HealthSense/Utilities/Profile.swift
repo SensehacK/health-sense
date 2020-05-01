@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-//TODO: Shared Instance or Global Model Object
+// TODO: Shared Instance or Global Model Object
 
 class Profile {
     

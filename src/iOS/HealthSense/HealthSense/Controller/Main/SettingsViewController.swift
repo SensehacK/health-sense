@@ -19,8 +19,6 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.\
-        
         print("##### Settings VC")
         print(SettingsStruct.isDarkMode)
         creditLabel.text = "Made with 💚 by Kautilya"

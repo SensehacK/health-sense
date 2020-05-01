@@ -12,24 +12,19 @@ class ViewController: UIViewController {
 
     let healthKitManager = HealthKitManager.sharedInstance
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         print("Main viewDidLoad ViewController")
-        
+
 //        commented function for programmatic UI
 //        programmaticUI()
-        
     }
     
     
     override func viewDidAppear(_ animated: Bool) {
-        
-        
         // Dynamic UI Screen Presenter
         if SettingsStruct.defaultScreen == "default" {
-         
             print("Default screen flow")
             let onboardStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let viewC = onboardStoryboard.instantiateViewController(identifier: "UITabBarViewController")
@@ -37,16 +32,12 @@ class ViewController: UIViewController {
             self.present(viewC, animated: false)
             
         } else if SettingsStruct.defaultScreen == "welcome" {
-           
             print("Welcome screen flow")
             let onboardStoryboard = UIStoryboard(name: "Onboarding", bundle: nil)
             let viewC = onboardStoryboard.instantiateViewController(identifier: "OnboardingViewController")
             viewC.modalPresentationStyle = .fullScreen
             self.present(viewC, animated: true)
-            
         }
-        
-        
     }
     
     

@@ -13,17 +13,11 @@ import UIKit
 struct HSColors {
     // Colors
     static let sensehackDarkGrey = UIColor(red: 69/255, green: 69/255, blue: 69/255, alpha: 1)
-    
     static let primaryColor1 = UIColor(red: 69/255, green: 69/255, blue: 69/255, alpha: 1)
-    
     static let primaryColor2 = UIColor(red: 69/255, green: 69/255, blue: 69/255, alpha: 1)
-    
     static let secondaryColor1 = UIColor(red: 69/255, green: 69/255, blue: 69/255, alpha: 1)
-    
     static let secondaryColor2 = UIColor(red: 69/255, green: 69/255, blue: 69/255, alpha: 1)
-    
     static let defaultColor = UIColor(red: 69/255, green: 69/255, blue: 69/255, alpha: 1)
-    
 }
 
 struct HSFonts {
@@ -46,6 +40,19 @@ struct HSHealthKit {
 }
 
 
+// MARK: View Enumerations
+
+enum HSStoryboard: String {
+    // Custom VCs
+    case kSummary = "SummaryViewController"
+    case kHealthVC = "HealthBookViewController"
+    case kSettingsVC = "SettingsViewController"
+    case kOnboardingVC = "OnboardingViewController"
+    case kLaunchVC = "LaunchScreen"
+    case kHomeVC = "ViewController"
+    case kTabBarVC = "UITabBarViewController"
+}
+
 enum HSCustomViewController: String {
     // Custom VCs
     case kSummaryVC = "SummaryViewController"
@@ -64,6 +71,15 @@ enum HSOnboardViewController: String {
     case kThirdVC = "ThirdOnboardingVC"
 }
 
+enum HSMainChildVC: String {
+    // Main Child VCs
+    case kSummaryVC = "SummaryChildVC"
+    case kHealthVC = "HealthChildVC"
+    case kSettingsVC = "SettingsChildVC"
+}
+
+
+// MARK: Network Enumerations
 
 enum HSHttpStatusCode: Int {
     // HTTPS response Codes
@@ -81,7 +97,7 @@ enum HSHttpStatusCode: Int {
     case kStatusNoNetConnection      = -1009
 }
 
-
+// MARK: Misc Enumerations
 enum HSSenseMotivationQuotes: String {
     // Motivation strings
     case kSensehack1 = "Just be yourself!"
@@ -93,10 +109,9 @@ enum HSSenseMotivationQuotes: String {
     case kSensehack7 = "You're unique!"
 }
 
-
-struct HSUserDefaults {
+// MARK: User Defaults Enumerations
+enum HSUserDefaults: String {
     // User Defaults
-    
-    static let kFirstLaunch = "FirstLaunch"
-    
+    case kFirstLaunch = "FirstLaunch"
+    case kAppLaunch = "AppOpen"
 }

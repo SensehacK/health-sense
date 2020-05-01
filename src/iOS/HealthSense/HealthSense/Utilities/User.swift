@@ -21,13 +21,10 @@ class User: NSObject {
         return UserStruct()
        }
     
-    
-    
 }
 
 // MARK: User Details
 struct UserStruct {
-    
     // App User
     static var displayName: String?
     static var firstName: String?
@@ -35,5 +32,4 @@ struct UserStruct {
     static var age: Int?
     static var weight: Double?
     static var height: Int?
-    
 }
