@@ -16,9 +16,7 @@ class ReadProfile {
     
     // func for calculating the Date of Birth
     func getDOB() -> (Int) {
-        
         var age: Int?
-        
         // Reading age
         do {
             let birthday = try healthKitManager.healthStore.dateOfBirthComponents()
@@ -27,14 +25,12 @@ class ReadProfile {
         } catch {
            print("Error in catching Date of Birth.")
         }
-
         return age ?? 0
     }
     
     
     // func for calculating the Blood Type
     func getBloodType() -> (String) {
-        
         var bloodTypeText = ""
         var bloodTypeObj: HKBloodTypeObject?
         
@@ -48,7 +44,6 @@ class ReadProfile {
         let bloodType = bloodTypeObj?.bloodType
 
         if bloodType != nil {
-            
             switch (bloodType) {
             case .aPositive:
                 bloodTypeText = "A+"
@@ -69,14 +64,12 @@ class ReadProfile {
             default: break
             }
         }
-        
         return bloodTypeText
     }
     
     
     // func for calculating the Gender
     func getGender() -> (String) {
-        
         var gender: String?
         var genderObj: HKBiologicalSexObject?
         
@@ -98,10 +91,8 @@ class ReadProfile {
         default:
             break
         }
-
         return gender ?? "Unknown"
     }
-    
-    
-    
+
+
 }

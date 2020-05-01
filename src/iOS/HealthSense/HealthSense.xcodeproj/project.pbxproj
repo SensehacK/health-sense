@@ -20,13 +20,13 @@
 		FB2FC38B245CA900005AD169 /* SummaryChildVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2FC38A245CA900005AD169 /* SummaryChildVC.swift */; };
 		FB2FC38D245CC067005AD169 /* HealthBookChildVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2FC38C245CC067005AD169 /* HealthBookChildVC.swift */; };
 		FB2FC38F245CC079005AD169 /* SettingsChildVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2FC38E245CC079005AD169 /* SettingsChildVC.swift */; };
+		FB2FC391245CC7FE005AD169 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2FC390245CC7FE005AD169 /* ViewController.swift */; };
 		FB3EC3BE24561DB2003318DF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3EC3BD24561DB2003318DF /* User.swift */; };
 		FB3EC3C1245620C3003318DF /* ReadProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3EC3C0245620C3003318DF /* ReadProfile.swift */; };
 		FB3EC3C32456653E003318DF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FB3EC3C22456653D003318DF /* README.md */; };
 		FB3EC3C7245670B7003318DF /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3EC3C6245670B7003318DF /* Helper.swift */; };
 		FB51DBC7242A789100FD0B7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51DBC6242A789100FD0B7B /* AppDelegate.swift */; };
 		FB51DBC9242A789100FD0B7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51DBC8242A789100FD0B7B /* SceneDelegate.swift */; };
-		FB51DBCB242A789100FD0B7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51DBCA242A789100FD0B7B /* ViewController.swift */; };
 		FB51DBCE242A789100FD0B7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB51DBCC242A789100FD0B7B /* Main.storyboard */; };
 		FB51DBD0242A789500FD0B7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB51DBCF242A789500FD0B7B /* Assets.xcassets */; };
 		FB51DBD3242A789500FD0B7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB51DBD1242A789500FD0B7B /* LaunchScreen.storyboard */; };
@@ -142,6 +142,7 @@
 		FB2FC38A245CA900005AD169 /* SummaryChildVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryChildVC.swift; sourceTree = "<group>"; };
 		FB2FC38C245CC067005AD169 /* HealthBookChildVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthBookChildVC.swift; sourceTree = "<group>"; };
 		FB2FC38E245CC079005AD169 /* SettingsChildVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsChildVC.swift; sourceTree = "<group>"; };
+		FB2FC390245CC7FE005AD169 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FB3EC3BD24561DB2003318DF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FB3EC3C0245620C3003318DF /* ReadProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadProfile.swift; sourceTree = "<group>"; };
 		FB3EC3C22456653D003318DF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -149,7 +150,6 @@
 		FB51DBC3242A789000FD0B7B /* HealthSense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthSense.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB51DBC6242A789100FD0B7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB51DBC8242A789100FD0B7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FB51DBCA242A789100FD0B7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FB51DBCD242A789100FD0B7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB51DBCF242A789500FD0B7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB51DBD2242A789500FD0B7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -279,7 +279,7 @@
 		FB2FC376245C8DDB005AD169 /* Skeleton */ = {
 			isa = PBXGroup;
 			children = (
-				FB51DBCA242A789100FD0B7B /* ViewController.swift */,
+				FB2FC390245CC7FE005AD169 /* ViewController.swift */,
 			);
 			path = Skeleton;
 			sourceTree = "<group>";
@@ -1012,7 +1012,7 @@
 				FB2FC38D245CC067005AD169 /* HealthBookChildVC.swift in Sources */,
 				FB2FC384245C9631005AD169 /* SettingsViewController.swift in Sources */,
 				FBB3D5AE24551F25007DE952 /* Analytics.swift in Sources */,
-				FB51DBCB242A789100FD0B7B /* ViewController.swift in Sources */,
+				FB2FC391245CC7FE005AD169 /* ViewController.swift in Sources */,
 				FB51DBC7242A789100FD0B7B /* AppDelegate.swift in Sources */,
 				FB2FC37A245C9128005AD169 /* SummaryViewController.swift in Sources */,
 				FB3EC3C1245620C3003318DF /* ReadProfile.swift in Sources */,

@@ -17,9 +17,7 @@ class Helper {
     let healthKitManager = HealthKitManager.sharedInstance
     
     init() {
-        
         print("#### Helper Class")
-        
     }
     
     //TODO: Reusable function for querying the Healthkit datastore to just pass the last result of a particular HKType

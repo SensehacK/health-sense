@@ -15,12 +15,10 @@ class ThirdOnboardingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print("#### ThirdOnboardingVC  ####")
-
+        print("#### ThirdOnboardingVC")
     }
     
     @IBAction func continueBtnPressed(_ sender: Any) {
-        
         // Do any additional setup after loading the view.
         healthKitManager.authorizeHealthKit { (success, error) in
             
@@ -31,13 +29,18 @@ class ThirdOnboardingViewController: UIViewController {
         }
         
         print("Button continue pressed ThirdOnboardingVC")
-//        self.dismiss(animated: true, completion: nil)
         
-        let onboardStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewC = onboardStoryboard.instantiateViewController(identifier: "UITabBarViewController")
-        print("continueBtnPressed ")
-        viewC.modalPresentationStyle = .fullScreen
-        self.present(viewC, animated: false)
+        if SettingsStruct.defaultScreen == "welcome" {
+            SettingsStruct.defaultScreen = "default"
+            let onboardStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let viewC = onboardStoryboard.instantiateViewController(identifier: "UITabBarViewController")
+            print("continueBtnPressed ")
+            viewC.modalPresentationStyle = .fullScreen
+            self.present(viewC, animated: true)
+            
+        } else if SettingsStruct.defaultScreen == "default" {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
     /*

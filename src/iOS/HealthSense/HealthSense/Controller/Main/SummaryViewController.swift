@@ -27,7 +27,6 @@ class SummaryViewController: UIViewController {
     let healthKitManager = HealthKitManager.sharedInstance
     
     fileprivate func initialSetup() {
-        
         // Debug Logs
         print("##### SummaryViewController VDL")
 
@@ -38,12 +37,12 @@ class SummaryViewController: UIViewController {
         print("Settings Static variables.", Settings.saf)
         print("Dark mode e after  ? \(SettingsStruct.isDarkMode)")
         
-        
         // Setting some details to Constant structures
         SettingsStruct.isDarkMode = true
         UserStruct.displayName = user
     }
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -53,6 +52,32 @@ class SummaryViewController: UIViewController {
         // Healthkit permissions
         healthAuthorization()
         
+        // Profile data calls
+        readProfileData()
+    }
+    
+    
+    @IBAction func chartButtonPressed(_ sender: Any) {
+        print("Button Chart Button pressed")
+        
+        // Navigate to
+        segueToSummaryChildVC()  // Child VC
+        // navigateToCustomVCStoryboard() // Macaw VC
+    }
+    
+    // healthkit singleton function
+    fileprivate func healthAuthorization() {
+        // Do any additional setup after loading the view.
+        healthKitManager.authorizeHealthKit { (success, error) in
+            
+            if let error = error {
+                print("Error in healthkit access \(error)")
+            }
+            print("Was healthkit successful? \(success)")
+        }
+    }
+    
+    fileprivate func readProfileData() {
         // Profile Age function call
         let dob = ReadProfile.sharedInstance.getDOB()
         ageLabel.text = "Age: \(dob)"
@@ -75,65 +100,29 @@ class SummaryViewController: UIViewController {
                 DispatchQueue.main.async {
                     self.chartLabel.text = "Weight: \(String(describing: usersWeight))"
                 }
-                
             }
         }
         
         helperObj.readHeight { (quantity, error) in
             guard error == nil else { return print("Error in: \(String(describing: error))") }
             if let bodyHeight = quantity {
-//                let usersHeight: Int = bodyHeight.doubleValue(for: LengthFormatter.init centimeter)
                 let heightCM = HKUnit.init(from: .centimeter)
                 let usersHeight: Int = Int(bodyHeight.doubleValue(for: heightCM))
-//                HKUnit.init(from: .centimeter)
                 UserStruct.height = usersHeight
                 DispatchQueue.main.async {
-                    self.heightLabel.text = "Height:\(String(describing: usersHeight))cms"
+                    self.heightLabel.text = "Height: \(String(describing: usersHeight))cms"
                 }
-                
             }
         }
-        
     }
     
     
-    @IBAction func chartButtonPressed(_ sender: Any) {
-        
-        print("Button Chart Button pressed")
-        userTitle.text = "Welcome \(user)"
-        chartLabel.text = "Kautilya Save"
-        
-        UserStruct.displayName = chartLabel.text
-        
-//        self.dismiss(animated: true, completion: nil)
-       
-        // Navigate to Macaw VC
-//        navigateToCustomVCStoryboard()
-        
-        // Navigate to Child VC
-        segueToSummaryChildVC()
-        
-        
-    }
-    
-    
-    fileprivate func healthAuthorization() {
-        // Do any additional setup after loading the view.
-        healthKitManager.authorizeHealthKit { (success, error) in
-            
-            if let error = error {
-                print("Error in healthkit access \(error)")
-            }
-            print("Was healthkit successful? \(success)")
-        }
-    }
     
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
          if segue.identifier == "SummaryChildSegue" {
             print("Showing Summary Child Segue")
             // Object data passing to child view controller
@@ -141,20 +130,8 @@ class SummaryViewController: UIViewController {
             if let destVC = (segue.destination as? SummaryChildVC) {
                 print("In segue destination")
                 destVC.titleObj  = "Kautilya"
-                
-                // Funny enough when I put a debugger here both the following commands gets executed with perfect valid "Kautilya 2/3" strings
-                // I believe with debugger it creates/invokes the child VC just before executing this line.
-                // So in normal instance if the destination VC isn't properly invoked these values won't be changed.
-                // Better approach is to pass a whole object and then in ViewDidLoad method of childVC class initialization code should be ranned.
-                // destVC.titleLabel.text  = "Kautilya 3" // This outrights crashes as titleLable still hasn't been invoked in Child VC
-                // destVC.titleLabel?.text = "Kautilya 2" // This doesn't crash as it looks for an optional value and it doesn't find it so text assignment is not done
             }
-           
-             
-//            instantiateViewController(withIdentifier: "SummaryChildSegue")
-            
         }
-        
     }
     
     // function for programmatically navigating to Custom view controller storyboard
@@ -167,43 +144,8 @@ class SummaryViewController: UIViewController {
     
     // function for performing storyboard segue to Child view controller
     func segueToSummaryChildVC() {
-        
         performSegue(withIdentifier: "SummaryChildSegue", sender: self)
     }
     
 
 }
-
-
-// Commented code
-
-
-/*
-        //        view.backgroundColor = Colors.sensehackDarkGrey
- 
-     // Get user details from User
- //    let userObj = User(firstName: "Kautilya", lastName: "Save", age: 24)
- //    Profile.user = userObj
- //
-        // Normal helper call
-        //        helperObj.readBodyMass()
-        //        let weight = UserStruct.weight
-        //        chartLabel.text = "Weight: \(String(describing: weight))"
-        
-        
-       // Completion handler call
-       
-       func completed(quantity: HKQuantity?, error: Error?) {
-       print("In function completed completion handler")
-       let weightUnit = HKUnit.pound()
-       if let bodyWeight = quantity {
-          let usersWeight: Double = bodyWeight.doubleValue(for: weightUnit)
-           UserStruct.weight = usersWeight
-           DispatchQueue.main.async {
-               self.chartLabel.text = "Weight: \(String(describing: usersWeight))"
-           }
-           
-       }
-       }
-
-*/

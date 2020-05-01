@@ -15,19 +15,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37z-g3-aR9">
-                                <rect key="frame" x="184" y="433" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37z-g3-aR9">
+                                <rect key="frame" x="164" y="433" width="86" height="30"/>
+                                <state key="normal" title="Macaw View"/>
+                                <connections>
+                                    <action selector="macawViewButton:" destination="RYs-eV-hX0" eventType="touchUpInside" id="mec-cE-BO7"/>
+                                </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LcV-Dl-iTB">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LcV-Dl-iTB">
                                 <rect key="frame" x="87" y="150" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pht-1T-NHG">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pht-1T-NHG">
                                 <rect key="frame" x="175" y="537" width="64" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Welcome"/>
                                 <connections>
                                     <action selector="welcomeButton:" destination="RYs-eV-hX0" eventType="touchUpInside" id="a37-Dw-sBp"/>
@@ -35,13 +35,23 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="37z-g3-aR9" firstAttribute="centerY" secondItem="4bS-Se-KoL" secondAttribute="centerY" id="8Te-25-qXY"/>
+                            <constraint firstItem="pht-1T-NHG" firstAttribute="top" secondItem="37z-g3-aR9" secondAttribute="bottom" constant="74" id="9mA-dX-ZbD"/>
+                            <constraint firstItem="37z-g3-aR9" firstAttribute="centerX" secondItem="4bS-Se-KoL" secondAttribute="centerX" id="CXW-R9-CMK"/>
+                            <constraint firstItem="LcV-Dl-iTB" firstAttribute="leading" secondItem="omz-db-0K3" secondAttribute="leading" constant="87" id="FqA-6d-wGY"/>
+                            <constraint firstAttribute="bottom" secondItem="LcV-Dl-iTB" secondAttribute="bottom" constant="618" id="Usd-si-iZ0"/>
+                            <constraint firstItem="LcV-Dl-iTB" firstAttribute="top" secondItem="omz-db-0K3" secondAttribute="top" constant="62" id="fd6-4c-6fG"/>
+                            <constraint firstItem="37z-g3-aR9" firstAttribute="centerX" secondItem="pht-1T-NHG" secondAttribute="centerX" id="kKv-kf-frL"/>
+                            <constraint firstItem="37z-g3-aR9" firstAttribute="centerX" secondItem="LcV-Dl-iTB" secondAttribute="centerX" id="sUJ-Hc-NfF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="omz-db-0K3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="HealthBook" image="browse" id="NfT-7d-RLm"/>
                     <navigationItem key="navigationItem" id="sOh-cL-gJO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="mainButton" destination="37z-g3-aR9" id="E5Z-TC-3O3"/>
+                        <outlet property="macawViewBtn" destination="37z-g3-aR9" id="PDh-K1-lVL"/>
                         <segue destination="JGY-DW-hhR" kind="presentation" identifier="goToOnboarding" modalPresentationStyle="fullScreen" id="oUT-bR-RZq"/>
                     </connections>
                 </viewController>

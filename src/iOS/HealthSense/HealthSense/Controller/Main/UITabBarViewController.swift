@@ -11,7 +11,11 @@ import UIKit
 class UITabBarViewController: UITabBarController {
 
     fileprivate func setupUIInit() {
-        //TODO: Have different view controller seggregation.
+        // TODO: Have different view controller seggregation.
+        
+        //        view.backgroundColor = Colors.sensehackDarkGrey
+        //        view.backgroundColor = .darkGray
+        //        view.backgroundColor = .green
         
         let initText = UILabel()
         initText.text = "Hello Sensehack!"
@@ -28,14 +32,9 @@ class UITabBarViewController: UITabBarController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        print("In UITab Var VC")
-//        view.backgroundColor = Colors.sensehackDarkGrey
-//        view.backgroundColor = .darkGray
-//        view.backgroundColor = .green
-        
-//        setupUIInit()
-        
-       
+        print("#### UITabBar VC")
+        // setupUIInit()
+
     }
     
     

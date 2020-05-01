@@ -11,22 +11,20 @@ import Macaw
 
 class CustomViewController: UIViewController {
 
-//    @IBOutlet weak var macawView: MacawView!
     @IBOutlet weak var macawViewUI: MacawViewUI!
     @IBOutlet weak var doneButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        customUIInvoke()
-        
+        // customUIInvoke() // Fails nil value
+        // programmaticUI() // Shows programmatic UI but no MacawView
     }
     
     
     // Custom UI programmatic invocation
     fileprivate func customUIInvoke() {
         programmaticUI()
-        macawViewUI.translatesAutoresizingMaskIntoConstraints = false
+        macawViewUI?.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(macawViewUI)
     }
     
@@ -43,18 +41,15 @@ class CustomViewController: UIViewController {
         
         let xConstraint = NSLayoutConstraint(item: initText, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1, constant: 0)
         let YConstraint = NSLayoutConstraint(item: initText, attribute: .centerY, relatedBy: .equal, toItem: view, attribute: .centerY, multiplier: 1, constant: 0)
-        
+       
         view.addConstraints([xConstraint, YConstraint])
     }
     
 
     @IBAction func doneButton(_ sender: Any) {
-        
         print("Done button pressed in Custom VC")
-        
         // Navigate to main parent view controller from where this child VC got invoked
         self.dismiss(animated: true, completion: nil)
-        
     }
     
     

@@ -18,13 +18,8 @@ class SummaryChildVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         print("#### SummaryChildVC")
-//        titleLabel.text = "SummaryChild VC"
-        print("titleLabel.text before \(titleLabel.text)")
         titleLabel.text = titleObj ?? "Summary"
-        print("titleLabel.text after \(titleLabel.text)")
     }
     
 

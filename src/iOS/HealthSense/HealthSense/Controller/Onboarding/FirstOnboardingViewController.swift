@@ -18,7 +18,7 @@ class FirstOnboardingViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         self.customLabel.text = UserStruct.displayName ?? "Kautilya"
-        
+        print("#### FirstOnboardingVC")
     }
     
 
