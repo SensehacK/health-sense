@@ -23,7 +23,8 @@ class HealthBookViewController: UIViewController {
     @IBAction func welcomeButton(_ sender: Any) {
         print("welcome button pressed")
 //        performSegue(withIdentifier: "goToOnboarding", sender: self)
-        setupUI()
+//        setupUI()
+        setupUIStoryboard()
     }
     
     func setupUI() {
@@ -32,6 +33,13 @@ class HealthBookViewController: UIViewController {
 //        self.presentingViewController?.addChild(customVC)
         self.present(customVC, animated: true, completion: nil)
         
+    }
+    
+    func setupUIStoryboard() {
+        let onboardStoryboard = UIStoryboard(name: "CustomViewController", bundle: nil)
+        let viewC = onboardStoryboard.instantiateViewController(identifier: "CustomViewController")
+        viewC.modalPresentationStyle = .fullScreen
+        self.present(viewC, animated: false)
     }
     
     

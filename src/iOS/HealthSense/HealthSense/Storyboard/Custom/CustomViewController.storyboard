@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zBp-71-a3T">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment version="4640" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,19 +10,26 @@
         <!--Custom View Controller-->
         <scene sceneID="0Wu-L3-4cT">
             <objects>
-                <viewController id="zBp-71-a3T" customClass="CustomViewController" customModule="HealthSense" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CustomViewController" id="zBp-71-a3T" customClass="CustomViewController" customModule="HealthSense" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mzP-wb-P6G">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZC-At-YaQ" customClass="MacawViewUI" customModule="HealthSense">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZC-At-YaQ" customClass="MacawViewUI" customModule="HealthSense" customModuleProvider="target">
                                 <rect key="frame" x="20" y="80" width="374" height="386"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Macaw View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3c-pP-r8D">
+                                <rect key="frame" x="159" y="612" width="96" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="ojh-o7-7oe" firstAttribute="bottom" secondItem="g3c-pP-r8D" secondAttribute="bottom" constant="229" id="7PU-PE-3qz"/>
                             <constraint firstItem="hZC-At-YaQ" firstAttribute="top" secondItem="ojh-o7-7oe" secondAttribute="top" constant="36" id="Fef-1O-nC9"/>
+                            <constraint firstItem="g3c-pP-r8D" firstAttribute="centerX" secondItem="hZC-At-YaQ" secondAttribute="centerX" id="GP1-dF-aVv"/>
                             <constraint firstItem="hZC-At-YaQ" firstAttribute="leading" secondItem="mzP-wb-P6G" secondAttribute="leadingMargin" id="HXP-lA-d4m"/>
                             <constraint firstItem="ojh-o7-7oe" firstAttribute="bottom" secondItem="hZC-At-YaQ" secondAttribute="bottom" constant="396" id="QbJ-vV-1Pz"/>
                             <constraint firstItem="hZC-At-YaQ" firstAttribute="trailing" secondItem="mzP-wb-P6G" secondAttribute="trailingMargin" id="opS-EK-hDm"/>

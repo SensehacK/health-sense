@@ -19,3 +19,5 @@ class MacawViewUI: MacawView {
     
     
 }
+
+// Link: https://github.com/exyte/Macaw/wiki/Getting-started#text

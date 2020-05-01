@@ -12,6 +12,8 @@
 		3FA1A9F75DCB17F18DD1729A /* Pods_HealthSenseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756B346B6AB9B2DDABF06E4A /* Pods_HealthSenseTests.framework */; };
 		88D4B4C59B31F021C7C4BC29 /* Pods_HealthSense.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4D6DCBDB95A37BA0D85A7B /* Pods_HealthSense.framework */; };
 		94131300FFFF3C0907B49180 /* Pods_HealthSense_HealthSenseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553EF7D84CADD9F5E01C0C3A /* Pods_HealthSense_HealthSenseUITests.framework */; };
+		FB2FC374245C875E005AD169 /* MacawViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2FC373245C875D005AD169 /* MacawViewUI.swift */; };
+		FB2FC37A245C9128005AD169 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2FC379245C9128005AD169 /* SummaryViewController.swift */; };
 		FB3EC3BE24561DB2003318DF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3EC3BD24561DB2003318DF /* User.swift */; };
 		FB3EC3C1245620C3003318DF /* ReadProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3EC3C0245620C3003318DF /* ReadProfile.swift */; };
 		FB3EC3C32456653E003318DF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FB3EC3C22456653D003318DF /* README.md */; };
@@ -48,13 +50,11 @@
 		FBE338F7245220C000B56A53 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE338F6245220C000B56A53 /* OnboardingViewController.swift */; };
 		FBE338F92452234200B56A53 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE338F82452234200B56A53 /* Profile.swift */; };
 		FBE338FB245239D500B56A53 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE338FA245239D500B56A53 /* Settings.swift */; };
-		FBE5CA0A245BAFF2001D8C03 /* MacawViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE5CA09245BAFF2001D8C03 /* MacawViewUI.swift */; };
 		FBE5CA0C245BB38C001D8C03 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE5CA0B245BB38C001D8C03 /* CustomViewController.swift */; };
 		FBE5CA0F245BC4A3001D8C03 /* CustomViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE5CA0D245BC2CD001D8C03 /* CustomViewController.storyboard */; };
 		FBFA6D64245136A7000A4592 /* Summary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFA6D63245136A7000A4592 /* Summary.storyboard */; };
 		FBFA6D6924513F08000A4592 /* HealthBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFA6D6724513F08000A4592 /* HealthBook.storyboard */; };
 		FBFA6D6B24513F71000A4592 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFA6D6A24513F71000A4592 /* Settings.storyboard */; };
-		FBFA6D6D2451423C000A4592 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA6D6C2451423C000A4592 /* SummaryViewController.swift */; };
 		FBFA6D912451491D000A4592 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA6D902451491D000A4592 /* SettingsViewController.swift */; };
 		FBFA6D93245149A5000A4592 /* HealthBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA6D92245149A5000A4592 /* HealthBookViewController.swift */; };
 /* End PBXBuildFile section */
@@ -131,6 +131,8 @@
 		E968CEEB7D6181F6CD374C21 /* Pods_HealthSense_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthSense_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEEA271C2DBCAFD4CF448365 /* Pods-HealthSenseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSenseTests.release.xcconfig"; path = "Target Support Files/Pods-HealthSenseTests/Pods-HealthSenseTests.release.xcconfig"; sourceTree = "<group>"; };
 		F29CE389FE9403AB07368686 /* Pods-HealthSenseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSenseTests.debug.xcconfig"; path = "Target Support Files/Pods-HealthSenseTests/Pods-HealthSenseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FB2FC373245C875D005AD169 /* MacawViewUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacawViewUI.swift; sourceTree = "<group>"; };
+		FB2FC379245C9128005AD169 /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		FB3EC3BD24561DB2003318DF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FB3EC3C0245620C3003318DF /* ReadProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadProfile.swift; sourceTree = "<group>"; };
 		FB3EC3C22456653D003318DF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -176,13 +178,11 @@
 		FBE338F6245220C000B56A53 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnboardingViewController.swift; path = HealthSense/Controller/Onboarding/OnboardingViewController.swift; sourceTree = SOURCE_ROOT; };
 		FBE338F82452234200B56A53 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		FBE338FA245239D500B56A53 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		FBE5CA09245BAFF2001D8C03 /* MacawViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacawViewUI.swift; sourceTree = "<group>"; };
-		FBE5CA0B245BB38C001D8C03 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomViewController.swift; path = HealthSense/View/CustomViewController.swift; sourceTree = SOURCE_ROOT; };
-		FBE5CA0D245BC2CD001D8C03 /* CustomViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = CustomViewController.storyboard; path = HealthSense/Storyboard/CustomViewController.storyboard; sourceTree = SOURCE_ROOT; };
+		FBE5CA0B245BB38C001D8C03 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomViewController.swift; path = HealthSense/Controller/Custom/CustomViewController.swift; sourceTree = SOURCE_ROOT; };
+		FBE5CA0D245BC2CD001D8C03 /* CustomViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = CustomViewController.storyboard; path = HealthSense/Storyboard/Custom/CustomViewController.storyboard; sourceTree = SOURCE_ROOT; };
 		FBFA6D63245136A7000A4592 /* Summary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Summary.storyboard; sourceTree = "<group>"; };
 		FBFA6D6824513F08000A4592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HealthBook.storyboard; sourceTree = "<group>"; };
-		FBFA6D6A24513F71000A4592 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Settings.storyboard; path = HealthSense/Storyboard/Settings.storyboard; sourceTree = SOURCE_ROOT; };
-		FBFA6D6C2451423C000A4592 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		FBFA6D6A24513F71000A4592 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Settings.storyboard; path = HealthSense/Storyboard/Screens/Settings.storyboard; sourceTree = SOURCE_ROOT; };
 		FBFA6D902451491D000A4592 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FBFA6D92245149A5000A4592 /* HealthBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthBookViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -248,6 +248,67 @@
 				EEEA271C2DBCAFD4CF448365 /* Pods-HealthSenseTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FB2FC372245C84EE005AD169 /* Macaw */ = {
+			isa = PBXGroup;
+			children = (
+				FB2FC373245C875D005AD169 /* MacawViewUI.swift */,
+			);
+			path = Macaw;
+			sourceTree = "<group>";
+		};
+		FB2FC375245C8DCA005AD169 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FB6DA844244E73360086A030 /* UITabBarViewController.swift */,
+				FB2FC379245C9128005AD169 /* SummaryViewController.swift */,
+				FBFA6D92245149A5000A4592 /* HealthBookViewController.swift */,
+				FBFA6D902451491D000A4592 /* SettingsViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FB2FC376245C8DDB005AD169 /* Skeleton */ = {
+			isa = PBXGroup;
+			children = (
+				FB51DBCA242A789100FD0B7B /* ViewController.swift */,
+			);
+			path = Skeleton;
+			sourceTree = "<group>";
+		};
+		FB2FC377245C8F33005AD169 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				FBE5CA0B245BB38C001D8C03 /* CustomViewController.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		FB2FC378245C8FD8005AD169 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FBFA6D63245136A7000A4592 /* Summary.storyboard */,
+				FBFA6D6724513F08000A4592 /* HealthBook.storyboard */,
+				FBFA6D6A24513F71000A4592 /* Settings.storyboard */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FB2FC37B245C925A005AD169 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				FBE338F424521DC800B56A53 /* Onboarding.storyboard */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		FB2FC37C245C9272005AD169 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				FBE5CA0D245BC2CD001D8C03 /* CustomViewController.storyboard */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 		FB3EC3BF24562098003318DF /* Healthkit */ = {
@@ -391,8 +452,8 @@
 		FB6DA83D244E6F190086A030 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FB2FC372245C84EE005AD169 /* Macaw */,
 				FB6DA846244E7A070086A030 /* CustomViews */,
-				FBE5CA09245BAFF2001D8C03 /* MacawViewUI.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -401,12 +462,9 @@
 			isa = PBXGroup;
 			children = (
 				FBD385DE245361AF00983106 /* Onboarding */,
-				FB51DBCA242A789100FD0B7B /* ViewController.swift */,
-				FB6DA844244E73360086A030 /* UITabBarViewController.swift */,
-				FBFA6D6C2451423C000A4592 /* SummaryViewController.swift */,
-				FBFA6D92245149A5000A4592 /* HealthBookViewController.swift */,
-				FBFA6D902451491D000A4592 /* SettingsViewController.swift */,
-				FBE5CA0B245BB38C001D8C03 /* CustomViewController.swift */,
+				FB2FC376245C8DDB005AD169 /* Skeleton */,
+				FB2FC375245C8DCA005AD169 /* Main */,
+				FB2FC377245C8F33005AD169 /* Custom */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -424,11 +482,9 @@
 			isa = PBXGroup;
 			children = (
 				FB51DBCC242A789100FD0B7B /* Main.storyboard */,
-				FBE338F424521DC800B56A53 /* Onboarding.storyboard */,
-				FBFA6D63245136A7000A4592 /* Summary.storyboard */,
-				FBFA6D6724513F08000A4592 /* HealthBook.storyboard */,
-				FBFA6D6A24513F71000A4592 /* Settings.storyboard */,
-				FBE5CA0D245BC2CD001D8C03 /* CustomViewController.storyboard */,
+				FB2FC37B245C925A005AD169 /* Onboarding */,
+				FB2FC378245C8FD8005AD169 /* Screens */,
+				FB2FC37C245C9272005AD169 /* Custom */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -935,21 +991,21 @@
 			files = (
 				FB6DA845244E73360086A030 /* UITabBarViewController.swift in Sources */,
 				FB6DA843244E716C0086A030 /* Constants.swift in Sources */,
-				FBE5CA0A245BAFF2001D8C03 /* MacawViewUI.swift in Sources */,
 				FBB3D5AE24551F25007DE952 /* Analytics.swift in Sources */,
 				FB51DBCB242A789100FD0B7B /* ViewController.swift in Sources */,
 				FB51DBC7242A789100FD0B7B /* AppDelegate.swift in Sources */,
+				FB2FC37A245C9128005AD169 /* SummaryViewController.swift in Sources */,
 				FB3EC3C1245620C3003318DF /* ReadProfile.swift in Sources */,
 				FBD385E4245362E900983106 /* ThirdOnboardingViewController.swift in Sources */,
 				FB51DBC9242A789100FD0B7B /* SceneDelegate.swift in Sources */,
 				FB3EC3C7245670B7003318DF /* Helper.swift in Sources */,
 				FB3EC3BE24561DB2003318DF /* User.swift in Sources */,
-				FBFA6D6D2451423C000A4592 /* SummaryViewController.swift in Sources */,
 				FBE338FB245239D500B56A53 /* Settings.swift in Sources */,
 				FBD385E0245362C900983106 /* FirstOnboardingViewController.swift in Sources */,
 				FBC3EE91242C29FE006DCE06 /* HealthManager.swift in Sources */,
 				FBE5CA0C245BB38C001D8C03 /* CustomViewController.swift in Sources */,
 				FBE338F7245220C000B56A53 /* OnboardingViewController.swift in Sources */,
+				FB2FC374245C875E005AD169 /* MacawViewUI.swift in Sources */,
 				FBE338F92452234200B56A53 /* Profile.swift in Sources */,
 				FBD385E2245362DA00983106 /* SecondOnboardingViewController.swift in Sources */,
 				FBFA6D912451491D000A4592 /* SettingsViewController.swift in Sources */,

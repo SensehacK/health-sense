@@ -133,9 +133,6 @@ class SummaryViewController: UIViewController {
 }
 
 
-
-
-
 // Commented code
 
 

@@ -14,23 +14,19 @@ class CustomViewController: UIViewController {
 //    @IBOutlet weak var macawView: MacawView!
     @IBOutlet weak var macawViewUI: MacawViewUI!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let coder: NSCoder = NSCoder()
         
-        // Do any additional setup after loading the view.
-        // Calling UI
+//        customUIInvoke()
+        
+    }
+    
+    
+    // Custom UI programmatic invocation
+    fileprivate func customUIInvoke() {
         programmaticUI()
-//        macawViewUI.contentMode = .scaleAspectFit
-        
-        // https://github.com/exyte/Macaw/wiki/Getting-started#text
-//        macawViewUI = MacawViewUI(coder: coder)
-        
-        
-//        macawView = MacawViewUI(coder: coder)!
-//        view.addSubview(macawViewUI)
-        
+        macawViewUI.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(macawViewUI)
     }
     
     
