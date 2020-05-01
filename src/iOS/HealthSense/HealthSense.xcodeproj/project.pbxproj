@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -48,6 +48,9 @@
 		FBE338F7245220C000B56A53 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE338F6245220C000B56A53 /* OnboardingViewController.swift */; };
 		FBE338F92452234200B56A53 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE338F82452234200B56A53 /* Profile.swift */; };
 		FBE338FB245239D500B56A53 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE338FA245239D500B56A53 /* Settings.swift */; };
+		FBE5CA0A245BAFF2001D8C03 /* MacawViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE5CA09245BAFF2001D8C03 /* MacawViewUI.swift */; };
+		FBE5CA0C245BB38C001D8C03 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE5CA0B245BB38C001D8C03 /* CustomViewController.swift */; };
+		FBE5CA0F245BC4A3001D8C03 /* CustomViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE5CA0D245BC2CD001D8C03 /* CustomViewController.storyboard */; };
 		FBFA6D64245136A7000A4592 /* Summary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFA6D63245136A7000A4592 /* Summary.storyboard */; };
 		FBFA6D6924513F08000A4592 /* HealthBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFA6D6724513F08000A4592 /* HealthBook.storyboard */; };
 		FBFA6D6B24513F71000A4592 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFA6D6A24513F71000A4592 /* Settings.storyboard */; };
@@ -173,9 +176,12 @@
 		FBE338F6245220C000B56A53 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnboardingViewController.swift; path = HealthSense/Controller/Onboarding/OnboardingViewController.swift; sourceTree = SOURCE_ROOT; };
 		FBE338F82452234200B56A53 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		FBE338FA245239D500B56A53 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		FBE5CA09245BAFF2001D8C03 /* MacawViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacawViewUI.swift; sourceTree = "<group>"; };
+		FBE5CA0B245BB38C001D8C03 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomViewController.swift; path = HealthSense/View/CustomViewController.swift; sourceTree = SOURCE_ROOT; };
+		FBE5CA0D245BC2CD001D8C03 /* CustomViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = CustomViewController.storyboard; path = HealthSense/Storyboard/CustomViewController.storyboard; sourceTree = SOURCE_ROOT; };
 		FBFA6D63245136A7000A4592 /* Summary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Summary.storyboard; sourceTree = "<group>"; };
 		FBFA6D6824513F08000A4592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HealthBook.storyboard; sourceTree = "<group>"; };
-		FBFA6D6A24513F71000A4592 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = SOURCE_ROOT; };
+		FBFA6D6A24513F71000A4592 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Settings.storyboard; path = HealthSense/Storyboard/Settings.storyboard; sourceTree = SOURCE_ROOT; };
 		FBFA6D6C2451423C000A4592 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		FBFA6D902451491D000A4592 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FBFA6D92245149A5000A4592 /* HealthBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthBookViewController.swift; sourceTree = "<group>"; };
@@ -386,6 +392,7 @@
 			isa = PBXGroup;
 			children = (
 				FB6DA846244E7A070086A030 /* CustomViews */,
+				FBE5CA09245BAFF2001D8C03 /* MacawViewUI.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -399,6 +406,7 @@
 				FBFA6D6C2451423C000A4592 /* SummaryViewController.swift */,
 				FBFA6D92245149A5000A4592 /* HealthBookViewController.swift */,
 				FBFA6D902451491D000A4592 /* SettingsViewController.swift */,
+				FBE5CA0B245BB38C001D8C03 /* CustomViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -420,6 +428,7 @@
 				FBFA6D63245136A7000A4592 /* Summary.storyboard */,
 				FBFA6D6724513F08000A4592 /* HealthBook.storyboard */,
 				FBFA6D6A24513F71000A4592 /* Settings.storyboard */,
+				FBE5CA0D245BC2CD001D8C03 /* CustomViewController.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -490,6 +499,7 @@
 				FB73C4DC2446814900E30D7D /* Swift Lint */,
 				FB6DA847244E8ACB0086A030 /* Xcode iOS Build Bump */,
 				FB6DA84A244E98680086A030 /* Xcode iOS Version Bump */,
+				73BCC7125AC8D5CCB71CCB4B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -528,6 +538,7 @@
 				FB51DBE0242A789500FD0B7B /* Sources */,
 				FB51DBE1242A789500FD0B7B /* Frameworks */,
 				FB51DBE2242A789500FD0B7B /* Resources */,
+				C2883044D871F2486C834300 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -638,6 +649,7 @@
 				FB6DA849244E97DD0086A030 /* InfoBak.plist in Resources */,
 				FB51DBD0242A789500FD0B7B /* Assets.xcassets in Resources */,
 				FBFA6D6924513F08000A4592 /* HealthBook.storyboard in Resources */,
+				FBE5CA0F245BC4A3001D8C03 /* CustomViewController.storyboard in Resources */,
 				FB51DBCE242A789100FD0B7B /* Main.storyboard in Resources */,
 				FBFA6D64245136A7000A4592 /* Summary.storyboard in Resources */,
 				FB3EC3C32456653E003318DF /* README.md in Resources */,
@@ -768,6 +780,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		73BCC7125AC8D5CCB71CCB4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HealthSense/Pods-HealthSense-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HealthSense/Pods-HealthSense-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HealthSense/Pods-HealthSense-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2883044D871F2486C834300 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HealthSense-HealthSenseUITests/Pods-HealthSense-HealthSenseUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HealthSense-HealthSenseUITests/Pods-HealthSense-HealthSenseUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HealthSense-HealthSenseUITests/Pods-HealthSense-HealthSenseUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C54A5E40166C227DD8A5DB41 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -889,6 +935,7 @@
 			files = (
 				FB6DA845244E73360086A030 /* UITabBarViewController.swift in Sources */,
 				FB6DA843244E716C0086A030 /* Constants.swift in Sources */,
+				FBE5CA0A245BAFF2001D8C03 /* MacawViewUI.swift in Sources */,
 				FBB3D5AE24551F25007DE952 /* Analytics.swift in Sources */,
 				FB51DBCB242A789100FD0B7B /* ViewController.swift in Sources */,
 				FB51DBC7242A789100FD0B7B /* AppDelegate.swift in Sources */,
@@ -901,6 +948,7 @@
 				FBE338FB245239D500B56A53 /* Settings.swift in Sources */,
 				FBD385E0245362C900983106 /* FirstOnboardingViewController.swift in Sources */,
 				FBC3EE91242C29FE006DCE06 /* HealthManager.swift in Sources */,
+				FBE5CA0C245BB38C001D8C03 /* CustomViewController.swift in Sources */,
 				FBE338F7245220C000B56A53 /* OnboardingViewController.swift in Sources */,
 				FBE338F92452234200B56A53 /* Profile.swift in Sources */,
 				FBD385E2245362DA00983106 /* SecondOnboardingViewController.swift in Sources */,

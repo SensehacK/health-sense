@@ -22,7 +22,16 @@ class HealthBookViewController: UIViewController {
     
     @IBAction func welcomeButton(_ sender: Any) {
         print("welcome button pressed")
-        performSegue(withIdentifier: "goToOnboarding", sender: self)
+//        performSegue(withIdentifier: "goToOnboarding", sender: self)
+        setupUI()
+    }
+    
+    func setupUI() {
+        
+        let customVC = CustomViewController()
+//        self.presentingViewController?.addChild(customVC)
+        self.present(customVC, animated: true, completion: nil)
+        
     }
     
     
