@@ -106,7 +106,13 @@ class SummaryViewController: UIViewController {
         UserStruct.displayName = chartLabel.text
         
 //        self.dismiss(animated: true, completion: nil)
-        navigateToCustomVCStoryboard()
+       
+        // Navigate to Macaw VC
+//        navigateToCustomVCStoryboard()
+        
+        // Navigate to Child VC
+        segueToSummaryChildVC()
+        
         
     }
     
@@ -128,13 +134,41 @@ class SummaryViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+         if segue.identifier == "SummaryChildSegue" {
+            print("Showing Summary Child Segue")
+            // Object data passing to child view controller
+        
+            if let destVC = (segue.destination as? SummaryChildVC) {
+                print("In segue destination")
+                destVC.titleObj  = "Kautilya"
+                
+                // Funny enough when I put a debugger here both the following commands gets executed with perfect valid "Kautilya 2/3" strings
+                // I believe with debugger it creates/invokes the child VC just before executing this line.
+                // So in normal instance if the destination VC isn't properly invoked these values won't be changed.
+                // Better approach is to pass a whole object and then in ViewDidLoad method of childVC class initialization code should be ranned.
+                // destVC.titleLabel.text  = "Kautilya 3" // This outrights crashes as titleLable still hasn't been invoked in Child VC
+                // destVC.titleLabel?.text = "Kautilya 2" // This doesn't crash as it looks for an optional value and it doesn't find it so text assignment is not done
+            }
+           
+             
+//            instantiateViewController(withIdentifier: "SummaryChildSegue")
+            
+        }
+        
     }
     
+    // function for programmatically navigating to Custom view controller storyboard
     func navigateToCustomVCStoryboard() {
         let onboardStoryboard = UIStoryboard(name: "CustomViewController", bundle: nil)
         let viewC = onboardStoryboard.instantiateViewController(identifier: "CustomViewController")
         viewC.modalPresentationStyle = .fullScreen
         self.present(viewC, animated: true)
+    }
+    
+    // function for performing storyboard segue to Child view controller
+    func segueToSummaryChildVC() {
+        
+        performSegue(withIdentifier: "SummaryChildSegue", sender: self)
     }
     
 
