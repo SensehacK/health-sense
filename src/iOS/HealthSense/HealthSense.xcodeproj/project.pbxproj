@@ -14,9 +14,9 @@
 		94131300FFFF3C0907B49180 /* Pods_HealthSense_HealthSenseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553EF7D84CADD9F5E01C0C3A /* Pods_HealthSense_HealthSenseUITests.framework */; };
 		FB2FC374245C875E005AD169 /* MacawViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2FC373245C875D005AD169 /* MacawViewUI.swift */; };
 		FB2FC37A245C9128005AD169 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2FC379245C9128005AD169 /* SummaryViewController.swift */; };
-		FB2FC382245C951B005AD169 /* HealthBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2FC381245C951B005AD169 /* HealthBookViewController.swift */; };
 		FB2FC384245C9631005AD169 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2FC383245C9630005AD169 /* SettingsViewController.swift */; };
 		FB2FC386245C96A2005AD169 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2FC385245C96A2005AD169 /* CustomViewController.swift */; };
+		FB2FC388245C9B26005AD169 /* HealthBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2FC387245C9B25005AD169 /* HealthBookViewController.swift */; };
 		FB3EC3BE24561DB2003318DF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3EC3BD24561DB2003318DF /* User.swift */; };
 		FB3EC3C1245620C3003318DF /* ReadProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3EC3C0245620C3003318DF /* ReadProfile.swift */; };
 		FB3EC3C32456653E003318DF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FB3EC3C22456653D003318DF /* README.md */; };
@@ -133,9 +133,9 @@
 		F29CE389FE9403AB07368686 /* Pods-HealthSenseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSenseTests.debug.xcconfig"; path = "Target Support Files/Pods-HealthSenseTests/Pods-HealthSenseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FB2FC373245C875D005AD169 /* MacawViewUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacawViewUI.swift; sourceTree = "<group>"; };
 		FB2FC379245C9128005AD169 /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
-		FB2FC381245C951B005AD169 /* HealthBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HealthBookViewController.swift; path = /Users/SensehacK/Documents/GitHub/Capstone_Team4/src/iOS/HealthSense/HealthSense/Controller/Main/HealthBookViewController.swift; sourceTree = "<absolute>"; };
 		FB2FC383245C9630005AD169 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FB2FC385245C96A2005AD169 /* CustomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
+		FB2FC387245C9B25005AD169 /* HealthBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthBookViewController.swift; sourceTree = "<group>"; };
 		FB3EC3BD24561DB2003318DF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FB3EC3C0245620C3003318DF /* ReadProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadProfile.swift; sourceTree = "<group>"; };
 		FB3EC3C22456653D003318DF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -263,7 +263,7 @@
 			children = (
 				FB6DA844244E73360086A030 /* UITabBarViewController.swift */,
 				FB2FC379245C9128005AD169 /* SummaryViewController.swift */,
-				FB2FC381245C951B005AD169 /* HealthBookViewController.swift */,
+				FB2FC387245C9B25005AD169 /* HealthBookViewController.swift */,
 				FB2FC383245C9630005AD169 /* SettingsViewController.swift */,
 			);
 			path = Main;
@@ -998,12 +998,12 @@
 				FB2FC37A245C9128005AD169 /* SummaryViewController.swift in Sources */,
 				FB3EC3C1245620C3003318DF /* ReadProfile.swift in Sources */,
 				FBD385E4245362E900983106 /* ThirdOnboardingViewController.swift in Sources */,
-				FB2FC382245C951B005AD169 /* HealthBookViewController.swift in Sources */,
 				FB51DBC9242A789100FD0B7B /* SceneDelegate.swift in Sources */,
 				FB3EC3C7245670B7003318DF /* Helper.swift in Sources */,
 				FB3EC3BE24561DB2003318DF /* User.swift in Sources */,
 				FBE338FB245239D500B56A53 /* Settings.swift in Sources */,
 				FBD385E0245362C900983106 /* FirstOnboardingViewController.swift in Sources */,
+				FB2FC388245C9B26005AD169 /* HealthBookViewController.swift in Sources */,
 				FB2FC386245C96A2005AD169 /* CustomViewController.swift in Sources */,
 				FBC3EE91242C29FE006DCE06 /* HealthManager.swift in Sources */,
 				FBE338F7245220C000B56A53 /* OnboardingViewController.swift in Sources */,
