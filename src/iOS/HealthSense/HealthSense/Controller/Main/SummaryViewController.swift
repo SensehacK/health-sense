@@ -105,7 +105,8 @@ class SummaryViewController: UIViewController {
         
         UserStruct.displayName = chartLabel.text
         
-        self.dismiss(animated: true, completion: nil)
+//        self.dismiss(animated: true, completion: nil)
+        navigateToCustomVCStoryboard()
         
     }
     
@@ -128,12 +129,16 @@ class SummaryViewController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-
+    
+    func navigateToCustomVCStoryboard() {
+        let onboardStoryboard = UIStoryboard(name: "CustomViewController", bundle: nil)
+        let viewC = onboardStoryboard.instantiateViewController(identifier: "CustomViewController")
+        viewC.modalPresentationStyle = .fullScreen
+        self.present(viewC, animated: true)
+    }
+    
 
 }
-
-
-
 
 
 // Commented code

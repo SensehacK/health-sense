@@ -19,6 +19,7 @@ class Helper {
     init() {
         
         print("#### Helper Class")
+        
     }
     
     //TODO: Reusable function for querying the Healthkit datastore to just pass the last result of a particular HKType
@@ -28,13 +29,8 @@ class Helper {
     
     func readBodyMassWithComp(completion: @escaping CompletionHandler) {
         
-//        var bodyWeight: HKQuantity
-        
-//        let weightType = healthKitManager.healthStore.HKRead
         guard let weightType = HKSampleType.quantityType(forIdentifier: HKQuantityTypeIdentifier.bodyMass) else { return }
-        
-        print("Debug readBodyMassWithComp Completion func Body Mass with Comp")
-        
+
         let query = HKSampleQuery(sampleType: weightType, predicate: nil, limit: HKObjectQueryNoLimit, sortDescriptors: nil) { (query, results, error) in
             if let results = results?.last as? HKQuantitySample {
                 print("Weight: \(results.quantity)")
@@ -45,7 +41,6 @@ class Helper {
                 print("Couldn't get Weight data \(String(describing: error))")
                 completion(nil, error)
             }
-            
         }
         healthKitManager.healthStore.execute(query)
     
@@ -65,11 +60,9 @@ class Helper {
                     let weightUnit = HKUnit.pound()
                     let usersWeight: Double = bodyWeight.doubleValue(for: weightUnit)
                     UserStruct.weight = usersWeight
-
                 } else {
                     print("Couldn't get Weight data \(String(describing: error))")
                 }
-            
             }
         healthKitManager.healthStore.execute(query)
         }
@@ -78,13 +71,8 @@ class Helper {
     
      func readHeight(completion: @escaping CompletionHandler) {
             
-    //        var bodyWeight: HKQuantity
-            
-    //        let weightType = healthKitManager.healthStore.HKRead
         guard let heightType = HKSampleType.quantityType(forIdentifier: HKQuantityTypeIdentifier.height) else { return }
-            
-            print("Debug readHeight Completion func readHeight")
-            
+
             let query = HKSampleQuery(sampleType: heightType, predicate: nil, limit: HKObjectQueryNoLimit, sortDescriptors: nil) { (query, results, error) in
                 if let results = results?.last as? HKQuantitySample {
                     print("Height: \(results.quantity)")
@@ -95,7 +83,6 @@ class Helper {
                     print("Couldn't get height data \(String(describing: error))")
                     completion(nil, error)
                 }
-                
             }
             healthKitManager.healthStore.execute(query)
         

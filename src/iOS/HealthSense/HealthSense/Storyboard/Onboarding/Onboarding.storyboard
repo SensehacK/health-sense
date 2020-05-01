@@ -78,9 +78,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zM7-Nn-RvQ">
-                                <rect key="frame" x="176" y="742" width="62" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zM7-Nn-RvQ">
+                                <rect key="frame" x="176" y="802" width="62" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3hl-Sp-fqe"/>
+                                </constraints>
                                 <state key="normal" title="Continue"/>
                                 <connections>
                                     <action selector="continueBtnPressed:" destination="G53-FP-cJN" eventType="touchUpInside" id="lrb-B7-eVV"/>
@@ -90,7 +92,9 @@
                         <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="sxk-fh-eiL" firstAttribute="centerX" secondItem="grh-kZ-mnB" secondAttribute="centerX" id="8Wr-d2-cWs"/>
+                            <constraint firstItem="grh-kZ-mnB" firstAttribute="bottom" secondItem="zM7-Nn-RvQ" secondAttribute="bottom" constant="30" id="KDr-gM-CNL"/>
                             <constraint firstItem="sxk-fh-eiL" firstAttribute="centerY" secondItem="grh-kZ-mnB" secondAttribute="centerY" id="ROJ-Bq-oPh"/>
+                            <constraint firstItem="zM7-Nn-RvQ" firstAttribute="centerX" secondItem="7SV-tL-sm8" secondAttribute="centerX" id="d5J-sd-aPh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="grh-kZ-mnB"/>
                     </view>
