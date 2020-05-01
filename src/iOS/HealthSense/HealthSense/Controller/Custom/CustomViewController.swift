@@ -13,6 +13,7 @@ class CustomViewController: UIViewController {
 
 //    @IBOutlet weak var macawView: MacawView!
     @IBOutlet weak var macawViewUI: MacawViewUI!
+    @IBOutlet weak var doneButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +48,16 @@ class CustomViewController: UIViewController {
     }
     
 
+    @IBAction func doneButton(_ sender: Any) {
+        
+        print("Done button pressed in Custom VC")
+        
+        // Navigate to main parent view controller from where this child VC got invoked
+        self.dismiss(animated: true, completion: nil)
+        
+    }
+    
+    
     /*
     // MARK: - Navigation
 

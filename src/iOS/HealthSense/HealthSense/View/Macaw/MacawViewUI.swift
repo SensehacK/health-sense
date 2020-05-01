@@ -12,8 +12,10 @@ import Macaw
 class MacawViewUI: MacawView {
     
     required init?(coder aDecoder: NSCoder) {
+        
         let text = Text(text: "Hello Sensehack 123!", place: .move(dx: 145, dy: 100))
         super.init(node: text, coder: aDecoder)
+        self.backgroundColor = UIColor.yellow
         
     }
     
