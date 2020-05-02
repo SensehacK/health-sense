@@ -73,6 +73,7 @@
     {
       "size" : "108x108",
       "idiom" : "watch",
+      "filename" : "healthSenseAppIcon-216x216.png",
       "scale" : "2x",
       "role" : "quickLook",
       "subtype" : "44mm"
