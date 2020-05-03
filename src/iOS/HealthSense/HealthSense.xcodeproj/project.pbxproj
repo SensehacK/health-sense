@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -49,6 +49,10 @@
 		FBB3D5AE24551F25007DE952 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3D5AD24551F25007DE952 /* Analytics.swift */; };
 		FBC3EE91242C29FE006DCE06 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3EE90242C29FE006DCE06 /* HealthManager.swift */; };
 		FBC3EE92242C2A04006DCE06 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3EE90242C29FE006DCE06 /* HealthManager.swift */; };
+		FBD0EA14245F449E005877FB /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD0EA13245F449E005877FB /* BarChart.swift */; };
+		FBD0EA16245F4516005877FB /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD0EA15245F4516005877FB /* DummyData.swift */; };
+		FBD0EA18245F56C0005877FB /* BarChart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD0EA17245F56C0005877FB /* BarChart.storyboard */; };
+		FBD0EA1A245F5785005877FB /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD0EA19245F5785005877FB /* BarChartViewController.swift */; };
 		FBD385E0245362C900983106 /* FirstOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD385DF245362C900983106 /* FirstOnboardingViewController.swift */; };
 		FBD385E2245362DA00983106 /* SecondOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD385E1245362DA00983106 /* SecondOnboardingViewController.swift */; };
 		FBD385E4245362E900983106 /* ThirdOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD385E3245362E900983106 /* ThirdOnboardingViewController.swift */; };
@@ -180,6 +184,10 @@
 		FBA35B39244CAAAF00A6639A /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		FBB3D5AD24551F25007DE952 /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
 		FBC3EE90242C29FE006DCE06 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HealthManager.swift; path = HealthSense/HealthManager.swift; sourceTree = SOURCE_ROOT; };
+		FBD0EA13245F449E005877FB /* BarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
+		FBD0EA15245F4516005877FB /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
+		FBD0EA17245F56C0005877FB /* BarChart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BarChart.storyboard; sourceTree = "<group>"; };
+		FBD0EA19245F5785005877FB /* BarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
 		FBD385DF245362C900983106 /* FirstOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstOnboardingViewController.swift; sourceTree = "<group>"; };
 		FBD385E1245362DA00983106 /* SecondOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondOnboardingViewController.swift; sourceTree = "<group>"; };
 		FBD385E3245362E900983106 /* ThirdOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdOnboardingViewController.swift; sourceTree = "<group>"; };
@@ -260,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				FB2FC373245C875D005AD169 /* MacawViewUI.swift */,
+				FBD0EA13245F449E005877FB /* BarChart.swift */,
 			);
 			path = Macaw;
 			sourceTree = "<group>";
@@ -288,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				FB2FC385245C96A2005AD169 /* CustomViewController.swift */,
+				FBD0EA19245F5785005877FB /* BarChartViewController.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -314,6 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				FBE5CA0D245BC2CD001D8C03 /* CustomViewController.storyboard */,
+				FBD0EA17245F56C0005877FB /* BarChart.storyboard */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -462,6 +473,7 @@
 		FB6DA83C244E6F120086A030 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FBD0EA15245F4516005877FB /* DummyData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -726,6 +738,7 @@
 				FB3EC3C32456653E003318DF /* README.md in Resources */,
 				FBFA6D6B24513F71000A4592 /* Settings.storyboard in Resources */,
 				FBE338F524521DC800B56A53 /* Onboarding.storyboard in Resources */,
+				FBD0EA18245F56C0005877FB /* BarChart.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -911,7 +924,7 @@
 		};
 		FB6DA84B244E9B2F0086A030 /* Xcode WatchApp Build Bump */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -978,8 +991,10 @@
 				FBB3D5AE24551F25007DE952 /* Analytics.swift in Sources */,
 				FB2FC391245CC7FE005AD169 /* ViewController.swift in Sources */,
 				FB51DBC7242A789100FD0B7B /* AppDelegate.swift in Sources */,
+				FBD0EA14245F449E005877FB /* BarChart.swift in Sources */,
 				FB2FC37A245C9128005AD169 /* SummaryViewController.swift in Sources */,
 				FB3EC3C1245620C3003318DF /* ReadProfile.swift in Sources */,
+				FBD0EA1A245F5785005877FB /* BarChartViewController.swift in Sources */,
 				FBD385E4245362E900983106 /* ThirdOnboardingViewController.swift in Sources */,
 				FB51DBC9242A789100FD0B7B /* SceneDelegate.swift in Sources */,
 				FB3EC3C7245670B7003318DF /* Helper.swift in Sources */,
@@ -993,6 +1008,7 @@
 				FBE338F7245220C000B56A53 /* OnboardingViewController.swift in Sources */,
 				FB2FC374245C875E005AD169 /* MacawViewUI.swift in Sources */,
 				FBE338F92452234200B56A53 /* Profile.swift in Sources */,
+				FBD0EA16245F4516005877FB /* DummyData.swift in Sources */,
 				FBD385E2245362DA00983106 /* SecondOnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
