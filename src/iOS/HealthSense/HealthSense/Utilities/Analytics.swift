@@ -27,7 +27,7 @@ class Analytics {
     
      // func for updating those App analytics variables in Settings struct
     func trackApp() {
-        AnalyticsStruct.appOpen += AnalyticsStruct.appOpen
+        AnalyticsStruct.appOpen += 1
     }
     
     
