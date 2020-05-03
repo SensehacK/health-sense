@@ -20,8 +20,9 @@ class HealthBookViewController: UIViewController {
     }
     
     @IBAction func macawViewButton(_ sender: Any) {
-         setupMacawStoryboard() // Calling Macaw VC
+//         setupMacawStoryboard() // Calling Macaw VC
 //         setupUI()
+        navigateToBarChartVC() // Calling Macaw BarChart
     }
     
     
@@ -44,6 +45,18 @@ class HealthBookViewController: UIViewController {
         let viewC = onboardStoryboard.instantiateViewController(identifier: "CustomViewController")
         viewC.modalPresentationStyle = .fullScreen
         self.present(viewC, animated: true)
+    }
+    
+    // function for programmatically navigating to BarChart view controller storyboard
+    func navigateToBarChartVC() {
+        // Storyboard Invocation without any Identifier
+        let barChartStoryboard = UIStoryboard(name: "BarChart", bundle: nil)
+        let barChartVC = barChartStoryboard.instantiateInitialViewController()
+        barChartVC?.modalPresentationStyle = .fullScreen
+        if let barchart = barChartVC {
+            self.present(barchart, animated: true)
+        }
+        
     }
     
     
