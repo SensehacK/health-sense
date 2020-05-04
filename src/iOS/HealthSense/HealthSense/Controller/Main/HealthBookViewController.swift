@@ -41,6 +41,7 @@ class HealthBookViewController: UIViewController {
     @IBAction func pieChartButton(_ sender: Any) {
         print("Pie button pressed")
         navigateToPieChartVC() // Calling Macaw PieChart
+//        navigateToPieChartWholeView()
         
     }
     
@@ -82,6 +83,19 @@ class HealthBookViewController: UIViewController {
         }
         
     }
+    
+    
+    // function for programmatically navigating to BarChart view controller storyboard
+    func navigateToPieChartWholeView() {
+        // Storyboard Invocation without any Identifier
+        let pieChartStoryboard = UIStoryboard(name: "CircularPieChart", bundle: nil)
+        
+        let viewC = pieChartStoryboard.instantiateViewController(identifier: "PieViewController")
+        viewC.modalPresentationStyle = .fullScreen
+        self.present(viewC, animated: true)
+        
+    }
+    
     
     
     // MARK: - Navigation

@@ -14,14 +14,14 @@ class CircularPieChart: MacawView {
     private var animationGroup = Group()
     
     private var animations = [Animation]()
-    private let backgroundColors = [
+    static let backgroundColors = [
         0.2,
         0.14,
         0.07
         ].map {
             Color.rgba(r: 255, g: 255, b: 255, a: $0)
     }
-    private let gradientColors = [
+    static let gradientColors = [
         (top: 0xfc087e, bottom: 0xff6868),
         (top: 0x06dfed, bottom: 0x03aafe),
         (top: 0xffff5c, bottom: 0xffa170)
@@ -32,58 +32,102 @@ class CircularPieChart: MacawView {
             to: Color(val: $0.bottom)
         )
     }
-    private let extent = [
-        4.0,
+    static let extent = [
+        5.0,
         2.0,
         3.0
     ]
-    private let radius = [
-        90.0,
-        70.0,
-        50.0
+    static let radius = [
+        150.0,
+        130.0,
+        110.0
     ]
+    
+    static var viewCenterX: Double = 350.0
+    
+    required init?(coder aDecoder: NSCoder) {
+
+        super.init(node: CircularPieChart.createChart() , coder: aDecoder)
+        backgroundColor = .clear
+    }
+    
+    
+    private static func createChart() -> Group {
+        let shape1 = Shape(
+            form: Arc(
+                ellipse: Ellipse(cx: 0, cy: 0, rx: self.radius[0], ry: self.radius[0]),
+                shift: 5.0,
+                extent: self.extent[0]),
+            stroke: Stroke(
+                fill: gradientColors[0],
+                width: 19,
+                cap: .round
+        ))
+        let shape2 = Shape(
+            form: Arc(
+                ellipse: Ellipse(cx: 0, cy: 0, rx: self.radius[1], ry: self.radius[1]),
+                shift: 5.0,
+                extent: self.extent[1]),
+            stroke: Stroke(
+                fill: gradientColors[1],
+                width: 19,
+                cap: .round
+        ))
+        
+        let shape3 = Shape(
+            form: Arc(
+                ellipse: Ellipse(cx: 0, cy: 0, rx: self.radius[2], ry: self.radius[2]),
+                shift: 5.0,
+                extent: self.extent[2]),
+            stroke: Stroke(
+                fill: gradientColors[2],
+                width: 19,
+                cap: .round
+        ))
+        
+        
+        let items: [Node] = createScene() + [shape1, shape2, shape3]
+        return Group(contents: items, place: .identity)
+    }
     
     private func createArc(_ time: Double, _ index: Int) -> Shape {
         return Shape(
             form: Arc(
-                ellipse: Ellipse(cx: 0, cy: 0, rx: self.radius[index], ry: self.radius[index]),
+                ellipse: Ellipse(cx: 0, cy: 0, rx: CircularPieChart.radius[index], ry: CircularPieChart.radius[index]),
                 shift: 5.0,
-                extent: self.extent[index] * time),
+                extent: CircularPieChart.extent[index] * time),
             stroke: Stroke(
-                fill: gradientColors[index],
+                fill: CircularPieChart.gradientColors[index],
                 width: 19,
                 cap: .round
             )
         )
     }
     
-    private func createScene() {
-        let viewCenterX = Double(self.frame.width / 2)
-        
-        let text = Text(
-            text: "Daily Summary",
-            font: Font(name: "Serif", size: 24),
-            fill: Color(val: 0xFFFFFF)
-        )
-        text.align = .mid
-        text.place = .move(dx: viewCenterX, dy: 30)
-        
-        let rootNode = Group(place: .move(dx: viewCenterX, dy: 200))
+
+    private static func createScene() -> [Node] {
+//        viewCenterX = viewCenterX window.
+        var newNodes: [Node]        = []
+        let rootNode = Group(place: .move(dx: viewCenterX + 15, dy: 150))
         
         for index in 0...2 {
             let circle = Shape(
-                form: Circle(cx: 0, cy: 0, r: radius[index]),
+                form: Circle(cx: 0, cy: 0, r: CircularPieChart.radius[index]),
                 stroke: Stroke(fill: backgroundColors[index], width: 19)
             )
+            newNodes.append(circle)
             rootNode.contents.append(circle)
         }
         
-        animationGroup = Group()
-        rootNode.contents.append(animationGroup)
+        return newNodes
+        /*
         
-//        self.node = [text, rootNode].group()
-        self.node = rootNode
+        animationGroup = Group()
+//        rootNode.contents.append(animationGroup)
+        
+        self.node = [rootNode].group()
         self.backgroundColor = UIColor(cgColor: Color(val: 0x4a2e7d).toCG())
+         */
     }
     
     private func createAnimations() {
@@ -100,7 +144,7 @@ class CircularPieChart: MacawView {
     }
     
     open func playAnimation() {
-        createScene()
+        CircularPieChart.createScene()
         createAnimations()
         animations.forEach {
             $0.play()

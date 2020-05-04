@@ -19,12 +19,15 @@
                                 <rect key="frame" x="20" y="144" width="374" height="350"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="350" id="k2R-xc-Xeb"/>
+                                    <constraint firstAttribute="height" constant="350" id="lAd-U7-Bh3"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bar Chart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6WF-VR-7MF">
-                                <rect key="frame" x="170" y="83" width="74" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bar Chart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6WF-VR-7MF">
+                                <rect key="frame" x="169.5" y="69" width="75" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="5rF-Xi-Ul3"/>
+                                    <constraint firstAttribute="height" constant="25" id="OCw-YH-3wR"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -48,9 +51,11 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wPE-j6-fdT" firstAttribute="leading" secondItem="UQQ-uz-Ykz" secondAttribute="leading" constant="20" id="HYk-4z-oQA"/>
-                            <constraint firstItem="wPE-j6-fdT" firstAttribute="top" secondItem="UQQ-uz-Ykz" secondAttribute="top" constant="100" id="q3m-M6-RyG"/>
-                            <constraint firstItem="UQQ-uz-Ykz" firstAttribute="trailing" secondItem="wPE-j6-fdT" secondAttribute="trailing" constant="20" id="xei-LT-Wrv"/>
+                            <constraint firstItem="wPE-j6-fdT" firstAttribute="leading" secondItem="UQQ-uz-Ykz" secondAttribute="leading" constant="20" id="NCv-kI-WOE"/>
+                            <constraint firstItem="6WF-VR-7MF" firstAttribute="top" secondItem="UQQ-uz-Ykz" secondAttribute="top" constant="25" id="RrJ-WK-NbO"/>
+                            <constraint firstItem="6WF-VR-7MF" firstAttribute="centerX" secondItem="8JC-zQ-nR7" secondAttribute="centerX" id="Ybv-BQ-EIe"/>
+                            <constraint firstItem="UQQ-uz-Ykz" firstAttribute="trailing" secondItem="wPE-j6-fdT" secondAttribute="trailing" constant="20" id="smT-lK-TD1"/>
+                            <constraint firstItem="wPE-j6-fdT" firstAttribute="top" secondItem="6WF-VR-7MF" secondAttribute="bottom" constant="50" id="yh5-4K-ELS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UQQ-uz-Ykz"/>
                     </view>

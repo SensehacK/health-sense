@@ -18,7 +18,7 @@ class BarChartViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        barChartView.contentMode = .scaleAspectFit
+//        barChartView.contentMode = .scaleAspectFit
         BarChart.playAnimations()
     }
     
