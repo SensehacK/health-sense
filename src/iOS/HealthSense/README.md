@@ -20,6 +20,15 @@ Open _.xcworkspace_ after package dependency has been installed.
 Change the project with specific bundle identifier and run it on the simulator.
 Alternatively you can run it on your phone given you have Apple Developer account.
 
+### App Sign
+
+Open the Xcode project and in “General” Tab select the Apple developer account you have under the dropdown menu. If you don’t have one you can add it using “Xcode-> Preferences-> Accounts”
+
+After that change the Bundle ID of the app, to your liking and make sure you have similar ID’s across Watch App, Extension and  iOS App.
+Make sure you check the Xcode Build Issues section of this ReadMe.
+
+Trust the Developer certificate on your iOS device in Settings app “General->Device Management” Accept the installed app from Xcode so that you can run signed iOS app on your device.
+
 ## User Experience
 
 ### First Launch
@@ -48,7 +57,7 @@ Options of turning off first party app usage tracking as well.
 Information displayed about the app build meta data.
 
 - About
-Information about the app production members. Tools we used and assets we incorporated in the project.
+Information about App production members. Tools we used and assets we incorporated in the project.
 
 
 ## Develop
@@ -89,3 +98,7 @@ cd to HealthSense $PWD
 
 So that cocoapods will reinstall properly & open using .xcworkspace
 
+
+- App version and Build number mismatch
+Make sure all of the version numbers and build info are in sync with companion apps. So that archive or running Xcode post build  phase scripts run properly.
+Some of the version would be included in Info.plist Key-value pair, so given the Xcode error just perform the search on Xcode left explorer window and open that particular key.
