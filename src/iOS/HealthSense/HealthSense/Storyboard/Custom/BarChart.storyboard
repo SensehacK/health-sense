@@ -37,6 +37,14 @@
                                     <action selector="doneButton:" destination="S0l-rG-nut" eventType="touchUpInside" id="rfm-ak-k36"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxK-Qj-tPV">
+                                <rect key="frame" x="184" y="529" width="47" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reload"/>
+                                <connections>
+                                    <action selector="reloadView:" destination="S0l-rG-nut" eventType="touchUpInside" id="o1l-Y3-Y8E"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>

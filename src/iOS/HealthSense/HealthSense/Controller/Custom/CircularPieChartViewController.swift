@@ -1,5 +1,5 @@
 //
-//  BarChartViewController.swift
+//  CircularPieChartViewController.swift
 //  HealthSense
 //
 //  Created by Sensehack on 5/3/20.
@@ -8,32 +8,27 @@
 
 import UIKit
 
-class BarChartViewController: UIViewController {
+class CircularPieChartViewController: UIViewController {
 
-    @IBOutlet weak var barChartView: BarChart!
     
+    @IBOutlet weak var circularPieView: CircularPieChart!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        circularPieView.contentMode = .scaleAspectFit
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        barChartView.contentMode = .scaleAspectFit
-        BarChart.playAnimations()
+        circularPieView.playAnimation()
     }
     
-
     @IBAction func doneButton(_ sender: Any) {
-        print("Done button pressed in Bar Chart VC")
-        
+        print("Done button pressed")
         self.dismiss(animated: true, completion: nil)
-        
     }
-    
-    @IBAction func reloadView(_ sender: Any) {
-        BarChart.playAnimations()
-    }
-    
     
     /*
     // MARK: - Navigation

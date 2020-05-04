@@ -42,6 +42,9 @@
 		FB51DC08242A789700FD0B7B /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51DC07242A789700FD0B7B /* ComplicationController.swift */; };
 		FB51DC0A242A789900FD0B7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB51DC09242A789900FD0B7B /* Assets.xcassets */; };
 		FB51DC23242A795400FD0B7B /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB51DC22242A795400FD0B7B /* HealthKit.framework */; };
+		FB6B45D5245F8F8D00B9AD96 /* CircularPieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B45D4245F8F8D00B9AD96 /* CircularPieChart.swift */; };
+		FB6B45D7245F8FC900B9AD96 /* CircularPieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B45D6245F8FC900B9AD96 /* CircularPieChartViewController.swift */; };
+		FB6B45D9245F8FE100B9AD96 /* CircularPieChart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB6B45D8245F8FE100B9AD96 /* CircularPieChart.storyboard */; };
 		FB6DA843244E716C0086A030 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6DA842244E716C0086A030 /* Constants.swift */; };
 		FB6DA845244E73360086A030 /* UITabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6DA844244E73360086A030 /* UITabBarViewController.swift */; };
 		FB6DA849244E97DD0086A030 /* InfoBak.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB6DA848244E97DD0086A030 /* InfoBak.plist */; };
@@ -178,6 +181,9 @@
 		FB51DC0C242A789900FD0B7B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		FB51DC20242A795400FD0B7B /* HealthSense.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HealthSense.entitlements; sourceTree = "<group>"; };
 		FB51DC22242A795400FD0B7B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		FB6B45D4245F8F8D00B9AD96 /* CircularPieChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularPieChart.swift; sourceTree = "<group>"; };
+		FB6B45D6245F8FC900B9AD96 /* CircularPieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularPieChartViewController.swift; sourceTree = "<group>"; };
+		FB6B45D8245F8FE100B9AD96 /* CircularPieChart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CircularPieChart.storyboard; sourceTree = "<group>"; };
 		FB6DA842244E716C0086A030 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FB6DA844244E73360086A030 /* UITabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarViewController.swift; sourceTree = "<group>"; };
 		FB6DA848244E97DD0086A030 /* InfoBak.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InfoBak.plist; sourceTree = "<group>"; };
@@ -269,6 +275,7 @@
 			children = (
 				FB2FC373245C875D005AD169 /* MacawViewUI.swift */,
 				FBD0EA13245F449E005877FB /* BarChart.swift */,
+				FB6B45D4245F8F8D00B9AD96 /* CircularPieChart.swift */,
 			);
 			path = Macaw;
 			sourceTree = "<group>";
@@ -298,6 +305,7 @@
 			children = (
 				FB2FC385245C96A2005AD169 /* CustomViewController.swift */,
 				FBD0EA19245F5785005877FB /* BarChartViewController.swift */,
+				FB6B45D6245F8FC900B9AD96 /* CircularPieChartViewController.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -325,6 +333,7 @@
 			children = (
 				FBE5CA0D245BC2CD001D8C03 /* CustomViewController.storyboard */,
 				FBD0EA17245F56C0005877FB /* BarChart.storyboard */,
+				FB6B45D8245F8FE100B9AD96 /* CircularPieChart.storyboard */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -739,6 +748,7 @@
 				FBFA6D6B24513F71000A4592 /* Settings.storyboard in Resources */,
 				FBE338F524521DC800B56A53 /* Onboarding.storyboard in Resources */,
 				FBD0EA18245F56C0005877FB /* BarChart.storyboard in Resources */,
+				FB6B45D9245F8FE100B9AD96 /* CircularPieChart.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -987,6 +997,7 @@
 				FB6DA845244E73360086A030 /* UITabBarViewController.swift in Sources */,
 				FB6DA843244E716C0086A030 /* Constants.swift in Sources */,
 				FB2FC38D245CC067005AD169 /* HealthBookChildVC.swift in Sources */,
+				FB6B45D7245F8FC900B9AD96 /* CircularPieChartViewController.swift in Sources */,
 				FB2FC384245C9631005AD169 /* SettingsViewController.swift in Sources */,
 				FBB3D5AE24551F25007DE952 /* Analytics.swift in Sources */,
 				FB2FC391245CC7FE005AD169 /* ViewController.swift in Sources */,
@@ -1001,6 +1012,7 @@
 				FB3EC3BE24561DB2003318DF /* User.swift in Sources */,
 				FB2FC38F245CC079005AD169 /* SettingsChildVC.swift in Sources */,
 				FBE338FB245239D500B56A53 /* Settings.swift in Sources */,
+				FB6B45D5245F8F8D00B9AD96 /* CircularPieChart.swift in Sources */,
 				FBD385E0245362C900983106 /* FirstOnboardingViewController.swift in Sources */,
 				FB2FC388245C9B26005AD169 /* HealthBookViewController.swift in Sources */,
 				FB2FC386245C96A2005AD169 /* CustomViewController.swift in Sources */,

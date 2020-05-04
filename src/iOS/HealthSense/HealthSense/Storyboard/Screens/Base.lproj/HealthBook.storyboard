@@ -15,35 +15,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37z-g3-aR9">
-                                <rect key="frame" x="164" y="433" width="86" height="30"/>
-                                <state key="normal" title="Macaw View"/>
-                                <connections>
-                                    <action selector="macawViewButton:" destination="RYs-eV-hX0" eventType="touchUpInside" id="mec-cE-BO7"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LcV-Dl-iTB">
-                                <rect key="frame" x="87" y="150" width="240" height="128"/>
+                                <rect key="frame" x="20" y="138" width="374" height="150"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="qw1-7z-bkP"/>
+                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pht-1T-NHG">
-                                <rect key="frame" x="175" y="537" width="64" height="30"/>
-                                <state key="normal" title="Welcome"/>
-                                <connections>
-                                    <action selector="welcomeButton:" destination="RYs-eV-hX0" eventType="touchUpInside" id="a37-Dw-sBp"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="b1a-va-rdg">
+                                <rect key="frame" x="164" y="332" width="86" height="165"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37z-g3-aR9">
+                                        <rect key="frame" x="0.0" y="0.0" width="86" height="30"/>
+                                        <state key="normal" title="Macaw View"/>
+                                        <connections>
+                                            <action selector="macawViewButton:" destination="RYs-eV-hX0" eventType="touchUpInside" id="mec-cE-BO7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pht-1T-NHG">
+                                        <rect key="frame" x="0.0" y="45" width="86" height="30"/>
+                                        <state key="normal" title="Welcome"/>
+                                        <connections>
+                                            <action selector="welcomeButton:" destination="RYs-eV-hX0" eventType="touchUpInside" id="a37-Dw-sBp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQO-II-QbG">
+                                        <rect key="frame" x="0.0" y="90" width="86" height="30"/>
+                                        <state key="normal" title="Bar Chart"/>
+                                        <connections>
+                                            <action selector="barChartButton:" destination="RYs-eV-hX0" eventType="touchUpInside" id="tmE-XM-U3D"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyO-jw-hfB">
+                                        <rect key="frame" x="0.0" y="135" width="86" height="30"/>
+                                        <state key="normal" title="Pie Chart"/>
+                                        <connections>
+                                            <action selector="pieChartButton:" destination="RYs-eV-hX0" eventType="touchUpInside" id="SpA-WD-RYm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="37z-g3-aR9" firstAttribute="centerY" secondItem="4bS-Se-KoL" secondAttribute="centerY" id="8Te-25-qXY"/>
-                            <constraint firstItem="pht-1T-NHG" firstAttribute="top" secondItem="37z-g3-aR9" secondAttribute="bottom" constant="74" id="9mA-dX-ZbD"/>
-                            <constraint firstItem="37z-g3-aR9" firstAttribute="centerX" secondItem="4bS-Se-KoL" secondAttribute="centerX" id="CXW-R9-CMK"/>
-                            <constraint firstItem="LcV-Dl-iTB" firstAttribute="leading" secondItem="omz-db-0K3" secondAttribute="leading" constant="87" id="FqA-6d-wGY"/>
-                            <constraint firstAttribute="bottom" secondItem="LcV-Dl-iTB" secondAttribute="bottom" constant="618" id="Usd-si-iZ0"/>
-                            <constraint firstItem="LcV-Dl-iTB" firstAttribute="top" secondItem="omz-db-0K3" secondAttribute="top" constant="62" id="fd6-4c-6fG"/>
-                            <constraint firstItem="37z-g3-aR9" firstAttribute="centerX" secondItem="pht-1T-NHG" secondAttribute="centerX" id="kKv-kf-frL"/>
-                            <constraint firstItem="37z-g3-aR9" firstAttribute="centerX" secondItem="LcV-Dl-iTB" secondAttribute="centerX" id="sUJ-Hc-NfF"/>
+                            <constraint firstItem="b1a-va-rdg" firstAttribute="centerX" secondItem="4bS-Se-KoL" secondAttribute="centerX" id="97s-pi-zve"/>
+                            <constraint firstItem="LcV-Dl-iTB" firstAttribute="top" secondItem="omz-db-0K3" secondAttribute="top" constant="50" id="Iob-OC-GLe"/>
+                            <constraint firstItem="LcV-Dl-iTB" firstAttribute="leading" secondItem="omz-db-0K3" secondAttribute="leading" constant="20" id="aFe-9n-BeR"/>
+                            <constraint firstItem="omz-db-0K3" firstAttribute="trailing" secondItem="LcV-Dl-iTB" secondAttribute="trailing" constant="20" id="h7e-1v-qhE"/>
+                            <constraint firstItem="b1a-va-rdg" firstAttribute="top" secondItem="LcV-Dl-iTB" secondAttribute="bottom" constant="44" id="mQf-Y8-owA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="omz-db-0K3"/>
                     </view>
