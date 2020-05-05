@@ -22,6 +22,7 @@ class HealthBookViewController: UIViewController {
     @IBAction func macawViewButton(_ sender: Any) {
          setupMacawStoryboard() // Calling Macaw VC
 //         setupUI()
+       
     }
     
     
@@ -30,6 +31,19 @@ class HealthBookViewController: UIViewController {
         performSegue(withIdentifier: "goToOnboarding", sender: self)
     }
     
+    
+    @IBAction func barChartButton(_ sender: Any) {
+         print("Bar button pressed")
+         navigateToBarChartVC() // Calling Macaw BarChart
+        
+    }
+    
+    @IBAction func pieChartButton(_ sender: Any) {
+        print("Pie button pressed")
+        navigateToPieChartVC() // Calling Macaw PieChart
+//        navigateToPieChartWholeView()
+        
+    }
     
     
     func setupUI() {
@@ -45,6 +59,43 @@ class HealthBookViewController: UIViewController {
         viewC.modalPresentationStyle = .fullScreen
         self.present(viewC, animated: true)
     }
+    
+    // function for programmatically navigating to BarChart view controller storyboard
+    func navigateToBarChartVC() {
+        // Storyboard Invocation without any Identifier
+        let barChartStoryboard = UIStoryboard(name: "BarChart", bundle: nil)
+        let barChartVC = barChartStoryboard.instantiateInitialViewController()
+        barChartVC?.modalPresentationStyle = .fullScreen
+        if let barchart = barChartVC {
+            self.present(barchart, animated: true)
+        }
+        
+    }
+    
+    // function for programmatically navigating to BarChart view controller storyboard
+    func navigateToPieChartVC() {
+        // Storyboard Invocation without any Identifier
+        let pieChartStoryboard = UIStoryboard(name: "CircularPieChart", bundle: nil)
+        let pieChartVC = pieChartStoryboard.instantiateInitialViewController()
+        pieChartVC?.modalPresentationStyle = .fullScreen
+        if let piechart = pieChartVC {
+            self.present(piechart, animated: true)
+        }
+        
+    }
+    
+    
+    // function for programmatically navigating to BarChart view controller storyboard
+    func navigateToPieChartWholeView() {
+        // Storyboard Invocation without any Identifier
+        let pieChartStoryboard = UIStoryboard(name: "CircularPieChart", bundle: nil)
+        
+        let viewC = pieChartStoryboard.instantiateViewController(identifier: "PieViewController")
+        viewC.modalPresentationStyle = .fullScreen
+        self.present(viewC, animated: true)
+        
+    }
+    
     
     
     // MARK: - Navigation

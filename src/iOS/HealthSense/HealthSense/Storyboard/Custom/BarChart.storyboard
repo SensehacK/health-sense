@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S0l-rG-nut">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bar Chart View Controller-->
+        <scene sceneID="Uo7-fm-87l">
+            <objects>
+                <viewController id="S0l-rG-nut" customClass="BarChartViewController" customModule="HealthSense" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8JC-zQ-nR7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wPE-j6-fdT" customClass="BarChart" customModule="HealthSense" customModuleProvider="target">
+                                <rect key="frame" x="20" y="144" width="374" height="350"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="lAd-U7-Bh3"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bar Chart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6WF-VR-7MF">
+                                <rect key="frame" x="169.5" y="69" width="75" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="5rF-Xi-Ul3"/>
+                                    <constraint firstAttribute="height" constant="25" id="OCw-YH-3wR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R48-Z7-TIE">
+                                <rect key="frame" x="353" y="44" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="doneButton:" destination="S0l-rG-nut" eventType="touchUpInside" id="rfm-ak-k36"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxK-Qj-tPV">
+                                <rect key="frame" x="184" y="529" width="47" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reload"/>
+                                <connections>
+                                    <action selector="reloadView:" destination="S0l-rG-nut" eventType="touchUpInside" id="o1l-Y3-Y8E"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wPE-j6-fdT" firstAttribute="leading" secondItem="UQQ-uz-Ykz" secondAttribute="leading" constant="20" id="NCv-kI-WOE"/>
+                            <constraint firstItem="6WF-VR-7MF" firstAttribute="top" secondItem="UQQ-uz-Ykz" secondAttribute="top" constant="25" id="RrJ-WK-NbO"/>
+                            <constraint firstItem="6WF-VR-7MF" firstAttribute="centerX" secondItem="8JC-zQ-nR7" secondAttribute="centerX" id="Ybv-BQ-EIe"/>
+                            <constraint firstItem="UQQ-uz-Ykz" firstAttribute="trailing" secondItem="wPE-j6-fdT" secondAttribute="trailing" constant="20" id="smT-lK-TD1"/>
+                            <constraint firstItem="wPE-j6-fdT" firstAttribute="top" secondItem="6WF-VR-7MF" secondAttribute="bottom" constant="50" id="yh5-4K-ELS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UQQ-uz-Ykz"/>
+                    </view>
+                    <connections>
+                        <outlet property="barChartView" destination="wPE-j6-fdT" id="g09-64-RgD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TEH-d3-zYb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="39" y="-4"/>
+        </scene>
+    </scenes>
+</document>
