@@ -25,6 +25,7 @@ class ReadProfile {
         } catch {
            print("Error in catching Date of Birth.")
         }
+        UserStruct.age = age
         return age ?? 0
     }
     
@@ -64,6 +65,7 @@ class ReadProfile {
             default: break
             }
         }
+        UserStruct.blood = bloodTypeText
         return bloodTypeText
     }
     
@@ -91,6 +93,7 @@ class ReadProfile {
         default:
             break
         }
+        UserStruct.gender = gender
         return gender ?? "Unknown"
     }
 

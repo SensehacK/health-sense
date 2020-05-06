@@ -25,6 +25,7 @@ class SummaryViewController: UIViewController {
     // Variables declaration
     let user = UserStruct.displayName ?? "Sensehack"
     let healthKitManager = HealthKitManager.sharedInstance
+    var profileMObj: ProfileM?
     
     fileprivate func initialSetup() {
         // Debug Logs
@@ -126,10 +127,20 @@ class SummaryViewController: UIViewController {
          if segue.identifier == "SummaryChildSegue" {
             print("Showing Summary Child Segue")
             // Object data passing to child view controller
-        
+            
+            self.profileMObj = ProfileM(
+                firstN: UserStruct.firstName ?? "Anon",
+                lastN: UserStruct.lastName ?? "Anon",
+                age: UserStruct.age ?? 0,
+                blood: UserStruct.blood ?? "Unknown",
+                gender: UserStruct.gender ?? "Unknown",
+                weight: UserStruct.weight ?? 0,
+                height: UserStruct.height ?? 0)
+            
             if let destVC = (segue.destination as? SummaryChildVC) {
                 print("In segue destination")
                 destVC.titleObj  = "Kautilya"
+                destVC.profileMObj = self.profileMObj
             }
         }
     }

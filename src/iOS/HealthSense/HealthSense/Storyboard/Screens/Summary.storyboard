@@ -231,6 +231,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="3d3-Qy-5KF"/>
                     <connections>
+                        <outlet property="label1" destination="lPf-vX-Fag" id="i97-e2-rrR"/>
+                        <outlet property="label2" destination="oLi-CJ-c5g" id="tRT-1y-kZy"/>
+                        <outlet property="label3" destination="IXz-jU-brg" id="690-c0-taA"/>
+                        <outlet property="textField1" destination="FG0-Xm-dGw" id="LdP-rj-dO9"/>
+                        <outlet property="textField2" destination="pu7-wt-6JI" id="ScV-Q0-XuE"/>
+                        <outlet property="textField3" destination="6OA-X8-UHZ" id="YG5-bI-Xoe"/>
                         <outlet property="titleLabel" destination="XGs-f0-r1e" id="9iF-eW-hqm"/>
                         <outlet property="verticalStackView" destination="qsM-PQ-Bzy" id="292-Dd-A4h"/>
                     </connections>

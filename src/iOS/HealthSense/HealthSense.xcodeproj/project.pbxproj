@@ -52,6 +52,7 @@
 		FBB3D5AE24551F25007DE952 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3D5AD24551F25007DE952 /* Analytics.swift */; };
 		FBC3EE91242C29FE006DCE06 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3EE90242C29FE006DCE06 /* HealthManager.swift */; };
 		FBC3EE92242C2A04006DCE06 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3EE90242C29FE006DCE06 /* HealthManager.swift */; };
+		FBCB32812460E0A8002369DD /* ProfileM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCB32802460E0A8002369DD /* ProfileM.swift */; };
 		FBD0EA14245F449E005877FB /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD0EA13245F449E005877FB /* BarChart.swift */; };
 		FBD0EA16245F4516005877FB /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD0EA15245F4516005877FB /* DummyData.swift */; };
 		FBD0EA18245F56C0005877FB /* BarChart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD0EA17245F56C0005877FB /* BarChart.storyboard */; };
@@ -190,6 +191,7 @@
 		FBA35B39244CAAAF00A6639A /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		FBB3D5AD24551F25007DE952 /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
 		FBC3EE90242C29FE006DCE06 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HealthManager.swift; path = HealthSense/HealthManager.swift; sourceTree = SOURCE_ROOT; };
+		FBCB32802460E0A8002369DD /* ProfileM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileM.swift; sourceTree = "<group>"; };
 		FBD0EA13245F449E005877FB /* BarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
 		FBD0EA15245F4516005877FB /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		FBD0EA17245F56C0005877FB /* BarChart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BarChart.storyboard; sourceTree = "<group>"; };
@@ -483,6 +485,7 @@
 			isa = PBXGroup;
 			children = (
 				FBD0EA15245F4516005877FB /* DummyData.swift */,
+				FBCB32802460E0A8002369DD /* ProfileM.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1002,6 +1005,7 @@
 				FBB3D5AE24551F25007DE952 /* Analytics.swift in Sources */,
 				FB2FC391245CC7FE005AD169 /* ViewController.swift in Sources */,
 				FB51DBC7242A789100FD0B7B /* AppDelegate.swift in Sources */,
+				FBCB32812460E0A8002369DD /* ProfileM.swift in Sources */,
 				FBD0EA14245F449E005877FB /* BarChart.swift in Sources */,
 				FB2FC37A245C9128005AD169 /* SummaryViewController.swift in Sources */,
 				FB3EC3C1245620C3003318DF /* ReadProfile.swift in Sources */,

@@ -13,15 +13,34 @@ class SummaryChildVC: UIViewController {
     @IBOutlet weak var verticalStackView: UIStackView!
     @IBOutlet weak var titleLabel: UILabel!
     
-    var titleObj: String?
     
+    @IBOutlet weak var label1: UILabel!
+    @IBOutlet weak var label2: UILabel!
+    @IBOutlet weak var label3: UILabel!
+    
+    
+    @IBOutlet weak var textField1: UITextField!
+    @IBOutlet weak var textField2: UITextField!
+    @IBOutlet weak var textField3: UITextField!
+    
+    
+    var titleObj: String?
+    var profileMObj: ProfileM?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print("#### SummaryChildVC")
-        titleLabel.text = titleObj ?? "Summary"
+        setupUI()
+        
     }
-    
+
+    // func to setup UI with programmatic text on launch
+    func setupUI() {
+        titleLabel.text = titleObj ?? "Summary"
+        print("Profile name \(String(describing: self.profileMObj?.firstName))")
+        label1.text = "First Name"
+        textField1.text = self.profileMObj?.firstName
+    }
 
     /*
     // MARK: - Navigation
