@@ -21,8 +21,6 @@ class CircularPieChartViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-//        circularPieView.playAnimation()
     }
     
     @IBAction func doneButton(_ sender: Any) {

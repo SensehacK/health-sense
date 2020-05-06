@@ -47,109 +47,47 @@ class CircularPieChart: MacawView {
     
     required init?(coder aDecoder: NSCoder) {
 
-        super.init(node: CircularPieChart.createChart() , coder: aDecoder)
+        super.init(node: CircularPieChart.createChart(), coder: aDecoder)
         backgroundColor = .clear
     }
     
     
     private static func createChart() -> Group {
-        let shape1 = Shape(
-            form: Arc(
-                ellipse: Ellipse(cx: 0, cy: 0, rx: self.radius[0], ry: self.radius[0]),
-                shift: 5.0,
-                extent: self.extent[0]),
-            stroke: Stroke(
-                fill: gradientColors[0],
-                width: 19,
-                cap: .round
-        ))
-        let shape2 = Shape(
-            form: Arc(
-                ellipse: Ellipse(cx: 0, cy: 0, rx: self.radius[1], ry: self.radius[1]),
-                shift: 5.0,
-                extent: self.extent[1]),
-            stroke: Stroke(
-                fill: gradientColors[1],
-                width: 19,
-                cap: .round
-        ))
-        
-        let shape3 = Shape(
-            form: Arc(
-                ellipse: Ellipse(cx: 0, cy: 0, rx: self.radius[2], ry: self.radius[2]),
-                shift: 5.0,
-                extent: self.extent[2]),
-            stroke: Stroke(
-                fill: gradientColors[2],
-                width: 19,
-                cap: .round
-        ))
-        
-        
-        let items: [Node] = createScene() + [shape1, shape2, shape3]
+        // Combining Nodes to create Node array which would be assigned to Group Scene
+        let items: [Node] = createBackgroundScene() + createArcWithoutAnimations()
         return Group(contents: items, place: .identity)
     }
     
-    private func createArc(_ time: Double, _ index: Int) -> Shape {
-        return Shape(
-            form: Arc(
-                ellipse: Ellipse(cx: 0, cy: 0, rx: CircularPieChart.radius[index], ry: CircularPieChart.radius[index]),
-                shift: 5.0,
-                extent: CircularPieChart.extent[index] * time),
-            stroke: Stroke(
-                fill: CircularPieChart.gradientColors[index],
-                width: 19,
-                cap: .round
-            )
-        )
+    private static func createArcWithoutAnimations() -> [Node] {
+        var newNodes: [Node] = []
+        for index in 0...2 {
+            let arc = Shape(
+                form: Arc(
+                    ellipse: Ellipse(cx: 0, cy: 0, rx: self.radius[index], ry: self.radius[index]),
+                    shift: 5.0,
+                    extent: self.extent[index]),
+                stroke: Stroke(
+                    fill: gradientColors[index],
+                    width: 19,
+                    cap: .round
+            ))
+            newNodes.append(arc)
+        }
+        return newNodes
     }
     
-
-    private static func createScene() -> [Node] {
-//        viewCenterX = viewCenterX window.
-        var newNodes: [Node]        = []
-        let rootNode = Group(place: .move(dx: viewCenterX + 15, dy: 150))
-        
+    
+    private static func createBackgroundScene() -> [Node] {
+        var newNodes: [Node] = []
         for index in 0...2 {
             let circle = Shape(
                 form: Circle(cx: 0, cy: 0, r: CircularPieChart.radius[index]),
                 stroke: Stroke(fill: backgroundColors[index], width: 19)
             )
             newNodes.append(circle)
-            rootNode.contents.append(circle)
         }
-        
         return newNodes
-        /*
-        
-        animationGroup = Group()
-//        rootNode.contents.append(animationGroup)
-        
-        self.node = [rootNode].group()
-        self.backgroundColor = UIColor(cgColor: Color(val: 0x4a2e7d).toCG())
-         */
     }
-    
-    private func createAnimations() {
-        animations.removeAll()
-        animations.append(
-            animationGroup.contentsVar.animation({ time in
-                var shapes1: [Shape] = []
-                for index in 0...2 {
-                    shapes1.append(self.createArc(time, index))
-                }
-                return  shapes1
-            }, during: 1).easing(Easing.easeInOut)
-        )
-    }
-    
-    open func playAnimation() {
-        CircularPieChart.createScene()
-        createAnimations()
-        animations.forEach {
-            $0.play()
-        }
-    }
-    
+
     
 }
