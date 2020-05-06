@@ -8,6 +8,7 @@
 
 import Foundation
 import HealthKit
+import UIKit
 
 class ReadProfile {
     
@@ -95,6 +96,17 @@ class ReadProfile {
         }
         UserStruct.gender = gender
         return gender ?? "Unknown"
+    }
+    
+    // func for getting Device name
+    func getProfileName() -> String {
+        var name = UIDevice.current.name
+        let stringStripArray = ["'s", "`s", "’s", "’s iphone", "iphone", "’s phone", "ipad", "ipod", "ipod touch", "phone"]
+        for string in stringStripArray {
+            name =  name.replacingOccurrences(of: string, with: "", options: .caseInsensitive, range: nil)
+        }
+        UserStruct.firstName = name
+        return name
     }
 
 
