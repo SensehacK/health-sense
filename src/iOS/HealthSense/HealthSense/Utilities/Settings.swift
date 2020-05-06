@@ -42,6 +42,7 @@ struct SettingsStruct {
     static var isHealthkitAccess = false
     static var cloudDataSharing = false
     static var defaultScreen = "welcome"
+    static var isRandomUserName = true
     
 }
 

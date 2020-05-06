@@ -108,6 +108,16 @@ class ReadProfile {
         UserStruct.firstName = name
         return name
     }
+    
+    
+    // func for getting Device name
+    func getRandomUserName() -> String {
+        print("############ \(Int.random(in: 0..<7)) | \(Int.random(in: 0..<7))")
+        let randomUser = HSUserName.kUserNameArr[Int.random(in: 0..<7)][Int.random(in: 0..<7)]
+        print("Random User Name: \(randomUser)")
+        return randomUser
+        
+    }
 
 
 }

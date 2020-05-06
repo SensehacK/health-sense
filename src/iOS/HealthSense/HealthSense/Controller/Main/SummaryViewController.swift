@@ -95,6 +95,18 @@ class SummaryViewController: UIViewController {
         let userDeviceName = ReadProfile.sharedInstance.getProfileName()
         userTitle.text = "Welcome \(userDeviceName)"
         
+        
+        if SettingsStruct.isRandomUserName {
+            // Profile preselected array Random user name generator function call
+            UserStruct.displayName = ReadProfile.sharedInstance.getRandomUserName()
+        } else {
+            UserStruct.displayName = ReadProfile.sharedInstance.getProfileName()
+        }
+        if let displayName = UserStruct.displayName {
+            userTitle.text = "Welcome \(displayName)"
+        }
+        
+        
         // Body Weight function call
         let helperObj = Helper()
         helperObj.readBodyMassWithComp { (quantity, error) in
