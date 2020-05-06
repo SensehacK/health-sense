@@ -114,4 +114,15 @@ enum HSUserDefaults: String {
     // User Defaults
     case kFirstLaunch = "FirstLaunch"
     case kAppLaunch = "AppOpen"
+struct HSUserName {
+    // Username strings
+    
+    static let kUserName1 = ["Goku", "Luffy", "Ichigo", "L", "Zoro", "Spike", "Edward", "Inuyasha", "Eren", "Saitama"]
+    static let kUserName2 = ["Alicia Keys", "Bruno Mars", "Daft Punk", "Ed Sheeran", "Imagine Dragons", "Juicy J", "Queen", "The Chainsmokers", "The Rolling Stones", "Tyga"]
+    static let kUserName3 = ["Basenji Dog", "Bombay", "Carolina Dog", "Chow Chow", "Dog", "Fire-Bellied Toad", "Gar", "Giant Clam", "Saint Bernard", "Shrimp"]
+    static let kUserName4 = ["Clauncher", "Druddigon", "Ferrothorn", "Gloom", "Hawlucha", "Hippopotas", "Honchkrow", "Leafeon", "Porygon-Z", "Wurmple"]
+    static let kUserName5 = ["Green Arrow", "Jean Grey", "Kitty Pryde", "Raphael", "The Atom", "The Tick", "Wally West (The Flash)", "Wolverine"]
+    static let kUserName6 = ["Bill", "Warren", "Jeff", "Steve", "Bill", "Warren", "Jeff", "Steve"]
+    static let kUserName7 = ["Marshall", "J.Cole", "Kendrick", "Dr. Dre", "Notorious BIG", "Tupac", "50 Cent", "Snoop" ]
+    static let kUserNameArr = [kUserName1, kUserName2, kUserName3, kUserName4, kUserName5, kUserName6, kUserName7]
 }
