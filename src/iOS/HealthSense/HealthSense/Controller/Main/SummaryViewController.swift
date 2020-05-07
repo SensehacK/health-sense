@@ -39,8 +39,8 @@ class SummaryViewController: UIViewController {
         print("Dark mode e after  ? \(SettingsStruct.isDarkMode)")
         
         // Setting some details to Constant structures
-        SettingsStruct.isDarkMode = true
-        UserStruct.displayName = user
+        //SettingsStruct.isDarkMode = true
+        //UserStruct.displayName = user
     }
     
 
