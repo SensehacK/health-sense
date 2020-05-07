@@ -31,6 +31,7 @@ class Settings: NSObject {
 }
 
 
+
 struct SettingsStruct {
     // App Settings
     static var isDarkMode = false
@@ -42,7 +43,9 @@ struct SettingsStruct {
     static var isHealthkitAccess = false
     static var cloudDataSharing = false
     static var defaultScreen = "welcome"
-    
+    static var isRandomUserName = false
+    static var isSecurity = false
+
 }
 
 struct AnalyticsStruct {
