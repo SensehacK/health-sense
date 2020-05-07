@@ -30,11 +30,14 @@ class ThirdOnboardingViewController: UIViewController {
         
         print("Button continue pressed ThirdOnboardingVC")
         
+        if SettingsStruct.defaultScreen == HSRouter.kWelcome.rawValue {
+            SettingsStruct.defaultScreen = HSRouter.kSummary.rawValue
+            let onboardStoryboard = UIStoryboard(name: HSStoryboard.kHomeVC.rawValue, bundle: nil)
+            let viewC = onboardStoryboard.instantiateViewController(identifier: HSCustomViewController.kTabBarVC.rawValue)
             print("continueBtnPressed ")
             viewC.modalPresentationStyle = .fullScreen
             self.present(viewC, animated: true)
-            
-        } else if SettingsStruct.defaultScreen == "default" {
+        } else if SettingsStruct.defaultScreen == HSRouter.kSummary.rawValue {
             self.dismiss(animated: true, completion: nil)
         }
     }
