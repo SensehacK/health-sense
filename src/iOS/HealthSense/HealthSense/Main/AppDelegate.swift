@@ -16,19 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Override point for customization after application launch.
         print("#### App Delegate")
-        
-        if UserDefaults.standard.bool(forKey: "FirstLaunch") {
-            print("Default launch")
-            Settings.sharedInstance.appRestoreSettings()
-        } else {
-            print("First launch")
-            Settings.sharedInstance.setAppSettings()
-        }
-        
-        // Calling Analytics class
-        // TODO: Could be moved to lazy class invokation after the initial loading of Screens are done.
-        Analytics().setup()
-        
         return true
     }
 
