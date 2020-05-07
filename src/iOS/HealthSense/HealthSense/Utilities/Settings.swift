@@ -45,7 +45,6 @@ struct SettingsStruct {
     static var defaultScreen = "welcome"
     static var isRandomUserName = false
     static var isSecurity = false
-
 }
 
 struct AnalyticsStruct {

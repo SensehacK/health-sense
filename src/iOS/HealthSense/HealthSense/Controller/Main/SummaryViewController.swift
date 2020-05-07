@@ -91,6 +91,22 @@ class SummaryViewController: UIViewController {
         let gender = ReadProfile.sharedInstance.getGender()
         chartLabel.text = "Gender: \(gender)"
         
+        // Profile Device Name function call
+        let userDeviceName = ReadProfile.sharedInstance.getProfileName()
+        userTitle.text = "Welcome \(userDeviceName)"
+        
+        
+        if SettingsStruct.isRandomUserName {
+            // Profile preselected array Random user name generator function call
+            UserStruct.displayName = ReadProfile.sharedInstance.getRandomUserName()
+        } else {
+            UserStruct.displayName = ReadProfile.sharedInstance.getProfileName()
+        }
+        if let displayName = UserStruct.displayName {
+            userTitle.text = "Welcome \(displayName)"
+        }
+        
+        
         // Body Weight function call
         let helperObj = Helper()
         helperObj.readBodyMassWithComp { (quantity, error) in
