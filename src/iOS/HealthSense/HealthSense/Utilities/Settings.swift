@@ -82,6 +82,11 @@ class Settings: NSObject {
     
 }
 
+enum HSRouter: String {
+    // Router switch
+    case kDefault = "default"
+    case kSummary = "summary"
+    case kWelcome = "welcome"
     
 }
 

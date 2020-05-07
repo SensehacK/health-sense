@@ -18,25 +18,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("#### App Delegate")
         
         if UserDefaults.standard.bool(forKey: "FirstLaunch") {
-            
             print("Default launch")
             Settings.sharedInstance.appRestoreSettings()
-//            SettingsStruct.defaultScreen = "default"
-            
         } else {
-            
             print("First launch")
             Settings.sharedInstance.setAppSettings()
-            /*
-            SettingsStruct.defaultScreen = "welcome"
-            UserDefaults.standard.set(true, forKey: "FirstLaunch")
-            UserDefaults.standard.set(1, forKey: "AppOpen")
-            */
         }
         
         // Calling Analytics class
         // TODO: Could be moved to lazy class invokation after the initial loading of Screens are done.
-        Analytics()
+        Analytics().setup()
         
         return true
     }

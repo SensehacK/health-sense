@@ -71,7 +71,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="macawViewBtn" destination="37z-g3-aR9" id="PDh-K1-lVL"/>
-                        <segue destination="JGY-DW-hhR" kind="presentation" identifier="goToOnboarding" modalPresentationStyle="fullScreen" id="oUT-bR-RZq"/>
+                        <segue destination="JGY-DW-hhR" kind="presentation" identifier="GoToOnboarding" modalPresentationStyle="fullScreen" id="oUT-bR-RZq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xOo-fd-YpI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

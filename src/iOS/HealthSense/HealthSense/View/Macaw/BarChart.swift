@@ -18,13 +18,6 @@ class BarChart: MacawView {
     static let xAxisWidth: Double               = 300
     static let yAxisWidth: Double               = 330
     
-    /* Small observation. Of animations Had to resort to using Double as my genius ass brain couldn't comprehend what went wrong when 100/200 => which results in 0.5
-     but as the value type was still Integer, it used to discard the .5 value which was crucial.
-     Thus Double data type was needed and my scenario of maxValue was lesser than Max Height defination.
-     Thats why, With using debugger thank god I could verify the data why it was zero
-     but still with limited understanding my puny brain (didn't have lunch / food since 7 hours now working on few different things) couldn't catch it right away.
-     About 7 mins of realization then it clicked with me.
-    */
     
     // Math
     static let dataDivisor              = maxValue/maxValueLineHeight
@@ -82,7 +75,6 @@ class BarChart: MacawView {
             print("Printing out adjustedData:  \(adjustedData[index-1]) ")
         }
         
-        
         // Line Outliner
         let xAxis = Line(x1: 0, y1: chartBaseY, x2: lineWidth, y2: chartBaseY).stroke(fill: Color.white.with(a: 0.25))
         newNodes.append(xAxis)
@@ -94,13 +86,6 @@ class BarChart: MacawView {
         let fillLinearGradient = LinearGradient(degree: 90, from: Color(val: 0xff4704), to: Color(val: 0xff4704).with(a: 0.33))
         let items = adjustedData.map { _ in Group() }
         
-//        for index in 1...adjustedData.count {
-//            let rectangle = Rect(x: Double(index) * 50 + 25, y: 200, w: 30, h: adjustedData[index-1])
-//            rectangle.fill(with: fillLinearGradient)
-//        }
-        
-        ///*
-        
         animations = items.enumerated().map { (index: Int, item: Group) in
             item.contentsVar.animation(delay: Double(index) * 0.1) { time in
                 // Calculate rectangle height for that specific animation frame HeightTotal = 50 (f1 -> h(10),f2 -> h(20),f3 -> h(30) ....) till 0.1 -> 1.0
@@ -110,7 +95,6 @@ class BarChart: MacawView {
                 return [rectangle.fill(with: fillLinearGradient)]
             }
         }
- //*/
         return items.group()
     }
     

@@ -41,17 +41,20 @@ struct HSHealthKit {
 
 
 // MARK: View Enumerations
-
 enum HSStoryboard: String {
     // Custom VCs
-    case kSummary = "SummaryViewController"
-    case kHealthVC = "HealthBookViewController"
-    case kSettingsVC = "SettingsViewController"
-    case kOnboardingVC = "OnboardingViewController"
+    case kSummary = "Summary"
+    case kHealthVC = "HealthBook"
+    case kSettingsVC = "Settings"
+    case kOnboardingVC = "Onboarding"
     case kLaunchVC = "LaunchScreen"
-    case kHomeVC = "ViewController"
-    case kTabBarVC = "UITabBarViewController"
+    case kHomeVC = "Main"
+    case kTabBarVC = "UITabBar"
+    case kCustomVC = "Custom"
+    case kBarChart = "BarChart"
+    case kCircularPieChart = "CircularPieChart"
 }
+
 
 enum HSCustomViewController: String {
     // Custom VCs
@@ -62,6 +65,9 @@ enum HSCustomViewController: String {
     case kLaunchVC = "LaunchScreen"
     case kHomeVC = "ViewController"
     case kTabBarVC = "UITabBarViewController"
+    case kCustomVC = "CustomViewController"
+    case kCircularPieVC = "CircularPieChartViewController"
+    case kBarChartVC = "BarChartViewController"
 }
 
 enum HSOnboardViewController: String {
@@ -79,8 +85,17 @@ enum HSMainChildVC: String {
 }
 
 
-// MARK: Network Enumerations
+enum HSStoryboardSegue: String {
+    // Storyboard Segues
+    case kSummaryS = "SummaryChildSegue"
+    case kHealthS = "HealthChildSegue"
+    case kSettingsS = "SettingsChildSegue"
+    case kOnboardingS = "GoToOnboarding"
+    case kOnboardingViewS = "onboarding"
+}
 
+
+// MARK: Network Enumerations
 enum HSHttpStatusCode: Int {
     // HTTPS response Codes
     case kStatusSuccess              = 200

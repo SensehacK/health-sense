@@ -30,10 +30,6 @@ class ThirdOnboardingViewController: UIViewController {
         
         print("Button continue pressed ThirdOnboardingVC")
         
-        if SettingsStruct.defaultScreen == "welcome" {
-            SettingsStruct.defaultScreen = "default"
-            let onboardStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let viewC = onboardStoryboard.instantiateViewController(identifier: "UITabBarViewController")
             print("continueBtnPressed ")
             viewC.modalPresentationStyle = .fullScreen
             self.present(viewC, animated: true)

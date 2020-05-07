@@ -13,8 +13,7 @@ class OnboardingViewController: UIPageViewController, UIPageViewControllerDataSo
     
     lazy var viewControllerList: [UIViewController] = {
        
-        let storyB = UIStoryboard(name: "Onboarding", bundle: nil)
-//        let vc1 = storyB.instantiateViewController(withIdentifier: "FirstOnboardingVC")
+        let storyB = UIStoryboard(name: HSStoryboard.kOnboardingVC.rawValue, bundle: nil)
         let vc1 = storyB.instantiateViewController(withIdentifier: HSOnboardViewController.kFirstVC.rawValue)
         let vc2 = storyB.instantiateViewController(withIdentifier: HSOnboardViewController.kSecondVC.rawValue)
         let vc3 = storyB.instantiateViewController(withIdentifier: HSOnboardViewController.kThirdVC.rawValue)

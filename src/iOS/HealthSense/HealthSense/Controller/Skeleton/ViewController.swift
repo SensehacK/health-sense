@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         // Dynamic UI Screen Presenter
-        if SettingsStruct.defaultScreen == "default" {
+        if SettingsStruct.defaultScreen == HSRouter.kSummary.rawValue {
             print("Default screen flow")
             let onboardStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let viewC = onboardStoryboard.instantiateViewController(identifier: "UITabBarViewController")

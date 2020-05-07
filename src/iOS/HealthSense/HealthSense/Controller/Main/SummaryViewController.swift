@@ -30,29 +30,17 @@ class SummaryViewController: UIViewController {
     fileprivate func initialSetup() {
         // Debug Logs
         print("##### SummaryViewController VDL")
-
         print("Display Name \(UserStruct.displayName ?? "Kautilya")")
-        print("Base URL", Settings.sharedInstance)
         print("Singleton", Settings.sharedInstance.appVersion)
-        print("Dark mode s ? \(SettingsStruct.isDarkMode)")
-        print("Settings Static variables.", Settings.saf)
-        print("Dark mode e after  ? \(SettingsStruct.isDarkMode)")
-        
-        // Setting some details to Constant structures
-        //SettingsStruct.isDarkMode = true
-        //UserStruct.displayName = user
     }
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // func for small init setup
         initialSetup()
-        
         // Healthkit permissions
         healthAuthorization()
-        
         // Profile data calls
         readProfileData()
     }
@@ -91,17 +79,15 @@ class SummaryViewController: UIViewController {
         let gender = ReadProfile.sharedInstance.getGender()
         chartLabel.text = "Gender: \(gender)"
         
-        // Profile Device Name function call
-        let userDeviceName = ReadProfile.sharedInstance.getProfileName()
-        userTitle.text = "Welcome \(userDeviceName)"
-        
-        
+        // Profile Device Name logic
         if SettingsStruct.isRandomUserName {
             // Profile preselected array Random user name generator function call
             UserStruct.displayName = ReadProfile.sharedInstance.getRandomUserName()
         } else {
+            // Profile Device Name function call
             UserStruct.displayName = ReadProfile.sharedInstance.getProfileName()
         }
+        
         if let displayName = UserStruct.displayName {
             userTitle.text = "Welcome \(displayName)"
         }
@@ -120,6 +106,7 @@ class SummaryViewController: UIViewController {
             }
         }
         
+        // Body Height function call
         helperObj.readHeight { (quantity, error) in
             guard error == nil else { return print("Error in: \(String(describing: error))") }
             if let bodyHeight = quantity {
@@ -140,7 +127,7 @@ class SummaryViewController: UIViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
-         if segue.identifier == "SummaryChildSegue" {
+        if segue.identifier == HSStoryboardSegue.kSummaryS.rawValue {
             print("Showing Summary Child Segue")
             // Object data passing to child view controller
             
@@ -163,16 +150,15 @@ class SummaryViewController: UIViewController {
     
     // function for programmatically navigating to Custom view controller storyboard
     func navigateToCustomVCStoryboard() {
-        let onboardStoryboard = UIStoryboard(name: "CustomViewController", bundle: nil)
-        let viewC = onboardStoryboard.instantiateViewController(identifier: "CustomViewController")
+        let onboardStoryboard = UIStoryboard(name: HSStoryboard.kCustomVC.rawValue, bundle: nil)
+        let viewC = onboardStoryboard.instantiateViewController(identifier: HSCustomViewController.kCustomVC.rawValue)
         viewC.modalPresentationStyle = .fullScreen
         self.present(viewC, animated: true)
     }
     
     // function for performing storyboard segue to Child view controller
     func segueToSummaryChildVC() {
-        performSegue(withIdentifier: "SummaryChildSegue", sender: self)
+        performSegue(withIdentifier: HSStoryboardSegue.kSummaryS.rawValue, sender: self)
     }
     
-
 }

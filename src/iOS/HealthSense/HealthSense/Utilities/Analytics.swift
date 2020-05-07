@@ -15,6 +15,9 @@ class Analytics {
     
     init() {
         print("Analytics Class init")
+    }
+    
+    func setup() {
         retrieveUser() // Function call to fetch User Defaults.
         trackApp() // Function call to track apps.
         saveTrackApp() // Function call to save new settings
@@ -22,7 +25,7 @@ class Analytics {
     
     // func for retrieving App Tracking from User Defaults to Settings struct
     func retrieveUser() {
-        AnalyticsStruct.appOpen = defaults.integer(forKey: "AppOpen")
+        AnalyticsStruct.appOpen = defaults.integer(forKey: HSUserDefaults.kAppLaunch.rawValue)
     }
     
      // func for updating those App analytics variables in Settings struct
@@ -33,7 +36,7 @@ class Analytics {
     
     // func for Saving App Tracking to User Defaults
     func saveTrackApp() {
-        defaults.set(AnalyticsStruct.appOpen, forKey: "AppOpen")
+        defaults.set(AnalyticsStruct.appOpen, forKey: HSUserDefaults.kAppLaunch.rawValue)
     }
     
 }
