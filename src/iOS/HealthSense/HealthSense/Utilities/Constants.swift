@@ -114,9 +114,14 @@ enum HSUserDefaults: String {
     // User Defaults
     case kFirstLaunch = "FirstLaunch"
     case kAppLaunch = "AppOpen"
+    case kRandomUser = "RandomUserName"
+    case kSecurity = "Authentication"
+    case kDarkMode = "DarkMode"
+}
+
+// MARK: Misc UserNames
 struct HSUserName {
     // Username strings
-    
     static let kUserName1 = ["Goku", "Luffy", "Ichigo", "L", "Zoro", "Spike", "Edward", "Inuyasha", "Eren", "Saitama"]
     static let kUserName2 = ["Alicia Keys", "Bruno Mars", "Daft Punk", "Ed Sheeran", "Imagine Dragons", "Juicy J", "Queen", "The Chainsmokers", "The Rolling Stones", "Tyga"]
     static let kUserName3 = ["Basenji Dog", "Bombay", "Carolina Dog", "Chow Chow", "Dog", "Fire-Bellied Toad", "Gar", "Giant Clam", "Saint Bernard", "Shrimp"]
