@@ -4,11 +4,18 @@ language: swift
 
 before_install: gem install cocoapods
 
-podfile: src/iOS/HealthSense/Podfile
-xcode_workspace: src/iOS/HealthSense/
+# Having this changed steps just to accommodate Pods folder inclusive as Travis CI skips "pod install" command due to no change discovered under "Podfile.lock"
+# So the script fails to execute the project without the Pods workspace.
+# Also as we have already cd to the iOS directory we don't need to provide absolute address as we are already in the iOS project root directory when the script is been ran.
+install:
+- pwd
+- cd src/iOS/HealthSense
+- pod install
+
+podfile: Podfile
 xcode_scheme: HealthSenseCI
 xcode_destination: platform=iOS Simulator,OS=13.3,name=iPhone 11
 
 
 # Build the main app, which happens to depend on the test cases.
-script: xcodebuild clean build test -workspace src/iOS/HealthSense/HealthSense.xcworkspace -scheme HealthSenseCI -destination "platform=iOS Simulator,OS=13.3,name=iPhone 11" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO -skip-testing:HealthSenseUITests
+script: xcodebuild clean build test -workspace HealthSense.xcworkspace -scheme HealthSenseCI -destination "platform=iOS Simulator,OS=13.3,name=iPhone 11" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO -skip-testing:HealthSenseUITests
