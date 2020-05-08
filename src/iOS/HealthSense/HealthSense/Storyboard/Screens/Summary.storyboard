@@ -10,7 +10,7 @@
         <!--Summary-->
         <scene sceneID="QH7-Uy-g4l">
             <objects>
-                <viewController id="JL4-bz-0PJ" customClass="SummaryViewController" customModule="HealthSense" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SummaryViewController" id="JL4-bz-0PJ" customClass="SummaryViewController" customModule="HealthSense" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lz0-Zz-cy5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

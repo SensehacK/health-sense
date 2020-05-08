@@ -22,10 +22,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Setting default Window View Controller programmatically. We can also remove "Main" storyboard references in Main proj and info.plist
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = ViewController()
+        
+        if UserDefaults.standard.bool(forKey: HSUserDefaults.kFirstLaunch.rawValue) {
+            print("Default launch")
+            Settings.sharedInstance.appRestoreSettings()
+            let storyboard = UIStoryboard(name: HSStoryboard.kHomeVC.rawValue, bundle: nil)
+            self.window?.rootViewController = storyboard.instantiateViewController(identifier: HSCustomViewController.kTabBarVC.rawValue)
+        } else {
+            print("First launch")
+            Settings.sharedInstance.setAppSettings()
+            let storyboard = UIStoryboard(name: HSStoryboard.kOnboardingVC.rawValue, bundle: nil)
+            self.window?.rootViewController = storyboard.instantiateViewController(identifier: HSCustomViewController.kOnboardingVC.rawValue)
+        }
+        Analytics().setup()
+        // Old way of checking for those Structs and letting ViewController handle the UX logic
+//        window?.rootViewController = ViewController()
         window?.makeKeyAndVisible()
-        //TODO: Maybe we can dynamically assign views control flow in SceneDelegate itself.
-       // 1 sec Black screen compared to Viewcontroller function viewDidLoad() and then viewDidAppear(), so there are already 4 extra overhead calls
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
