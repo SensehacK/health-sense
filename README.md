@@ -1,6 +1,45 @@
-# Health Sense
+<div align="center">
+	<h1 align="center">Health Sense</h1>
+	<p align="center">
+		<a href="http://ant.design">
+			<img width="200" src="https://raw.githubusercontent.com/SensehacK/health-sense/master/design/icons/export/healthSenseAppIcon.png">
+		</a>
+	</p>
 
-[![Build Status](https://travis-ci.com/SensehacK/health-sense.svg?branch=master)](https://travis-ci.com/SensehacK/health-sense)
+[![Build Status][build-status-image]][build-status-url] [![Issues][issues-image]][issues-url] [![Closed PRs][close—pr-image]][close—pr-url] [![Code Coverage Status][codecov-image]][codecov-url]
+
+[![iOS issues][ios-issues-image]][ios-issues-url] [![Help Wanted][help-wanted-image]][help-wanted-url] [![Open Issues][open-issues-image]][open-issues-url] [![Open PRs][open—pr-image]][open—pr-url]
+
+[![Milestone][milestone1-image]][milestone1-url] [![Milestone][milestone2-image]][milestone2-url]
+
+[![Github checks][github-checks-image]][github-checks-url]
+
+</div>
+
+[build-status-image]: https://travis-ci.com/SensehacK/health-sense.svg?branch=master
+[build-status-url]: https://travis-ci.com/SensehacK/health-sense
+[open-issues-image]: https://flat.badgen.net/github/open-issues/Sensehack/health-sense
+[open-issues-url]: https://github.com/Sensehack/health-sense/issues?q=is%3Aopen+is%3Aissue
+[issues-image]: https://flat.badgen.net/github/issues/Sensehack/health-sense
+[issues-url]: https://github.com/SensehacK/health-sense/issues
+[help-wanted-image]: https://flat.badgen.net/github/label-issues/Sensehack/health-sense/help-wanted/open
+[help-wanted-url]: https://github.com/Sensehack/health-sense/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22
+[open—pr-image]: https://flat.badgen.net/github/open-prs/SensehacK/health-sense
+[open—pr-url]: https://github.com/SensehacK/health-sense/pulls?q=is%3Aopen+is%3Apr
+[close—pr-image]: https://flat.badgen.net/github/merged-prs/SensehacK/health-sense
+[close—pr-url]: https://github.com/SensehacK/health-sense/pulls?q=is%3Apr+is%3Aclosed
+[milestone1-image]: https://flat.badgen.net/github/milestones/SensehacK/health-sense/2
+[milestone1-url]: https://github.com/SensehacK/health-sense/milestone/2
+[milestone2-image]: https://flat.badgen.net/github/milestones/SensehacK/health-sense/4
+[milestone2-url]: https://github.com/SensehacK/health-sense/milestone/4
+[codecov-image]: https://codecov.io/gh/SensehacK/health-sense/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/SensehacK/health-sense/
+[github-checks-image]: https://flat.badgen.net/github/checks/SensehacK/health-sense/
+[github-checks-url]: https://github.com/SensehacK/health-sense/pulse
+[ios-issues-image]: https://flat.badgen.net/github/label-issues/SensehacK/health-sense/iOS/open
+[ios-issues-url]: https://github.com/Sensehack/health-sense/issues?q=is%3Aopen+is%3Aissue+label%3AiOS
+
+[![App Screenshot](https://drive.google.com/uc?export=view&id=17rr5bZdzeUEKF9NO-1diqd7VWA55TbwC)](https://drive.google.com/file/d/17rr5bZdzeUEKF9NO-1diqd7VWA55TbwC/view?usp=sharing)
 
 ## Description
 
