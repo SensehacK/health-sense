@@ -1,54 +1,60 @@
- **Please check if the PR fulfills these requirements**
+ <!--- Please check if the PR fulfills these requirements-->
 
- Code Style
+## Pull Request
 
-- [ ] The commit message follows our guidelines
-- [ ] My code follows the code style of this project.
-- [ ] I have read the **CONTRIBUTING** document.
-- [ ] Fixed merge conflicts with Master branch as base.
+### Description
 
- Documentation
-
-- [ ] My change requires a change to the documentation.
-- [ ] Docs have been added / updated (for bug fixes / features)
-- [ ] I have updated the documentation accordingly.
-
- Tests
-
-- [ ] I have added tests to cover my changes.
-- [ ] All new and existing tests passed.
-- [ ] Tests for the changes have been added (for bug fixes / features)
-
- **What kind of change does this PR introduce?** (Bug fix, feature, docs update, ...)
+**What kind of change does this PR introduce?** (Bug fix, feature, docs update, ...)
 
 - [ ] New feature (non-breaking change which adds functionality)
 - [ ] Bug fix (non-breaking change which fixes an issue)
 - [ ] Breaking change (fix or feature that would cause existing functionality to change)
 
- **Relevant Issues**
+### Code Style
 
-Fixes #...
+- [ ] The commit message follows our guidelines
+- [ ] My code follows the code style of this project.
+- [ ] Compiles and passes lint tests
+- [ ] Fixed merge conflicts with Master branch as base.
 
- **What is the current behavior?** (You can also link to an open issue here)
+### Documentation
 
- **What is the new behavior (if this is a feature change)?**
+- [ ] My change requires a change to the documentation.
+- [ ] Docs have been added / updated (for bug fixes / features)
+- [ ] I have updated the documentation accordingly.
 
- **Does this PR introduce a breaking change?** (What changes might users need to make in their application due to this PR?)
+### Tests
 
+- [ ] I have added tests to cover my changes.
+- [ ] All existing tests passed.
+- [ ] All tests passed
 - [ ] Github Actions
 - [ ] Travis CI
 
- **Checklist**
+### Behavior
 
-- [ ] Compiles and passes lint tests
-- [ ] Properly formatted
-- [ ] Tested on Desktop
-- [ ] Tested on iPhone
-- [ ] Tested on Android
-- [ ] Tested on Apple Watch
-- [ ] Tested on Xcode Simulator
-- [ ] Tested on Simulator
+Fixes #...
 
- **Screenshots**
+**What is the current behavior?** (You can also link to an open issue here)
 
- **Other information**:
+**What is the new behavior (if this is a feature change)?**
+
+**Does this PR introduce a breaking change?** (What changes might users need to make in their application due to this PR?)
+
+### Tested Checklist
+
+- [ ] Desktop
+- [ ] iPhone
+- [ ] Android
+- [ ] Apple Watch
+- [ ] Xcode Simulator
+- [ ] Simulator
+
+### Other information
+
+**Additional context/Screenshots**
+Add any other context about the problem here. If applicable, add screenshots to help explain.
+
+**Note: for PR Review**
+This repository's PRs would be peer reviewed and then 1 approving reviewer is needed to merge code with master branch.
+[ ] I have read the **CONTRIBUTING** document.

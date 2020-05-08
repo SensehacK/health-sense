@@ -12,22 +12,22 @@ assignees: SensehacK
 Functionality of adding a feature for iOS application which would add in
 [Description of the feature]
 
-### Other options
-
+### Behavior
 
 **Expected behavior:** [What you expected to happen]
- iOS application
+iOS application
 
 **Actual behavior:** [What actually happened]
 
-
 ### Dependency
+
 1. Xcode , iOS v+
 2. Library
 3. Patience
 4. Intelligence
 
 ### Process
+
 - [ ] Cocoapods install
 - [ ] Library Pod
 - [ ] Story Dependency #
@@ -35,9 +35,8 @@ Functionality of adding a feature for iOS application which would add in
 - [ ] Implement your understanding
 - [ ] Story Future Roadmap #
 
-
 Documentation
 
-- [ ] [Link1]() 
-- [ ] [Link2]() 
-- [ ] [Link3]()
+- [ ] [Link1](https://developer.apple.com/documentation)
+- [ ] [Link2](https://developer.apple.com/documentation)
+- [ ] [Link3](https://developer.apple.com/documentation)

@@ -9,13 +9,21 @@ assignees: ManasiTayade, rtrend96
 
 ## Bug Report
 
+Description of the bug!
+
+### Behavior
+
 **Current Behavior**
 A clear and concise description of the behavior.
 
 **Expected behavior/code**
 A clear and concise description of what you expected to happen (or code).
 
-**Environment**
+### Possible Solution
+
+<!--- Only if you have suggestions on a fix for the bug -->
+
+### Environment
 
 - Swift version(s): [e.g. v4.0.0, v5.0]
 - Kotlin version(s): [e.g. v4.0.0, v5.0]
@@ -23,9 +31,7 @@ A clear and concise description of what you expected to happen (or code).
 - OS: [e.g. OSX 10.14.6, Windows 10]
 - How you are using App build
 
-**Possible Solution**
-
-<!--- Only if you have suggestions on a fix for the bug -->
+### Other information
 
 **Note: for support questions, please use stackoverflow**. This repository's issues are reserved for feature requests and bug reports.
 
