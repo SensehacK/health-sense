@@ -19,6 +19,13 @@ A clear and concise description of the behavior.
 **Expected behavior/code**
 A clear and concise description of what you expected to happen (or code).
 
+### Steps to Reproduce
+
+1. Open the Web/App
+2. Navigate to ...
+3. Click the button/link ...
+4. Observe the bug
+
 ### Possible Solution
 
 <!--- Only if you have suggestions on a fix for the bug -->
