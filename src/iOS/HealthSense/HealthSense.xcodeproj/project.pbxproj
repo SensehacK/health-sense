@@ -7,14 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13025DDA163B33BDB1077ECF /* Pods_HealthSense_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E968CEEB7D6181F6CD374C21 /* Pods_HealthSense_WatchKit_Extension.framework */; };
-		34D8104EFCE0364CBF147F07 /* Pods_HealthSense_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CE43D09282CA30C5B7184D /* Pods_HealthSense_WatchKit_App.framework */; };
-		3FA1A9F75DCB17F18DD1729A /* Pods_HealthSenseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756B346B6AB9B2DDABF06E4A /* Pods_HealthSenseTests.framework */; };
-		88D4B4C59B31F021C7C4BC29 /* Pods_HealthSense.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4D6DCBDB95A37BA0D85A7B /* Pods_HealthSense.framework */; };
-		94131300FFFF3C0907B49180 /* Pods_HealthSense_HealthSenseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553EF7D84CADD9F5E01C0C3A /* Pods_HealthSense_HealthSenseUITests.framework */; };
+		6D96BE37AF0004EB725A3713 /* libPods-HealthSense.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80A9FCD82763A922A1B8DF9E /* libPods-HealthSense.a */; };
+		76926A464234E0D472A868B0 /* libPods-HealthSenseTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A2F5A3E201988F7FABED7B /* libPods-HealthSenseTests.a */; };
+		80C36E588D12EA7D48D04765 /* Pods_HealthSense_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211B1A0465306938FB82EAB7 /* Pods_HealthSense_WatchKit_Extension.framework */; };
+		A213A2D7A4A4188E7556CE08 /* Pods_HealthSense_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6650B3A45065657B9BB342 /* Pods_HealthSense_WatchKit_App.framework */; };
+		A7FC3FA90AE668D59AE9622E /* libPods-HealthSense-HealthSenseUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7EA30D821BE117E671FA47C /* libPods-HealthSense-HealthSenseUITests.a */; };
+		FB2FC374245C875E005AD169 /* MacawViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2FC373245C875D005AD169 /* MacawViewUI.swift */; };
+		FB2FC37A245C9128005AD169 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2FC379245C9128005AD169 /* SummaryViewController.swift */; };
+		FB2FC384245C9631005AD169 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2FC383245C9630005AD169 /* SettingsViewController.swift */; };
+		FB2FC386245C96A2005AD169 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2FC385245C96A2005AD169 /* CustomViewController.swift */; };
+		FB2FC388245C9B26005AD169 /* HealthBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2FC387245C9B25005AD169 /* HealthBookViewController.swift */; };
+		FB2FC38B245CA900005AD169 /* SummaryChildVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2FC38A245CA900005AD169 /* SummaryChildVC.swift */; };
+		FB2FC38D245CC067005AD169 /* HealthBookChildVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2FC38C245CC067005AD169 /* HealthBookChildVC.swift */; };
+		FB2FC38F245CC079005AD169 /* SettingsChildVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2FC38E245CC079005AD169 /* SettingsChildVC.swift */; };
+		FB2FC391245CC7FE005AD169 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2FC390245CC7FE005AD169 /* ViewController.swift */; };
+		FB3EC3BE24561DB2003318DF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3EC3BD24561DB2003318DF /* User.swift */; };
+		FB3EC3C1245620C3003318DF /* ReadProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3EC3C0245620C3003318DF /* ReadProfile.swift */; };
+		FB3EC3C32456653E003318DF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FB3EC3C22456653D003318DF /* README.md */; };
+		FB3EC3C7245670B7003318DF /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3EC3C6245670B7003318DF /* Helper.swift */; };
 		FB51DBC7242A789100FD0B7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51DBC6242A789100FD0B7B /* AppDelegate.swift */; };
 		FB51DBC9242A789100FD0B7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51DBC8242A789100FD0B7B /* SceneDelegate.swift */; };
-		FB51DBCB242A789100FD0B7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51DBCA242A789100FD0B7B /* ViewController.swift */; };
 		FB51DBCE242A789100FD0B7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB51DBCC242A789100FD0B7B /* Main.storyboard */; };
 		FB51DBD0242A789500FD0B7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB51DBCF242A789500FD0B7B /* Assets.xcassets */; };
 		FB51DBD3242A789500FD0B7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB51DBD1242A789500FD0B7B /* LaunchScreen.storyboard */; };
@@ -30,8 +42,32 @@
 		FB51DC08242A789700FD0B7B /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51DC07242A789700FD0B7B /* ComplicationController.swift */; };
 		FB51DC0A242A789900FD0B7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB51DC09242A789900FD0B7B /* Assets.xcassets */; };
 		FB51DC23242A795400FD0B7B /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB51DC22242A795400FD0B7B /* HealthKit.framework */; };
+		FB6B45D5245F8F8D00B9AD96 /* CircularPieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B45D4245F8F8D00B9AD96 /* CircularPieChart.swift */; };
+		FB6B45D7245F8FC900B9AD96 /* CircularPieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B45D6245F8FC900B9AD96 /* CircularPieChartViewController.swift */; };
+		FB6B45D9245F8FE100B9AD96 /* CircularPieChart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB6B45D8245F8FE100B9AD96 /* CircularPieChart.storyboard */; };
+		FB6DA843244E716C0086A030 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6DA842244E716C0086A030 /* Constants.swift */; };
+		FB6DA845244E73360086A030 /* UITabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6DA844244E73360086A030 /* UITabBarViewController.swift */; };
+		FB6DA849244E97DD0086A030 /* InfoBak.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB6DA848244E97DD0086A030 /* InfoBak.plist */; };
+		FBA35B3A244CAAAF00A6639A /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA35B39244CAAAF00A6639A /* HealthKit.framework */; };
+		FBB3D5AE24551F25007DE952 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3D5AD24551F25007DE952 /* Analytics.swift */; };
 		FBC3EE91242C29FE006DCE06 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3EE90242C29FE006DCE06 /* HealthManager.swift */; };
 		FBC3EE92242C2A04006DCE06 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC3EE90242C29FE006DCE06 /* HealthManager.swift */; };
+		FBCB32812460E0A8002369DD /* ProfileM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCB32802460E0A8002369DD /* ProfileM.swift */; };
+		FBD0EA14245F449E005877FB /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD0EA13245F449E005877FB /* BarChart.swift */; };
+		FBD0EA16245F4516005877FB /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD0EA15245F4516005877FB /* DummyData.swift */; };
+		FBD0EA18245F56C0005877FB /* BarChart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD0EA17245F56C0005877FB /* BarChart.storyboard */; };
+		FBD0EA1A245F5785005877FB /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD0EA19245F5785005877FB /* BarChartViewController.swift */; };
+		FBD385E0245362C900983106 /* FirstOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD385DF245362C900983106 /* FirstOnboardingViewController.swift */; };
+		FBD385E2245362DA00983106 /* SecondOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD385E1245362DA00983106 /* SecondOnboardingViewController.swift */; };
+		FBD385E4245362E900983106 /* ThirdOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD385E3245362E900983106 /* ThirdOnboardingViewController.swift */; };
+		FBE338F524521DC800B56A53 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE338F424521DC800B56A53 /* Onboarding.storyboard */; };
+		FBE338F7245220C000B56A53 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE338F6245220C000B56A53 /* OnboardingViewController.swift */; };
+		FBE338F92452234200B56A53 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE338F82452234200B56A53 /* Profile.swift */; };
+		FBE338FB245239D500B56A53 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE338FA245239D500B56A53 /* Settings.swift */; };
+		FBE5CA0F245BC4A3001D8C03 /* Custom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE5CA0D245BC2CD001D8C03 /* Custom.storyboard */; };
+		FBFA6D64245136A7000A4592 /* Summary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFA6D63245136A7000A4592 /* Summary.storyboard */; };
+		FBFA6D6924513F08000A4592 /* HealthBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFA6D6724513F08000A4592 /* HealthBook.storyboard */; };
+		FBFA6D6B24513F71000A4592 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFA6D6A24513F71000A4592 /* Settings.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,25 +127,37 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2F50CDDBEC759DCD5E4BEEEC /* Pods-HealthSense.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSense.release.xcconfig"; path = "Target Support Files/Pods-HealthSense/Pods-HealthSense.release.xcconfig"; sourceTree = "<group>"; };
-		30F85BF1E85193032ACA697A /* Pods-HealthSense WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSense WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-HealthSense WatchKit Extension/Pods-HealthSense WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
-		4AEEFA33C5AAEEC58E4C54EA /* Pods-HealthSense WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSense WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-HealthSense WatchKit App/Pods-HealthSense WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
-		553EF7D84CADD9F5E01C0C3A /* Pods_HealthSense_HealthSenseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthSense_HealthSenseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F4D6DCBDB95A37BA0D85A7B /* Pods_HealthSense.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthSense.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		756B346B6AB9B2DDABF06E4A /* Pods_HealthSenseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthSenseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F47F23C261C899CBAB379CB /* Pods-HealthSense-HealthSenseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSense-HealthSenseUITests.release.xcconfig"; path = "Target Support Files/Pods-HealthSense-HealthSenseUITests/Pods-HealthSense-HealthSenseUITests.release.xcconfig"; sourceTree = "<group>"; };
-		801864310BC54E349232A2C9 /* Pods-HealthSense WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSense WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-HealthSense WatchKit Extension/Pods-HealthSense WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
-		978AA109E15E6ED8C93436BA /* Pods-HealthSense-HealthSenseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSense-HealthSenseUITests.debug.xcconfig"; path = "Target Support Files/Pods-HealthSense-HealthSenseUITests/Pods-HealthSense-HealthSenseUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		9A4139BFE2AA899AC51B7C73 /* Pods-HealthSense WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSense WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-HealthSense WatchKit App/Pods-HealthSense WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
-		AC73716CEE540C95E8BC8A5A /* Pods-HealthSense.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSense.debug.xcconfig"; path = "Target Support Files/Pods-HealthSense/Pods-HealthSense.debug.xcconfig"; sourceTree = "<group>"; };
-		C0CE43D09282CA30C5B7184D /* Pods_HealthSense_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthSense_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E968CEEB7D6181F6CD374C21 /* Pods_HealthSense_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthSense_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EEEA271C2DBCAFD4CF448365 /* Pods-HealthSenseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSenseTests.release.xcconfig"; path = "Target Support Files/Pods-HealthSenseTests/Pods-HealthSenseTests.release.xcconfig"; sourceTree = "<group>"; };
-		F29CE389FE9403AB07368686 /* Pods-HealthSenseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSenseTests.debug.xcconfig"; path = "Target Support Files/Pods-HealthSenseTests/Pods-HealthSenseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		211B1A0465306938FB82EAB7 /* Pods_HealthSense_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthSense_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2148DB755B00BE7FB4469D18 /* Pods-HealthSense.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSense.debug.xcconfig"; path = "Target Support Files/Pods-HealthSense/Pods-HealthSense.debug.xcconfig"; sourceTree = "<group>"; };
+		3A8D6BCC3DB5766EAA66AB55 /* Pods-HealthSenseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSenseTests.debug.xcconfig"; path = "Target Support Files/Pods-HealthSenseTests/Pods-HealthSenseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7303944F73302BDFFB75D7FE /* Pods-HealthSense.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSense.release.xcconfig"; path = "Target Support Files/Pods-HealthSense/Pods-HealthSense.release.xcconfig"; sourceTree = "<group>"; };
+		786FD9D954E55A409FFF669D /* Pods-HealthSenseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSenseTests.release.xcconfig"; path = "Target Support Files/Pods-HealthSenseTests/Pods-HealthSenseTests.release.xcconfig"; sourceTree = "<group>"; };
+		80A9FCD82763A922A1B8DF9E /* libPods-HealthSense.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HealthSense.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F6650B3A45065657B9BB342 /* Pods_HealthSense_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthSense_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A38EF0C04C27E5E1A26729A3 /* Pods-HealthSense-HealthSenseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSense-HealthSenseUITests.release.xcconfig"; path = "Target Support Files/Pods-HealthSense-HealthSenseUITests/Pods-HealthSense-HealthSenseUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A5A2F5A3E201988F7FABED7B /* libPods-HealthSenseTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HealthSenseTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8BE99FC3052A534BC0D2E6D /* Pods-HealthSense-HealthSenseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSense-HealthSenseUITests.debug.xcconfig"; path = "Target Support Files/Pods-HealthSense-HealthSenseUITests/Pods-HealthSense-HealthSenseUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B8BF35B8B6022A4600DD29E9 /* Pods-HealthSense WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSense WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-HealthSense WatchKit App/Pods-HealthSense WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		C1AF9EC57977C3BF048EE8EB /* Pods-HealthSense WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSense WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-HealthSense WatchKit Extension/Pods-HealthSense WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		D7EA30D821BE117E671FA47C /* libPods-HealthSense-HealthSenseUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HealthSense-HealthSenseUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2D5266BE219C5FED47977E2 /* Pods-HealthSense WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSense WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-HealthSense WatchKit App/Pods-HealthSense WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		E60CF48EBE60D01059D37E03 /* Pods-HealthSense WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSense WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-HealthSense WatchKit Extension/Pods-HealthSense WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		FB2FC373245C875D005AD169 /* MacawViewUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacawViewUI.swift; sourceTree = "<group>"; };
+		FB2FC379245C9128005AD169 /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		FB2FC383245C9630005AD169 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		FB2FC385245C96A2005AD169 /* CustomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
+		FB2FC387245C9B25005AD169 /* HealthBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthBookViewController.swift; sourceTree = "<group>"; };
+		FB2FC38A245CA900005AD169 /* SummaryChildVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryChildVC.swift; sourceTree = "<group>"; };
+		FB2FC38C245CC067005AD169 /* HealthBookChildVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthBookChildVC.swift; sourceTree = "<group>"; };
+		FB2FC38E245CC079005AD169 /* SettingsChildVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsChildVC.swift; sourceTree = "<group>"; };
+		FB2FC390245CC7FE005AD169 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FB3EC3BD24561DB2003318DF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FB3EC3C0245620C3003318DF /* ReadProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadProfile.swift; sourceTree = "<group>"; };
+		FB3EC3C22456653D003318DF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FB3EC3C6245670B7003318DF /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		FB51DBC3242A789000FD0B7B /* HealthSense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthSense.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB51DBC6242A789100FD0B7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB51DBC8242A789100FD0B7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FB51DBCA242A789100FD0B7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FB51DBCD242A789100FD0B7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB51DBCF242A789500FD0B7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB51DBD2242A789500FD0B7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -134,7 +182,31 @@
 		FB51DC0C242A789900FD0B7B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		FB51DC20242A795400FD0B7B /* HealthSense.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HealthSense.entitlements; sourceTree = "<group>"; };
 		FB51DC22242A795400FD0B7B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		FB6B45D4245F8F8D00B9AD96 /* CircularPieChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularPieChart.swift; sourceTree = "<group>"; };
+		FB6B45D6245F8FC900B9AD96 /* CircularPieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularPieChartViewController.swift; sourceTree = "<group>"; };
+		FB6B45D8245F8FE100B9AD96 /* CircularPieChart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CircularPieChart.storyboard; sourceTree = "<group>"; };
+		FB6DA842244E716C0086A030 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FB6DA844244E73360086A030 /* UITabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarViewController.swift; sourceTree = "<group>"; };
+		FB6DA848244E97DD0086A030 /* InfoBak.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InfoBak.plist; sourceTree = "<group>"; };
+		FBA35B39244CAAAF00A6639A /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		FBB3D5AD24551F25007DE952 /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
 		FBC3EE90242C29FE006DCE06 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HealthManager.swift; path = HealthSense/HealthManager.swift; sourceTree = SOURCE_ROOT; };
+		FBCB32802460E0A8002369DD /* ProfileM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileM.swift; sourceTree = "<group>"; };
+		FBD0EA13245F449E005877FB /* BarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
+		FBD0EA15245F4516005877FB /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
+		FBD0EA17245F56C0005877FB /* BarChart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BarChart.storyboard; sourceTree = "<group>"; };
+		FBD0EA19245F5785005877FB /* BarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
+		FBD385DF245362C900983106 /* FirstOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstOnboardingViewController.swift; sourceTree = "<group>"; };
+		FBD385E1245362DA00983106 /* SecondOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondOnboardingViewController.swift; sourceTree = "<group>"; };
+		FBD385E3245362E900983106 /* ThirdOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdOnboardingViewController.swift; sourceTree = "<group>"; };
+		FBE338F424521DC800B56A53 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		FBE338F6245220C000B56A53 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnboardingViewController.swift; path = HealthSense/Controller/Onboarding/OnboardingViewController.swift; sourceTree = SOURCE_ROOT; };
+		FBE338F82452234200B56A53 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		FBE338FA245239D500B56A53 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		FBE5CA0D245BC2CD001D8C03 /* Custom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Custom.storyboard; path = HealthSense/Storyboard/Custom/Custom.storyboard; sourceTree = SOURCE_ROOT; };
+		FBFA6D63245136A7000A4592 /* Summary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Summary.storyboard; sourceTree = "<group>"; };
+		FBFA6D6824513F08000A4592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HealthBook.storyboard; sourceTree = "<group>"; };
+		FBFA6D6A24513F71000A4592 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Settings.storyboard; path = HealthSense/Storyboard/Screens/Settings.storyboard; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +214,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34D8104EFCE0364CBF147F07 /* Pods_HealthSense_WatchKit_App.framework in Frameworks */,
+				A213A2D7A4A4188E7556CE08 /* Pods_HealthSense_WatchKit_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB51DC23242A795400FD0B7B /* HealthKit.framework in Frameworks */,
-				88D4B4C59B31F021C7C4BC29 /* Pods_HealthSense.framework in Frameworks */,
+				6D96BE37AF0004EB725A3713 /* libPods-HealthSense.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,7 +231,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FA1A9F75DCB17F18DD1729A /* Pods_HealthSenseTests.framework in Frameworks */,
+				76926A464234E0D472A868B0 /* libPods-HealthSenseTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,7 +239,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94131300FFFF3C0907B49180 /* Pods_HealthSense_HealthSenseUITests.framework in Frameworks */,
+				A7FC3FA90AE668D59AE9622E /* libPods-HealthSense-HealthSenseUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +247,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13025DDA163B33BDB1077ECF /* Pods_HealthSense_WatchKit_Extension.framework in Frameworks */,
+				FBA35B3A244CAAAF00A6639A /* HealthKit.framework in Frameworks */,
+				80C36E588D12EA7D48D04765 /* Pods_HealthSense_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,24 +258,120 @@
 		ABB337DA3568F906D2EB4818 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AC73716CEE540C95E8BC8A5A /* Pods-HealthSense.debug.xcconfig */,
-				2F50CDDBEC759DCD5E4BEEEC /* Pods-HealthSense.release.xcconfig */,
-				4AEEFA33C5AAEEC58E4C54EA /* Pods-HealthSense WatchKit App.debug.xcconfig */,
-				9A4139BFE2AA899AC51B7C73 /* Pods-HealthSense WatchKit App.release.xcconfig */,
-				801864310BC54E349232A2C9 /* Pods-HealthSense WatchKit Extension.debug.xcconfig */,
-				30F85BF1E85193032ACA697A /* Pods-HealthSense WatchKit Extension.release.xcconfig */,
-				978AA109E15E6ED8C93436BA /* Pods-HealthSense-HealthSenseUITests.debug.xcconfig */,
-				7F47F23C261C899CBAB379CB /* Pods-HealthSense-HealthSenseUITests.release.xcconfig */,
-				F29CE389FE9403AB07368686 /* Pods-HealthSenseTests.debug.xcconfig */,
-				EEEA271C2DBCAFD4CF448365 /* Pods-HealthSenseTests.release.xcconfig */,
+				2148DB755B00BE7FB4469D18 /* Pods-HealthSense.debug.xcconfig */,
+				7303944F73302BDFFB75D7FE /* Pods-HealthSense.release.xcconfig */,
+				B8BF35B8B6022A4600DD29E9 /* Pods-HealthSense WatchKit App.debug.xcconfig */,
+				E2D5266BE219C5FED47977E2 /* Pods-HealthSense WatchKit App.release.xcconfig */,
+				E60CF48EBE60D01059D37E03 /* Pods-HealthSense WatchKit Extension.debug.xcconfig */,
+				C1AF9EC57977C3BF048EE8EB /* Pods-HealthSense WatchKit Extension.release.xcconfig */,
+				B8BE99FC3052A534BC0D2E6D /* Pods-HealthSense-HealthSenseUITests.debug.xcconfig */,
+				A38EF0C04C27E5E1A26729A3 /* Pods-HealthSense-HealthSenseUITests.release.xcconfig */,
+				3A8D6BCC3DB5766EAA66AB55 /* Pods-HealthSenseTests.debug.xcconfig */,
+				786FD9D954E55A409FFF669D /* Pods-HealthSenseTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FB2FC372245C84EE005AD169 /* Macaw */ = {
+			isa = PBXGroup;
+			children = (
+				FB2FC373245C875D005AD169 /* MacawViewUI.swift */,
+				FBD0EA13245F449E005877FB /* BarChart.swift */,
+				FB6B45D4245F8F8D00B9AD96 /* CircularPieChart.swift */,
+			);
+			path = Macaw;
+			sourceTree = "<group>";
+		};
+		FB2FC375245C8DCA005AD169 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FB2FC389245CA8B0005AD169 /* Child */,
+				FB6DA844244E73360086A030 /* UITabBarViewController.swift */,
+				FB2FC379245C9128005AD169 /* SummaryViewController.swift */,
+				FB2FC387245C9B25005AD169 /* HealthBookViewController.swift */,
+				FB2FC383245C9630005AD169 /* SettingsViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FB2FC376245C8DDB005AD169 /* Skeleton */ = {
+			isa = PBXGroup;
+			children = (
+				FB2FC390245CC7FE005AD169 /* ViewController.swift */,
+			);
+			path = Skeleton;
+			sourceTree = "<group>";
+		};
+		FB2FC377245C8F33005AD169 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				FB2FC385245C96A2005AD169 /* CustomViewController.swift */,
+				FBD0EA19245F5785005877FB /* BarChartViewController.swift */,
+				FB6B45D6245F8FC900B9AD96 /* CircularPieChartViewController.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		FB2FC378245C8FD8005AD169 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FBFA6D63245136A7000A4592 /* Summary.storyboard */,
+				FBFA6D6724513F08000A4592 /* HealthBook.storyboard */,
+				FBFA6D6A24513F71000A4592 /* Settings.storyboard */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FB2FC37B245C925A005AD169 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				FBE338F424521DC800B56A53 /* Onboarding.storyboard */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		FB2FC37C245C9272005AD169 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				FBE5CA0D245BC2CD001D8C03 /* Custom.storyboard */,
+				FBD0EA17245F56C0005877FB /* BarChart.storyboard */,
+				FB6B45D8245F8FE100B9AD96 /* CircularPieChart.storyboard */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		FB2FC389245CA8B0005AD169 /* Child */ = {
+			isa = PBXGroup;
+			children = (
+				FB2FC38A245CA900005AD169 /* SummaryChildVC.swift */,
+				FB2FC38C245CC067005AD169 /* HealthBookChildVC.swift */,
+				FB2FC38E245CC079005AD169 /* SettingsChildVC.swift */,
+			);
+			path = Child;
+			sourceTree = "<group>";
+		};
+		FB3EC3BF24562098003318DF /* Healthkit */ = {
+			isa = PBXGroup;
+			children = (
+				FB3EC3C0245620C3003318DF /* ReadProfile.swift */,
+			);
+			path = Healthkit;
+			sourceTree = "<group>";
+		};
+		FB3EC3C42456708E003318DF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FB3EC3C6245670B7003318DF /* Helper.swift */,
+				FB3EC3BF24562098003318DF /* Healthkit */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		FB51DBBA242A789000FD0B7B = {
 			isa = PBXGroup;
 			children = (
 				FB51DBC5242A789000FD0B7B /* HealthSense */,
+				FB3EC3C22456653D003318DF /* README.md */,
 				FB9EFE30242A8B7900913776 /* Shared */,
 				FB51DBDC242A789500FD0B7B /* HealthSenseTests */,
 				FB51DBE7242A789500FD0B7B /* HealthSenseUITests */,
@@ -229,15 +398,17 @@
 		FB51DBC5242A789000FD0B7B /* HealthSense */ = {
 			isa = PBXGroup;
 			children = (
-				FB73C4DD2446839E00E30D7D /* config */,
-				FB51DC20242A795400FD0B7B /* HealthSense.entitlements */,
-				FB51DBC6242A789100FD0B7B /* AppDelegate.swift */,
-				FB51DBC8242A789100FD0B7B /* SceneDelegate.swift */,
-				FB51DBCA242A789100FD0B7B /* ViewController.swift */,
-				FB51DBCC242A789100FD0B7B /* Main.storyboard */,
-				FB51DBCF242A789500FD0B7B /* Assets.xcassets */,
-				FB51DBD1242A789500FD0B7B /* LaunchScreen.storyboard */,
+				FB6DA83F244E6F6C0086A030 /* Main */,
+				FB6DA83C244E6F120086A030 /* Model */,
+				FB6DA83D244E6F190086A030 /* View */,
+				FB6DA83E244E6F1F0086A030 /* Controller */,
+				FB6DA840244E6F890086A030 /* Storyboard */,
+				FB3EC3C42456708E003318DF /* Helper */,
+				FB6DA83B244E6ED20086A030 /* Utilities */,
+				FB6DA841244E6FA00086A030 /* Misc */,
+				FB73C4DD2446839E00E30D7D /* Config */,
 				FB51DBD4242A789500FD0B7B /* Info.plist */,
+				FBB3D5AC24550F17007DE952 /* Supporting Files */,
 			);
 			path = HealthSense;
 			sourceTree = "<group>";
@@ -287,21 +458,99 @@
 		FB51DC21242A795400FD0B7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FBA35B39244CAAAF00A6639A /* HealthKit.framework */,
 				FB51DC22242A795400FD0B7B /* HealthKit.framework */,
-				6F4D6DCBDB95A37BA0D85A7B /* Pods_HealthSense.framework */,
-				C0CE43D09282CA30C5B7184D /* Pods_HealthSense_WatchKit_App.framework */,
-				E968CEEB7D6181F6CD374C21 /* Pods_HealthSense_WatchKit_Extension.framework */,
-				553EF7D84CADD9F5E01C0C3A /* Pods_HealthSense_HealthSenseUITests.framework */,
-				756B346B6AB9B2DDABF06E4A /* Pods_HealthSenseTests.framework */,
+				80A9FCD82763A922A1B8DF9E /* libPods-HealthSense.a */,
+				8F6650B3A45065657B9BB342 /* Pods_HealthSense_WatchKit_App.framework */,
+				211B1A0465306938FB82EAB7 /* Pods_HealthSense_WatchKit_Extension.framework */,
+				D7EA30D821BE117E671FA47C /* libPods-HealthSense-HealthSenseUITests.a */,
+				A5A2F5A3E201988F7FABED7B /* libPods-HealthSenseTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FB73C4DD2446839E00E30D7D /* config */ = {
+		FB6DA83B244E6ED20086A030 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FB6DA842244E716C0086A030 /* Constants.swift */,
+				FBE338F82452234200B56A53 /* Profile.swift */,
+				FBE338FA245239D500B56A53 /* Settings.swift */,
+				FB3EC3BD24561DB2003318DF /* User.swift */,
+				FBB3D5AD24551F25007DE952 /* Analytics.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FB6DA83C244E6F120086A030 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FBD0EA15245F4516005877FB /* DummyData.swift */,
+				FBCB32802460E0A8002369DD /* ProfileM.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB6DA83D244E6F190086A030 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB2FC372245C84EE005AD169 /* Macaw */,
+				FB6DA846244E7A070086A030 /* CustomViews */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FB6DA83E244E6F1F0086A030 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FBD385DE245361AF00983106 /* Onboarding */,
+				FB2FC376245C8DDB005AD169 /* Skeleton */,
+				FB2FC375245C8DCA005AD169 /* Main */,
+				FB2FC377245C8F33005AD169 /* Custom */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FB6DA83F244E6F6C0086A030 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FB51DBC6242A789100FD0B7B /* AppDelegate.swift */,
+				FB51DBC8242A789100FD0B7B /* SceneDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FB6DA840244E6F890086A030 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FB51DBCC242A789100FD0B7B /* Main.storyboard */,
+				FB2FC37B245C925A005AD169 /* Onboarding */,
+				FB2FC378245C8FD8005AD169 /* Screens */,
+				FB2FC37C245C9272005AD169 /* Custom */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		FB6DA841244E6FA00086A030 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				FB51DC20242A795400FD0B7B /* HealthSense.entitlements */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		FB6DA846244E7A070086A030 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = config;
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		FB73C4DD2446839E00E30D7D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				FB6DA848244E97DD0086A030 /* InfoBak.plist */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		FB9EFE30242A8B7900913776 /* Shared */ = {
@@ -312,6 +561,26 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
+		FBB3D5AC24550F17007DE952 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB51DBD1242A789500FD0B7B /* LaunchScreen.storyboard */,
+				FB51DBCF242A789500FD0B7B /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBD385DE245361AF00983106 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				FBE338F6245220C000B56A53 /* OnboardingViewController.swift */,
+				FBD385DF245362C900983106 /* FirstOnboardingViewController.swift */,
+				FBD385E1245362DA00983106 /* SecondOnboardingViewController.swift */,
+				FBD385E3245362E900983106 /* ThirdOnboardingViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -319,12 +588,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB51DC17242A789900FD0B7B /* Build configuration list for PBXNativeTarget "HealthSense" */;
 			buildPhases = (
-				5DE1327128D1E04D79D81897 /* [CP] Check Pods Manifest.lock */,
+				70965B17065DA188B5A0C889 /* [CP] Check Pods Manifest.lock */,
 				FB51DBBF242A789000FD0B7B /* Sources */,
 				FB51DBC0242A789000FD0B7B /* Frameworks */,
 				FB51DBC1242A789000FD0B7B /* Resources */,
 				FB51DC16242A789900FD0B7B /* Embed Watch Content */,
-				FB73C4DC2446814900E30D7D /* ShellScript */,
+				FB73C4DC2446814900E30D7D /* Swift Lint */,
+				FB6DA847244E8ACB0086A030 /* Xcode iOS Build Bump */,
+				FB6DA84A244E98680086A030 /* Xcode iOS Version Bump */,
 			);
 			buildRules = (
 			);
@@ -340,7 +611,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB51DC1A242A789900FD0B7B /* Build configuration list for PBXNativeTarget "HealthSenseTests" */;
 			buildPhases = (
-				1358DC26C7F8B5BFC2076B14 /* [CP] Check Pods Manifest.lock */,
+				D3DAF7313D2E8D91DAED6641 /* [CP] Check Pods Manifest.lock */,
 				FB51DBD5242A789500FD0B7B /* Sources */,
 				FB51DBD6242A789500FD0B7B /* Frameworks */,
 				FB51DBD7242A789500FD0B7B /* Resources */,
@@ -359,7 +630,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB51DC1D242A789900FD0B7B /* Build configuration list for PBXNativeTarget "HealthSenseUITests" */;
 			buildPhases = (
-				54C90E3644B4ACC032F296F1 /* [CP] Check Pods Manifest.lock */,
+				684664730964D8D3085C6A49 /* [CP] Check Pods Manifest.lock */,
 				FB51DBE0242A789500FD0B7B /* Sources */,
 				FB51DBE1242A789500FD0B7B /* Frameworks */,
 				FB51DBE2242A789500FD0B7B /* Resources */,
@@ -378,10 +649,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB51DC13242A789900FD0B7B /* Build configuration list for PBXNativeTarget "HealthSense WatchKit App" */;
 			buildPhases = (
-				C54A5E40166C227DD8A5DB41 /* [CP] Check Pods Manifest.lock */,
+				B2DC0007703BCF2FB904C333 /* [CP] Check Pods Manifest.lock */,
 				FB51DBEB242A789600FD0B7B /* Resources */,
 				FB51DC12242A789900FD0B7B /* Embed App Extensions */,
 				E848B79ED159515B40E7D1F3 /* Frameworks */,
+				FB6DA84B244E9B2F0086A030 /* Xcode WatchApp Build Bump */,
+				FB6DA84C244E9BDA0086A030 /* Xcode WatchApp Version Bump */,
 			);
 			buildRules = (
 			);
@@ -397,7 +670,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB51DC0F242A789900FD0B7B /* Build configuration list for PBXNativeTarget "HealthSense WatchKit Extension" */;
 			buildPhases = (
-				3231EE05FB51DBB0F810C6DD /* [CP] Check Pods Manifest.lock */,
+				2F46FC5EAD8D7E6E164C0046 /* [CP] Check Pods Manifest.lock */,
 				FB51DBF8242A789700FD0B7B /* Sources */,
 				FB51DBF9242A789700FD0B7B /* Frameworks */,
 				FB51DBFA242A789700FD0B7B /* Resources */,
@@ -468,8 +741,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB51DBD3242A789500FD0B7B /* LaunchScreen.storyboard in Resources */,
+				FB6DA849244E97DD0086A030 /* InfoBak.plist in Resources */,
 				FB51DBD0242A789500FD0B7B /* Assets.xcassets in Resources */,
+				FBFA6D6924513F08000A4592 /* HealthBook.storyboard in Resources */,
+				FBE5CA0F245BC4A3001D8C03 /* Custom.storyboard in Resources */,
 				FB51DBCE242A789100FD0B7B /* Main.storyboard in Resources */,
+				FBFA6D64245136A7000A4592 /* Summary.storyboard in Resources */,
+				FB3EC3C32456653E003318DF /* README.md in Resources */,
+				FBFA6D6B24513F71000A4592 /* Settings.storyboard in Resources */,
+				FBE338F524521DC800B56A53 /* Onboarding.storyboard in Resources */,
+				FBD0EA18245F56C0005877FB /* BarChart.storyboard in Resources */,
+				FB6B45D9245F8FE100B9AD96 /* CircularPieChart.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,29 +789,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1358DC26C7F8B5BFC2076B14 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HealthSenseTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3231EE05FB51DBB0F810C6DD /* [CP] Check Pods Manifest.lock */ = {
+		2F46FC5EAD8D7E6E164C0046 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -551,7 +811,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		54C90E3644B4ACC032F296F1 /* [CP] Check Pods Manifest.lock */ = {
+		684664730964D8D3085C6A49 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -573,7 +833,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5DE1327128D1E04D79D81897 /* [CP] Check Pods Manifest.lock */ = {
+		70965B17065DA188B5A0C889 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -595,7 +855,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C54A5E40166C227DD8A5DB41 /* [CP] Check Pods Manifest.lock */ = {
+		B2DC0007703BCF2FB904C333 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -617,7 +877,101 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FB73C4DC2446814900E30D7D /* ShellScript */ = {
+		D3DAF7313D2E8D91DAED6641 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealthSenseTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB6DA847244E8ACB0086A030 /* Xcode iOS Build Bump */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Xcode iOS Build Bump";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$PRODUCT_SETTINGS_PATH\")\n# Setting \"Date\" + Build Number\n#buildNumber=$(cut -d'.' -f2 <<<$buildNumber)\n#buildNumber=$(date +\"%y%m%d\")\".\"$(($buildNumber + 1))\n# Setting \"Git commits\" + Build Number\n#buildNumber=$(git rev-list --count HEAD)\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$PRODUCT_SETTINGS_PATH\"\n";
+		};
+		FB6DA84A244E98680086A030 /* Xcode iOS Version Bump */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Xcode iOS Version Bump";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# This splits a two-decimal version string, such as \"0.45.123\", allowing us to increment the third position.\nVERSIONNUM=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nNEWSUBVERSION=`echo $VERSIONNUM | awk -F \".\" '{print $3}'`\nNEWSUBVERSION=$(($NEWSUBVERSION + 1))\nNEWVERSIONSTRING=`echo $VERSIONNUM | awk -F \".\" '{print $1 \".\" $2 \".'$NEWSUBVERSION'\" }'`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString $NEWVERSIONSTRING\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
+		};
+		FB6DA84B244E9B2F0086A030 /* Xcode WatchApp Build Bump */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Xcode WatchApp Build Bump";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$PRODUCT_SETTINGS_PATH\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$PRODUCT_SETTINGS_PATH\"\n";
+		};
+		FB6DA84C244E9BDA0086A030 /* Xcode WatchApp Version Bump */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Xcode WatchApp Version Bump";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# This splits a two-decimal version string, such as \"0.45.123\", allowing us to increment the third position.\nVERSIONNUM=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nNEWSUBVERSION=`echo $VERSIONNUM | awk -F \".\" '{print $3}'`\nNEWSUBVERSION=$(($NEWSUBVERSION + 1))\nNEWVERSIONSTRING=`echo $VERSIONNUM | awk -F \".\" '{print $1 \".\" $2 \".'$NEWSUBVERSION'\" }'`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString $NEWVERSIONSTRING\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
+		};
+		FB73C4DC2446814900E30D7D /* Swift Lint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -626,6 +980,7 @@
 			);
 			inputPaths = (
 			);
+			name = "Swift Lint";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -641,10 +996,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB51DBCB242A789100FD0B7B /* ViewController.swift in Sources */,
+				FB2FC38B245CA900005AD169 /* SummaryChildVC.swift in Sources */,
+				FB6DA845244E73360086A030 /* UITabBarViewController.swift in Sources */,
+				FB6DA843244E716C0086A030 /* Constants.swift in Sources */,
+				FB2FC38D245CC067005AD169 /* HealthBookChildVC.swift in Sources */,
+				FB6B45D7245F8FC900B9AD96 /* CircularPieChartViewController.swift in Sources */,
+				FB2FC384245C9631005AD169 /* SettingsViewController.swift in Sources */,
+				FBB3D5AE24551F25007DE952 /* Analytics.swift in Sources */,
+				FB2FC391245CC7FE005AD169 /* ViewController.swift in Sources */,
 				FB51DBC7242A789100FD0B7B /* AppDelegate.swift in Sources */,
+				FBCB32812460E0A8002369DD /* ProfileM.swift in Sources */,
+				FBD0EA14245F449E005877FB /* BarChart.swift in Sources */,
+				FB2FC37A245C9128005AD169 /* SummaryViewController.swift in Sources */,
+				FB3EC3C1245620C3003318DF /* ReadProfile.swift in Sources */,
+				FBD0EA1A245F5785005877FB /* BarChartViewController.swift in Sources */,
+				FBD385E4245362E900983106 /* ThirdOnboardingViewController.swift in Sources */,
 				FB51DBC9242A789100FD0B7B /* SceneDelegate.swift in Sources */,
+				FB3EC3C7245670B7003318DF /* Helper.swift in Sources */,
+				FB3EC3BE24561DB2003318DF /* User.swift in Sources */,
+				FB2FC38F245CC079005AD169 /* SettingsChildVC.swift in Sources */,
+				FBE338FB245239D500B56A53 /* Settings.swift in Sources */,
+				FB6B45D5245F8F8D00B9AD96 /* CircularPieChart.swift in Sources */,
+				FBD385E0245362C900983106 /* FirstOnboardingViewController.swift in Sources */,
+				FB2FC388245C9B26005AD169 /* HealthBookViewController.swift in Sources */,
+				FB2FC386245C96A2005AD169 /* CustomViewController.swift in Sources */,
 				FBC3EE91242C29FE006DCE06 /* HealthManager.swift in Sources */,
+				FBE338F7245220C000B56A53 /* OnboardingViewController.swift in Sources */,
+				FB2FC374245C875E005AD169 /* MacawViewUI.swift in Sources */,
+				FBE338F92452234200B56A53 /* Profile.swift in Sources */,
+				FBD0EA16245F4516005877FB /* DummyData.swift in Sources */,
+				FBD385E2245362DA00983106 /* SecondOnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -724,6 +1105,14 @@
 				FB51DBF3242A789600FD0B7B /* Base */,
 			);
 			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		FBFA6D6724513F08000A4592 /* HealthBook.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBFA6D6824513F08000A4592 /* Base */,
+			);
+			name = HealthBook.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -845,9 +1234,11 @@
 		};
 		FB51DC10242A789900FD0B7B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 801864310BC54E349232A2C9 /* Pods-HealthSense WatchKit Extension.debug.xcconfig */;
+			baseConfigurationReference = E60CF48EBE60D01059D37E03 /* Pods-HealthSense WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "HealthSense WatchKit Extension/HealthSense WatchKit ExtensionDebug.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LGQH99U6M2;
 				INFOPLIST_FILE = "HealthSense WatchKit Extension/Info.plist";
@@ -858,6 +1249,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kautilya.HealthSense.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -868,9 +1260,10 @@
 		};
 		FB51DC11242A789900FD0B7B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 30F85BF1E85193032ACA697A /* Pods-HealthSense WatchKit Extension.release.xcconfig */;
+			baseConfigurationReference = C1AF9EC57977C3BF048EE8EB /* Pods-HealthSense WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "HealthSense WatchKit Extension/HealthSense WatchKit ExtensionRelease.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LGQH99U6M2;
 				INFOPLIST_FILE = "HealthSense WatchKit Extension/Info.plist";
@@ -891,7 +1284,7 @@
 		};
 		FB51DC14242A789900FD0B7B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4AEEFA33C5AAEEC58E4C54EA /* Pods-HealthSense WatchKit App.debug.xcconfig */;
+			baseConfigurationReference = B8BF35B8B6022A4600DD29E9 /* Pods-HealthSense WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -899,6 +1292,7 @@
 				DEVELOPMENT_TEAM = LGQH99U6M2;
 				IBSC_MODULE = HealthSense_WatchKit_Extension;
 				INFOPLIST_FILE = "HealthSense WatchKit App/Info.plist";
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kautilya.HealthSense.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -911,7 +1305,7 @@
 		};
 		FB51DC15242A789900FD0B7B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A4139BFE2AA899AC51B7C73 /* Pods-HealthSense WatchKit App.release.xcconfig */;
+			baseConfigurationReference = E2D5266BE219C5FED47977E2 /* Pods-HealthSense WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -919,6 +1313,7 @@
 				DEVELOPMENT_TEAM = LGQH99U6M2;
 				IBSC_MODULE = HealthSense_WatchKit_Extension;
 				INFOPLIST_FILE = "HealthSense WatchKit App/Info.plist";
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kautilya.HealthSense.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -931,10 +1326,10 @@
 		};
 		FB51DC18242A789900FD0B7B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC73716CEE540C95E8BC8A5A /* Pods-HealthSense.debug.xcconfig */;
+			baseConfigurationReference = 2148DB755B00BE7FB4469D18 /* Pods-HealthSense.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = HealthSense/HealthSense.entitlements;
+				CODE_SIGN_ENTITLEMENTS = HealthSense/Misc/HealthSense.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LGQH99U6M2;
 				INFOPLIST_FILE = HealthSense/Info.plist;
@@ -942,6 +1337,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kautilya.HealthSense;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -951,10 +1347,10 @@
 		};
 		FB51DC19242A789900FD0B7B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F50CDDBEC759DCD5E4BEEEC /* Pods-HealthSense.release.xcconfig */;
+			baseConfigurationReference = 7303944F73302BDFFB75D7FE /* Pods-HealthSense.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = HealthSense/HealthSense.entitlements;
+				CODE_SIGN_ENTITLEMENTS = HealthSense/Misc/HealthSense.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LGQH99U6M2;
 				INFOPLIST_FILE = HealthSense/Info.plist;
@@ -962,6 +1358,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kautilya.HealthSense;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -971,7 +1368,7 @@
 		};
 		FB51DC1B242A789900FD0B7B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F29CE389FE9403AB07368686 /* Pods-HealthSenseTests.debug.xcconfig */;
+			baseConfigurationReference = 3A8D6BCC3DB5766EAA66AB55 /* Pods-HealthSenseTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -994,7 +1391,7 @@
 		};
 		FB51DC1C242A789900FD0B7B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EEEA271C2DBCAFD4CF448365 /* Pods-HealthSenseTests.release.xcconfig */;
+			baseConfigurationReference = 786FD9D954E55A409FFF669D /* Pods-HealthSenseTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1017,7 +1414,7 @@
 		};
 		FB51DC1E242A789900FD0B7B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 978AA109E15E6ED8C93436BA /* Pods-HealthSense-HealthSenseUITests.debug.xcconfig */;
+			baseConfigurationReference = B8BE99FC3052A534BC0D2E6D /* Pods-HealthSense-HealthSenseUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1038,7 +1435,7 @@
 		};
 		FB51DC1F242A789900FD0B7B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F47F23C261C899CBAB379CB /* Pods-HealthSense-HealthSenseUITests.release.xcconfig */;
+			baseConfigurationReference = A38EF0C04C27E5E1A26729A3 /* Pods-HealthSense-HealthSenseUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

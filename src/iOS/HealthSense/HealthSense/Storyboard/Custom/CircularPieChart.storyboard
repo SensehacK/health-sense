@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3ka-xp-vgx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Circular Pie Chart View Controller-->
+        <scene sceneID="1Kx-3C-y0m">
+            <objects>
+                <viewController id="3ka-xp-vgx" customClass="CircularPieChartViewController" customModule="HealthSense" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CdA-3B-jtG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H6X-bw-3W5" customClass="CircularPieChart" customModule="HealthSense" customModuleProvider="target">
+                                <rect key="frame" x="27" y="94" width="360" height="400"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="2hx-b1-2D2"/>
+                                    <constraint firstAttribute="width" constant="360" id="M1b-aJ-pR2"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJD-hs-oYh">
+                                <rect key="frame" x="357" y="44" width="37" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="liP-wc-xRA"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="yJt-KZ-dje"/>
+                                </constraints>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="doneButton:" destination="3ka-xp-vgx" eventType="touchUpInside" id="Diy-fJ-PmF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2OE-gl-46s" firstAttribute="trailing" secondItem="vJD-hs-oYh" secondAttribute="trailing" constant="20" id="1z8-V7-etT"/>
+                            <constraint firstItem="H6X-bw-3W5" firstAttribute="top" secondItem="vJD-hs-oYh" secondAttribute="bottom" constant="20" id="7hL-hO-5tT"/>
+                            <constraint firstItem="H6X-bw-3W5" firstAttribute="centerX" secondItem="CdA-3B-jtG" secondAttribute="centerX" id="Zl7-PB-NYa"/>
+                            <constraint firstItem="vJD-hs-oYh" firstAttribute="top" secondItem="2OE-gl-46s" secondAttribute="top" id="i6U-n5-5xW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2OE-gl-46s"/>
+                    </view>
+                    <connections>
+                        <outlet property="circularPieView" destination="H6X-bw-3W5" id="iHv-eE-eVr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t8X-A5-5k2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="73.913043478260875" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+</document>
