@@ -19,114 +19,449 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		3584970EA121DC7B7F25C92FD8998798 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADBF5E8B7047831DCFB355C966E47AD /* Foundation.framework */; };
-		369D6F3C9E923D99AF6CA0B4F2B0A5F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADBF5E8B7047831DCFB355C966E47AD /* Foundation.framework */; };
-		3B68FB8021DD98846C8A0C24DBA3F3FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADBF5E8B7047831DCFB355C966E47AD /* Foundation.framework */; };
-		405852FA70A88599FF942BF7E247C6D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FE31D69E844FBC226419FFD908E6D2 /* Foundation.framework */; };
-		54F92980EB61D6DAF17330C7F72EF43F /* Pods-HealthSense-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A45D3F1EA20D9DC8BEFDC55E4A3F524 /* Pods-HealthSense-dummy.m */; };
-		55CF6C728881E2C869EE90E3FC578266 /* Pods-HealthSense WatchKit Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7212B07D11EAA78B1C9E6897107AEEE0 /* Pods-HealthSense WatchKit Extension-dummy.m */; };
-		5C8CCA51CDA487F75CE420AFD1AE2479 /* Pods-HealthSense WatchKit App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAEA1C376A738D5CA67389AD0BE82F /* Pods-HealthSense WatchKit App-dummy.m */; };
-		66D95D4922A47265B11594BF9FA39A81 /* Pods-HealthSense-HealthSenseUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DA2FE524AD6168F68A96494B366863 /* Pods-HealthSense-HealthSenseUITests-dummy.m */; };
-		724A2AAA7B33FA89D4B1101F9E5DEDA4 /* Pods-HealthSense-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F00363D1D88BD21907650D693B9CDD51 /* Pods-HealthSense-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		82B7C21A78BC6EEF4D8448C2577AF084 /* Pods-HealthSenseTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E1E6A77275BE4E297C4964EB4748260 /* Pods-HealthSenseTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8323BA86E6E4C33216855796C098809C /* Pods-HealthSenseTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 425333C4DDD93B85779E64A130632590 /* Pods-HealthSenseTests-dummy.m */; };
-		87A8CB9041226AA4F5742352C35C874D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FE31D69E844FBC226419FFD908E6D2 /* Foundation.framework */; };
-		8B65D439698CA6D607E71E4118C3E92C /* Pods-HealthSense-HealthSenseUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D544D035825B0F413EC84776BBB745B /* Pods-HealthSense-HealthSenseUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E461C6D51D84F1F975173A17399C3E7D /* Pods-HealthSense WatchKit Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BFD5031006FDCF99F821B11C7C357353 /* Pods-HealthSense WatchKit Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E80A55CA422B58039F61262512053466 /* Pods-HealthSense WatchKit App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC7DFB359B7D243DF0C458EB38AA95D5 /* Pods-HealthSense WatchKit App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		047F2CFB7753319C9F22F0EFDB38B720 /* LocusInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF1BB458219D73BB7D30A0EFF6789BF /* LocusInterpolation.swift */; };
+		0526EC308AB07FDB9382F79E604DB5B7 /* XMLIndexer+XMLIndexerDeserializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C584B02DAADB478C23EE8CE5E8B8EA6 /* XMLIndexer+XMLIndexerDeserializable.swift */; };
+		060F8158768C2FC40FA1E97C85070372 /* NodeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699F1DF70C25B418DFDB890235C96690 /* NodeRenderer.swift */; };
+		06EC2FE309A6BBB91CF9D3F4C254660A /* AnimationSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A207431A0F1E1800E21582C5061FFA0 /* AnimationSequence.swift */; };
+		078B4466246C5589F65B85D5C551D7AD /* ContentLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97D289FF8CCC39C8D404F9DAA7BB22B /* ContentLayout.swift */; };
+		07F21573D939D1EFEAEEEDEA5CABFFFA /* Ellipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0FBCAB5D37777C06D56BC849B0EFB0 /* Ellipse.swift */; };
+		0C162F9BE7C77A55505D10800588136F /* SVGParserRegexHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F52D32F9B63EF01BC75306E80860D8B /* SVGParserRegexHelper.swift */; };
+		0D7A921BF764F41D9EBA5EB1234AC399 /* PathBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A370646FB38201919F3EF564D1CE528 /* PathBuilder.swift */; };
+		0EEF39F071FDA752D6ED504FE80E04C0 /* PathSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36CBC31CB256E83464AFC164FA7DFB4 /* PathSegment.swift */; };
+		0F221DEFA8451F82B414729D225A7915 /* shim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C2DBF30C2400A10F07B78D91628F38 /* shim.swift */; };
+		0F9478C56F63D22503D04D9ECC51DD9B /* MDisplayLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFB3166706EBA8DE69550DC0DC6C768 /* MDisplayLink.swift */; };
+		1196DECF73365BCD8350CFBD5089BF24 /* OpacityGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67BB64C0056E32C73BF4A5E0C806870 /* OpacityGenerator.swift */; };
+		11B79DF0CA398D5B1876B0B8BB080EA0 /* AspectRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8761794BE96D389238EB8C70AE30C3 /* AspectRatio.swift */; };
+		11E18CBFBA0FFE45B2893F43631BFA2B /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB922B195652D4240C27A1A973B15B9C /* Image.swift */; };
+		120F425FD51E22779CA7A18C108B2667 /* AnimatableVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667664BBD020F5EDF37A1779DC1BC390 /* AnimatableVariable.swift */; };
+		136B1B521E1993A7008A37B5263FA33E /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441117B6E865BB0268DF7B54007E47F3 /* Stop.swift */; };
+		166CE6E1C6E2854079F3A5C7FD8147F8 /* ColorMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAB6200BB40F3858F761E25D0D8188C /* ColorMatrix.swift */; };
+		16F1DCDCFF8469670259CB7E8B36CC8B /* Variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C3906FFF349D7F47A3C259187B0B88 /* Variable.swift */; };
+		172604E1E44064862113B6030C87EA41 /* Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0C72786AA4398341A86BAF9B41CB4D /* Polygon.swift */; };
+		1745021504F8F75C16BE7C1E131A4782 /* CombineAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEDAD30DBEE60F4BE47987FC81A55B1 /* CombineAnimation.swift */; };
+		1AC24AB0152E4E77DD3FB37C8592019F /* Macaw-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2984A0769743BAB3400DFF9FF3C8EE66 /* Macaw-dummy.m */; };
+		1BC6924032DD3C7F82CD5C1C1C0B6BFA /* SVGCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8556EFFBA81C5CE5A5291BCBF66C11 /* SVGCanvas.swift */; };
+		1C873F2746AD1569ABF282FB01F93872 /* SVGParserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836600187CEE7B69761B701B07DB4205 /* SVGParserError.swift */; };
+		1D3EA4D9A952F2CC354DE5ADAF8507E6 /* Drawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7622C59C39C5E9E5881496C840908F67 /* Drawable.swift */; };
+		1DDE8FF9D76D1A6713F23679AFCFD37F /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7AC117A3C11991F8175311D1EEA0A2 /* Animation.swift */; };
+		1E68FC033D3D4399B39EA03D42FBA793 /* BoundsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EAB49EA4F3437B755E68CB1AFBBA77 /* BoundsUtils.swift */; };
+		27CD82BCDAB2712EE48BCE30F3EA250C /* MCAMediaTimingFunctionName_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E9E06C4DFB4C9295BADD661506EBE7 /* MCAMediaTimingFunctionName_macOS.swift */; };
+		2A7F379F1205273A3A0BCEAD2FC192F0 /* AlphaEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35588250E98B9FBC12C427E27A934CC /* AlphaEffect.swift */; };
+		2AA65233DE0EAAC5DFB2D40F4C58FDED /* SWXMLHash-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EE40C1EFBC61CB9B821CAE746B3680 /* SWXMLHash-dummy.m */; };
+		2AB219A7122A0E5A7A890D689EAF817A /* Align.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2FD67B30F2CF14C9F8DABEF21A531B /* Align.swift */; };
+		2AC415EAF316864603D6216375E13D4E /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FA2D83BA344A8F4B272163BFA0400 /* Font.swift */; };
+		2B6312A87C3AAD8358E6BBBEE77E721B /* LineCap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079F6E5637F4509A84A6B87462AEA552 /* LineCap.swift */; };
+		2E3A32A1D89904E05B5E3B7EDDCA0167 /* ShapeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7960ACCA109D71B67D2B73701BFB1D58 /* ShapeRenderer.swift */; };
+		2F9100474DCB8293831FD50DB9B45039 /* Graphics_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5AE5C2F64F73EB762DA53646F474C /* Graphics_iOS.swift */; };
+		322D10822C3F8346000B34D172619E3A /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A52F3C395032109C92410447840C60 /* Size.swift */; };
+		32BB13475666502BA361E89002C55B1E /* MDisplayLink_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCBAF3464BB08EFBC3743D04BE20C0E /* MDisplayLink_macOS.swift */; };
+		32D2900501D5D778F3BE38F7C3864668 /* ContentsInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A78DA8275C748FE00B0F4F5043540E /* ContentsInterpolation.swift */; };
+		337D334D160ADC701FA5D6FE2C1BE84F /* MorphingGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5943857ECEF193D2FE37055093D1A887 /* MorphingGenerator.swift */; };
+		34B0E7298FD9D3CC858EAEDCB3205DD1 /* PanEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306ABD784C9D65A5D4A25084A1EF56AA /* PanEvent.swift */; };
+		37A07D77A30131F0269C007023FD89F2 /* Fill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470D02C844A596738D95C4845BC108F6 /* Fill.swift */; };
+		39D75267E9B299114BF16C40C340ED6F /* NodeHashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051D497A09045AF5DEE973C5DD0BC520 /* NodeHashable.swift */; };
+		3ACDAE42E7A163A6252C5AD7C461487A /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907D5688124A8F2F13E2B59E557FCDB8 /* Group.swift */; };
+		3B6F8F56243B224A21CD5777E5E8829B /* ShapeAnimationGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C31F2648B23AF746339ED02CA1754D6 /* ShapeAnimationGenerator.swift */; };
+		3BAFEFB8630679458B30A7198C8E16B4 /* GeomUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BA25044E537FB23CEAADF790F589FC /* GeomUtils.swift */; };
+		3E1CBE3B2FA90084ECC86285F8A970B7 /* MCAShapeLayerLineJoin_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7CA27A139B8FFF14C952758FCD7E9F /* MCAShapeLayerLineJoin_iOS.swift */; };
+		3E4F166AB43056F6578B9506B57CCF90 /* PathSegmentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9759AB337B7141A78E7575040C0DD4DF /* PathSegmentType.swift */; };
+		3EE025611D05AF1B5D1D8F0B56236B35 /* GroupRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB673046C60B41FC566D32442980A3 /* GroupRenderer.swift */; };
+		405852FA70A88599FF942BF7E247C6D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08C1BF69644C6D05026EDA7923A512D /* Foundation.framework */; };
+		40B066F0ABAB46E2253FCD207F64DC21 /* FuncBounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA36B6308CD8EDB9350B49067E80DFD /* FuncBounds.swift */; };
+		40D6911A3A565F34931D9AE0DC9C38C1 /* Baseline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C46DAC9E2057C295B1566826620BA1A /* Baseline.swift */; };
+		4112DA942620D5F12E887A31904057CE /* RenderContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0895D220689090267E26B8C2ADBE89 /* RenderContext.swift */; };
+		445638E9A69602308119BF59614A1D1B /* TextRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A13054A4AA02405CE1374D1819A728 /* TextRenderer.swift */; };
+		4645D3164C2615E7133A707EB0B3E311 /* Polyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F81A6AF2A47A0C36CAF13C6466CBEB /* Polyline.swift */; };
+		46E5B34618541EDA79E10E0974140FFF /* SVGSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD4799A8AF79299171F0B1BFD847D35 /* SVGSerializer.swift */; };
+		4DA3D4777DCA54392D472F9D4AB466EB /* Pods-HealthSense-HealthSenseUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7D8734238C54936E5F876E8A9E1FB8 /* Pods-HealthSense-HealthSenseUITests-dummy.m */; };
+		4DBD280B59E10CA9916A61058311A064 /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0DA49F4C829C6FFAB7A3B70A740E01 /* Disposable.swift */; };
+		4EC21CC13D473035F71BD4BC13AFFE42 /* FillInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683B236EADADECBB08CA4BC20FFE3831 /* FillInterpolation.swift */; };
+		55CF6C728881E2C869EE90E3FC578266 /* Pods-HealthSense WatchKit Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58498F3E7624CDD0A17637A6F161CFAC /* Pods-HealthSense WatchKit Extension-dummy.m */; };
+		57D74D64278AA825FB5D8470170E4560 /* Pods-HealthSense-HealthSenseUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6096D2DB02B305D570CB45E34350D547 /* Pods-HealthSense-HealthSenseUITests-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5AC2C4AAB9372412CA6725FF7EC23BFA /* SWXMLHash-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 75DE0F6D6E2938E55171A488967DFADA /* SWXMLHash-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5C152A0400F2D22D7E6F569678EAE1C3 /* Pods-HealthSense-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D0235A351DA0E16F745CE38EAA93EE3 /* Pods-HealthSense-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5C6574E4063B838D81A08CF47F70875E /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A7AFA7B2A873FAB89699495665013F /* Effect.swift */; };
+		5C8CCA51CDA487F75CE420AFD1AE2479 /* Pods-HealthSense WatchKit App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C38B2B59BB0DA744DAD685B32F6725 /* Pods-HealthSense WatchKit App-dummy.m */; };
+		5E82E03DAB403CFDC0577DD7FE993EEE /* Pods-HealthSenseTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EB26862800F1420416BFDA4F14A95C /* Pods-HealthSenseTests-dummy.m */; };
+		5EF1895ECD3584B372CBE65F116CB52B /* GroupDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FF41EDF4204A5494D4AD7CB1F42DDA /* GroupDisposable.swift */; };
+		6029B798921092495E1A679A6C1DDB4B /* ShapeInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909B44E09950BAD2059E896E8E65FFF5 /* ShapeInterpolation.swift */; };
+		61E2458E41FF36A98A14A17E0F67D38E /* Arc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F61BF7E81A43BC66DA76A0857474D7 /* Arc.swift */; };
+		6294F9E34A346EFE7FBAE420BE65646A /* AnimationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5B2EEB380DBB09575D8C94587F4C20 /* AnimationUtils.swift */; };
+		62A231E371A6B6B0E499C78B8BD73B0C /* NSTimer+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB009A118C72C6F5D9E1B7EB44FF804 /* NSTimer+Closure.swift */; };
+		640C0F27907641438D54910698753941 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9262B7960F0FA89A45B285763FEEECEB /* Path.swift */; };
+		641D1E78614BC59BEDDD21A36DBEBE84 /* CAAnimationClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693AF2ECF402F1E642489B131D6B45D7 /* CAAnimationClosure.swift */; };
+		652FB814F0EEB53E3582F4996C4AD58C /* DoubleInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA3CC71036C2F387013BC4343E65C01 /* DoubleInterpolation.swift */; };
+		6B6EF1CF9B630F938881F7E061A5478C /* DescriptionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB23B3CD1B4CEABBB391122219AE6A14 /* DescriptionExtensions.swift */; };
+		6C7B3AD1E95DA70726808C7A3B3945FF /* CSSParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B23EDC3ADC64CB0AE4B441910AC031F /* CSSParser.swift */; };
+		6FAFBBB49B8965AB9F435DAE172A7CF9 /* TransformHashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707AD362ED26C6191854BAB5DB4D2F57 /* TransformHashable.swift */; };
+		731842370B694392A65993178D5D5411 /* ShapeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E528F76E5D7009376C320B02188C6914 /* ShapeAnimation.swift */; };
+		74BDD6DF30EE62D987ECD3CD9D7468AF /* TimingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44270AA43DD498FB651BAF71F4B7C904 /* TimingFunction.swift */; };
+		77C138E92B719AC69014F9455021D549 /* MorphingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A639669B83DCBC54D295E716FC3F9 /* MorphingAnimation.swift */; };
+		7818280115D380A412124E840821210C /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF70278FF7528891FE057AA824A76DE /* Shape.swift */; };
+		7A37971BDA6053B7BDEA196E70398840 /* Common_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152C4587E8052BEC1B5452307CCD858B /* Common_iOS.swift */; };
+		8233E37867D55BBEA9DCBECE712412CE /* LineJoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88549500D8CFB55DF9ED5601A51526E2 /* LineJoin.swift */; };
+		82477310196C7950D80D76B87BAE3C6D /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E5AEFC91E4E8DA8930E587E333102 /* Gradient.swift */; };
+		8290957D474B121236748D51183C5770 /* RoundRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = E902550907F6BCEA36C3B8A630590428 /* RoundRect.swift */; };
+		829B41638D1598090A69AD7CBBD10053 /* OffsetEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC4DB10B6CFF4F4897B54A795DF4454 /* OffsetEffect.swift */; };
+		82DC599C3266C880AA1BF08056274DCF /* TransformedLocus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D64A4C46DE9D5BF151E47668D2431 /* TransformedLocus.swift */; };
+		82FB1B6F1007F4A0CFA10CD549113337 /* PinchEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C334049FB2DB973D74D177504E8B8DB9 /* PinchEvent.swift */; };
+		84EB719A91BB141B2810CBF5F494DA29 /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0479FF3B7704972124B6643C4572BE8 /* Pattern.swift */; };
+		85EAD76EA4C8D09E0CA9A2C7DB56ECA6 /* Interpolable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9634B821DCDBF86AC91BF4117AC3A3F /* Interpolable.swift */; };
+		87A8CB9041226AA4F5742352C35C874D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08C1BF69644C6D05026EDA7923A512D /* Foundation.framework */; };
+		886B7DA5609A0DEE896FF46481D78ECC /* AnimOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B608A74A03744D32A8CC32DFAA3363CD /* AnimOperators.swift */; };
+		89A687D6F7581B01C02819889C0AA3FE /* Stroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF92B63C90C249B47166FB2B9DD52FAA /* Stroke.swift */; };
+		8D84866FAE3C7C84B08BE95CB298CE5B /* MCAMediaTimingFunctionName_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D7DBB1AB18BCCD6B733BAD44857B64 /* MCAMediaTimingFunctionName_iOS.swift */; };
+		92B0E5999B29AD14A757B3F3CDCB3C05 /* MCAShapeLayerLineCap_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32E5FEA6A3A49DFF38426B6505DE84 /* MCAShapeLayerLineCap_iOS.swift */; };
+		939AD8D6A5F3961DF58E0ED436F636F8 /* CombinationAnimationGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C70531821A5CD844E8080EB8EE60ED8 /* CombinationAnimationGenerator.swift */; };
+		941C8E7386E005E979D2897617B01E10 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DD1046D9EEBC598D8C539E95D4DE7A /* Point.swift */; };
+		94CE890F7A322BC980E79B4375389F98 /* MCAShapeLayerLineJoin_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DE167C51D27CBB7F396BFEF3EE2D2F /* MCAShapeLayerLineJoin_macOS.swift */; };
+		94E2103FD4E61F96C1C9F83D73146935 /* MCAShapeLayerLineCap_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83DE00EF297EDDD1553320A3CEFC75D /* MCAShapeLayerLineCap_macOS.swift */; };
+		974B16B9D72A8D8F7B7B4DDCE15DD4C5 /* AnimationCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B02E3D8B61B8C8E55470890F4E9CF9C /* AnimationCache.swift */; };
+		99225CF73C90C5409D67ED0FFE6FB8DF /* OpacityAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF3F805AD6DCE2A606714B17D8F700 /* OpacityAnimation.swift */; };
+		99649AA2FB1C094EAD98EEC451A02D5C /* ColorMatrixEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2BFA3639CCA9C6F519A02FE1E6C22A /* ColorMatrixEffect.swift */; };
+		9B93F45757E45AE1C2F9D94A974C2C7D /* TransformAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0611670A3FCAB10689FB5DD38F1AFC43 /* TransformAnimation.swift */; };
+		9D6BE7207FFCA3972C0FBE7AF65B95DD /* TransformGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0EA7DCEF31D2EC867300DE32C9C442 /* TransformGenerator.swift */; };
+		9E16660BAE77A3046F9B5700B91FBE1C /* SWXMLHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506B1D9E1657B13A573FC0FF0DD7064C /* SWXMLHash.swift */; };
+		9E26E9C78C4A18E951D6A006FF624EA5 /* AnimationProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F7183DF618287581C4EC6EBBA642C9 /* AnimationProducer.swift */; };
+		A1EA3F6072D10F588FA6768632E6EE49 /* Common_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5202FCFD7A22BDA6F12CD4A6C1EC84C7 /* Common_macOS.swift */; };
+		A50A59CE2A6412418C89AA6E8CE11D57 /* Rect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556069870927AB978C5DC044028FE0F5 /* Rect.swift */; };
+		AA2B5E88D5767525F5F3E23377FA89E7 /* TouchEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09A04F8579C7BBC18BBD8AAF29212E6 /* TouchEvent.swift */; };
+		B089956A51B79D692C6BF1029258683A /* SVGParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6102A258BE56618CB21E0AEB848EFC9 /* SVGParser.swift */; };
+		B2EDE3714D77C9A5DE9FD810AA865EDF /* MView_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AAA1A3040F4F9D9158F8CBE66067FC /* MView_iOS.swift */; };
+		B779A20F448CBDC6D5D3516F559E3298 /* RenderUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCBFC05EF61DC2720D2E7E1574817A2 /* RenderUtils.swift */; };
+		BE654D29E969E82BEAD1811191B86114 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C298BBB6A47613219BB7ED90FB12F104 /* Event.swift */; };
+		BEF910D33BB00B554DE404FC78A774D1 /* MacawView+PDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB2B5FF47F633ADACC85B332043A4B /* MacawView+PDF.swift */; };
+		C01EC2FD366A2789D0FDD7F2AC15BFE6 /* Graphics_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08342B9E89323C956C5694A290F922D9 /* Graphics_macOS.swift */; };
+		C0E3BD5E9CD57398785FAADD4D2AB4D3 /* Touchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F20AF292B9D7EC96BAA5A4E8C80F92 /* Touchable.swift */; };
+		C1790D268DDD2B1B5D3ABE9E53DBD2D2 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CA351F590D2AF0137303D0ECC70D6E /* Text.swift */; };
+		C1FEFC3085F88530EB5FB088BF7B8900 /* Macaw-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B1ED2E130C2B2F5407834015D197968C /* Macaw-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C37DA751DAA49EB6FCBF0B7AFD249206 /* CGFloat+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C3A27D080BDE7DC94504C22E745B4C /* CGFloat+Double.swift */; };
+		C3B87D8EE7682A0B38BF364586E86776 /* RadialGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7181B50ABC9DC1BC39A3B76E1D897E7D /* RadialGradient.swift */; };
+		C3C8526E458FEE6F845535257183DFEC /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE66F678A47046E2D82DB5B50F1B78D2 /* Line.swift */; };
+		C7DC0C2EF1D303A30FC314B4A46438FD /* Locus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C63D09168FAEA974697221DB49C749 /* Locus.swift */; };
+		C9115E299C928191200E5B6DA6C98282 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5102191D60AFCC7CB2977F5350C15C5A /* Circle.swift */; };
+		C9B837A04C2DB59AFDF1261BF4EFF0C0 /* PathFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0CCB8828A73EFF2340BA508E2E5D9D /* PathFunctions.swift */; };
+		CA3CDC8BA12B7F04966949A99DB79504 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2A7BA25531F2D89969DD7250AB2464 /* Transform.swift */; };
+		D5C46F1956F7CEF2FE1E4AFF3934D5EA /* MBezierPath+Extension_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC0E2241FDF0C5DAC993DB5BAB0B912 /* MBezierPath+Extension_macOS.swift */; };
+		D6CD401D948A25B20D106DB205508F49 /* MCAMediaTimingFillMode_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F2DF59941C3E710A0F016265C2E816 /* MCAMediaTimingFillMode_macOS.swift */; };
+		D792CF6DD3D3D69B5D68FAB6A2E137AF /* SVGNodeLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E14A8FECC0E264ACD85EDA9845CC86 /* SVGNodeLayout.swift */; };
+		D9095ED290A2C788D7DD41B0E1BF4DF8 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5705E6163D90BE5F2E3E67BC0F88E0A /* Node.swift */; };
+		DB28646B72EA71E678A3335B7B1A9E39 /* MCAMediaTimingFillMode_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09179F438DAC50AA305255E5393EAF89 /* MCAMediaTimingFillMode_iOS.swift */; };
+		DEC81CF99EF56053690B678F5F08B80D /* BlendEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE19908522E9FA155C67599037FD38E /* BlendEffect.swift */; };
+		E461C6D51D84F1F975173A17399C3E7D /* Pods-HealthSense WatchKit Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 68400D0E5EE81AA7BA6AF35C4DA29B98 /* Pods-HealthSense WatchKit Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E48524F5D2D2C4388E948E1854C92C71 /* ShapeLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E2483481A44ACA79FEF4BCD9EFFE46 /* ShapeLayer.swift */; };
+		E80A55CA422B58039F61262512053466 /* Pods-HealthSense WatchKit App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EEF43016549A83A17201D45D7339D624 /* Pods-HealthSense WatchKit App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8C293E47AA6536D35CD80A327C413C8 /* Easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E35DAAB95F210E42F4222C4EF1FF8F /* Easing.swift */; };
+		EB36EC172EB7317CA31C62C0A689722E /* ContentsAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4F49CB816B087EEEBCF7CE93B5A573 /* ContentsAnimation.swift */; };
+		EB5597C15E2B0B66901D298F4BF3E036 /* LinearGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771F938D6586D80EDD42FA2FB122AB75 /* LinearGradient.swift */; };
+		EB6FD579CBC3BBB286D08E7934DD6662 /* MDisplayLink_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F35B39630BB21B1D3FA50E61957C33 /* MDisplayLink_iOS.swift */; };
+		EC817FB7B185D6208E166BBA6AD1283F /* SVGConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B89691513865479E9E950AA4A56B69 /* SVGConstants.swift */; };
+		EC967A09E0175585E53D3C2961B1B2DD /* GaussianBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B6A9219BBA58F4CC92B7DF6581C55 /* GaussianBlur.swift */; };
+		EF697BB2C883E115D13EC4687B3F721B /* TransformInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D53120909D54898C341380EB04AA9 /* TransformInterpolation.swift */; };
+		EF6E1ABCAB3E09B9078894E04805F0DE /* MView_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E265A2F006E67B2699976EA968F10684 /* MView_macOS.swift */; };
+		F16AE7CBB1DA0D9527D051EB972AAF51 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842FED73CE3205AECE50CA983E39875 /* Color.swift */; };
+		F1FD3B0026C530E1E0E8F37968A031F3 /* PathBounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD92312236E683C0DA87651D4E84BE7D /* PathBounds.swift */; };
+		F4F464AAEE491B6705D8BA5BD1622FDC /* Insets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFC647D82B03A119CB4C2BEF27CBCC4 /* Insets.swift */; };
+		F60BA37B09249F1988EC3FF0BF040619 /* ImageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E01616A90473C5EC9C08A29FF534C65 /* ImageRenderer.swift */; };
+		F6E2E12E0BB68E90D7C7BCB9BE2F2418 /* MacawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0998FE1C53F0459D0E75DA4DF0811812 /* MacawView.swift */; };
+		F71FB1AB49C20FBBA6E716CCE59FF97A /* CGMappings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FB2577A479297747FDFF2964FEED81 /* CGMappings.swift */; };
+		F9449DD95F764DD829F62F36E6C0B74C /* Pods-HealthSense-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C113E696BC82DBBC03F19063C2D39210 /* Pods-HealthSense-dummy.m */; };
+		FBB1912A04044C6CC6A0530F2C2CD1A6 /* UIImage2Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511C4032E582F478AA7795C471CB3C7 /* UIImage2Image.swift */; };
+		FC7BC36B2F8E60DB92F62C931C280670 /* SceneUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD4EFB24D4BDADBA952835E48A9210F /* SceneUtils.swift */; };
+		FCA5F4E929BAED1EC470F002FF7C5F24 /* StrokeInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347DE784B5C524CC68296A69BE961AD3 /* StrokeInterpolation.swift */; };
+		FCAE4EFBAD609F6E8EF6D9D18A2FCB03 /* TapEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CAD59CADF74CC91E881E4D530640F6 /* TapEvent.swift */; };
+		FCDD70A68A08B4894CDABE1F6CA64E5D /* MoveTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DFC5462F50F9F845C3CC278D8D45D8 /* MoveTo.swift */; };
+		FD3F13CE44CB38FC7BD3F56F3D6E2CCB /* RotateEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC76E41F587321EBDEC19723DF8BFC3 /* RotateEvent.swift */; };
+		FD71B1051A6868C5790005AC63A07100 /* AnimationImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B979453D66DF0A00C9FA399B20BFF3F2 /* AnimationImpl.swift */; };
+		FDEDB21BB5A2B968633A0BF23272C912 /* SVGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CBC800F6DE45B703BE2785E3DD350E /* SVGView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1CB0EFE5B80738100BC6552F7B85C4DA /* PBXContainerItemProxy */ = {
+		18E1B3DD64E436BCFEBB75BE259FE09B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CBE890FB81E7706B0A7C85EF7657002;
+			remoteInfo = Macaw;
+		};
+		5FF3EAF0B51345683D572806404298BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63678F9A594800CBC7006B45EAB7886B;
+			remoteInfo = SWXMLHash;
+		};
+		629E28797BEA0A32F9EB23F5F254B70C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
 			remoteInfo = SwiftLint;
 		};
-		4B8211FDA5F6FA9A52647222CE7F9533 /* PBXContainerItemProxy */ = {
+		7B57EAF19F3A75A784876ED549859795 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63678F9A594800CBC7006B45EAB7886B;
+			remoteInfo = SWXMLHash;
+		};
+		A0BBA82C0D0B3E551916454F98FC413C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
 			remoteInfo = SwiftLint;
 		};
-		D41F410FE77B83BEDB3790F34FDED561 /* PBXContainerItemProxy */ = {
+		A740EA680BC1EE3A1BED0B733382FA7D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = FBA4EC236AE8BE9A9C0B3F19E0FB840F;
 			remoteInfo = "Pods-HealthSense";
 		};
+		D65BB7681D96287A370AF430CB468C91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63678F9A594800CBC7006B45EAB7886B;
+			remoteInfo = SWXMLHash;
+		};
+		D96096C1F459E2F0EDA3001F22AE30EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CBE890FB81E7706B0A7C85EF7657002;
+			remoteInfo = Macaw;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B84B98E5F7C749B555DF929AED0E940 /* Pods-HealthSense.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthSense.debug.xcconfig"; sourceTree = "<group>"; };
-		0BB9E3AB7F961087BD54D192CBB297EC /* Pods-HealthSenseTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HealthSenseTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0C31166449D96DD6585D70CEAB6B8B5A /* Pods-HealthSense-HealthSenseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthSense-HealthSenseUITests.release.xcconfig"; sourceTree = "<group>"; };
-		17403B5012EE9FE676BE92F548731E9D /* Pods_HealthSense_HealthSenseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HealthSense_HealthSenseUITests.framework; path = "Pods-HealthSense-HealthSenseUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D544D035825B0F413EC84776BBB745B /* Pods-HealthSense-HealthSenseUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HealthSense-HealthSenseUITests-umbrella.h"; sourceTree = "<group>"; };
-		3A1C80046FDB6D7F1EF7F5D4909530D6 /* Pods-HealthSense-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HealthSense-acknowledgements.markdown"; sourceTree = "<group>"; };
+		00D503C731932F93DB993D2D78437522 /* SWXMLHash.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SWXMLHash.modulemap; sourceTree = "<group>"; };
+		051D497A09045AF5DEE973C5DD0BC520 /* NodeHashable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NodeHashable.swift; path = Source/animation/types/animation_generators/Cache/NodeHashable.swift; sourceTree = "<group>"; };
+		0611670A3FCAB10689FB5DD38F1AFC43 /* TransformAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformAnimation.swift; path = Source/animation/types/TransformAnimation.swift; sourceTree = "<group>"; };
+		079F6E5637F4509A84A6B87462AEA552 /* LineCap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineCap.swift; path = Source/model/draw/LineCap.swift; sourceTree = "<group>"; };
+		08342B9E89323C956C5694A290F922D9 /* Graphics_macOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Graphics_macOS.swift; path = Source/platform/macOS/Graphics_macOS.swift; sourceTree = "<group>"; };
+		09179F438DAC50AA305255E5393EAF89 /* MCAMediaTimingFillMode_iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCAMediaTimingFillMode_iOS.swift; path = Source/MCAMediaTimingFillMode_iOS.swift; sourceTree = "<group>"; };
+		0998FE1C53F0459D0E75DA4DF0811812 /* MacawView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MacawView.swift; path = Source/views/MacawView.swift; sourceTree = "<group>"; };
+		0B2BFA3639CCA9C6F519A02FE1E6C22A /* ColorMatrixEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorMatrixEffect.swift; path = Source/model/draw/ColorMatrixEffect.swift; sourceTree = "<group>"; };
+		0C70531821A5CD844E8080EB8EE60ED8 /* CombinationAnimationGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CombinationAnimationGenerator.swift; path = Source/animation/types/animation_generators/CombinationAnimationGenerator.swift; sourceTree = "<group>"; };
+		0E0FBCAB5D37777C06D56BC849B0EFB0 /* Ellipse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ellipse.swift; path = Source/model/geom2d/Ellipse.swift; sourceTree = "<group>"; };
+		0EC4DB10B6CFF4F4897B54A795DF4454 /* OffsetEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OffsetEffect.swift; path = Source/model/draw/OffsetEffect.swift; sourceTree = "<group>"; };
+		0F3D64A4C46DE9D5BF151E47668D2431 /* TransformedLocus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformedLocus.swift; path = Source/model/geom2d/TransformedLocus.swift; sourceTree = "<group>"; };
+		10CBC800F6DE45B703BE2785E3DD350E /* SVGView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGView.swift; path = Source/svg/SVGView.swift; sourceTree = "<group>"; };
+		11C3A27D080BDE7DC94504C22E745B4C /* CGFloat+Double.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGFloat+Double.swift"; path = "Source/thirdparty/CGFloat+Double.swift"; sourceTree = "<group>"; };
+		152C4587E8052BEC1B5452307CCD858B /* Common_iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Common_iOS.swift; path = Source/platform/iOS/Common_iOS.swift; sourceTree = "<group>"; };
+		17403B5012EE9FE676BE92F548731E9D /* libPods-HealthSense-HealthSenseUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-HealthSense-HealthSenseUITests.a"; path = "libPods-HealthSense-HealthSenseUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		191CE8E92F4C546E39B2BA47274821B8 /* Pods-HealthSense WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthSense WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		19EE40C1EFBC61CB9B821CAE746B3680 /* SWXMLHash-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SWXMLHash-dummy.m"; sourceTree = "<group>"; };
+		1B2A7BA25531F2D89969DD7250AB2464 /* Transform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transform.swift; path = Source/model/geom2d/Transform.swift; sourceTree = "<group>"; };
+		1BF51EB1EC4D5A2DA31D4BCE4E4A7B73 /* Pods-HealthSense WatchKit App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HealthSense WatchKit App.modulemap"; sourceTree = "<group>"; };
+		1C46DAC9E2057C295B1566826620BA1A /* Baseline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Baseline.swift; path = Source/model/draw/Baseline.swift; sourceTree = "<group>"; };
+		1C584B02DAADB478C23EE8CE5E8B8EA6 /* XMLIndexer+XMLIndexerDeserializable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "XMLIndexer+XMLIndexerDeserializable.swift"; path = "Source/XMLIndexer+XMLIndexerDeserializable.swift"; sourceTree = "<group>"; };
+		1CA5AE5C2F64F73EB762DA53646F474C /* Graphics_iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Graphics_iOS.swift; path = Source/platform/iOS/Graphics_iOS.swift; sourceTree = "<group>"; };
+		1D0CFA755AF2CBD4A4B50BC5A9B5D48E /* Pods-HealthSense.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthSense.release.xcconfig"; sourceTree = "<group>"; };
+		1E01616A90473C5EC9C08A29FF534C65 /* ImageRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageRenderer.swift; path = Source/render/ImageRenderer.swift; sourceTree = "<group>"; };
+		1ED4764219FF23B9C8A33482488216AA /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
+		237DE7A4C19FA5AC347C70FFE5AB9D54 /* Macaw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Macaw.release.xcconfig; sourceTree = "<group>"; };
+		25A13054A4AA02405CE1374D1819A728 /* TextRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextRenderer.swift; path = Source/render/TextRenderer.swift; sourceTree = "<group>"; };
+		2651B663C7C30C03FB39964C57B48E5F /* Pods-HealthSense WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthSense WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		2746122DA7F619B53E78BB896239761D /* Macaw.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Macaw.debug.xcconfig; sourceTree = "<group>"; };
+		27C63D09168FAEA974697221DB49C749 /* Locus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Locus.swift; path = Source/model/geom2d/Locus.swift; sourceTree = "<group>"; };
+		2984A0769743BAB3400DFF9FF3C8EE66 /* Macaw-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Macaw-dummy.m"; sourceTree = "<group>"; };
+		2A370646FB38201919F3EF564D1CE528 /* PathBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathBuilder.swift; path = Source/model/geom2d/PathBuilder.swift; sourceTree = "<group>"; };
+		2B8556EFFBA81C5CE5A5291BCBF66C11 /* SVGCanvas.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGCanvas.swift; path = Source/svg/SVGCanvas.swift; sourceTree = "<group>"; };
+		2BA36B6308CD8EDB9350B49067E80DFD /* FuncBounds.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FuncBounds.swift; path = Source/animation/layer_animation/FuncBounds.swift; sourceTree = "<group>"; };
+		2C0CCB8828A73EFF2340BA508E2E5D9D /* PathFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathFunctions.swift; path = Source/animation/layer_animation/PathFunctions.swift; sourceTree = "<group>"; };
+		305E6C1DF13B73D9DDA5F88DDDD064CF /* Pods-HealthSenseTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HealthSenseTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		306ABD784C9D65A5D4A25084A1EF56AA /* PanEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PanEvent.swift; path = Source/events/PanEvent.swift; sourceTree = "<group>"; };
+		30EC9A7CED992CCBE657A373AF520E67 /* Pods-HealthSenseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthSenseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		30F35B39630BB21B1D3FA50E61957C33 /* MDisplayLink_iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MDisplayLink_iOS.swift; path = Source/platform/iOS/MDisplayLink_iOS.swift; sourceTree = "<group>"; };
+		3125E5106044B6B299583DA81309E467 /* SWXMLHash-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWXMLHash-prefix.pch"; sourceTree = "<group>"; };
+		347DE784B5C524CC68296A69BE961AD3 /* StrokeInterpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StrokeInterpolation.swift; path = Source/animation/layer_animation/Extensions/StrokeInterpolation.swift; sourceTree = "<group>"; };
+		378D53120909D54898C341380EB04AA9 /* TransformInterpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformInterpolation.swift; path = Source/animation/layer_animation/Extensions/TransformInterpolation.swift; sourceTree = "<group>"; };
+		3B02E3D8B61B8C8E55470890F4E9CF9C /* AnimationCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationCache.swift; path = Source/animation/types/animation_generators/Cache/AnimationCache.swift; sourceTree = "<group>"; };
 		3B121A4B71803C0BEB52752665EDC7AB /* Pods_HealthSense_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HealthSense_WatchKit_App.framework; path = "Pods-HealthSense WatchKit App.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3CD76D3E330BD70A5D5B66A404492217 /* Pods-HealthSense WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthSense WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
-		3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
-		3F7F6C8AE1D91E73A155FF80F3BA768A /* Pods-HealthSense WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthSense WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
-		425333C4DDD93B85779E64A130632590 /* Pods-HealthSenseTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HealthSenseTests-dummy.m"; sourceTree = "<group>"; };
-		5A45D3F1EA20D9DC8BEFDC55E4A3F524 /* Pods-HealthSense-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HealthSense-dummy.m"; sourceTree = "<group>"; };
-		5ADBF5E8B7047831DCFB355C966E47AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5AF301E6B9262E8A008810C0D7A79CDB /* Pods-HealthSense WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HealthSense WatchKit Extension.modulemap"; sourceTree = "<group>"; };
-		6E1E6A77275BE4E297C4964EB4748260 /* Pods-HealthSenseTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HealthSenseTests-umbrella.h"; sourceTree = "<group>"; };
-		7212B07D11EAA78B1C9E6897107AEEE0 /* Pods-HealthSense WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HealthSense WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
-		75DA2FE524AD6168F68A96494B366863 /* Pods-HealthSense-HealthSenseUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HealthSense-HealthSenseUITests-dummy.m"; sourceTree = "<group>"; };
-		7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
-		806CF9C618B942E5B10A9D5D4EC9389D /* Pods-HealthSense WatchKit App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HealthSense WatchKit App.modulemap"; sourceTree = "<group>"; };
+		3B23EDC3ADC64CB0AE4B441910AC031F /* CSSParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSSParser.swift; path = Source/svg/CSSParser.swift; sourceTree = "<group>"; };
+		3D9FA2D83BA344A8F4B272163BFA0400 /* Font.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Font.swift; path = Source/model/draw/Font.swift; sourceTree = "<group>"; };
+		3EEDAD30DBEE60F4BE47987FC81A55B1 /* CombineAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CombineAnimation.swift; path = Source/animation/types/CombineAnimation.swift; sourceTree = "<group>"; };
+		3FCBAF3464BB08EFBC3743D04BE20C0E /* MDisplayLink_macOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MDisplayLink_macOS.swift; path = Source/platform/macOS/MDisplayLink_macOS.swift; sourceTree = "<group>"; };
+		41F7183DF618287581C4EC6EBBA642C9 /* AnimationProducer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationProducer.swift; path = Source/animation/AnimationProducer.swift; sourceTree = "<group>"; };
+		441117B6E865BB0268DF7B54007E47F3 /* Stop.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stop.swift; path = Source/model/draw/Stop.swift; sourceTree = "<group>"; };
+		44270AA43DD498FB651BAF71F4B7C904 /* TimingFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimingFunction.swift; path = Source/animation/types/animation_generators/TimingFunction.swift; sourceTree = "<group>"; };
+		44C979D5793F675604C8206E5502BF36 /* Pods-HealthSense WatchKit Extension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HealthSense WatchKit Extension-Info.plist"; sourceTree = "<group>"; };
+		45FE0EF38B6B5EFF50F4AD50AEE89519 /* Pods-HealthSense-HealthSenseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthSense-HealthSenseUITests.release.xcconfig"; sourceTree = "<group>"; };
+		46E35DAAB95F210E42F4222C4EF1FF8F /* Easing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Easing.swift; path = Source/animation/Easing.swift; sourceTree = "<group>"; };
+		470D02C844A596738D95C4845BC108F6 /* Fill.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Fill.swift; path = Source/model/draw/Fill.swift; sourceTree = "<group>"; };
+		4842FED73CE3205AECE50CA983E39875 /* Color.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Color.swift; path = Source/model/draw/Color.swift; sourceTree = "<group>"; };
+		4A207431A0F1E1800E21582C5061FFA0 /* AnimationSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationSequence.swift; path = Source/animation/types/AnimationSequence.swift; sourceTree = "<group>"; };
+		4A3A639669B83DCBC54D295E716FC3F9 /* MorphingAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MorphingAnimation.swift; path = Source/animation/types/MorphingAnimation.swift; sourceTree = "<group>"; };
+		4A4F49CB816B087EEEBCF7CE93B5A573 /* ContentsAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentsAnimation.swift; path = Source/animation/types/ContentsAnimation.swift; sourceTree = "<group>"; };
+		4C2FD67B30F2CF14C9F8DABEF21A531B /* Align.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Align.swift; path = Source/model/draw/Align.swift; sourceTree = "<group>"; };
+		4D0235A351DA0E16F745CE38EAA93EE3 /* Pods-HealthSense-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HealthSense-umbrella.h"; sourceTree = "<group>"; };
+		4F8761794BE96D389238EB8C70AE30C3 /* AspectRatio.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AspectRatio.swift; path = Source/model/draw/AspectRatio.swift; sourceTree = "<group>"; };
+		506B1D9E1657B13A573FC0FF0DD7064C /* SWXMLHash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SWXMLHash.swift; path = Source/SWXMLHash.swift; sourceTree = "<group>"; };
+		5102191D60AFCC7CB2977F5350C15C5A /* Circle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Circle.swift; path = Source/model/geom2d/Circle.swift; sourceTree = "<group>"; };
+		5202FCFD7A22BDA6F12CD4A6C1EC84C7 /* Common_macOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Common_macOS.swift; path = Source/platform/macOS/Common_macOS.swift; sourceTree = "<group>"; };
+		556069870927AB978C5DC044028FE0F5 /* Rect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rect.swift; path = Source/model/geom2d/Rect.swift; sourceTree = "<group>"; };
+		57DD1046D9EEBC598D8C539E95D4DE7A /* Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Point.swift; path = Source/model/geom2d/Point.swift; sourceTree = "<group>"; };
+		58498F3E7624CDD0A17637A6F161CFAC /* Pods-HealthSense WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HealthSense WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
+		5943857ECEF193D2FE37055093D1A887 /* MorphingGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MorphingGenerator.swift; path = Source/animation/types/animation_generators/MorphingGenerator.swift; sourceTree = "<group>"; };
+		59ADBB71AEA3EE15B747FE5133484E77 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
+		5CC76E41F587321EBDEC19723DF8BFC3 /* RotateEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RotateEvent.swift; path = Source/events/RotateEvent.swift; sourceTree = "<group>"; };
+		5DFC647D82B03A119CB4C2BEF27CBCC4 /* Insets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Insets.swift; path = Source/model/geom2d/Insets.swift; sourceTree = "<group>"; };
+		5F0DA49F4C829C6FFAB7A3B70A740E01 /* Disposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Disposable.swift; path = Source/bindings/Disposable.swift; sourceTree = "<group>"; };
+		5F4E9268B1834EC47D5E0044298952D8 /* Pods-HealthSense-HealthSenseUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HealthSense-HealthSenseUITests.modulemap"; sourceTree = "<group>"; };
+		5F52D32F9B63EF01BC75306E80860D8B /* SVGParserRegexHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGParserRegexHelper.swift; path = Source/svg/SVGParserRegexHelper.swift; sourceTree = "<group>"; };
+		5FE19908522E9FA155C67599037FD38E /* BlendEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlendEffect.swift; path = Source/model/draw/BlendEffect.swift; sourceTree = "<group>"; };
+		6096D2DB02B305D570CB45E34350D547 /* Pods-HealthSense-HealthSenseUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HealthSense-HealthSenseUITests-umbrella.h"; sourceTree = "<group>"; };
+		60C2DBF30C2400A10F07B78D91628F38 /* shim.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = shim.swift; path = Source/shim.swift; sourceTree = "<group>"; };
+		62F20AF292B9D7EC96BAA5A4E8C80F92 /* Touchable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Touchable.swift; path = Source/views/Touchable.swift; sourceTree = "<group>"; };
+		647762DF72FFF1CB7BC663DBECFCF58F /* Pods-HealthSense WatchKit App-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HealthSense WatchKit App-Info.plist"; sourceTree = "<group>"; };
+		64CA351F590D2AF0137303D0ECC70D6E /* Text.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Text.swift; path = Source/model/scene/Text.swift; sourceTree = "<group>"; };
+		65E14A8FECC0E264ACD85EDA9845CC86 /* SVGNodeLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGNodeLayout.swift; path = Source/svg/SVGNodeLayout.swift; sourceTree = "<group>"; };
+		667664BBD020F5EDF37A1779DC1BC390 /* AnimatableVariable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatableVariable.swift; path = Source/animation/AnimatableVariable.swift; sourceTree = "<group>"; };
+		683B236EADADECBB08CA4BC20FFE3831 /* FillInterpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FillInterpolation.swift; path = Source/animation/layer_animation/Extensions/FillInterpolation.swift; sourceTree = "<group>"; };
+		68400D0E5EE81AA7BA6AF35C4DA29B98 /* Pods-HealthSense WatchKit Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HealthSense WatchKit Extension-umbrella.h"; sourceTree = "<group>"; };
+		693AF2ECF402F1E642489B131D6B45D7 /* CAAnimationClosure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CAAnimationClosure.swift; path = Source/thirdparty/CAAnimationClosure.swift; sourceTree = "<group>"; };
+		699F1DF70C25B418DFDB890235C96690 /* NodeRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NodeRenderer.swift; path = Source/render/NodeRenderer.swift; sourceTree = "<group>"; };
+		70488A8D87FFCB7928DC5195B70B097D /* Pods-HealthSense WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HealthSense WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		707AD362ED26C6191854BAB5DB4D2F57 /* TransformHashable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformHashable.swift; path = Source/animation/types/animation_generators/Cache/TransformHashable.swift; sourceTree = "<group>"; };
+		7181B50ABC9DC1BC39A3B76E1D897E7D /* RadialGradient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadialGradient.swift; path = Source/model/draw/RadialGradient.swift; sourceTree = "<group>"; };
+		741FEFDC8901F8EAE32FCB3DBF55FA55 /* Pods-HealthSense WatchKit App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HealthSense WatchKit App-acknowledgements.plist"; sourceTree = "<group>"; };
+		75CAD59CADF74CC91E881E4D530640F6 /* TapEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TapEvent.swift; path = Source/events/TapEvent.swift; sourceTree = "<group>"; };
+		75DE0F6D6E2938E55171A488967DFADA /* SWXMLHash-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWXMLHash-umbrella.h"; sourceTree = "<group>"; };
+		75DFC5462F50F9F845C3CC278D8D45D8 /* MoveTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoveTo.swift; path = Source/model/geom2d/MoveTo.swift; sourceTree = "<group>"; };
+		7622C59C39C5E9E5881496C840908F67 /* Drawable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Drawable.swift; path = Source/model/draw/Drawable.swift; sourceTree = "<group>"; };
+		771F938D6586D80EDD42FA2FB122AB75 /* LinearGradient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinearGradient.swift; path = Source/model/draw/LinearGradient.swift; sourceTree = "<group>"; };
+		77BA25044E537FB23CEAADF790F589FC /* GeomUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeomUtils.swift; path = Source/model/geom2d/GeomUtils.swift; sourceTree = "<group>"; };
+		77FD4D7CD82562F1F14DE12145185396 /* Macaw.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Macaw.modulemap; sourceTree = "<group>"; };
+		78F61BF7E81A43BC66DA76A0857474D7 /* Arc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Arc.swift; path = Source/model/geom2d/Arc.swift; sourceTree = "<group>"; };
+		7960ACCA109D71B67D2B73701BFB1D58 /* ShapeRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeRenderer.swift; path = Source/render/ShapeRenderer.swift; sourceTree = "<group>"; };
+		7ABB673046C60B41FC566D32442980A3 /* GroupRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GroupRenderer.swift; path = Source/render/GroupRenderer.swift; sourceTree = "<group>"; };
+		7AD4EFB24D4BDADBA952835E48A9210F /* SceneUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SceneUtils.swift; path = Source/model/scene/SceneUtils.swift; sourceTree = "<group>"; };
+		7C31F2648B23AF746339ED02CA1754D6 /* ShapeAnimationGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeAnimationGenerator.swift; path = Source/animation/types/animation_generators/ShapeAnimationGenerator.swift; sourceTree = "<group>"; };
+		7D0C72786AA4398341A86BAF9B41CB4D /* Polygon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Polygon.swift; path = Source/model/geom2d/Polygon.swift; sourceTree = "<group>"; };
+		7FCBFC05EF61DC2720D2E7E1574817A2 /* RenderUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RenderUtils.swift; path = Source/render/RenderUtils.swift; sourceTree = "<group>"; };
+		836600187CEE7B69761B701B07DB4205 /* SVGParserError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGParserError.swift; path = Source/svg/SVGParserError.swift; sourceTree = "<group>"; };
 		836CE8ABD9D8EF03C92F77142C9D5BDC /* Pods_HealthSense_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HealthSense_WatchKit_Extension.framework; path = "Pods-HealthSense WatchKit Extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		84A4D3C04CCD73E5B6022224446C838E /* Pods-HealthSense WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HealthSense WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
-		86FE31D69E844FBC226419FFD908E6D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		8A833982005FF7A8EA2626E8ACC56628 /* Pods-HealthSenseTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HealthSenseTests-Info.plist"; sourceTree = "<group>"; };
-		8BC00234E28F17660B3598D56DF434E8 /* Pods-HealthSense WatchKit App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HealthSense WatchKit App-acknowledgements.markdown"; sourceTree = "<group>"; };
-		90AAEA1C376A738D5CA67389AD0BE82F /* Pods-HealthSense WatchKit App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HealthSense WatchKit App-dummy.m"; sourceTree = "<group>"; };
-		90CEB1735FDC10EB0C9A01D03A8A491F /* Pods-HealthSense WatchKit App-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HealthSense WatchKit App-Info.plist"; sourceTree = "<group>"; };
-		92D7EFD7AF7168580ABDFB84D2B4702F /* Pods-HealthSenseTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HealthSenseTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		83AF3F805AD6DCE2A606714B17D8F700 /* OpacityAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OpacityAnimation.swift; path = Source/animation/types/OpacityAnimation.swift; sourceTree = "<group>"; };
+		84B89691513865479E9E950AA4A56B69 /* SVGConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGConstants.swift; path = Source/svg/SVGConstants.swift; sourceTree = "<group>"; };
+		88549500D8CFB55DF9ED5601A51526E2 /* LineJoin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineJoin.swift; path = Source/model/draw/LineJoin.swift; sourceTree = "<group>"; };
+		8963B2669A26CFF8BCDA5BCAE14A7042 /* Pods-HealthSenseTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HealthSenseTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8B32E5FEA6A3A49DFF38426B6505DE84 /* MCAShapeLayerLineCap_iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCAShapeLayerLineCap_iOS.swift; path = Source/MCAShapeLayerLineCap_iOS.swift; sourceTree = "<group>"; };
+		8B875B4E3C00C65390BE0A9A6D859DDD /* Pods-HealthSense WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthSense WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		8CD7D7ABB26E5E16149F66EF1558815C /* Pods-HealthSense WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthSense WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		8DD4799A8AF79299171F0B1BFD847D35 /* SVGSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGSerializer.swift; path = Source/svg/SVGSerializer.swift; sourceTree = "<group>"; };
+		8FB9EF1DFBA789840190CF4E6C1082FD /* Pods-HealthSense-HealthSenseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthSense-HealthSenseUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		907D5688124A8F2F13E2B59E557FCDB8 /* Group.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Group.swift; path = Source/model/scene/Group.swift; sourceTree = "<group>"; };
+		909B44E09950BAD2059E896E8E65FFF5 /* ShapeInterpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeInterpolation.swift; path = Source/animation/layer_animation/Extensions/ShapeInterpolation.swift; sourceTree = "<group>"; };
+		9262B7960F0FA89A45B285763FEEECEB /* Path.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Path.swift; path = Source/model/geom2d/Path.swift; sourceTree = "<group>"; };
+		92C3906FFF349D7F47A3C259187B0B88 /* Variable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Variable.swift; path = Source/bindings/Variable.swift; sourceTree = "<group>"; };
+		95EAB49EA4F3437B755E68CB1AFBBA77 /* BoundsUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BoundsUtils.swift; path = Source/utils/BoundsUtils.swift; sourceTree = "<group>"; };
+		9759AB337B7141A78E7575040C0DD4DF /* PathSegmentType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathSegmentType.swift; path = Source/model/geom2d/PathSegmentType.swift; sourceTree = "<group>"; };
+		97D014AD6344E543FEDB1FD1F8F2BFEC /* libSWXMLHash.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSWXMLHash.a; path = libSWXMLHash.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9ED801338C6C1D24CB8F777D3C3CBD58 /* Pods-HealthSense-HealthSenseUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HealthSense-HealthSenseUITests.modulemap"; sourceTree = "<group>"; };
-		A7F6043B9AD0EDECADF9BA120C802D2D /* Pods_HealthSenseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HealthSenseTests.framework; path = "Pods-HealthSenseTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA0B9D9FE47DAD3339BA5D27EC7A4C90 /* Pods-HealthSense-HealthSenseUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HealthSense-HealthSenseUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		B61AFFC94F99BBA429EC3CF0456F01F9 /* Pods-HealthSense-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HealthSense-Info.plist"; sourceTree = "<group>"; };
-		B7D79962D4AE8A75746D17A062C04802 /* Pods-HealthSense WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthSense WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
-		BAB7B0FDE1C296216CB30565CB99EA3E /* Pods-HealthSense.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthSense.release.xcconfig"; sourceTree = "<group>"; };
-		BDAAA0D51B6C5DF0003F2E979E50142D /* Pods-HealthSenseTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HealthSenseTests.modulemap"; sourceTree = "<group>"; };
-		BFD5031006FDCF99F821B11C7C357353 /* Pods-HealthSense WatchKit Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HealthSense WatchKit Extension-umbrella.h"; sourceTree = "<group>"; };
-		BFEC031DF16BD8BFB1AC3B31E46C7EC9 /* Pods-HealthSense WatchKit App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HealthSense WatchKit App-acknowledgements.plist"; sourceTree = "<group>"; };
-		C04A05A10794EF33ABDFE9C495A7947E /* Pods-HealthSenseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthSenseTests.debug.xcconfig"; sourceTree = "<group>"; };
-		C33591479B10F9359B742D6DDE7E6AC3 /* Pods-HealthSense-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HealthSense-acknowledgements.plist"; sourceTree = "<group>"; };
-		C4C01D2BE698ABC49411E0FFB7254CDF /* Pods-HealthSense.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HealthSense.modulemap"; sourceTree = "<group>"; };
-		C4E0A18B1779E3559D73323F4D14D6F8 /* Pods-HealthSense-HealthSenseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthSense-HealthSenseUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		C9AC2A5F45E46D384AF00563D69011B7 /* Pods_HealthSense.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HealthSense.framework; path = "Pods-HealthSense.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF3055A475D35F5C47049E192ACD2622 /* Pods-HealthSense WatchKit Extension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HealthSense WatchKit Extension-Info.plist"; sourceTree = "<group>"; };
-		D09D10309A2F73A39F4C62B1FC45DF52 /* Pods-HealthSense WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HealthSense WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
-		D822D996ED9A12A26CC3498964E45498 /* Pods-HealthSense WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthSense WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
-		E8BC0E370EEDDF53FFCD679590F59490 /* Pods-HealthSense-HealthSenseUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HealthSense-HealthSenseUITests-Info.plist"; sourceTree = "<group>"; };
-		F00363D1D88BD21907650D693B9CDD51 /* Pods-HealthSense-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HealthSense-umbrella.h"; sourceTree = "<group>"; };
-		F24EDD32F2D16D903EB521704D86157B /* Pods-HealthSenseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthSenseTests.release.xcconfig"; sourceTree = "<group>"; };
-		FC7DFB359B7D243DF0C458EB38AA95D5 /* Pods-HealthSense WatchKit App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HealthSense WatchKit App-umbrella.h"; sourceTree = "<group>"; };
-		FD63259E0C21F9BC7F379036AA794856 /* Pods-HealthSense-HealthSenseUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HealthSense-HealthSenseUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9E0EA7DCEF31D2EC867300DE32C9C442 /* TransformGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformGenerator.swift; path = Source/animation/types/animation_generators/TransformGenerator.swift; sourceTree = "<group>"; };
+		9EAB6200BB40F3858F761E25D0D8188C /* ColorMatrix.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorMatrix.swift; path = Source/model/draw/ColorMatrix.swift; sourceTree = "<group>"; };
+		A08C1BF69644C6D05026EDA7923A512D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A3FF41EDF4204A5494D4AD7CB1F42DDA /* GroupDisposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GroupDisposable.swift; path = Source/bindings/GroupDisposable.swift; sourceTree = "<group>"; };
+		A4D7DBB1AB18BCCD6B733BAD44857B64 /* MCAMediaTimingFunctionName_iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCAMediaTimingFunctionName_iOS.swift; path = Source/MCAMediaTimingFunctionName_iOS.swift; sourceTree = "<group>"; };
+		A511C4032E582F478AA7795C471CB3C7 /* UIImage2Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImage2Image.swift; path = Source/utils/UIImage2Image.swift; sourceTree = "<group>"; };
+		A51E5AEFC91E4E8DA8930E587E333102 /* Gradient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Gradient.swift; path = Source/model/draw/Gradient.swift; sourceTree = "<group>"; };
+		A7F6043B9AD0EDECADF9BA120C802D2D /* libPods-HealthSenseTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-HealthSenseTests.a"; path = "libPods-HealthSenseTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8C38B2B59BB0DA744DAD685B32F6725 /* Pods-HealthSense WatchKit App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HealthSense WatchKit App-dummy.m"; sourceTree = "<group>"; };
+		A97D289FF8CCC39C8D404F9DAA7BB22B /* ContentLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentLayout.swift; path = Source/layout/ContentLayout.swift; sourceTree = "<group>"; };
+		AD92312236E683C0DA87651D4E84BE7D /* PathBounds.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathBounds.swift; path = Source/animation/layer_animation/PathBounds.swift; sourceTree = "<group>"; };
+		ADFB3166706EBA8DE69550DC0DC6C768 /* MDisplayLink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MDisplayLink.swift; path = Source/platform/MDisplayLink.swift; sourceTree = "<group>"; };
+		AE66F678A47046E2D82DB5B50F1B78D2 /* Line.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Line.swift; path = Source/model/geom2d/Line.swift; sourceTree = "<group>"; };
+		AFDB2B5FF47F633ADACC85B332043A4B /* MacawView+PDF.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MacawView+PDF.swift"; path = "Source/export/MacawView+PDF.swift"; sourceTree = "<group>"; };
+		AFF1BB458219D73BB7D30A0EFF6789BF /* LocusInterpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocusInterpolation.swift; path = Source/animation/layer_animation/Extensions/LocusInterpolation.swift; sourceTree = "<group>"; };
+		B1ED2E130C2B2F5407834015D197968C /* Macaw-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Macaw-umbrella.h"; sourceTree = "<group>"; };
+		B4FB2577A479297747FDFF2964FEED81 /* CGMappings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGMappings.swift; path = Source/utils/CGMappings.swift; sourceTree = "<group>"; };
+		B608A74A03744D32A8CC32DFAA3363CD /* AnimOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimOperators.swift; path = Source/animation/layer_animation/Extensions/AnimOperators.swift; sourceTree = "<group>"; };
+		B95DD2DEF0F03740A9B73CEBE6F622B9 /* Pods-HealthSense-HealthSenseUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HealthSense-HealthSenseUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B979453D66DF0A00C9FA399B20BFF3F2 /* AnimationImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationImpl.swift; path = Source/animation/AnimationImpl.swift; sourceTree = "<group>"; };
+		B9F2DF59941C3E710A0F016265C2E816 /* MCAMediaTimingFillMode_macOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCAMediaTimingFillMode_macOS.swift; path = Source/MCAMediaTimingFillMode_macOS.swift; sourceTree = "<group>"; };
+		BB23B3CD1B4CEABBB391122219AE6A14 /* DescriptionExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DescriptionExtensions.swift; path = Source/utils/DescriptionExtensions.swift; sourceTree = "<group>"; };
+		BB7AC117A3C11991F8175311D1EEA0A2 /* Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animation.swift; path = Source/animation/Animation.swift; sourceTree = "<group>"; };
+		BEC0E2241FDF0C5DAC993DB5BAB0B912 /* MBezierPath+Extension_macOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MBezierPath+Extension_macOS.swift"; path = "Source/platform/macOS/MBezierPath+Extension_macOS.swift"; sourceTree = "<group>"; };
+		C113E696BC82DBBC03F19063C2D39210 /* Pods-HealthSense-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HealthSense-dummy.m"; sourceTree = "<group>"; };
+		C298BBB6A47613219BB7ED90FB12F104 /* Event.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Source/events/Event.swift; sourceTree = "<group>"; };
+		C334049FB2DB973D74D177504E8B8DB9 /* PinchEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PinchEvent.swift; path = Source/events/PinchEvent.swift; sourceTree = "<group>"; };
+		C36CBC31CB256E83464AFC164FA7DFB4 /* PathSegment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathSegment.swift; path = Source/model/geom2d/PathSegment.swift; sourceTree = "<group>"; };
+		C387806CE1F7FC814E9EE915DD03EEF9 /* libMacaw.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMacaw.a; path = libMacaw.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4DE167C51D27CBB7F396BFEF3EE2D2F /* MCAShapeLayerLineJoin_macOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCAShapeLayerLineJoin_macOS.swift; path = Source/MCAShapeLayerLineJoin_macOS.swift; sourceTree = "<group>"; };
+		C5EB26862800F1420416BFDA4F14A95C /* Pods-HealthSenseTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HealthSenseTests-dummy.m"; sourceTree = "<group>"; };
+		C67BB64C0056E32C73BF4A5E0C806870 /* OpacityGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OpacityGenerator.swift; path = Source/animation/types/animation_generators/OpacityGenerator.swift; sourceTree = "<group>"; };
+		C9634B821DCDBF86AC91BF4117AC3A3F /* Interpolable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Interpolable.swift; path = Source/animation/layer_animation/Extensions/Interpolable.swift; sourceTree = "<group>"; };
+		C9AC2A5F45E46D384AF00563D69011B7 /* libPods-HealthSense.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-HealthSense.a"; path = "libPods-HealthSense.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9F81A6AF2A47A0C36CAF13C6466CBEB /* Polyline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Polyline.swift; path = Source/model/geom2d/Polyline.swift; sourceTree = "<group>"; };
+		CD0895D220689090267E26B8C2ADBE89 /* RenderContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RenderContext.swift; path = Source/render/RenderContext.swift; sourceTree = "<group>"; };
+		CDA3CC71036C2F387013BC4343E65C01 /* DoubleInterpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DoubleInterpolation.swift; path = Source/animation/layer_animation/Extensions/DoubleInterpolation.swift; sourceTree = "<group>"; };
+		CDF629E1E60CF59767ACFCEFE2E9DE75 /* SWXMLHash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SWXMLHash.debug.xcconfig; sourceTree = "<group>"; };
+		D0479FF3B7704972124B6643C4572BE8 /* Pattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pattern.swift; path = Source/model/draw/Pattern.swift; sourceTree = "<group>"; };
+		D09A04F8579C7BBC18BBD8AAF29212E6 /* TouchEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TouchEvent.swift; path = Source/events/TouchEvent.swift; sourceTree = "<group>"; };
+		D0AAA1A3040F4F9D9158F8CBE66067FC /* MView_iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MView_iOS.swift; path = Source/platform/iOS/MView_iOS.swift; sourceTree = "<group>"; };
+		D2A52F3C395032109C92410447840C60 /* Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Size.swift; path = Source/model/geom2d/Size.swift; sourceTree = "<group>"; };
+		D33EF416322CCAAC9E3FFEE30564D432 /* Pods-HealthSenseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthSenseTests.release.xcconfig"; sourceTree = "<group>"; };
+		D35588250E98B9FBC12C427E27A934CC /* AlphaEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlphaEffect.swift; path = Source/model/draw/AlphaEffect.swift; sourceTree = "<group>"; };
+		D4E9E06C4DFB4C9295BADD661506EBE7 /* MCAMediaTimingFunctionName_macOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCAMediaTimingFunctionName_macOS.swift; path = Source/MCAMediaTimingFunctionName_macOS.swift; sourceTree = "<group>"; };
+		D5705E6163D90BE5F2E3E67BC0F88E0A /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = Source/model/scene/Node.swift; sourceTree = "<group>"; };
+		D7BD8363DA921BEE09EB9E01E44324A5 /* Macaw-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Macaw-prefix.pch"; sourceTree = "<group>"; };
+		D83B9C4C0BC6EADD4CD0F0A6948F0B63 /* Pods-HealthSense-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HealthSense-acknowledgements.plist"; sourceTree = "<group>"; };
+		D8A78DA8275C748FE00B0F4F5043540E /* ContentsInterpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentsInterpolation.swift; path = Source/animation/layer_animation/Extensions/ContentsInterpolation.swift; sourceTree = "<group>"; };
+		DEB009A118C72C6F5D9E1B7EB44FF804 /* NSTimer+Closure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSTimer+Closure.swift"; path = "Source/thirdparty/NSTimer+Closure.swift"; sourceTree = "<group>"; };
+		E0EF85B852F3A81BE2C066A920447D2F /* Pods-HealthSense.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HealthSense.modulemap"; sourceTree = "<group>"; };
+		E10B6A9219BBA58F4CC92B7DF6581C55 /* GaussianBlur.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GaussianBlur.swift; path = Source/model/draw/GaussianBlur.swift; sourceTree = "<group>"; };
+		E1745134FDC31F18D64E42C85E247122 /* Pods-HealthSense WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HealthSense WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E265A2F006E67B2699976EA968F10684 /* MView_macOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MView_macOS.swift; path = Source/platform/macOS/MView_macOS.swift; sourceTree = "<group>"; };
+		E528F76E5D7009376C320B02188C6914 /* ShapeAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeAnimation.swift; path = Source/animation/types/ShapeAnimation.swift; sourceTree = "<group>"; };
+		E6102A258BE56618CB21E0AEB848EFC9 /* SVGParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGParser.swift; path = Source/svg/SVGParser.swift; sourceTree = "<group>"; };
+		E624CEE6FCEA28D9ACC3440ECD9EFF11 /* Pods-HealthSense-HealthSenseUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HealthSense-HealthSenseUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E902550907F6BCEA36C3B8A630590428 /* RoundRect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RoundRect.swift; path = Source/model/geom2d/RoundRect.swift; sourceTree = "<group>"; };
+		EB922B195652D4240C27A1A973B15B9C /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Source/model/scene/Image.swift; sourceTree = "<group>"; };
+		EE368280DB996B718A44FA8E85347E99 /* Pods-HealthSense WatchKit App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HealthSense WatchKit App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EE5B2EEB380DBB09575D8C94587F4C20 /* AnimationUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationUtils.swift; path = Source/animation/AnimationUtils.swift; sourceTree = "<group>"; };
+		EEF43016549A83A17201D45D7339D624 /* Pods-HealthSense WatchKit App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HealthSense WatchKit App-umbrella.h"; sourceTree = "<group>"; };
+		EF92B63C90C249B47166FB2B9DD52FAA /* Stroke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stroke.swift; path = Source/model/draw/Stroke.swift; sourceTree = "<group>"; };
+		F0A9FBDF2C23DF1AC6FB4C27A5EB8393 /* Pods-HealthSense WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HealthSense WatchKit Extension.modulemap"; sourceTree = "<group>"; };
+		F35858A9BC408D4CFEB4A0403A6C0ED5 /* Pods-HealthSense-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HealthSense-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F4F52F1D5126B78D249106821A7E7E8A /* SWXMLHash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SWXMLHash.release.xcconfig; sourceTree = "<group>"; };
+		F5E2483481A44ACA79FEF4BCD9EFFE46 /* ShapeLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeLayer.swift; path = Source/views/ShapeLayer.swift; sourceTree = "<group>"; };
+		F83DE00EF297EDDD1553320A3CEFC75D /* MCAShapeLayerLineCap_macOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCAShapeLayerLineCap_macOS.swift; path = Source/MCAShapeLayerLineCap_macOS.swift; sourceTree = "<group>"; };
+		F8A7AFA7B2A873FAB89699495665013F /* Effect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Effect.swift; path = Source/model/draw/Effect.swift; sourceTree = "<group>"; };
+		FCF70278FF7528891FE057AA824A76DE /* Shape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shape.swift; path = Source/model/scene/Shape.swift; sourceTree = "<group>"; };
+		FD7CA27A139B8FFF14C952758FCD7E9F /* MCAShapeLayerLineJoin_iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCAShapeLayerLineJoin_iOS.swift; path = Source/MCAShapeLayerLineJoin_iOS.swift; sourceTree = "<group>"; };
+		FD7D8734238C54936E5F876E8A9E1FB8 /* Pods-HealthSense-HealthSenseUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HealthSense-HealthSenseUITests-dummy.m"; sourceTree = "<group>"; };
+		FE7358B5ECAAC750BA0205350E7D5FAC /* Pods-HealthSense.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HealthSense.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		57AC38FB83BF59025B7EECBAD92B97B7 /* Frameworks */ = {
+		1AA57AD9EEE4219775454BB2B53FD564 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3584970EA121DC7B7F25C92FD8998798 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4EB892D80DFA094135DC067532BC62A /* Frameworks */ = {
+		37ECEEBFA2D0FD153D3BB64CE5A1ED9E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				369D6F3C9E923D99AF6CA0B4F2B0A5F9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C3FD53A3578A42985F72F4627D624B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC56946AC728F2F599AA1EE62091BA30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,14 +473,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DAD35B3B6ADBBF7EF7F63A6F434999CC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3B68FB8021DD98846C8A0C24DBA3F3FD /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E6CDE00AE479AA67DC8A535585B93460 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -154,195 +481,362 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED97766D9B4B554D0C1737B97A6D6EB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		109E9BD8E55F2B5BC8C987AAC67886B5 /* Targets Support Files */ = {
+		008D2978372CCCF6F0989CA6084E6E4D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				235E5B7D5138BF415ED7A60F3FE87C4C /* Pods-HealthSense */,
-				E3F768CBBFED4321F3B96D040D888FE9 /* Pods-HealthSense WatchKit App */,
-				18911F4D9B8CC6D2CAAB0903C8984B3C /* Pods-HealthSense WatchKit Extension */,
-				B96DD4DA1838A1BC795B47B3790E9F95 /* Pods-HealthSense-HealthSenseUITests */,
-				9BE0FF3C63445C1C9B230B151D570CE0 /* Pods-HealthSenseTests */,
+				F41872644D17D42BD5513E7D91E629C9 /* Macaw */,
+				182F4BC9930B3F3DE1A90CD710847720 /* SwiftLint */,
+				AEF339F59FFB8DD2BB615F61D0B85DE2 /* SWXMLHash */,
 			);
-			name = "Targets Support Files";
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		18911F4D9B8CC6D2CAAB0903C8984B3C /* Pods-HealthSense WatchKit Extension */ = {
+		182F4BC9930B3F3DE1A90CD710847720 /* SwiftLint */ = {
 			isa = PBXGroup;
 			children = (
-				5AF301E6B9262E8A008810C0D7A79CDB /* Pods-HealthSense WatchKit Extension.modulemap */,
-				84A4D3C04CCD73E5B6022224446C838E /* Pods-HealthSense WatchKit Extension-acknowledgements.markdown */,
-				D09D10309A2F73A39F4C62B1FC45DF52 /* Pods-HealthSense WatchKit Extension-acknowledgements.plist */,
-				7212B07D11EAA78B1C9E6897107AEEE0 /* Pods-HealthSense WatchKit Extension-dummy.m */,
-				CF3055A475D35F5C47049E192ACD2622 /* Pods-HealthSense WatchKit Extension-Info.plist */,
-				BFD5031006FDCF99F821B11C7C357353 /* Pods-HealthSense WatchKit Extension-umbrella.h */,
-				3F7F6C8AE1D91E73A155FF80F3BA768A /* Pods-HealthSense WatchKit Extension.debug.xcconfig */,
-				D822D996ED9A12A26CC3498964E45498 /* Pods-HealthSense WatchKit Extension.release.xcconfig */,
+				B19C35652DB15E36D5A085F8B40D6BCA /* Support Files */,
 			);
-			name = "Pods-HealthSense WatchKit Extension";
-			path = "Target Support Files/Pods-HealthSense WatchKit Extension";
+			name = SwiftLint;
+			path = SwiftLint;
 			sourceTree = "<group>";
 		};
-		235E5B7D5138BF415ED7A60F3FE87C4C /* Pods-HealthSense */ = {
+		1F609373943C98557397F6771171085A /* Pods-HealthSense */ = {
 			isa = PBXGroup;
 			children = (
-				C4C01D2BE698ABC49411E0FFB7254CDF /* Pods-HealthSense.modulemap */,
-				3A1C80046FDB6D7F1EF7F5D4909530D6 /* Pods-HealthSense-acknowledgements.markdown */,
-				C33591479B10F9359B742D6DDE7E6AC3 /* Pods-HealthSense-acknowledgements.plist */,
-				5A45D3F1EA20D9DC8BEFDC55E4A3F524 /* Pods-HealthSense-dummy.m */,
-				B61AFFC94F99BBA429EC3CF0456F01F9 /* Pods-HealthSense-Info.plist */,
-				F00363D1D88BD21907650D693B9CDD51 /* Pods-HealthSense-umbrella.h */,
-				0B84B98E5F7C749B555DF929AED0E940 /* Pods-HealthSense.debug.xcconfig */,
-				BAB7B0FDE1C296216CB30565CB99EA3E /* Pods-HealthSense.release.xcconfig */,
+				E0EF85B852F3A81BE2C066A920447D2F /* Pods-HealthSense.modulemap */,
+				F35858A9BC408D4CFEB4A0403A6C0ED5 /* Pods-HealthSense-acknowledgements.markdown */,
+				D83B9C4C0BC6EADD4CD0F0A6948F0B63 /* Pods-HealthSense-acknowledgements.plist */,
+				C113E696BC82DBBC03F19063C2D39210 /* Pods-HealthSense-dummy.m */,
+				4D0235A351DA0E16F745CE38EAA93EE3 /* Pods-HealthSense-umbrella.h */,
+				FE7358B5ECAAC750BA0205350E7D5FAC /* Pods-HealthSense.debug.xcconfig */,
+				1D0CFA755AF2CBD4A4B50BC5A9B5D48E /* Pods-HealthSense.release.xcconfig */,
 			);
 			name = "Pods-HealthSense";
 			path = "Target Support Files/Pods-HealthSense";
 			sourceTree = "<group>";
 		};
-		2C8DCC9952E5DB2860D73C3A913F1CC2 /* iOS */ = {
+		20BC7890790E9AE3265C63F10412FD04 /* Pods-HealthSenseTests */ = {
 			isa = PBXGroup;
 			children = (
-				5ADBF5E8B7047831DCFB355C966E47AD /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		43085B5EC92BA9333228B94389FFA518 /* watchOS */ = {
-			isa = PBXGroup;
-			children = (
-				86FE31D69E844FBC226419FFD908E6D2 /* Foundation.framework */,
-			);
-			name = watchOS;
-			sourceTree = "<group>";
-		};
-		54CCD06893F300F5B2C02DAFD57093E1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2C8DCC9952E5DB2860D73C3A913F1CC2 /* iOS */,
-				43085B5EC92BA9333228B94389FFA518 /* watchOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7FDA596DBE0337ACDFE55A210D54EF26 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */,
-				7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftLint";
-			sourceTree = "<group>";
-		};
-		965877409E01FB3D85D85E90E6B30185 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D96179D43A67C5D5323B0682D32C133C /* SwiftLint */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		9BE0FF3C63445C1C9B230B151D570CE0 /* Pods-HealthSenseTests */ = {
-			isa = PBXGroup;
-			children = (
-				BDAAA0D51B6C5DF0003F2E979E50142D /* Pods-HealthSenseTests.modulemap */,
-				0BB9E3AB7F961087BD54D192CBB297EC /* Pods-HealthSenseTests-acknowledgements.markdown */,
-				92D7EFD7AF7168580ABDFB84D2B4702F /* Pods-HealthSenseTests-acknowledgements.plist */,
-				425333C4DDD93B85779E64A130632590 /* Pods-HealthSenseTests-dummy.m */,
-				8A833982005FF7A8EA2626E8ACC56628 /* Pods-HealthSenseTests-Info.plist */,
-				6E1E6A77275BE4E297C4964EB4748260 /* Pods-HealthSenseTests-umbrella.h */,
-				C04A05A10794EF33ABDFE9C495A7947E /* Pods-HealthSenseTests.debug.xcconfig */,
-				F24EDD32F2D16D903EB521704D86157B /* Pods-HealthSenseTests.release.xcconfig */,
+				8963B2669A26CFF8BCDA5BCAE14A7042 /* Pods-HealthSenseTests-acknowledgements.markdown */,
+				305E6C1DF13B73D9DDA5F88DDDD064CF /* Pods-HealthSenseTests-acknowledgements.plist */,
+				C5EB26862800F1420416BFDA4F14A95C /* Pods-HealthSenseTests-dummy.m */,
+				30EC9A7CED992CCBE657A373AF520E67 /* Pods-HealthSenseTests.debug.xcconfig */,
+				D33EF416322CCAAC9E3FFEE30564D432 /* Pods-HealthSenseTests.release.xcconfig */,
 			);
 			name = "Pods-HealthSenseTests";
 			path = "Target Support Files/Pods-HealthSenseTests";
 			sourceTree = "<group>";
 		};
-		B96DD4DA1838A1BC795B47B3790E9F95 /* Pods-HealthSense-HealthSenseUITests */ = {
+		32AB8CC75EB8043358F04B63FF7AF472 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9ED801338C6C1D24CB8F777D3C3CBD58 /* Pods-HealthSense-HealthSenseUITests.modulemap */,
-				FD63259E0C21F9BC7F379036AA794856 /* Pods-HealthSense-HealthSenseUITests-acknowledgements.markdown */,
-				AA0B9D9FE47DAD3339BA5D27EC7A4C90 /* Pods-HealthSense-HealthSenseUITests-acknowledgements.plist */,
-				75DA2FE524AD6168F68A96494B366863 /* Pods-HealthSense-HealthSenseUITests-dummy.m */,
-				E8BC0E370EEDDF53FFCD679590F59490 /* Pods-HealthSense-HealthSenseUITests-Info.plist */,
-				1D544D035825B0F413EC84776BBB745B /* Pods-HealthSense-HealthSenseUITests-umbrella.h */,
-				C4E0A18B1779E3559D73323F4D14D6F8 /* Pods-HealthSense-HealthSenseUITests.debug.xcconfig */,
-				0C31166449D96DD6585D70CEAB6B8B5A /* Pods-HealthSense-HealthSenseUITests.release.xcconfig */,
+				77FD4D7CD82562F1F14DE12145185396 /* Macaw.modulemap */,
+				2984A0769743BAB3400DFF9FF3C8EE66 /* Macaw-dummy.m */,
+				D7BD8363DA921BEE09EB9E01E44324A5 /* Macaw-prefix.pch */,
+				B1ED2E130C2B2F5407834015D197968C /* Macaw-umbrella.h */,
+				2746122DA7F619B53E78BB896239761D /* Macaw.debug.xcconfig */,
+				237DE7A4C19FA5AC347C70FFE5AB9D54 /* Macaw.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Macaw";
+			sourceTree = "<group>";
+		};
+		33D7EFEB73050798853310082546DF94 /* Pods-HealthSense-HealthSenseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5F4E9268B1834EC47D5E0044298952D8 /* Pods-HealthSense-HealthSenseUITests.modulemap */,
+				B95DD2DEF0F03740A9B73CEBE6F622B9 /* Pods-HealthSense-HealthSenseUITests-acknowledgements.markdown */,
+				E624CEE6FCEA28D9ACC3440ECD9EFF11 /* Pods-HealthSense-HealthSenseUITests-acknowledgements.plist */,
+				FD7D8734238C54936E5F876E8A9E1FB8 /* Pods-HealthSense-HealthSenseUITests-dummy.m */,
+				6096D2DB02B305D570CB45E34350D547 /* Pods-HealthSense-HealthSenseUITests-umbrella.h */,
+				8FB9EF1DFBA789840190CF4E6C1082FD /* Pods-HealthSense-HealthSenseUITests.debug.xcconfig */,
+				45FE0EF38B6B5EFF50F4AD50AEE89519 /* Pods-HealthSense-HealthSenseUITests.release.xcconfig */,
 			);
 			name = "Pods-HealthSense-HealthSenseUITests";
 			path = "Target Support Files/Pods-HealthSense-HealthSenseUITests";
+			sourceTree = "<group>";
+		};
+		5CF220D25288EBED6D1E3B7AEE3E8274 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7B15227E1149F7F3634346CF4125164 /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6AD8C6E23AA66F5C11A05D569ACA077A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				00D503C731932F93DB993D2D78437522 /* SWXMLHash.modulemap */,
+				19EE40C1EFBC61CB9B821CAE746B3680 /* SWXMLHash-dummy.m */,
+				3125E5106044B6B299583DA81309E467 /* SWXMLHash-prefix.pch */,
+				75DE0F6D6E2938E55171A488967DFADA /* SWXMLHash-umbrella.h */,
+				CDF629E1E60CF59767ACFCEFE2E9DE75 /* SWXMLHash.debug.xcconfig */,
+				F4F52F1D5126B78D249106821A7E7E8A /* SWXMLHash.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SWXMLHash";
+			sourceTree = "<group>";
+		};
+		6C7836038ED95EFC9A027DB4CCF351B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C387806CE1F7FC814E9EE915DD03EEF9 /* libMacaw.a */,
+				C9AC2A5F45E46D384AF00563D69011B7 /* libPods-HealthSense.a */,
+				17403B5012EE9FE676BE92F548731E9D /* libPods-HealthSense-HealthSenseUITests.a */,
+				A7F6043B9AD0EDECADF9BA120C802D2D /* libPods-HealthSenseTests.a */,
+				97D014AD6344E543FEDB1FD1F8F2BFEC /* libSWXMLHash.a */,
+				3B121A4B71803C0BEB52752665EDC7AB /* Pods_HealthSense_WatchKit_App.framework */,
+				836CE8ABD9D8EF03C92F77142C9D5BDC /* Pods_HealthSense_WatchKit_Extension.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9ACC36C04EBFF9DDAFA2D812BAADDAF4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F609373943C98557397F6771171085A /* Pods-HealthSense */,
+				E4AF598E25E85DA28E1A6B15C6D80435 /* Pods-HealthSense WatchKit App */,
+				B071FBDF8973E052507A68E7B1001A57 /* Pods-HealthSense WatchKit Extension */,
+				33D7EFEB73050798853310082546DF94 /* Pods-HealthSense-HealthSenseUITests */,
+				20BC7890790E9AE3265C63F10412FD04 /* Pods-HealthSenseTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AEF339F59FFB8DD2BB615F61D0B85DE2 /* SWXMLHash */ = {
+			isa = PBXGroup;
+			children = (
+				60C2DBF30C2400A10F07B78D91628F38 /* shim.swift */,
+				506B1D9E1657B13A573FC0FF0DD7064C /* SWXMLHash.swift */,
+				1C584B02DAADB478C23EE8CE5E8B8EA6 /* XMLIndexer+XMLIndexerDeserializable.swift */,
+				6AD8C6E23AA66F5C11A05D569ACA077A /* Support Files */,
+			);
+			name = SWXMLHash;
+			path = SWXMLHash;
+			sourceTree = "<group>";
+		};
+		B071FBDF8973E052507A68E7B1001A57 /* Pods-HealthSense WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F0A9FBDF2C23DF1AC6FB4C27A5EB8393 /* Pods-HealthSense WatchKit Extension.modulemap */,
+				E1745134FDC31F18D64E42C85E247122 /* Pods-HealthSense WatchKit Extension-acknowledgements.markdown */,
+				70488A8D87FFCB7928DC5195B70B097D /* Pods-HealthSense WatchKit Extension-acknowledgements.plist */,
+				58498F3E7624CDD0A17637A6F161CFAC /* Pods-HealthSense WatchKit Extension-dummy.m */,
+				44C979D5793F675604C8206E5502BF36 /* Pods-HealthSense WatchKit Extension-Info.plist */,
+				68400D0E5EE81AA7BA6AF35C4DA29B98 /* Pods-HealthSense WatchKit Extension-umbrella.h */,
+				2651B663C7C30C03FB39964C57B48E5F /* Pods-HealthSense WatchKit Extension.debug.xcconfig */,
+				8B875B4E3C00C65390BE0A9A6D859DDD /* Pods-HealthSense WatchKit Extension.release.xcconfig */,
+			);
+			name = "Pods-HealthSense WatchKit Extension";
+			path = "Target Support Files/Pods-HealthSense WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		B19C35652DB15E36D5A085F8B40D6BCA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				59ADBB71AEA3EE15B747FE5133484E77 /* SwiftLint.debug.xcconfig */,
+				1ED4764219FF23B9C8A33482488216AA /* SwiftLint.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				54CCD06893F300F5B2C02DAFD57093E1 /* Frameworks */,
-				965877409E01FB3D85D85E90E6B30185 /* Pods */,
-				F56EE482480A70213EF1AC77F651EFCC /* Products */,
-				109E9BD8E55F2B5BC8C987AAC67886B5 /* Targets Support Files */,
+				5CF220D25288EBED6D1E3B7AEE3E8274 /* Frameworks */,
+				008D2978372CCCF6F0989CA6084E6E4D /* Pods */,
+				6C7836038ED95EFC9A027DB4CCF351B4 /* Products */,
+				9ACC36C04EBFF9DDAFA2D812BAADDAF4 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D96179D43A67C5D5323B0682D32C133C /* SwiftLint */ = {
+		E4AF598E25E85DA28E1A6B15C6D80435 /* Pods-HealthSense WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
-				7FDA596DBE0337ACDFE55A210D54EF26 /* Support Files */,
-			);
-			name = SwiftLint;
-			path = SwiftLint;
-			sourceTree = "<group>";
-		};
-		E3F768CBBFED4321F3B96D040D888FE9 /* Pods-HealthSense WatchKit App */ = {
-			isa = PBXGroup;
-			children = (
-				806CF9C618B942E5B10A9D5D4EC9389D /* Pods-HealthSense WatchKit App.modulemap */,
-				8BC00234E28F17660B3598D56DF434E8 /* Pods-HealthSense WatchKit App-acknowledgements.markdown */,
-				BFEC031DF16BD8BFB1AC3B31E46C7EC9 /* Pods-HealthSense WatchKit App-acknowledgements.plist */,
-				90AAEA1C376A738D5CA67389AD0BE82F /* Pods-HealthSense WatchKit App-dummy.m */,
-				90CEB1735FDC10EB0C9A01D03A8A491F /* Pods-HealthSense WatchKit App-Info.plist */,
-				FC7DFB359B7D243DF0C458EB38AA95D5 /* Pods-HealthSense WatchKit App-umbrella.h */,
-				3CD76D3E330BD70A5D5B66A404492217 /* Pods-HealthSense WatchKit App.debug.xcconfig */,
-				B7D79962D4AE8A75746D17A062C04802 /* Pods-HealthSense WatchKit App.release.xcconfig */,
+				1BF51EB1EC4D5A2DA31D4BCE4E4A7B73 /* Pods-HealthSense WatchKit App.modulemap */,
+				EE368280DB996B718A44FA8E85347E99 /* Pods-HealthSense WatchKit App-acknowledgements.markdown */,
+				741FEFDC8901F8EAE32FCB3DBF55FA55 /* Pods-HealthSense WatchKit App-acknowledgements.plist */,
+				A8C38B2B59BB0DA744DAD685B32F6725 /* Pods-HealthSense WatchKit App-dummy.m */,
+				647762DF72FFF1CB7BC663DBECFCF58F /* Pods-HealthSense WatchKit App-Info.plist */,
+				EEF43016549A83A17201D45D7339D624 /* Pods-HealthSense WatchKit App-umbrella.h */,
+				8CD7D7ABB26E5E16149F66EF1558815C /* Pods-HealthSense WatchKit App.debug.xcconfig */,
+				191CE8E92F4C546E39B2BA47274821B8 /* Pods-HealthSense WatchKit App.release.xcconfig */,
 			);
 			name = "Pods-HealthSense WatchKit App";
 			path = "Target Support Files/Pods-HealthSense WatchKit App";
 			sourceTree = "<group>";
 		};
-		F56EE482480A70213EF1AC77F651EFCC /* Products */ = {
+		E7B15227E1149F7F3634346CF4125164 /* watchOS */ = {
 			isa = PBXGroup;
 			children = (
-				C9AC2A5F45E46D384AF00563D69011B7 /* Pods_HealthSense.framework */,
-				17403B5012EE9FE676BE92F548731E9D /* Pods_HealthSense_HealthSenseUITests.framework */,
-				3B121A4B71803C0BEB52752665EDC7AB /* Pods_HealthSense_WatchKit_App.framework */,
-				836CE8ABD9D8EF03C92F77142C9D5BDC /* Pods_HealthSense_WatchKit_Extension.framework */,
-				A7F6043B9AD0EDECADF9BA120C802D2D /* Pods_HealthSenseTests.framework */,
+				A08C1BF69644C6D05026EDA7923A512D /* Foundation.framework */,
 			);
-			name = Products;
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		F41872644D17D42BD5513E7D91E629C9 /* Macaw */ = {
+			isa = PBXGroup;
+			children = (
+				4C2FD67B30F2CF14C9F8DABEF21A531B /* Align.swift */,
+				D35588250E98B9FBC12C427E27A934CC /* AlphaEffect.swift */,
+				667664BBD020F5EDF37A1779DC1BC390 /* AnimatableVariable.swift */,
+				BB7AC117A3C11991F8175311D1EEA0A2 /* Animation.swift */,
+				3B02E3D8B61B8C8E55470890F4E9CF9C /* AnimationCache.swift */,
+				B979453D66DF0A00C9FA399B20BFF3F2 /* AnimationImpl.swift */,
+				41F7183DF618287581C4EC6EBBA642C9 /* AnimationProducer.swift */,
+				4A207431A0F1E1800E21582C5061FFA0 /* AnimationSequence.swift */,
+				EE5B2EEB380DBB09575D8C94587F4C20 /* AnimationUtils.swift */,
+				B608A74A03744D32A8CC32DFAA3363CD /* AnimOperators.swift */,
+				78F61BF7E81A43BC66DA76A0857474D7 /* Arc.swift */,
+				4F8761794BE96D389238EB8C70AE30C3 /* AspectRatio.swift */,
+				1C46DAC9E2057C295B1566826620BA1A /* Baseline.swift */,
+				5FE19908522E9FA155C67599037FD38E /* BlendEffect.swift */,
+				95EAB49EA4F3437B755E68CB1AFBBA77 /* BoundsUtils.swift */,
+				693AF2ECF402F1E642489B131D6B45D7 /* CAAnimationClosure.swift */,
+				11C3A27D080BDE7DC94504C22E745B4C /* CGFloat+Double.swift */,
+				B4FB2577A479297747FDFF2964FEED81 /* CGMappings.swift */,
+				5102191D60AFCC7CB2977F5350C15C5A /* Circle.swift */,
+				4842FED73CE3205AECE50CA983E39875 /* Color.swift */,
+				9EAB6200BB40F3858F761E25D0D8188C /* ColorMatrix.swift */,
+				0B2BFA3639CCA9C6F519A02FE1E6C22A /* ColorMatrixEffect.swift */,
+				0C70531821A5CD844E8080EB8EE60ED8 /* CombinationAnimationGenerator.swift */,
+				3EEDAD30DBEE60F4BE47987FC81A55B1 /* CombineAnimation.swift */,
+				152C4587E8052BEC1B5452307CCD858B /* Common_iOS.swift */,
+				5202FCFD7A22BDA6F12CD4A6C1EC84C7 /* Common_macOS.swift */,
+				A97D289FF8CCC39C8D404F9DAA7BB22B /* ContentLayout.swift */,
+				4A4F49CB816B087EEEBCF7CE93B5A573 /* ContentsAnimation.swift */,
+				D8A78DA8275C748FE00B0F4F5043540E /* ContentsInterpolation.swift */,
+				3B23EDC3ADC64CB0AE4B441910AC031F /* CSSParser.swift */,
+				BB23B3CD1B4CEABBB391122219AE6A14 /* DescriptionExtensions.swift */,
+				5F0DA49F4C829C6FFAB7A3B70A740E01 /* Disposable.swift */,
+				CDA3CC71036C2F387013BC4343E65C01 /* DoubleInterpolation.swift */,
+				7622C59C39C5E9E5881496C840908F67 /* Drawable.swift */,
+				46E35DAAB95F210E42F4222C4EF1FF8F /* Easing.swift */,
+				F8A7AFA7B2A873FAB89699495665013F /* Effect.swift */,
+				0E0FBCAB5D37777C06D56BC849B0EFB0 /* Ellipse.swift */,
+				C298BBB6A47613219BB7ED90FB12F104 /* Event.swift */,
+				470D02C844A596738D95C4845BC108F6 /* Fill.swift */,
+				683B236EADADECBB08CA4BC20FFE3831 /* FillInterpolation.swift */,
+				3D9FA2D83BA344A8F4B272163BFA0400 /* Font.swift */,
+				2BA36B6308CD8EDB9350B49067E80DFD /* FuncBounds.swift */,
+				E10B6A9219BBA58F4CC92B7DF6581C55 /* GaussianBlur.swift */,
+				77BA25044E537FB23CEAADF790F589FC /* GeomUtils.swift */,
+				A51E5AEFC91E4E8DA8930E587E333102 /* Gradient.swift */,
+				1CA5AE5C2F64F73EB762DA53646F474C /* Graphics_iOS.swift */,
+				08342B9E89323C956C5694A290F922D9 /* Graphics_macOS.swift */,
+				907D5688124A8F2F13E2B59E557FCDB8 /* Group.swift */,
+				A3FF41EDF4204A5494D4AD7CB1F42DDA /* GroupDisposable.swift */,
+				7ABB673046C60B41FC566D32442980A3 /* GroupRenderer.swift */,
+				EB922B195652D4240C27A1A973B15B9C /* Image.swift */,
+				1E01616A90473C5EC9C08A29FF534C65 /* ImageRenderer.swift */,
+				5DFC647D82B03A119CB4C2BEF27CBCC4 /* Insets.swift */,
+				C9634B821DCDBF86AC91BF4117AC3A3F /* Interpolable.swift */,
+				AE66F678A47046E2D82DB5B50F1B78D2 /* Line.swift */,
+				771F938D6586D80EDD42FA2FB122AB75 /* LinearGradient.swift */,
+				079F6E5637F4509A84A6B87462AEA552 /* LineCap.swift */,
+				88549500D8CFB55DF9ED5601A51526E2 /* LineJoin.swift */,
+				27C63D09168FAEA974697221DB49C749 /* Locus.swift */,
+				AFF1BB458219D73BB7D30A0EFF6789BF /* LocusInterpolation.swift */,
+				0998FE1C53F0459D0E75DA4DF0811812 /* MacawView.swift */,
+				AFDB2B5FF47F633ADACC85B332043A4B /* MacawView+PDF.swift */,
+				BEC0E2241FDF0C5DAC993DB5BAB0B912 /* MBezierPath+Extension_macOS.swift */,
+				09179F438DAC50AA305255E5393EAF89 /* MCAMediaTimingFillMode_iOS.swift */,
+				B9F2DF59941C3E710A0F016265C2E816 /* MCAMediaTimingFillMode_macOS.swift */,
+				A4D7DBB1AB18BCCD6B733BAD44857B64 /* MCAMediaTimingFunctionName_iOS.swift */,
+				D4E9E06C4DFB4C9295BADD661506EBE7 /* MCAMediaTimingFunctionName_macOS.swift */,
+				8B32E5FEA6A3A49DFF38426B6505DE84 /* MCAShapeLayerLineCap_iOS.swift */,
+				F83DE00EF297EDDD1553320A3CEFC75D /* MCAShapeLayerLineCap_macOS.swift */,
+				FD7CA27A139B8FFF14C952758FCD7E9F /* MCAShapeLayerLineJoin_iOS.swift */,
+				C4DE167C51D27CBB7F396BFEF3EE2D2F /* MCAShapeLayerLineJoin_macOS.swift */,
+				ADFB3166706EBA8DE69550DC0DC6C768 /* MDisplayLink.swift */,
+				30F35B39630BB21B1D3FA50E61957C33 /* MDisplayLink_iOS.swift */,
+				3FCBAF3464BB08EFBC3743D04BE20C0E /* MDisplayLink_macOS.swift */,
+				4A3A639669B83DCBC54D295E716FC3F9 /* MorphingAnimation.swift */,
+				5943857ECEF193D2FE37055093D1A887 /* MorphingGenerator.swift */,
+				75DFC5462F50F9F845C3CC278D8D45D8 /* MoveTo.swift */,
+				D0AAA1A3040F4F9D9158F8CBE66067FC /* MView_iOS.swift */,
+				E265A2F006E67B2699976EA968F10684 /* MView_macOS.swift */,
+				D5705E6163D90BE5F2E3E67BC0F88E0A /* Node.swift */,
+				051D497A09045AF5DEE973C5DD0BC520 /* NodeHashable.swift */,
+				699F1DF70C25B418DFDB890235C96690 /* NodeRenderer.swift */,
+				DEB009A118C72C6F5D9E1B7EB44FF804 /* NSTimer+Closure.swift */,
+				0EC4DB10B6CFF4F4897B54A795DF4454 /* OffsetEffect.swift */,
+				83AF3F805AD6DCE2A606714B17D8F700 /* OpacityAnimation.swift */,
+				C67BB64C0056E32C73BF4A5E0C806870 /* OpacityGenerator.swift */,
+				306ABD784C9D65A5D4A25084A1EF56AA /* PanEvent.swift */,
+				9262B7960F0FA89A45B285763FEEECEB /* Path.swift */,
+				AD92312236E683C0DA87651D4E84BE7D /* PathBounds.swift */,
+				2A370646FB38201919F3EF564D1CE528 /* PathBuilder.swift */,
+				2C0CCB8828A73EFF2340BA508E2E5D9D /* PathFunctions.swift */,
+				C36CBC31CB256E83464AFC164FA7DFB4 /* PathSegment.swift */,
+				9759AB337B7141A78E7575040C0DD4DF /* PathSegmentType.swift */,
+				D0479FF3B7704972124B6643C4572BE8 /* Pattern.swift */,
+				C334049FB2DB973D74D177504E8B8DB9 /* PinchEvent.swift */,
+				57DD1046D9EEBC598D8C539E95D4DE7A /* Point.swift */,
+				7D0C72786AA4398341A86BAF9B41CB4D /* Polygon.swift */,
+				C9F81A6AF2A47A0C36CAF13C6466CBEB /* Polyline.swift */,
+				7181B50ABC9DC1BC39A3B76E1D897E7D /* RadialGradient.swift */,
+				556069870927AB978C5DC044028FE0F5 /* Rect.swift */,
+				CD0895D220689090267E26B8C2ADBE89 /* RenderContext.swift */,
+				7FCBFC05EF61DC2720D2E7E1574817A2 /* RenderUtils.swift */,
+				5CC76E41F587321EBDEC19723DF8BFC3 /* RotateEvent.swift */,
+				E902550907F6BCEA36C3B8A630590428 /* RoundRect.swift */,
+				7AD4EFB24D4BDADBA952835E48A9210F /* SceneUtils.swift */,
+				FCF70278FF7528891FE057AA824A76DE /* Shape.swift */,
+				E528F76E5D7009376C320B02188C6914 /* ShapeAnimation.swift */,
+				7C31F2648B23AF746339ED02CA1754D6 /* ShapeAnimationGenerator.swift */,
+				909B44E09950BAD2059E896E8E65FFF5 /* ShapeInterpolation.swift */,
+				F5E2483481A44ACA79FEF4BCD9EFFE46 /* ShapeLayer.swift */,
+				7960ACCA109D71B67D2B73701BFB1D58 /* ShapeRenderer.swift */,
+				D2A52F3C395032109C92410447840C60 /* Size.swift */,
+				441117B6E865BB0268DF7B54007E47F3 /* Stop.swift */,
+				EF92B63C90C249B47166FB2B9DD52FAA /* Stroke.swift */,
+				347DE784B5C524CC68296A69BE961AD3 /* StrokeInterpolation.swift */,
+				2B8556EFFBA81C5CE5A5291BCBF66C11 /* SVGCanvas.swift */,
+				84B89691513865479E9E950AA4A56B69 /* SVGConstants.swift */,
+				65E14A8FECC0E264ACD85EDA9845CC86 /* SVGNodeLayout.swift */,
+				E6102A258BE56618CB21E0AEB848EFC9 /* SVGParser.swift */,
+				836600187CEE7B69761B701B07DB4205 /* SVGParserError.swift */,
+				5F52D32F9B63EF01BC75306E80860D8B /* SVGParserRegexHelper.swift */,
+				8DD4799A8AF79299171F0B1BFD847D35 /* SVGSerializer.swift */,
+				10CBC800F6DE45B703BE2785E3DD350E /* SVGView.swift */,
+				75CAD59CADF74CC91E881E4D530640F6 /* TapEvent.swift */,
+				64CA351F590D2AF0137303D0ECC70D6E /* Text.swift */,
+				25A13054A4AA02405CE1374D1819A728 /* TextRenderer.swift */,
+				44270AA43DD498FB651BAF71F4B7C904 /* TimingFunction.swift */,
+				62F20AF292B9D7EC96BAA5A4E8C80F92 /* Touchable.swift */,
+				D09A04F8579C7BBC18BBD8AAF29212E6 /* TouchEvent.swift */,
+				1B2A7BA25531F2D89969DD7250AB2464 /* Transform.swift */,
+				0611670A3FCAB10689FB5DD38F1AFC43 /* TransformAnimation.swift */,
+				0F3D64A4C46DE9D5BF151E47668D2431 /* TransformedLocus.swift */,
+				9E0EA7DCEF31D2EC867300DE32C9C442 /* TransformGenerator.swift */,
+				707AD362ED26C6191854BAB5DB4D2F57 /* TransformHashable.swift */,
+				378D53120909D54898C341380EB04AA9 /* TransformInterpolation.swift */,
+				A511C4032E582F478AA7795C471CB3C7 /* UIImage2Image.swift */,
+				92C3906FFF349D7F47A3C259187B0B88 /* Variable.swift */,
+				32AB8CC75EB8043358F04B63FF7AF472 /* Support Files */,
+			);
+			name = Macaw;
+			path = Macaw;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		27900C74C3B526FB580D2B929CC26348 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				724A2AAA7B33FA89D4B1101F9E5DEDA4 /* Pods-HealthSense-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		609FA0C1200188D882427E67BA5C03ED /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8B65D439698CA6D607E71E4118C3E92C /* Pods-HealthSense-HealthSenseUITests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6669B0240AE8A34C0BEBA7CA4927524A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -351,11 +845,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		766FAC28DA53C348281D8A888BE61DE2 /* Headers */ = {
+		6D10D65A286E883E37284D63513BC7E1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82B7C21A78BC6EEF4D8448C2577AF084 /* Pods-HealthSenseTests-umbrella.h in Headers */,
+				57D74D64278AA825FB5D8470170E4560 /* Pods-HealthSense-HealthSenseUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		956FDAC4B1868C05437DD51820E3EF3C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AC2C4AAB9372412CA6725FF7EC23BFA /* SWXMLHash-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A988B88E1C8B1ECD87ACFF170D1EDBC9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,9 +876,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E3458434983830A792143C434ADDE4BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C152A0400F2D22D7E6F569678EAE1C3 /* Pods-HealthSense-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED08F00409CB965CAB5A7D281383CC13 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1FEFC3085F88530EB5FB088BF7B8900 /* Macaw-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1CBE890FB81E7706B0A7C85EF7657002 /* Macaw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F84DD751144BE876A407D77BDBB2624E /* Build configuration list for PBXNativeTarget "Macaw" */;
+			buildPhases = (
+				ED08F00409CB965CAB5A7D281383CC13 /* Headers */,
+				7C7AE0F3F6ECC765A331A22BCC8191C5 /* Sources */,
+				1AA57AD9EEE4219775454BB2B53FD564 /* Frameworks */,
+				20BDFBE00752DE1224702C609BAA4AD7 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4834C7C2D457BE1D8E67466C7C518552 /* PBXTargetDependency */,
+			);
+			name = Macaw;
+			productName = Macaw;
+			productReference = C387806CE1F7FC814E9EE915DD03EEF9 /* libMacaw.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		1FBAD071585508C55F38DAF1B31D8BC3 /* Pods-HealthSense WatchKit Extension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A281DF3181028F8DF4EAB3A3B203CF29 /* Build configuration list for PBXNativeTarget "Pods-HealthSense WatchKit Extension" */;
@@ -388,43 +932,61 @@
 			productReference = 836CE8ABD9D8EF03C92F77142C9D5BDC /* Pods_HealthSense_WatchKit_Extension.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6A6F00A1DA88AA7172986AB3376ADD24 /* Pods-HealthSenseTests */ = {
+		63678F9A594800CBC7006B45EAB7886B /* SWXMLHash */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B2BB15B1E7320B94B30ECC8799B141CA /* Build configuration list for PBXNativeTarget "Pods-HealthSenseTests" */;
+			buildConfigurationList = 1CA9CBE881ED3316E07ED72E5D4360D4 /* Build configuration list for PBXNativeTarget "SWXMLHash" */;
 			buildPhases = (
-				766FAC28DA53C348281D8A888BE61DE2 /* Headers */,
-				2206F34C207848BF1413EE624D82AA44 /* Sources */,
-				A4EB892D80DFA094135DC067532BC62A /* Frameworks */,
-				8D0BD12AEE4112119D8D9EDE5B0FE8D4 /* Resources */,
+				956FDAC4B1868C05437DD51820E3EF3C /* Headers */,
+				CCA95693DF60A82768EB9A1636BD35DE /* Sources */,
+				ED97766D9B4B554D0C1737B97A6D6EB6 /* Frameworks */,
+				D93AFC1FD3998AC142B1279C5F190617 /* Copy generated compatibility header */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3FDEA86CA669B44508DCBCA2986804EB /* PBXTargetDependency */,
+			);
+			name = SWXMLHash;
+			productName = SWXMLHash;
+			productReference = 97D014AD6344E543FEDB1FD1F8F2BFEC /* libSWXMLHash.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6A6F00A1DA88AA7172986AB3376ADD24 /* Pods-HealthSenseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56BF2523F5F39ACF64566644B98BAF43 /* Build configuration list for PBXNativeTarget "Pods-HealthSenseTests" */;
+			buildPhases = (
+				A988B88E1C8B1ECD87ACFF170D1EDBC9 /* Headers */,
+				0D25945554517E6E15D7C849D976FCAA /* Sources */,
+				3C3FD53A3578A42985F72F4627D624B3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C325DF363CAD3720A2077AE5472A18F /* PBXTargetDependency */,
 			);
 			name = "Pods-HealthSenseTests";
 			productName = "Pods-HealthSenseTests";
-			productReference = A7F6043B9AD0EDECADF9BA120C802D2D /* Pods_HealthSenseTests.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = A7F6043B9AD0EDECADF9BA120C802D2D /* libPods-HealthSenseTests.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 		CA5C86FA8ECBCDB70C429F37E529F660 /* Pods-HealthSense-HealthSenseUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B254B25CD17495B5376655E563765366 /* Build configuration list for PBXNativeTarget "Pods-HealthSense-HealthSenseUITests" */;
+			buildConfigurationList = 8C5E09B1A5B09891F5A78E09878B3777 /* Build configuration list for PBXNativeTarget "Pods-HealthSense-HealthSenseUITests" */;
 			buildPhases = (
-				609FA0C1200188D882427E67BA5C03ED /* Headers */,
-				67609F9A4878171CF648D4236FD65B50 /* Sources */,
-				57AC38FB83BF59025B7EECBAD92B97B7 /* Frameworks */,
-				C09EA887FE98934A1DE751D6D1E7FF04 /* Resources */,
+				6D10D65A286E883E37284D63513BC7E1 /* Headers */,
+				0604DBB1F09754DD2D6465B5E1F9A6EA /* Sources */,
+				37ECEEBFA2D0FD153D3BB64CE5A1ED9E /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0BEF27D95E6BA7559DDE3B64FB0872E2 /* PBXTargetDependency */,
+				D067757FAB62514D0CC0F33EB003AAB4 /* PBXTargetDependency */,
+				7B8EF9CB252CE8DC53CD1B4E078D90CD /* PBXTargetDependency */,
+				2196B785D1181688B673D905E3FFB3AF /* PBXTargetDependency */,
 			);
 			name = "Pods-HealthSense-HealthSenseUITests";
 			productName = "Pods-HealthSense-HealthSenseUITests";
-			productReference = 17403B5012EE9FE676BE92F548731E9D /* Pods_HealthSense_HealthSenseUITests.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = 17403B5012EE9FE676BE92F548731E9D /* libPods-HealthSense-HealthSenseUITests.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 		D128BC7BC1C0420F678F11796B8E57FD /* Pods-HealthSense WatchKit App */ = {
 			isa = PBXNativeTarget;
@@ -446,22 +1008,23 @@
 		};
 		FBA4EC236AE8BE9A9C0B3F19E0FB840F /* Pods-HealthSense */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A902E427F2BF69A86495655D05AA232E /* Build configuration list for PBXNativeTarget "Pods-HealthSense" */;
+			buildConfigurationList = 5137481A4902955E1EC3F14133C6DF78 /* Build configuration list for PBXNativeTarget "Pods-HealthSense" */;
 			buildPhases = (
-				27900C74C3B526FB580D2B929CC26348 /* Headers */,
-				C2A3C256008FD6765CD540C5BC55C66E /* Sources */,
-				DAD35B3B6ADBBF7EF7F63A6F434999CC /* Frameworks */,
-				B3EFA2F5F403EA8A2A6E278BD4D58E0A /* Resources */,
+				E3458434983830A792143C434ADDE4BD /* Headers */,
+				B1FF631F931A686AE9C84CD0CC88E56A /* Sources */,
+				BC56946AC728F2F599AA1EE62091BA30 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7F1708195FC76D79E4601E6EED554AF4 /* PBXTargetDependency */,
+				B1977290A7E6B6FB3D4334F2E16A2DA8 /* PBXTargetDependency */,
+				6B2233AD54A780DCC5E6714B5017530E /* PBXTargetDependency */,
+				2FE8F2E97765FA02AB013F2B249D1543 /* PBXTargetDependency */,
 			);
 			name = "Pods-HealthSense";
 			productName = "Pods-HealthSense";
-			productReference = C9AC2A5F45E46D384AF00563D69011B7 /* Pods_HealthSense.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = C9AC2A5F45E46D384AF00563D69011B7 /* libPods-HealthSense.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -481,29 +1044,24 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = F56EE482480A70213EF1AC77F651EFCC /* Products */;
+			productRefGroup = 6C7836038ED95EFC9A027DB4CCF351B4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				1CBE890FB81E7706B0A7C85EF7657002 /* Macaw */,
 				FBA4EC236AE8BE9A9C0B3F19E0FB840F /* Pods-HealthSense */,
 				D128BC7BC1C0420F678F11796B8E57FD /* Pods-HealthSense WatchKit App */,
 				1FBAD071585508C55F38DAF1B31D8BC3 /* Pods-HealthSense WatchKit Extension */,
 				CA5C86FA8ECBCDB70C429F37E529F660 /* Pods-HealthSense-HealthSenseUITests */,
 				6A6F00A1DA88AA7172986AB3376ADD24 /* Pods-HealthSenseTests */,
 				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
+				63678F9A594800CBC7006B45EAB7886B /* SWXMLHash */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1AF9FE651792E5580C1F57CD160D2068 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8D0BD12AEE4112119D8D9EDE5B0FE8D4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -517,28 +1075,73 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B3EFA2F5F403EA8A2A6E278BD4D58E0A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C09EA887FE98934A1DE751D6D1E7FF04 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		20BDFBE00752DE1224702C609BAA4AD7 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/Macaw/Macaw.modulemap",
+				"${PODS_ROOT}/Headers/Public/Macaw/Macaw-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/Macaw-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Macaw/Macaw.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Macaw/Macaw-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+		D93AFC1FD3998AC142B1279C5F190617 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/SWXMLHash/SWXMLHash.modulemap",
+				"${PODS_ROOT}/Headers/Public/SWXMLHash/SWXMLHash-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/SWXMLHash-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/SWXMLHash/SWXMLHash.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/SWXMLHash/SWXMLHash-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		2206F34C207848BF1413EE624D82AA44 /* Sources */ = {
+		0604DBB1F09754DD2D6465B5E1F9A6EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8323BA86E6E4C33216855796C098809C /* Pods-HealthSenseTests-dummy.m in Sources */,
+				4DA3D4777DCA54392D472F9D4AB466EB /* Pods-HealthSense-HealthSenseUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D25945554517E6E15D7C849D976FCAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E82E03DAB403CFDC0577DD7FE993EEE /* Pods-HealthSenseTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,11 +1153,156 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		67609F9A4878171CF648D4236FD65B50 /* Sources */ = {
+		7C7AE0F3F6ECC765A331A22BCC8191C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66D95D4922A47265B11594BF9FA39A81 /* Pods-HealthSense-HealthSenseUITests-dummy.m in Sources */,
+				2AB219A7122A0E5A7A890D689EAF817A /* Align.swift in Sources */,
+				2A7F379F1205273A3A0BCEAD2FC192F0 /* AlphaEffect.swift in Sources */,
+				120F425FD51E22779CA7A18C108B2667 /* AnimatableVariable.swift in Sources */,
+				1DDE8FF9D76D1A6713F23679AFCFD37F /* Animation.swift in Sources */,
+				974B16B9D72A8D8F7B7B4DDCE15DD4C5 /* AnimationCache.swift in Sources */,
+				FD71B1051A6868C5790005AC63A07100 /* AnimationImpl.swift in Sources */,
+				9E26E9C78C4A18E951D6A006FF624EA5 /* AnimationProducer.swift in Sources */,
+				06EC2FE309A6BBB91CF9D3F4C254660A /* AnimationSequence.swift in Sources */,
+				6294F9E34A346EFE7FBAE420BE65646A /* AnimationUtils.swift in Sources */,
+				886B7DA5609A0DEE896FF46481D78ECC /* AnimOperators.swift in Sources */,
+				61E2458E41FF36A98A14A17E0F67D38E /* Arc.swift in Sources */,
+				11B79DF0CA398D5B1876B0B8BB080EA0 /* AspectRatio.swift in Sources */,
+				40D6911A3A565F34931D9AE0DC9C38C1 /* Baseline.swift in Sources */,
+				DEC81CF99EF56053690B678F5F08B80D /* BlendEffect.swift in Sources */,
+				1E68FC033D3D4399B39EA03D42FBA793 /* BoundsUtils.swift in Sources */,
+				641D1E78614BC59BEDDD21A36DBEBE84 /* CAAnimationClosure.swift in Sources */,
+				C37DA751DAA49EB6FCBF0B7AFD249206 /* CGFloat+Double.swift in Sources */,
+				F71FB1AB49C20FBBA6E716CCE59FF97A /* CGMappings.swift in Sources */,
+				C9115E299C928191200E5B6DA6C98282 /* Circle.swift in Sources */,
+				F16AE7CBB1DA0D9527D051EB972AAF51 /* Color.swift in Sources */,
+				166CE6E1C6E2854079F3A5C7FD8147F8 /* ColorMatrix.swift in Sources */,
+				99649AA2FB1C094EAD98EEC451A02D5C /* ColorMatrixEffect.swift in Sources */,
+				939AD8D6A5F3961DF58E0ED436F636F8 /* CombinationAnimationGenerator.swift in Sources */,
+				1745021504F8F75C16BE7C1E131A4782 /* CombineAnimation.swift in Sources */,
+				7A37971BDA6053B7BDEA196E70398840 /* Common_iOS.swift in Sources */,
+				A1EA3F6072D10F588FA6768632E6EE49 /* Common_macOS.swift in Sources */,
+				078B4466246C5589F65B85D5C551D7AD /* ContentLayout.swift in Sources */,
+				EB36EC172EB7317CA31C62C0A689722E /* ContentsAnimation.swift in Sources */,
+				32D2900501D5D778F3BE38F7C3864668 /* ContentsInterpolation.swift in Sources */,
+				6C7B3AD1E95DA70726808C7A3B3945FF /* CSSParser.swift in Sources */,
+				6B6EF1CF9B630F938881F7E061A5478C /* DescriptionExtensions.swift in Sources */,
+				4DBD280B59E10CA9916A61058311A064 /* Disposable.swift in Sources */,
+				652FB814F0EEB53E3582F4996C4AD58C /* DoubleInterpolation.swift in Sources */,
+				1D3EA4D9A952F2CC354DE5ADAF8507E6 /* Drawable.swift in Sources */,
+				E8C293E47AA6536D35CD80A327C413C8 /* Easing.swift in Sources */,
+				5C6574E4063B838D81A08CF47F70875E /* Effect.swift in Sources */,
+				07F21573D939D1EFEAEEEDEA5CABFFFA /* Ellipse.swift in Sources */,
+				BE654D29E969E82BEAD1811191B86114 /* Event.swift in Sources */,
+				37A07D77A30131F0269C007023FD89F2 /* Fill.swift in Sources */,
+				4EC21CC13D473035F71BD4BC13AFFE42 /* FillInterpolation.swift in Sources */,
+				2AC415EAF316864603D6216375E13D4E /* Font.swift in Sources */,
+				40B066F0ABAB46E2253FCD207F64DC21 /* FuncBounds.swift in Sources */,
+				EC967A09E0175585E53D3C2961B1B2DD /* GaussianBlur.swift in Sources */,
+				3BAFEFB8630679458B30A7198C8E16B4 /* GeomUtils.swift in Sources */,
+				82477310196C7950D80D76B87BAE3C6D /* Gradient.swift in Sources */,
+				2F9100474DCB8293831FD50DB9B45039 /* Graphics_iOS.swift in Sources */,
+				C01EC2FD366A2789D0FDD7F2AC15BFE6 /* Graphics_macOS.swift in Sources */,
+				3ACDAE42E7A163A6252C5AD7C461487A /* Group.swift in Sources */,
+				5EF1895ECD3584B372CBE65F116CB52B /* GroupDisposable.swift in Sources */,
+				3EE025611D05AF1B5D1D8F0B56236B35 /* GroupRenderer.swift in Sources */,
+				11E18CBFBA0FFE45B2893F43631BFA2B /* Image.swift in Sources */,
+				F60BA37B09249F1988EC3FF0BF040619 /* ImageRenderer.swift in Sources */,
+				F4F464AAEE491B6705D8BA5BD1622FDC /* Insets.swift in Sources */,
+				85EAD76EA4C8D09E0CA9A2C7DB56ECA6 /* Interpolable.swift in Sources */,
+				C3C8526E458FEE6F845535257183DFEC /* Line.swift in Sources */,
+				EB5597C15E2B0B66901D298F4BF3E036 /* LinearGradient.swift in Sources */,
+				2B6312A87C3AAD8358E6BBBEE77E721B /* LineCap.swift in Sources */,
+				8233E37867D55BBEA9DCBECE712412CE /* LineJoin.swift in Sources */,
+				C7DC0C2EF1D303A30FC314B4A46438FD /* Locus.swift in Sources */,
+				047F2CFB7753319C9F22F0EFDB38B720 /* LocusInterpolation.swift in Sources */,
+				1AC24AB0152E4E77DD3FB37C8592019F /* Macaw-dummy.m in Sources */,
+				BEF910D33BB00B554DE404FC78A774D1 /* MacawView+PDF.swift in Sources */,
+				F6E2E12E0BB68E90D7C7BCB9BE2F2418 /* MacawView.swift in Sources */,
+				D5C46F1956F7CEF2FE1E4AFF3934D5EA /* MBezierPath+Extension_macOS.swift in Sources */,
+				DB28646B72EA71E678A3335B7B1A9E39 /* MCAMediaTimingFillMode_iOS.swift in Sources */,
+				D6CD401D948A25B20D106DB205508F49 /* MCAMediaTimingFillMode_macOS.swift in Sources */,
+				8D84866FAE3C7C84B08BE95CB298CE5B /* MCAMediaTimingFunctionName_iOS.swift in Sources */,
+				27CD82BCDAB2712EE48BCE30F3EA250C /* MCAMediaTimingFunctionName_macOS.swift in Sources */,
+				92B0E5999B29AD14A757B3F3CDCB3C05 /* MCAShapeLayerLineCap_iOS.swift in Sources */,
+				94E2103FD4E61F96C1C9F83D73146935 /* MCAShapeLayerLineCap_macOS.swift in Sources */,
+				3E1CBE3B2FA90084ECC86285F8A970B7 /* MCAShapeLayerLineJoin_iOS.swift in Sources */,
+				94CE890F7A322BC980E79B4375389F98 /* MCAShapeLayerLineJoin_macOS.swift in Sources */,
+				0F9478C56F63D22503D04D9ECC51DD9B /* MDisplayLink.swift in Sources */,
+				EB6FD579CBC3BBB286D08E7934DD6662 /* MDisplayLink_iOS.swift in Sources */,
+				32BB13475666502BA361E89002C55B1E /* MDisplayLink_macOS.swift in Sources */,
+				77C138E92B719AC69014F9455021D549 /* MorphingAnimation.swift in Sources */,
+				337D334D160ADC701FA5D6FE2C1BE84F /* MorphingGenerator.swift in Sources */,
+				FCDD70A68A08B4894CDABE1F6CA64E5D /* MoveTo.swift in Sources */,
+				B2EDE3714D77C9A5DE9FD810AA865EDF /* MView_iOS.swift in Sources */,
+				EF6E1ABCAB3E09B9078894E04805F0DE /* MView_macOS.swift in Sources */,
+				D9095ED290A2C788D7DD41B0E1BF4DF8 /* Node.swift in Sources */,
+				39D75267E9B299114BF16C40C340ED6F /* NodeHashable.swift in Sources */,
+				060F8158768C2FC40FA1E97C85070372 /* NodeRenderer.swift in Sources */,
+				62A231E371A6B6B0E499C78B8BD73B0C /* NSTimer+Closure.swift in Sources */,
+				829B41638D1598090A69AD7CBBD10053 /* OffsetEffect.swift in Sources */,
+				99225CF73C90C5409D67ED0FFE6FB8DF /* OpacityAnimation.swift in Sources */,
+				1196DECF73365BCD8350CFBD5089BF24 /* OpacityGenerator.swift in Sources */,
+				34B0E7298FD9D3CC858EAEDCB3205DD1 /* PanEvent.swift in Sources */,
+				640C0F27907641438D54910698753941 /* Path.swift in Sources */,
+				F1FD3B0026C530E1E0E8F37968A031F3 /* PathBounds.swift in Sources */,
+				0D7A921BF764F41D9EBA5EB1234AC399 /* PathBuilder.swift in Sources */,
+				C9B837A04C2DB59AFDF1261BF4EFF0C0 /* PathFunctions.swift in Sources */,
+				0EEF39F071FDA752D6ED504FE80E04C0 /* PathSegment.swift in Sources */,
+				3E4F166AB43056F6578B9506B57CCF90 /* PathSegmentType.swift in Sources */,
+				84EB719A91BB141B2810CBF5F494DA29 /* Pattern.swift in Sources */,
+				82FB1B6F1007F4A0CFA10CD549113337 /* PinchEvent.swift in Sources */,
+				941C8E7386E005E979D2897617B01E10 /* Point.swift in Sources */,
+				172604E1E44064862113B6030C87EA41 /* Polygon.swift in Sources */,
+				4645D3164C2615E7133A707EB0B3E311 /* Polyline.swift in Sources */,
+				C3B87D8EE7682A0B38BF364586E86776 /* RadialGradient.swift in Sources */,
+				A50A59CE2A6412418C89AA6E8CE11D57 /* Rect.swift in Sources */,
+				4112DA942620D5F12E887A31904057CE /* RenderContext.swift in Sources */,
+				B779A20F448CBDC6D5D3516F559E3298 /* RenderUtils.swift in Sources */,
+				FD3F13CE44CB38FC7BD3F56F3D6E2CCB /* RotateEvent.swift in Sources */,
+				8290957D474B121236748D51183C5770 /* RoundRect.swift in Sources */,
+				FC7BC36B2F8E60DB92F62C931C280670 /* SceneUtils.swift in Sources */,
+				7818280115D380A412124E840821210C /* Shape.swift in Sources */,
+				731842370B694392A65993178D5D5411 /* ShapeAnimation.swift in Sources */,
+				3B6F8F56243B224A21CD5777E5E8829B /* ShapeAnimationGenerator.swift in Sources */,
+				6029B798921092495E1A679A6C1DDB4B /* ShapeInterpolation.swift in Sources */,
+				E48524F5D2D2C4388E948E1854C92C71 /* ShapeLayer.swift in Sources */,
+				2E3A32A1D89904E05B5E3B7EDDCA0167 /* ShapeRenderer.swift in Sources */,
+				322D10822C3F8346000B34D172619E3A /* Size.swift in Sources */,
+				136B1B521E1993A7008A37B5263FA33E /* Stop.swift in Sources */,
+				89A687D6F7581B01C02819889C0AA3FE /* Stroke.swift in Sources */,
+				FCA5F4E929BAED1EC470F002FF7C5F24 /* StrokeInterpolation.swift in Sources */,
+				1BC6924032DD3C7F82CD5C1C1C0B6BFA /* SVGCanvas.swift in Sources */,
+				EC817FB7B185D6208E166BBA6AD1283F /* SVGConstants.swift in Sources */,
+				D792CF6DD3D3D69B5D68FAB6A2E137AF /* SVGNodeLayout.swift in Sources */,
+				B089956A51B79D692C6BF1029258683A /* SVGParser.swift in Sources */,
+				1C873F2746AD1569ABF282FB01F93872 /* SVGParserError.swift in Sources */,
+				0C162F9BE7C77A55505D10800588136F /* SVGParserRegexHelper.swift in Sources */,
+				46E5B34618541EDA79E10E0974140FFF /* SVGSerializer.swift in Sources */,
+				FDEDB21BB5A2B968633A0BF23272C912 /* SVGView.swift in Sources */,
+				FCAE4EFBAD609F6E8EF6D9D18A2FCB03 /* TapEvent.swift in Sources */,
+				C1790D268DDD2B1B5D3ABE9E53DBD2D2 /* Text.swift in Sources */,
+				445638E9A69602308119BF59614A1D1B /* TextRenderer.swift in Sources */,
+				74BDD6DF30EE62D987ECD3CD9D7468AF /* TimingFunction.swift in Sources */,
+				C0E3BD5E9CD57398785FAADD4D2AB4D3 /* Touchable.swift in Sources */,
+				AA2B5E88D5767525F5F3E23377FA89E7 /* TouchEvent.swift in Sources */,
+				CA3CDC8BA12B7F04966949A99DB79504 /* Transform.swift in Sources */,
+				9B93F45757E45AE1C2F9D94A974C2C7D /* TransformAnimation.swift in Sources */,
+				82DC599C3266C880AA1BF08056274DCF /* TransformedLocus.swift in Sources */,
+				9D6BE7207FFCA3972C0FBE7AF65B95DD /* TransformGenerator.swift in Sources */,
+				6FAFBBB49B8965AB9F435DAE172A7CF9 /* TransformHashable.swift in Sources */,
+				EF697BB2C883E115D13EC4687B3F721B /* TransformInterpolation.swift in Sources */,
+				FBB1912A04044C6CC6A0530F2C2CD1A6 /* UIImage2Image.swift in Sources */,
+				16F1DCDCFF8469670259CB7E8B36CC8B /* Variable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1FF631F931A686AE9C84CD0CC88E56A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9449DD95F764DD829F62F36E6C0B74C /* Pods-HealthSense-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,74 +1314,112 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C2A3C256008FD6765CD540C5BC55C66E /* Sources */ = {
+		CCA95693DF60A82768EB9A1636BD35DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54F92980EB61D6DAF17330C7F72EF43F /* Pods-HealthSense-dummy.m in Sources */,
+				0F221DEFA8451F82B414729D225A7915 /* shim.swift in Sources */,
+				2AA65233DE0EAAC5DFB2D40F4C58FDED /* SWXMLHash-dummy.m in Sources */,
+				9E16660BAE77A3046F9B5700B91FBE1C /* SWXMLHash.swift in Sources */,
+				0526EC308AB07FDB9382F79E604DB5B7 /* XMLIndexer+XMLIndexerDeserializable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0BEF27D95E6BA7559DDE3B64FB0872E2 /* PBXTargetDependency */ = {
+		2196B785D1181688B673D905E3FFB3AF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftLint;
 			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
-			targetProxy = 4B8211FDA5F6FA9A52647222CE7F9533 /* PBXContainerItemProxy */;
+			targetProxy = 629E28797BEA0A32F9EB23F5F254B70C /* PBXContainerItemProxy */;
 		};
-		3FDEA86CA669B44508DCBCA2986804EB /* PBXTargetDependency */ = {
+		2FE8F2E97765FA02AB013F2B249D1543 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = A0BBA82C0D0B3E551916454F98FC413C /* PBXContainerItemProxy */;
+		};
+		4834C7C2D457BE1D8E67466C7C518552 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SWXMLHash;
+			target = 63678F9A594800CBC7006B45EAB7886B /* SWXMLHash */;
+			targetProxy = D65BB7681D96287A370AF430CB468C91 /* PBXContainerItemProxy */;
+		};
+		6B2233AD54A780DCC5E6714B5017530E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SWXMLHash;
+			target = 63678F9A594800CBC7006B45EAB7886B /* SWXMLHash */;
+			targetProxy = 7B57EAF19F3A75A784876ED549859795 /* PBXContainerItemProxy */;
+		};
+		6C325DF363CAD3720A2077AE5472A18F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-HealthSense";
 			target = FBA4EC236AE8BE9A9C0B3F19E0FB840F /* Pods-HealthSense */;
-			targetProxy = D41F410FE77B83BEDB3790F34FDED561 /* PBXContainerItemProxy */;
+			targetProxy = A740EA680BC1EE3A1BED0B733382FA7D /* PBXContainerItemProxy */;
 		};
-		7F1708195FC76D79E4601E6EED554AF4 /* PBXTargetDependency */ = {
+		7B8EF9CB252CE8DC53CD1B4E078D90CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SwiftLint;
-			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
-			targetProxy = 1CB0EFE5B80738100BC6552F7B85C4DA /* PBXContainerItemProxy */;
+			name = SWXMLHash;
+			target = 63678F9A594800CBC7006B45EAB7886B /* SWXMLHash */;
+			targetProxy = 5FF3EAF0B51345683D572806404298BC /* PBXContainerItemProxy */;
+		};
+		B1977290A7E6B6FB3D4334F2E16A2DA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Macaw;
+			target = 1CBE890FB81E7706B0A7C85EF7657002 /* Macaw */;
+			targetProxy = 18E1B3DD64E436BCFEBB75BE259FE09B /* PBXContainerItemProxy */;
+		};
+		D067757FAB62514D0CC0F33EB003AAB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Macaw;
+			target = 1CBE890FB81E7706B0A7C85EF7657002 /* Macaw */;
+			targetProxy = D96096C1F459E2F0EDA3001F22AE30EB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		14ABE1E0E9E51F969EE829A148595014 /* Release */ = {
+		083E0E75B3A21AB391C574C772C358DB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C31166449D96DD6585D70CEAB6B8B5A /* Pods-HealthSense-HealthSenseUITests.release.xcconfig */;
+			baseConfigurationReference = 237DE7A4C19FA5AC347C70FFE5AB9D54 /* Macaw.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HealthSense-HealthSenseUITests/Pods-HealthSense-HealthSenseUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				GCC_PREFIX_HEADER = "Target Support Files/Macaw/Macaw-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = Headers/Public/Macaw/Macaw.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Macaw;
+				PRODUCT_NAME = Macaw;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08CCD7E78728291264A399BA9AE86996 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ED4764219FF23B9C8A33482488216AA /* SwiftLint.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HealthSense-HealthSenseUITests/Pods-HealthSense-HealthSenseUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -702,9 +1488,56 @@
 			};
 			name = Debug;
 		};
+		261CFA290703C4AB77F96AC3021BD87A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30EC9A7CED992CCBE657A373AF520E67 /* Pods-HealthSenseTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2E8736B8BC6EE4BFC4EBF0DD9C5A5410 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDF629E1E60CF59767ACFCEFE2E9DE75 /* SWXMLHash.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SWXMLHash/SWXMLHash-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/SWXMLHash/SWXMLHash.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SWXMLHash;
+				PRODUCT_NAME = SWXMLHash;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		30603B2A2B2875970C6C8705EEA2A498 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F7F6C8AE1D91E73A155FF80F3BA768A /* Pods-HealthSense WatchKit Extension.debug.xcconfig */;
+			baseConfigurationReference = 2651B663C7C30C03FB39964C57B48E5F /* Pods-HealthSense WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -740,63 +1573,33 @@
 			};
 			name = Debug;
 		};
-		46379C1099C2071556889F55C9D1E012 /* Debug */ = {
+		4873BCF5CFBCA57237C594B302DD8F11 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4E0A18B1779E3559D73323F4D14D6F8 /* Pods-HealthSense-HealthSenseUITests.debug.xcconfig */;
+			baseConfigurationReference = 45FE0EF38B6B5EFF50F4AD50AEE89519 /* Pods-HealthSense-HealthSenseUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HealthSense-HealthSenseUITests/Pods-HealthSense-HealthSenseUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-HealthSense-HealthSenseUITests/Pods-HealthSense-HealthSenseUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
-		};
-		46EECD2DED30D7C5FE141C0B267C2D3F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
+			name = Release;
 		};
 		4AC35E55BE661C4D22B859438891F918 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CD76D3E330BD70A5D5B66A404492217 /* Pods-HealthSense WatchKit App.debug.xcconfig */;
+			baseConfigurationReference = 8CD7D7ABB26E5E16149F66EF1558815C /* Pods-HealthSense WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -832,59 +1635,53 @@
 			};
 			name = Debug;
 		};
-		55DD740115BE746C8DBB7753806D85D5 /* Release */ = {
+		4CB48D6CD53071F5398BBC304F5CF81F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */;
+			baseConfigurationReference = F4F52F1D5126B78D249106821A7E7E8A /* SWXMLHash.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SWXMLHash/SWXMLHash-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				MODULEMAP_FILE = Headers/Public/SWXMLHash/SWXMLHash.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SWXMLHash;
+				PRODUCT_NAME = SWXMLHash;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		6242ED2FDB41FC6C3C8D924DFC0AB8D1 /* Release */ = {
+		57C766B459562DB420101628E92E24EC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BAB7B0FDE1C296216CB30565CB99EA3E /* Pods-HealthSense.release.xcconfig */;
+			baseConfigurationReference = 1D0CFA755AF2CBD4A4B50BC5A9B5D48E /* Pods-HealthSense.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HealthSense/Pods-HealthSense-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-HealthSense/Pods-HealthSense.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -949,85 +1746,32 @@
 			};
 			name = Release;
 		};
-		6E0F3242CF01B57B42C608192B0B78CB /* Debug */ = {
+		793C32A9ADDE44A8F92DEB8432FA2A3E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B84B98E5F7C749B555DF929AED0E940 /* Pods-HealthSense.debug.xcconfig */;
+			baseConfigurationReference = FE7358B5ECAAC750BA0205350E7D5FAC /* Pods-HealthSense.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HealthSense/Pods-HealthSense-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-HealthSense/Pods-HealthSense.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		70D469E61D8E7F1656CC8F6C12CD1130 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C04A05A10794EF33ABDFE9C495A7947E /* Pods-HealthSenseTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HealthSenseTests/Pods-HealthSenseTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HealthSenseTests/Pods-HealthSenseTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
 		8B20178C9DE048C80439C08B7E966FEC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D822D996ED9A12A26CC3498964E45498 /* Pods-HealthSense WatchKit Extension.release.xcconfig */;
+			baseConfigurationReference = 8B875B4E3C00C65390BE0A9A6D859DDD /* Pods-HealthSense WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -1064,48 +1808,74 @@
 			};
 			name = Release;
 		};
-		BF71C9ED49FD1C3636FE42EC0EC20D52 /* Release */ = {
+		D33739054A92B27640FFB880C9EE1D1F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F24EDD32F2D16D903EB521704D86157B /* Pods-HealthSenseTests.release.xcconfig */;
+			baseConfigurationReference = D33EF416322CCAAC9E3FFEE30564D432 /* Pods-HealthSenseTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HealthSenseTests/Pods-HealthSenseTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HealthSenseTests/Pods-HealthSenseTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
+		D68C511775FF9726A034E7003DC17069 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2746122DA7F619B53E78BB896239761D /* Macaw.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Macaw/Macaw-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = Headers/Public/Macaw/Macaw.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Macaw;
+				PRODUCT_NAME = Macaw;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D86F6C8508ED371D7CBECC6632784BD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59ADBB71AEA3EE15B747FE5133484E77 /* SwiftLint.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		DCBF21A98C38B0CB7E89E3CB4C529CB9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7D79962D4AE8A75746D17A062C04802 /* Pods-HealthSense WatchKit App.release.xcconfig */;
+			baseConfigurationReference = 191CE8E92F4C546E39B2BA47274821B8 /* Pods-HealthSense WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -1142,9 +1912,41 @@
 			};
 			name = Release;
 		};
+		E9C942FA852492DC11B0F71D95C624FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FB9EF1DFBA789840190CF4E6C1082FD /* Pods-HealthSense-HealthSenseUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HealthSense-HealthSenseUITests/Pods-HealthSense-HealthSenseUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1CA9CBE881ED3316E07ED72E5D4360D4 /* Build configuration list for PBXNativeTarget "SWXMLHash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E8736B8BC6EE4BFC4EBF0DD9C5A5410 /* Debug */,
+				4CB48D6CD53071F5398BBC304F5CF81F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1163,6 +1965,33 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		5137481A4902955E1EC3F14133C6DF78 /* Build configuration list for PBXNativeTarget "Pods-HealthSense" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				793C32A9ADDE44A8F92DEB8432FA2A3E /* Debug */,
+				57C766B459562DB420101628E92E24EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56BF2523F5F39ACF64566644B98BAF43 /* Build configuration list for PBXNativeTarget "Pods-HealthSenseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				261CFA290703C4AB77F96AC3021BD87A /* Debug */,
+				D33739054A92B27640FFB880C9EE1D1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C5E09B1A5B09891F5A78E09878B3777 /* Build configuration list for PBXNativeTarget "Pods-HealthSense-HealthSenseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9C942FA852492DC11B0F71D95C624FC /* Debug */,
+				4873BCF5CFBCA57237C594B302DD8F11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A281DF3181028F8DF4EAB3A3B203CF29 /* Build configuration list for PBXNativeTarget "Pods-HealthSense WatchKit Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1172,38 +2001,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A902E427F2BF69A86495655D05AA232E /* Build configuration list for PBXNativeTarget "Pods-HealthSense" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6E0F3242CF01B57B42C608192B0B78CB /* Debug */,
-				6242ED2FDB41FC6C3C8D924DFC0AB8D1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46EECD2DED30D7C5FE141C0B267C2D3F /* Debug */,
-				55DD740115BE746C8DBB7753806D85D5 /* Release */,
+				D86F6C8508ED371D7CBECC6632784BD2 /* Debug */,
+				08CCD7E78728291264A399BA9AE86996 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B254B25CD17495B5376655E563765366 /* Build configuration list for PBXNativeTarget "Pods-HealthSense-HealthSenseUITests" */ = {
+		F84DD751144BE876A407D77BDBB2624E /* Build configuration list for PBXNativeTarget "Macaw" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46379C1099C2071556889F55C9D1E012 /* Debug */,
-				14ABE1E0E9E51F969EE829A148595014 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B2BB15B1E7320B94B30ECC8799B141CA /* Build configuration list for PBXNativeTarget "Pods-HealthSenseTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				70D469E61D8E7F1656CC8F6C12CD1130 /* Debug */,
-				BF71C9ED49FD1C3636FE42EC0EC20D52 /* Release */,
+				D68C511775FF9726A034E7003DC17069 /* Debug */,
+				083E0E75B3A21AB391C574C772C358DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

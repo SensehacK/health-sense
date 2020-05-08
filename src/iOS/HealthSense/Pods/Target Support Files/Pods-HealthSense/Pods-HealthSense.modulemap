@@ -1,4 +1,4 @@
-framework module Pods_HealthSense {
+module Pods_HealthSense {
   umbrella header "Pods-HealthSense-umbrella.h"
 
   export *
