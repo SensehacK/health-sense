@@ -29,10 +29,10 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="2QO-ky-84M">
-                                <rect key="frame" x="20" y="457" width="374" height="273"/>
+                                <rect key="frame" x="20" y="457" width="374" height="150"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4MM-l6-v2R">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="273"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="150"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Z6G-rc-hcb" userLabel="Vertical View">
                                                 <rect key="frame" x="8" y="8" width="358" height="120"/>
@@ -103,6 +103,9 @@
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Tej-Rx-avL"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -110,7 +113,6 @@
                             <constraint firstItem="g6l-Sx-M1s" firstAttribute="top" secondItem="ePy-3C-QC1" secondAttribute="bottom" constant="5.5" id="3kb-WB-c7m"/>
                             <constraint firstItem="2QO-ky-84M" firstAttribute="top" secondItem="g6l-Sx-M1s" secondAttribute="bottom" constant="22" id="6Nh-Ch-mkK"/>
                             <constraint firstItem="ePy-3C-QC1" firstAttribute="leading" secondItem="xIM-XQ-1vc" secondAttribute="leading" constant="20" id="9pH-2x-S1H"/>
-                            <constraint firstItem="xIM-XQ-1vc" firstAttribute="bottom" secondItem="2QO-ky-84M" secondAttribute="bottom" constant="83" id="WqO-kG-Lb4"/>
                             <constraint firstItem="g6l-Sx-M1s" firstAttribute="centerX" secondItem="lz0-Zz-cy5" secondAttribute="centerX" id="X8n-vP-y37"/>
                             <constraint firstItem="ePy-3C-QC1" firstAttribute="top" secondItem="xIM-XQ-1vc" secondAttribute="top" constant="2" id="XZn-PD-TKa"/>
                             <constraint firstItem="xIM-XQ-1vc" firstAttribute="trailing" secondItem="2QO-ky-84M" secondAttribute="trailing" constant="20" id="pNm-jJ-wqy"/>

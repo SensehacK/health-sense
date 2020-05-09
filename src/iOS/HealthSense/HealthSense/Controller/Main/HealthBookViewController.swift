@@ -13,10 +13,20 @@ class HealthBookViewController: UIViewController {
     
     @IBOutlet weak var mainButton: UIButton!
     @IBOutlet weak var macawViewBtn: UIButton!
+    @IBOutlet weak var barChartView: BarChart!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Invoking Bar Chart View with Scaling
+        barChartView.contentMode = .scaleAspectFit
+        BarChart.playAnimations()
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print("HealthBook View did Appear")
     }
     
     @IBAction func macawViewButton(_ sender: Any) {

@@ -130,6 +130,7 @@
                             <constraint firstItem="brq-RB-1V5" firstAttribute="centerX" secondItem="Ih3-HA-ZBi" secondAttribute="centerX" id="tGL-jH-GH0"/>
                             <constraint firstItem="xIU-Xs-nZK" firstAttribute="leading" secondItem="Ih3-HA-ZBi" secondAttribute="leading" constant="39" id="tgQ-97-ieF"/>
                             <constraint firstItem="xIU-Xs-nZK" firstAttribute="top" secondItem="mLN-Kc-ioA" secondAttribute="top" id="xnL-dd-EL1"/>
+                            <constraint firstItem="Ih3-HA-ZBi" firstAttribute="trailing" secondItem="mLN-Kc-ioA" secondAttribute="trailing" constant="12" id="z00-em-8c4"/>
                             <constraint firstItem="3zy-uc-3VC" firstAttribute="centerX" secondItem="Ih3-HA-ZBi" secondAttribute="centerX" id="zhK-j1-wqa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ih3-HA-ZBi"/>

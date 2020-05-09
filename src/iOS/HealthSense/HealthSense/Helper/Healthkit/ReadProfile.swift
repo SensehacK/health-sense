@@ -105,8 +105,9 @@ class ReadProfile {
         for string in stringStripArray {
             name =  name.replacingOccurrences(of: string, with: "", options: .caseInsensitive, range: nil)
         }
-        UserStruct.firstName = name
-        return name
+        let afterStripLength = name.count
+        UserStruct.firstName = (afterStripLength > 3) ? name: UIDevice.current.name
+        return UserStruct.firstName!
     }
     
     

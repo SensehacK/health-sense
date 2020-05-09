@@ -16,16 +16,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kautilya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7x-Ys-Ftm">
-                                <rect key="frame" x="149" y="432.5" width="116" height="41"/>
+                                <rect key="frame" x="149" y="706" width="116" height="41"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Health Sense" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giG-fi-10t">
+                                <rect key="frame" x="20" y="139" width="374" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An App to track all things health" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QwK-0d-4Sj">
+                                <rect key="frame" x="57" y="196" width="300" height="27"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <color key="textColor" red="1" green="0.86927634814639565" blue="0.25759440214839202" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We will go through the user experience and showcase the main features of the app! 🎉" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLc-ob-EVd">
+                                <rect key="frame" x="34" y="275" width="346" height="224"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="224" id="Tjp-Oy-gBf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="R7x-Ys-Ftm" firstAttribute="centerY" secondItem="8aJ-GR-IVN" secondAttribute="centerY" id="Eci-8p-TM9"/>
-                            <constraint firstItem="R7x-Ys-Ftm" firstAttribute="centerX" secondItem="8aJ-GR-IVN" secondAttribute="centerX" id="cSY-7l-ZGz"/>
+                            <constraint firstItem="R7x-Ys-Ftm" firstAttribute="centerX" secondItem="ulG-qM-nuR" secondAttribute="centerX" id="4ye-Yj-VCm"/>
+                            <constraint firstItem="gLc-ob-EVd" firstAttribute="top" secondItem="QwK-0d-4Sj" secondAttribute="bottom" constant="52" id="5eG-2f-9gb"/>
+                            <constraint firstItem="QwK-0d-4Sj" firstAttribute="top" secondItem="giG-fi-10t" secondAttribute="bottom" constant="16" id="FO4-hc-YeH"/>
+                            <constraint firstItem="R7x-Ys-Ftm" firstAttribute="centerX" secondItem="QwK-0d-4Sj" secondAttribute="centerX" id="IwX-cu-dke"/>
+                            <constraint firstItem="8aJ-GR-IVN" firstAttribute="bottom" secondItem="R7x-Ys-Ftm" secondAttribute="bottom" constant="115" id="KbY-3K-apc"/>
+                            <constraint firstItem="gLc-ob-EVd" firstAttribute="centerX" secondItem="QwK-0d-4Sj" secondAttribute="centerX" id="T8i-Wh-08S"/>
+                            <constraint firstItem="R7x-Ys-Ftm" firstAttribute="centerX" secondItem="giG-fi-10t" secondAttribute="centerX" id="V9P-2g-BvR"/>
+                            <constraint firstItem="giG-fi-10t" firstAttribute="top" secondItem="8aJ-GR-IVN" secondAttribute="top" constant="95" id="e42-Rb-k1N"/>
+                            <constraint firstItem="gLc-ob-EVd" firstAttribute="leading" secondItem="8aJ-GR-IVN" secondAttribute="leading" constant="34" id="jub-Ye-7Jo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8aJ-GR-IVN"/>
                     </view>
@@ -35,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ti6-Yt-jeh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1045" y="767"/>
+            <point key="canvasLocation" x="-1046.376811594203" y="766.74107142857144"/>
         </scene>
         <!--Second Onboarding View Controller-->
         <scene sceneID="Y2Q-46-I0N">
