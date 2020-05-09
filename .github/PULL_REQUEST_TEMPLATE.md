@@ -14,7 +14,6 @@
 
 - [ ] The commit message follows our guidelines
 - [ ] My code follows the code style of this project.
-- [ ] Compiles and passes lint tests
 - [ ] Fixed merge conflicts with Master branch as base.
 
 ### Documentation
@@ -25,11 +24,11 @@
 
 ### Tests
 
-- [ ] I have added tests to cover my changes.
+- [ ] Compiles and passes lint tests
 - [ ] All existing tests passed.
-- [ ] All tests passed
 - [ ] Github Actions
 - [ ] Travis CI
+- [ ] I have added tests to cover my changes.
 
 ### Behavior
 
@@ -47,7 +46,9 @@ Fixes #...
 - [ ] iPhone
 - [ ] Android
 - [ ] Apple Watch
-- [ ] Xcode Simulator
+- [ ] iPhone 11 Simulator
+- [ ] iPhone X Simulator
+- [ ] iPhone 8 Simulator
 - [ ] Simulator
 
 ### Other information
@@ -57,4 +58,5 @@ Add any other context about the problem here. If applicable, add screenshots to 
 
 **Note: for PR Review**
 This repository's PRs would be peer reviewed and then 1 approving reviewer is needed to merge code with master branch.
-[ ] I have read the **CONTRIBUTING** document.
+
+- [ ] I have read the **CONTRIBUTING** document.
