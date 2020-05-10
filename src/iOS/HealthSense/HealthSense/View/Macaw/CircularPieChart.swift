@@ -33,7 +33,7 @@ class CircularPieChart: MacawView {
         )
     }
     static let extent = [
-        5.0,
+        3.0,
         2.0,
         3.0
     ]

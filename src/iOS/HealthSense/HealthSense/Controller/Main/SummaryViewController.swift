@@ -20,6 +20,8 @@ class SummaryViewController: UIViewController {
     @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var bloodType: UILabel!
     @IBOutlet weak var heightLabel: UILabel!
+    @IBOutlet weak var circularChartView: CircularPieChart!
+    
     
     
     // Variables declaration
@@ -43,6 +45,7 @@ class SummaryViewController: UIViewController {
         healthAuthorization()
         // Profile data calls
         readProfileData()
+        circularChartView.contentMode = .scaleAspectFit
     }
     
     
