@@ -49,6 +49,12 @@ class SummaryViewController: UIViewController {
     }
     
     
+    override func viewDidAppear(_ animated: Bool) {
+        print("Summary View did Appear")
+        overrideUserInterfaceStyle = SettingsStruct.isDarkMode ? .dark : .light
+    }
+    
+    
     @IBAction func chartButtonPressed(_ sender: Any) {
         print("Button Chart Button pressed")
         

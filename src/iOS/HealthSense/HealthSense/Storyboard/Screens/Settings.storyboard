@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -86,16 +87,16 @@
                                         <rect key="frame" x="0.0" y="81" width="314" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CM3-QA-n1W">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CM3-QA-n1W" userLabel="Color Mode Label">
                                                 <rect key="frame" x="0.0" y="0.0" width="265" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ct8-Yf-uh1">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ct8-Yf-uh1" userLabel="Is Color Mode">
                                                 <rect key="frame" x="265" y="0.0" width="51" height="21"/>
                                                 <connections>
-                                                    <action selector="toggleDarkMode:" destination="NAk-qj-Y0L" eventType="valueChanged" id="QN7-SG-0Gq"/>
+                                                    <action selector="toggleDarkMode:" destination="NAk-qj-Y0L" eventType="valueChanged" id="tZ6-Xr-gEB"/>
                                                 </connections>
                                             </switch>
                                         </subviews>
@@ -201,8 +202,21 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mG7-6d-6Fa">
+                                <rect key="frame" x="75" y="307" width="264" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="UqP-yN-OOg"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Light"/>
+                                    <segment title="Dark"/>
+                                </segments>
+                                <connections>
+                                    <action selector="appearanceChanged:" destination="NAk-qj-Y0L" eventType="valueChanged" id="WVW-We-4Kr"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="Color"/>
                         <constraints>
                             <constraint firstItem="Ih3-HA-ZBi" firstAttribute="trailing" secondItem="xyE-pC-W7e" secondAttribute="trailing" constant="20" id="4Do-LF-8Vo"/>
                             <constraint firstItem="lvd-9N-Uye" firstAttribute="top" secondItem="xIU-Xs-nZK" secondAttribute="bottom" constant="13" id="7Vy-o9-wcH"/>
@@ -215,8 +229,11 @@
                             <constraint firstItem="Ih3-HA-ZBi" firstAttribute="trailing" secondItem="lvd-9N-Uye" secondAttribute="trailing" constant="50" id="VSu-V2-Wua"/>
                             <constraint firstItem="xyE-pC-W7e" firstAttribute="top" secondItem="Ih3-HA-ZBi" secondAttribute="top" constant="5" id="Yrc-Zq-gcu"/>
                             <constraint firstItem="eSd-BB-MfG" firstAttribute="leading" secondItem="Ih3-HA-ZBi" secondAttribute="leading" constant="20" id="hKv-Al-6N6"/>
+                            <constraint firstItem="xIU-Xs-nZK" firstAttribute="top" secondItem="mG7-6d-6Fa" secondAttribute="bottom" constant="33.5" id="j1c-Lf-xjL"/>
                             <constraint firstItem="xIU-Xs-nZK" firstAttribute="centerY" secondItem="1yC-kN-Ifq" secondAttribute="centerY" id="kZu-Yn-EnN"/>
                             <constraint firstItem="xIU-Xs-nZK" firstAttribute="centerX" secondItem="1yC-kN-Ifq" secondAttribute="centerX" id="ktg-Ws-xYD"/>
+                            <constraint firstItem="mG7-6d-6Fa" firstAttribute="leading" secondItem="Ih3-HA-ZBi" secondAttribute="leading" constant="75" id="mTG-L1-Tcg"/>
+                            <constraint firstItem="Ih3-HA-ZBi" firstAttribute="trailing" secondItem="mG7-6d-6Fa" secondAttribute="trailing" constant="75" id="nc1-ea-XLE"/>
                             <constraint firstItem="lvd-9N-Uye" firstAttribute="centerX" secondItem="1yC-kN-Ifq" secondAttribute="centerX" id="sg5-DZ-sF4"/>
                             <constraint firstItem="Ih3-HA-ZBi" firstAttribute="trailing" secondItem="eSd-BB-MfG" secondAttribute="trailing" constant="20" id="uxC-mJ-ZgL"/>
                             <constraint firstItem="Ih3-HA-ZBi" firstAttribute="trailing" secondItem="mLN-Kc-ioA" secondAttribute="trailing" constant="31" id="z00-em-8c4"/>
@@ -231,10 +248,11 @@
                         <outlet property="appOpenLabel" destination="hXB-GM-gw8" id="OKg-Di-8Iz"/>
                         <outlet property="appOpenNumber" destination="M0b-dl-IOT" id="PoQ-ca-UXQ"/>
                         <outlet property="appVersion" destination="RQq-NW-d2M" id="y7F-d5-IZI"/>
+                        <outlet property="appearanceSegment" destination="mG7-6d-6Fa" id="Cq5-E4-D4q"/>
                         <outlet property="creditLabel" destination="3zy-uc-3VC" id="FJp-xC-Wis"/>
                         <outlet property="darkModeLabel" destination="CM3-QA-n1W" id="vLb-WU-onL"/>
                         <outlet property="isAnalyticsEnabled" destination="Lox-kw-804" id="XcA-DS-7Mx"/>
-                        <outlet property="isDarkMode" destination="Ct8-Yf-uh1" id="NvB-bU-c7h"/>
+                        <outlet property="isColorMode" destination="Ct8-Yf-uh1" id="97J-NO-x9t"/>
                         <outlet property="isRandomUserName" destination="lyo-9f-7Tn" id="RSy-We-Yhx"/>
                         <outlet property="isSecurityEnabled" destination="4tg-Gx-r0i" id="2fT-mY-ws6"/>
                         <outlet property="issueLink" destination="Psy-o0-X9H" id="wfr-SA-yAK"/>
@@ -256,5 +274,8 @@
     </scenes>
     <resources>
         <image name="settings" width="30" height="30"/>
+        <namedColor name="Color">
+            <color red="0.77899998426437378" green="0.81400001049041748" blue="0.78600001335144043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

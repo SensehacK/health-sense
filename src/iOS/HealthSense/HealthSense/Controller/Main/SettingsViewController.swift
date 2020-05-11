@@ -17,10 +17,13 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var appOpenLabel: UILabel!
     @IBOutlet weak var appOpenNumber: UILabel!
     
+    
+    @IBOutlet weak var appearanceSegment: UISegmentedControl!
+    
     // Switch Outlets
     @IBOutlet weak var isRandomUserName: UISwitch!
     @IBOutlet weak var isSecurityEnabled: UISwitch!
-    @IBOutlet weak var isDarkMode: UISwitch!
+    @IBOutlet weak var isColorMode: UISwitch!
     @IBOutlet weak var isAnalyticsEnabled: UISwitch!
     
     // Credit Stack
@@ -38,28 +41,20 @@ class SettingsViewController: UIViewController {
     
     // func to initialize the Settings UI
     fileprivate func setupUI() {
-        print(SettingsStruct.isDarkMode)
         print("App run how many times: \(AnalyticsStruct.appOpen)")
-        creditLabel.text = "Made with 💚 by Kautilya"
-        appOpenNumber.text = "\(AnalyticsStruct.appOpen) times"
-        isRandomUserName.isOn = SettingsStruct.isRandomUserName
-        isSecurityEnabled.isOn = SettingsStruct.isSecurity
-        isDarkMode.isOn = SettingsStruct.isDarkMode
-        isAnalyticsEnabled.isOn = !SettingsStruct.isAnalytics
+        
+        // Setup Settings UI
+        uiSwitch()
         
         // Randomize Quotes
         quoteLabel.isUserInteractionEnabled = true
-        projectLink.setTitle("Code link⌨️", for: .normal)
-        issueLink.setTitle("Submit an Issue🐞", for: .normal)
-        randomQuote()
-        getProgrammerQuotes()
-        getAppVersion()
+        appInfo() // Set app info
+        getCredit() // set credit
+        getAppVersion() // set app version
         
-        // Hide View
+        // Analytics
         analyticsView.isHidden = !(SettingsStruct.isAnalytics ? true : false)
-//        appOpenLabel.isHidden = !SettingsStruct.isAnalytics ? true : false
-//        appOpenNumber.isHidden = !SettingsStruct.isAnalytics ? true : false
-        
+        appOpenNumber.text = "\(AnalyticsStruct.appOpen) times"
     }
     
     override func viewDidLoad() {
@@ -73,6 +68,25 @@ class SettingsViewController: UIViewController {
         print("Settings View did Appear")
         getProgrammerQuotes()
         randomQuote()
+        getCredit()
+        // Dark Mode On/Off
+        overrideUserInterfaceStyle = SettingsStruct.isDarkMode ? .dark : .light
+    }
+    
+    
+    @IBAction func appearanceChanged(_ sender: UISegmentedControl) {
+        
+        switch sender.selectedSegmentIndex {
+        case 0:
+            overrideUserInterfaceStyle = .light
+            SettingsStruct.isDarkMode = false
+        case 1:
+            overrideUserInterfaceStyle = .dark
+            SettingsStruct.isDarkMode = true
+        default:
+            overrideUserInterfaceStyle = .unspecified
+        }
+        Settings.sharedInstance.setDarkMode()
     }
     
     
@@ -99,11 +113,13 @@ class SettingsViewController: UIViewController {
     
     
     @IBAction func toggleDarkMode(_ sender: UISwitch) {
-        print("toggleSecurity")
+        print("toggleDarkMode")
         if sender.isOn {
             SettingsStruct.isDarkMode = true
+            overrideUserInterfaceStyle = .dark
         } else {
             SettingsStruct.isDarkMode = false
+            overrideUserInterfaceStyle = .light
         }
         Settings.sharedInstance.setDarkMode()
     }
@@ -122,13 +138,15 @@ class SettingsViewController: UIViewController {
         quoteLabel.text = HSSenseMotivationQuotes.allCases.randomElement().map { $0.rawValue }
     }
     
-    @IBAction func changeQuote(_ sender: Any) {
-        randomQuote()
-    }
-    
     @IBAction func labelTap(_ sender: UITapGestureRecognizer) {
         print("Tapped")
         randomQuote()
+    }
+    
+    // TODO: Main programmer label tap
+    @IBAction func mainLabelTap(_ sender: UITapGestureRecognizer) {
+        print("Main Tapped")
+        getProgrammerQuotes()
     }
     
     @IBAction func openLink(_ sender: Any) {
@@ -156,7 +174,7 @@ class SettingsViewController: UIViewController {
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             
-            print("Your response here")
+            print("Your response here \(String(describing: response))")
             
             guard let data = data else { return }
             
@@ -190,6 +208,30 @@ class SettingsViewController: UIViewController {
         }.resume()
         
         
+    }
+    
+    fileprivate func uiSwitch() {
+        isRandomUserName.isOn = SettingsStruct.isRandomUserName
+        isSecurityEnabled.isOn = SettingsStruct.isSecurity
+        isColorMode.isOn = SettingsStruct.isColorMode
+        isAnalyticsEnabled.isOn = !SettingsStruct.isAnalytics
+    }
+    
+    fileprivate func appInfo() {
+        projectLink.setTitle("Code link⌨️", for: .normal)
+        issueLink.setTitle("Submit an Issue🐞", for: .normal)
+    }
+    
+    // TODO: Credit label tap
+    func getCredit() {
+        creditLabel.text = "Made with 💚 by Kautilya"
+        guard let emojiHeart = HSEmoji.allCases.randomElement().map({ $0.rawValue }) else { return }
+        guard let teamMember = HSTeam.allCases.randomElement().map({ $0.rawValue }) else { return }
+        
+        print("Made with \(HSEmoji.kEmoji3.rawValue) by \(HSTeam.kTeam3.rawValue)")
+        print("Printing text: Made with \(emojiHeart) by \(teamMember)")
+
+        creditLabel.text = "Made with \(emojiHeart) by \(teamMember)"
     }
     
     // TODO: Move these functions to HSHelper Class

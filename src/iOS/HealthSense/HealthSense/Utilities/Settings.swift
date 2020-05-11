@@ -118,6 +118,7 @@ struct SettingsStruct {
     static var isRandomUserName = false
     static var isSecurity = false
     static var isAnalytics = true
+    static var isColorMode = false
 }
 
 struct AnalyticsStruct {
