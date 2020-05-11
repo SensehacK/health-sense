@@ -16,8 +16,7 @@ class FirstOnboardingViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        self.customLabel.text = UserStruct.displayName ?? "Kautilya"
+        self.customLabel.text = ReadProfile.sharedInstance.getProfileName()
         print("#### FirstOnboardingVC")
     }
     
