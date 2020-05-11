@@ -97,8 +97,8 @@ class SummaryViewController: UIViewController {
         
         
         // Body Weight function call
-        let helperObj = Helper()
-        helperObj.readBodyMassWithComp { (quantity, error) in
+        let bodyObj = ReadBody()
+        bodyObj.readBodyMassWithComp { (quantity, error) in
             guard error == nil else { return print("Error in: \(String(describing: error))") }
             if let bodyWeight = quantity {
                 let usersWeight: Double = bodyWeight.doubleValue(for: HKUnit.pound())
@@ -110,7 +110,7 @@ class SummaryViewController: UIViewController {
         }
         
         // Body Height function call
-        helperObj.readHeight { (quantity, error) in
+        bodyObj.readHeight { (quantity, error) in
             guard error == nil else { return print("Error in: \(String(describing: error))") }
             if let bodyHeight = quantity {
                 let heightCM = HKUnit.init(from: .centimeter)

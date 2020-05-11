@@ -12,6 +12,8 @@
 		80C36E588D12EA7D48D04765 /* Pods_HealthSense_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211B1A0465306938FB82EAB7 /* Pods_HealthSense_WatchKit_Extension.framework */; };
 		A213A2D7A4A4188E7556CE08 /* Pods_HealthSense_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6650B3A45065657B9BB342 /* Pods_HealthSense_WatchKit_App.framework */; };
 		A7FC3FA90AE668D59AE9622E /* libPods-HealthSense-HealthSenseUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7EA30D821BE117E671FA47C /* libPods-HealthSense-HealthSenseUITests.a */; };
+		FB0C36D82469D84100B3C438 /* HSHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C36D72469D84100B3C438 /* HSHelper.swift */; };
+		FB0C36DA2469DA4B00B3C438 /* ReadBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C36D92469DA4B00B3C438 /* ReadBody.swift */; };
 		FB2FC374245C875E005AD169 /* MacawViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2FC373245C875D005AD169 /* MacawViewUI.swift */; };
 		FB2FC37A245C9128005AD169 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2FC379245C9128005AD169 /* SummaryViewController.swift */; };
 		FB2FC384245C9631005AD169 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2FC383245C9630005AD169 /* SettingsViewController.swift */; };
@@ -24,7 +26,6 @@
 		FB3EC3BE24561DB2003318DF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3EC3BD24561DB2003318DF /* User.swift */; };
 		FB3EC3C1245620C3003318DF /* ReadProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3EC3C0245620C3003318DF /* ReadProfile.swift */; };
 		FB3EC3C32456653E003318DF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FB3EC3C22456653D003318DF /* README.md */; };
-		FB3EC3C7245670B7003318DF /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3EC3C6245670B7003318DF /* Helper.swift */; };
 		FB51DBC7242A789100FD0B7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51DBC6242A789100FD0B7B /* AppDelegate.swift */; };
 		FB51DBC9242A789100FD0B7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51DBC8242A789100FD0B7B /* SceneDelegate.swift */; };
 		FB51DBCE242A789100FD0B7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB51DBCC242A789100FD0B7B /* Main.storyboard */; };
@@ -142,6 +143,7 @@
 		D7EA30D821BE117E671FA47C /* libPods-HealthSense-HealthSenseUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HealthSense-HealthSenseUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D5266BE219C5FED47977E2 /* Pods-HealthSense WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSense WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-HealthSense WatchKit App/Pods-HealthSense WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
 		E60CF48EBE60D01059D37E03 /* Pods-HealthSense WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSense WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-HealthSense WatchKit Extension/Pods-HealthSense WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		FB0C36D92469DA4B00B3C438 /* ReadBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadBody.swift; sourceTree = "<group>"; };
 		FB2FC373245C875D005AD169 /* MacawViewUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacawViewUI.swift; sourceTree = "<group>"; };
 		FB2FC379245C9128005AD169 /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		FB2FC383245C9630005AD169 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -154,7 +156,6 @@
 		FB3EC3BD24561DB2003318DF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FB3EC3C0245620C3003318DF /* ReadProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadProfile.swift; sourceTree = "<group>"; };
 		FB3EC3C22456653D003318DF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		FB3EC3C6245670B7003318DF /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		FB51DBC3242A789000FD0B7B /* HealthSense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthSense.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB51DBC6242A789100FD0B7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB51DBC8242A789100FD0B7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -353,6 +354,7 @@
 		FB3EC3BF24562098003318DF /* Healthkit */ = {
 			isa = PBXGroup;
 			children = (
+				FB0C36D92469DA4B00B3C438 /* ReadBody.swift */,
 				FB3EC3C0245620C3003318DF /* ReadProfile.swift */,
 			);
 			path = Healthkit;
@@ -361,7 +363,6 @@
 		FB3EC3C42456708E003318DF /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				FB3EC3C6245670B7003318DF /* Helper.swift */,
 				FB3EC3BF24562098003318DF /* Healthkit */,
 			);
 			path = Helper;
@@ -1012,8 +1013,8 @@
 				FBD0EA1A245F5785005877FB /* BarChartViewController.swift in Sources */,
 				FBD385E4245362E900983106 /* ThirdOnboardingViewController.swift in Sources */,
 				FB51DBC9242A789100FD0B7B /* SceneDelegate.swift in Sources */,
-				FB3EC3C7245670B7003318DF /* Helper.swift in Sources */,
 				FB3EC3BE24561DB2003318DF /* User.swift in Sources */,
+				FB0C36DA2469DA4B00B3C438 /* ReadBody.swift in Sources */,
 				FB2FC38F245CC079005AD169 /* SettingsChildVC.swift in Sources */,
 				FBE338FB245239D500B56A53 /* Settings.swift in Sources */,
 				FB6B45D5245F8F8D00B9AD96 /* CircularPieChart.swift in Sources */,
