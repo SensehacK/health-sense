@@ -113,7 +113,7 @@ enum HSHttpStatusCode: Int {
 }
 
 // MARK: Misc Enumerations
-enum HSSenseMotivationQuotes: String {
+enum HSSenseMotivationQuotes: String, CaseIterable {
     // Motivation strings
     case kSensehack1 = "Just be yourself!"
     case kSensehack2 = "Stay Original!"
@@ -123,6 +123,7 @@ enum HSSenseMotivationQuotes: String {
     case kSensehack6 = "Don't Regret!"
     case kSensehack7 = "You're unique!"
 }
+
 
 // MARK: User Defaults Enumerations
 enum HSUserDefaults: String {
