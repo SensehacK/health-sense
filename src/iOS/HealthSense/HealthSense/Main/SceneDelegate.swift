@@ -34,7 +34,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let storyboard = UIStoryboard(name: HSStoryboard.kOnboardingVC.rawValue, bundle: nil)
             self.window?.rootViewController = storyboard.instantiateViewController(identifier: HSCustomViewController.kOnboardingVC.rawValue)
         }
-        Analytics().setup()
+        // Calling Analytics function
+        SettingsStruct.isAnalytics ? Analytics().setup(): nil
+        
         // Old way of checking for those Structs and letting ViewController handle the UX logic
 //        window?.rootViewController = ViewController()
         window?.makeKeyAndVisible()

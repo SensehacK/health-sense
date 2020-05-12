@@ -113,7 +113,7 @@ enum HSHttpStatusCode: Int {
 }
 
 // MARK: Misc Enumerations
-enum HSSenseMotivationQuotes: String {
+enum HSSenseMotivationQuotes: String, CaseIterable {
     // Motivation strings
     case kSensehack1 = "Just be yourself!"
     case kSensehack2 = "Stay Original!"
@@ -124,6 +124,36 @@ enum HSSenseMotivationQuotes: String {
     case kSensehack7 = "You're unique!"
 }
 
+enum HSTeam: String, CaseIterable {
+    // Team strings
+    case kTeam1 = "Abbas Shamshi"
+    case kTeam2 = "Endri Zylali"
+    case kTeam3 = "Kautilya Save"
+    case kTeam4 = "Manasi Tayade"
+    case kTeam5 = "Rushikesh Nage"
+}
+
+enum HSTeamRole: String, CaseIterable {
+    // Team Roles strings
+    case kTeamD1 = "Front End Dev"
+    case kTeamD2 = "Android Dev"
+    case kTeamD3 = "iOS Dev"
+    case kTeamD4 = "Business Analyst"
+    case kTeamD5 = "Project Manager"
+}
+
+enum HSEmoji: String, CaseIterable {
+    // Emoji strings
+    case kEmoji1 = "\u{1F49B}"
+    case kEmoji2 = "\u{1F9E1}"
+    case kEmoji3 = "\u{1F49A}"
+    case kEmoji4 = "\u{1F499}"
+    case kEmoji5 = "\u{1F49C}"
+    case kEmoji6 = "\u{1F90E}"
+    case kEmoji7 = "\u{1F5A4}"
+    case kEmoji8 = "\u{1F90D}"
+}
+
 // MARK: User Defaults Enumerations
 enum HSUserDefaults: String {
     // User Defaults
@@ -132,6 +162,7 @@ enum HSUserDefaults: String {
     case kRandomUser = "RandomUserName"
     case kSecurity = "Authentication"
     case kDarkMode = "DarkMode"
+    case kAnalytics = "Analytics"
 }
 
 // MARK: Misc UserNames

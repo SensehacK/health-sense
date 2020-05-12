@@ -33,10 +33,11 @@ class Settings: NSObject {
         print("set App Settings")
         SettingsStruct.defaultScreen = HSRouter.kWelcome.rawValue
         defaults.set(true, forKey: HSUserDefaults.kFirstLaunch.rawValue)
-        defaults.set(1, forKey: HSUserDefaults.kAppLaunch.rawValue)
+        defaults.set(0, forKey: HSUserDefaults.kAppLaunch.rawValue)
         setRandomUserName() // Set RandomUser settings
         setSecurity() // Set Security settings
         setDarkMode() // Set Dark Mode settings
+        setAnalytics() // Set Analytics settings
     }
     
     
@@ -47,6 +48,7 @@ class Settings: NSObject {
         retrieveRandomUserName() // Refresh latest settings
         retrieveSecurity() // Refresh Security settings
         retrieveDarkMode() // Refresh Dark Mode settings
+        retrieveAnalytics() // Refresh Analytics settings
     }
     
 
@@ -80,6 +82,16 @@ class Settings: NSObject {
         defaults.set(SettingsStruct.isDarkMode, forKey: HSUserDefaults.kDarkMode.rawValue)
     }
     
+    // func for retrieving isRandomUserName User Default setting
+    func retrieveAnalytics() {
+        SettingsStruct.isAnalytics  = defaults.bool(forKey: HSUserDefaults.kAnalytics.rawValue)
+    }
+    
+    // func for Saving RandomUser preference to User Defaults
+    func setAnalytics() {
+        defaults.set(SettingsStruct.isAnalytics, forKey: HSUserDefaults.kAnalytics.rawValue)
+    }
+    
 }
 
 enum HSRouter: String {
@@ -105,9 +117,11 @@ struct SettingsStruct {
     static var defaultScreen = "welcome"
     static var isRandomUserName = false
     static var isSecurity = false
+    static var isAnalytics = true
+    static var isColorMode = false
 }
 
 struct AnalyticsStruct {
     // Analytics Global space
-    static var appOpen = 1
+    static var appOpen = 0
 }

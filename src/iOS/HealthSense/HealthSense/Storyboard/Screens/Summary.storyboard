@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -108,7 +109,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="Color"/>
                         <constraints>
                             <constraint firstItem="g6l-Sx-M1s" firstAttribute="top" secondItem="ePy-3C-QC1" secondAttribute="bottom" constant="5.5" id="3kb-WB-c7m"/>
                             <constraint firstItem="2QO-ky-84M" firstAttribute="top" secondItem="g6l-Sx-M1s" secondAttribute="bottom" constant="22" id="6Nh-Ch-mkK"/>
@@ -121,7 +122,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xIM-XQ-1vc"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Summary" image="anonymous" id="NCQ-hU-MWi"/>
+                    <tabBarItem key="tabBarItem" title="Summary" image="anonymous" id="NCQ-hU-MWi">
+                        <color key="badgeColor" name="Color"/>
+                    </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="ageLabel" destination="vEB-36-ZQ6" id="Tbz-O6-qUE"/>
@@ -263,5 +266,8 @@
     </scenes>
     <resources>
         <image name="anonymous" width="30" height="30"/>
+        <namedColor name="Color">
+            <color red="0.91289173968831117" green="0.91050153009315204" blue="0.95225253807106602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

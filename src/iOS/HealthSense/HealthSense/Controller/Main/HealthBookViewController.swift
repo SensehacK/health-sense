@@ -27,6 +27,7 @@ class HealthBookViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         print("HealthBook View did Appear")
+        overrideUserInterfaceStyle = SettingsStruct.isDarkMode ? .dark : .light
     }
     
     @IBAction func macawViewButton(_ sender: Any) {

@@ -12,7 +12,7 @@ import HealthKit
 public typealias CompletionHandler = ((HKQuantity?, Error?) -> Void)
 
 // Class for the whole project helper methods.
-class Helper {
+class ReadBody {
     
     let healthKitManager = HealthKitManager.sharedInstance
     
