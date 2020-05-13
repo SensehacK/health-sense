@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bJS-wJ-ixd">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -28,28 +28,36 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37z-g3-aR9">
                                         <rect key="frame" x="0.0" y="0.0" width="86" height="30"/>
-                                        <state key="normal" title="Macaw View"/>
+                                        <state key="normal" title="Macaw View">
+                                            <color key="titleColor" name="Link"/>
+                                        </state>
                                         <connections>
                                             <action selector="macawViewButton:" destination="RYs-eV-hX0" eventType="touchUpInside" id="mec-cE-BO7"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pht-1T-NHG">
                                         <rect key="frame" x="0.0" y="45" width="86" height="30"/>
-                                        <state key="normal" title="Welcome"/>
+                                        <state key="normal" title="Welcome">
+                                            <color key="titleColor" name="Link"/>
+                                        </state>
                                         <connections>
                                             <action selector="welcomeButton:" destination="RYs-eV-hX0" eventType="touchUpInside" id="a37-Dw-sBp"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQO-II-QbG">
                                         <rect key="frame" x="0.0" y="90" width="86" height="30"/>
-                                        <state key="normal" title="Bar Chart"/>
+                                        <state key="normal" title="Bar Chart">
+                                            <color key="titleColor" name="Link"/>
+                                        </state>
                                         <connections>
                                             <action selector="barChartButton:" destination="RYs-eV-hX0" eventType="touchUpInside" id="tmE-XM-U3D"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyO-jw-hfB">
                                         <rect key="frame" x="0.0" y="135" width="86" height="30"/>
-                                        <state key="normal" title="Pie Chart"/>
+                                        <state key="normal" title="Pie Chart">
+                                            <color key="titleColor" name="Link"/>
+                                        </state>
                                         <connections>
                                             <action selector="pieChartButton:" destination="RYs-eV-hX0" eventType="touchUpInside" id="SpA-WD-RYm"/>
                                         </connections>
@@ -110,7 +118,10 @@
     <resources>
         <image name="browse" width="30" height="30"/>
         <namedColor name="Color">
-            <color red="0.88090181350708008" green="0.88200575113296509" blue="0.50951087474822998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="1" blue="0.95899999141693115" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Link">
+            <color red="0.0" green="0.4779999852180481" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

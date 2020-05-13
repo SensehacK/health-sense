@@ -111,13 +111,11 @@ class ReadProfile {
     }
     
     
-    // func for getting Device name
+    // func for getting random generated user name
     func getRandomUserName() -> String {
-        print("############ \(Int.random(in: 0..<7)) | \(Int.random(in: 0..<7))")
-        let randomUser = HSUserName.kUserNameArr[Int.random(in: 0..<7)][Int.random(in: 0..<7)]
-        print("Random User Name: \(randomUser)")
+        let randomUserArray = HSUserName.kUserNameArr[Int.random(in: 0..<HSUserName.kUserNameArr.count)]
+        let randomUser = randomUserArray[Int.random(in: 0..<randomUserArray.count)]
         return randomUser
-        
     }
 
 

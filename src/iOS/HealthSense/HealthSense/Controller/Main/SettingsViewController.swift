@@ -31,6 +31,7 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var appVersion: UILabel!
     
     // App Info links
+    @IBOutlet weak var infoStack: UIStackView!
     @IBOutlet weak var quoteLabel: UILabel!
     @IBOutlet weak var projectLink: UIButton!
     @IBOutlet weak var issueLink: UIButton!
@@ -49,7 +50,6 @@ class SettingsViewController: UIViewController {
         // Randomize Quotes
         quoteLabel.isUserInteractionEnabled = true
         appInfo() // Set app info
-        getCredit() // set credit
         getAppVersion() // set app version
         
         // Analytics
@@ -64,13 +64,17 @@ class SettingsViewController: UIViewController {
         setupUI()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        print("Settings View did Appear")
+    override func viewWillAppear(_ animated: Bool) {
+        print("Settings View will Appear")
         getProgrammerQuotes()
         randomQuote()
-        getCredit()
+        getCredit() // set credit
         // Dark Mode On/Off
         overrideUserInterfaceStyle = SettingsStruct.isDarkMode ? .dark : .light
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print("Settings View did Appear")
     }
     
     
@@ -150,63 +154,47 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func openLink(_ sender: Any) {
-        if let url = URL(string: "https://github.com/SensehacK/health-sense") {
+        if let url = URL(string: HSAppLinks.kAppCode.rawValue) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
     }
     
     @IBAction func submitIssue(_ sender: Any) {
-        if let url = URL(string: "https://github.com/SensehacK/health-sense/issues") {
+        if let url = URL(string: HSAppLinks.kAppBug.rawValue) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
     }
     
     // TODO: Move these functions to Network Class
     func getProgrammerQuotes() {
-        
-        //        let quote = Quotes(idI: 1, quote: "Be Yourself!", author: "Kautilya")
-        //        print("Quote: ", quote)
-        
-        let urlString = "https://programming-quotes-api.herokuapp.com/quotes/random/lang/en"
-        
-        guard let url = URL(string: urlString) else { return }
-        
+//        let urlString = "https://programming-quotes-api.herokuapp.com/quotes/random/lang/en"
+        guard let url = URL(string: HSAPI.kAPIProgrammerQuote.rawValue) else { return }
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
+            guard error == nil else { return }
             
-            print("Your response here \(String(describing: response))")
-            
+            guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == HSHttpStatusCode.kStatusSuccess.rawValue else {
+                print("Error in retrieving text")
+                DispatchQueue.main.async {
+                    self.programmerQuote.text = HSErrorMsg.kErrorNetwork.rawValue
+                    self.programmerAuthor.isHidden = true
+                }
+                return
+            }
             guard let data = data else { return }
-            
-            // Old method
-            /*
-             do {
-             guard let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String:Any] else { return }
-             print(json)
-             print(json["author"])
-             
-             } catch let error {
-             print(error)
-             }
-             
-             */
-            
-            
             do {
                 let json = try JSONDecoder().decode(Quotes.self, from: data)
                 print(json.en!)
                 print(json.author!)
                 DispatchQueue.main.async {
+                    self.programmerAuthor.isHidden = false
                     self.programmerQuote.text = json.en!
                     self.programmerAuthor.text = "-\(json.author!)"
                 }
-                
             } catch let error {
                 print(error)
             }
-            
         }.resume()
-        
         
     }
     
@@ -215,9 +203,11 @@ class SettingsViewController: UIViewController {
         isSecurityEnabled.isOn = SettingsStruct.isSecurity
         isColorMode.isOn = SettingsStruct.isColorMode
         isAnalyticsEnabled.isOn = !SettingsStruct.isAnalytics
+        appearanceSegment.selectedSegmentIndex  = SettingsStruct.isDarkMode ? 1 : 0
     }
     
     fileprivate func appInfo() {
+        infoStack.backgroundColor = UIColor(named: "Link")
         projectLink.setTitle("Code link⌨️", for: .normal)
         issueLink.setTitle("Submit an Issue🐞", for: .normal)
     }
@@ -225,12 +215,9 @@ class SettingsViewController: UIViewController {
     // TODO: Credit label tap
     func getCredit() {
         creditLabel.text = "Made with 💚 by Kautilya"
-        guard let emojiHeart = HSEmoji.allCases.randomElement().map({ $0.rawValue }) else { return }
+        guard let emojiHeart = HSHeartEmoji.allCases.randomElement().map({ $0.rawValue }) else { return }
         guard let teamMember = HSTeam.allCases.randomElement().map({ $0.rawValue }) else { return }
-        
-        print("Made with \(HSEmoji.kEmoji3.rawValue) by \(HSTeam.kTeam3.rawValue)")
-        print("Printing text: Made with \(emojiHeart) by \(teamMember)")
-
+        print("Made with \(HSHeartEmoji.kEmoji3.rawValue) by \(HSTeam.kTeam3.rawValue)")
         creditLabel.text = "Made with \(emojiHeart) by \(teamMember)"
     }
     

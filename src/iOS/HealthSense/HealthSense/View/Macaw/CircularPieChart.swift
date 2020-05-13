@@ -19,8 +19,8 @@ class CircularPieChart: MacawView {
         0.14,
         0.07
         ].map {
-            Color.rgba(r: 255, g: 255, b: 255, a: $0)
-    }
+            Color.rgba(r: SettingsStruct.isDarkMode ? 255 : 0, g: SettingsStruct.isDarkMode ? 255 : 0, b: SettingsStruct.isDarkMode ? 255 : 0, a: $0)
+        }
     static let gradientColors = [
         (top: 0xfc087e, bottom: 0xff6868),
         (top: 0x06dfed, bottom: 0x03aafe),
@@ -46,7 +46,6 @@ class CircularPieChart: MacawView {
     static var viewCenterX: Double = 350.0
     
     required init?(coder aDecoder: NSCoder) {
-
         super.init(node: CircularPieChart.createChart(), coder: aDecoder)
         backgroundColor = .clear
     }
