@@ -16,7 +16,8 @@ class FirstOnboardingViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.customLabel.text = ReadProfile.sharedInstance.getProfileName()
+        self.customLabel.text = "Hey  \(ReadProfile.sharedInstance.getProfileName())"
+        
         print("#### FirstOnboardingVC")
     }
     

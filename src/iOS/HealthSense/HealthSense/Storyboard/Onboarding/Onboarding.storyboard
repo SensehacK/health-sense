@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qiG-27-AJH">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,22 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kautilya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7x-Ys-Ftm">
-                                <rect key="frame" x="149" y="706" width="116" height="41"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Health Sense" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giG-fi-10t">
                                 <rect key="frame" x="20" y="139" width="374" height="41"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="FontOnboarding"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An App to track all things health" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QwK-0d-4Sj">
                                 <rect key="frame" x="57" y="196" width="300" height="27"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                <color key="textColor" red="1" green="0.86927634814639565" blue="0.25759440214839202" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" name="FontOnboarding"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We will go through the user experience and showcase the main features of the app! 🎉" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLc-ob-EVd">
@@ -39,17 +34,23 @@
                                     <constraint firstAttribute="height" constant="224" id="Tjp-Oy-gBf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="FontOnboarding"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kautilya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7x-Ys-Ftm">
+                                <rect key="frame" x="149" y="258" width="116" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <color key="textColor" name="FontOnboarding"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="Onboard"/>
                         <constraints>
                             <constraint firstItem="R7x-Ys-Ftm" firstAttribute="centerX" secondItem="ulG-qM-nuR" secondAttribute="centerX" id="4ye-Yj-VCm"/>
                             <constraint firstItem="gLc-ob-EVd" firstAttribute="top" secondItem="QwK-0d-4Sj" secondAttribute="bottom" constant="52" id="5eG-2f-9gb"/>
                             <constraint firstItem="QwK-0d-4Sj" firstAttribute="top" secondItem="giG-fi-10t" secondAttribute="bottom" constant="16" id="FO4-hc-YeH"/>
                             <constraint firstItem="R7x-Ys-Ftm" firstAttribute="centerX" secondItem="QwK-0d-4Sj" secondAttribute="centerX" id="IwX-cu-dke"/>
-                            <constraint firstItem="8aJ-GR-IVN" firstAttribute="bottom" secondItem="R7x-Ys-Ftm" secondAttribute="bottom" constant="115" id="KbY-3K-apc"/>
+                            <constraint firstItem="8aJ-GR-IVN" firstAttribute="bottom" secondItem="R7x-Ys-Ftm" secondAttribute="bottom" constant="563" id="KbY-3K-apc"/>
                             <constraint firstItem="gLc-ob-EVd" firstAttribute="centerX" secondItem="QwK-0d-4Sj" secondAttribute="centerX" id="T8i-Wh-08S"/>
                             <constraint firstItem="R7x-Ys-Ftm" firstAttribute="centerX" secondItem="giG-fi-10t" secondAttribute="centerX" id="V9P-2g-BvR"/>
                             <constraint firstItem="giG-fi-10t" firstAttribute="top" secondItem="8aJ-GR-IVN" secondAttribute="top" constant="95" id="e42-Rb-k1N"/>
@@ -73,24 +74,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Dx-FF-wZl">
-                                <rect key="frame" x="195" y="432.5" width="24" height="41"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Onboard" translatesAutoresizingMaskIntoConstraints="NO" id="l3v-iS-eeo">
+                                <rect key="frame" x="50" y="24" width="314" height="848"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App features" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Neu-Sk-jaI">
+                                <rect key="frame" x="75" y="-86" width="264" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="uG8-PL-Vf3"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="FontOnboarding"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="3Dx-FF-wZl" firstAttribute="centerX" secondItem="wAP-5V-Scx" secondAttribute="centerX" id="0QV-wo-dob"/>
-                            <constraint firstItem="3Dx-FF-wZl" firstAttribute="centerY" secondItem="wAP-5V-Scx" secondAttribute="centerY" id="qRZ-a9-i7B"/>
+                            <constraint firstItem="Neu-Sk-jaI" firstAttribute="leading" secondItem="wAP-5V-Scx" secondAttribute="leading" constant="75" id="Ch0-6n-FP5"/>
+                            <constraint firstItem="Neu-Sk-jaI" firstAttribute="centerX" secondItem="r6J-t7-NKI" secondAttribute="centerX" id="cvA-9V-00h"/>
+                            <constraint firstItem="l3v-iS-eeo" firstAttribute="top" secondItem="Neu-Sk-jaI" secondAttribute="bottom" constant="60" id="esF-eh-Eri"/>
+                            <constraint firstItem="l3v-iS-eeo" firstAttribute="centerY" secondItem="r6J-t7-NKI" secondAttribute="centerY" id="fVa-36-nYn"/>
+                            <constraint firstItem="l3v-iS-eeo" firstAttribute="leading" secondItem="wAP-5V-Scx" secondAttribute="leading" constant="50" id="hSS-Mm-nub"/>
+                            <constraint firstItem="wAP-5V-Scx" firstAttribute="trailing" secondItem="Neu-Sk-jaI" secondAttribute="trailing" constant="75" id="her-7P-0JZ"/>
+                            <constraint firstItem="l3v-iS-eeo" firstAttribute="centerX" secondItem="r6J-t7-NKI" secondAttribute="centerX" id="qzl-Fe-WFY"/>
+                            <constraint firstItem="wAP-5V-Scx" firstAttribute="trailing" secondItem="l3v-iS-eeo" secondAttribute="trailing" constant="50" id="yQ8-xt-kDK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wAP-5V-Scx"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UdO-oo-VIo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="145" y="767"/>
+            <point key="canvasLocation" x="144.92753623188406" y="766.74107142857144"/>
         </scene>
         <!--Third Onboarding View Controller-->
         <scene sceneID="ahC-3U-no4">
@@ -101,9 +114,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Awesome ✌️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxk-fh-eiL">
-                                <rect key="frame" x="112.5" y="432.5" width="189" height="41"/>
+                                <rect key="frame" x="112.5" y="681" width="189" height="41"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="FontOnboarding"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zM7-Nn-RvQ">
@@ -116,13 +129,27 @@
                                     <action selector="continueBtnPressed:" destination="G53-FP-cJN" eventType="touchUpInside" id="lrb-B7-eVV"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEm-bc-DGz">
+                                <rect key="frame" x="20" y="323" width="374" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="250" id="vrZ-NY-VUI"/>
+                                </constraints>
+                                <string key="text">The App will prompt Health data permissions. In order for the Health Sense app to properly function and provide relevant information, please turn on all of the permissions on Health Kit.</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" name="FontOnboarding"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="grh-kZ-mnB" firstAttribute="trailing" secondItem="yEm-bc-DGz" secondAttribute="trailing" constant="20" id="1YN-TL-CLB"/>
+                            <constraint firstItem="yEm-bc-DGz" firstAttribute="centerY" secondItem="7SV-tL-sm8" secondAttribute="centerY" id="3WR-gI-mbz"/>
                             <constraint firstItem="sxk-fh-eiL" firstAttribute="centerX" secondItem="grh-kZ-mnB" secondAttribute="centerX" id="8Wr-d2-cWs"/>
+                            <constraint firstItem="yEm-bc-DGz" firstAttribute="leading" secondItem="grh-kZ-mnB" secondAttribute="leading" constant="20" id="Emv-L8-4do"/>
                             <constraint firstItem="grh-kZ-mnB" firstAttribute="bottom" secondItem="zM7-Nn-RvQ" secondAttribute="bottom" constant="30" id="KDr-gM-CNL"/>
-                            <constraint firstItem="sxk-fh-eiL" firstAttribute="centerY" secondItem="grh-kZ-mnB" secondAttribute="centerY" id="ROJ-Bq-oPh"/>
+                            <constraint firstItem="sxk-fh-eiL" firstAttribute="centerY" secondItem="grh-kZ-mnB" secondAttribute="centerY" constant="248.5" id="ROJ-Bq-oPh"/>
                             <constraint firstItem="zM7-Nn-RvQ" firstAttribute="centerX" secondItem="7SV-tL-sm8" secondAttribute="centerX" id="d5J-sd-aPh"/>
+                            <constraint firstItem="yEm-bc-DGz" firstAttribute="centerX" secondItem="7SV-tL-sm8" secondAttribute="centerX" id="mqs-y8-4rt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="grh-kZ-mnB"/>
                     </view>
@@ -140,4 +167,13 @@
             <point key="canvasLocation" x="146" y="19"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Onboard" width="288" height="424"/>
+        <namedColor name="FontOnboarding">
+            <color red="0.011973505839705467" green="0.038468070328235626" blue="0.075832204974215958" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Onboard">
+            <color red="0.066491171717643738" green="0.68423062562942505" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
