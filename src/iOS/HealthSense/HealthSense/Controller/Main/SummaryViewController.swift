@@ -13,14 +13,17 @@ class SummaryViewController: UIViewController {
 
     // IBOutlets
     @IBOutlet weak var userTitle: UILabel!
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var circularChartView: CircularPieChart!
     @IBOutlet weak var chartView: UIView!
-    @IBOutlet weak var chartLabel: UILabel!
-    @IBOutlet weak var viewChartButton: UIButton!
+    
+
+    @IBOutlet weak var weightLabel: UILabel!
     @IBOutlet weak var ageLabel: UILabel!
+    @IBOutlet weak var genderLabel: UILabel!
     @IBOutlet weak var bloodType: UILabel!
     @IBOutlet weak var heightLabel: UILabel!
-    @IBOutlet weak var circularChartView: CircularPieChart!
+   
+    @IBOutlet weak var viewChartButton: UIButton!
     
     
     
@@ -37,16 +40,7 @@ class SummaryViewController: UIViewController {
     }
     
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // func for small init setup
-        initialSetup()
-        // Healthkit permissions
-        healthAuthorization()
-        // Profile data calls
-        readProfileData()
-        circularChartView.contentMode = .scaleAspectFit
-        
+    fileprivate func userInterfaceStyle() {
         switch UIScreen.main.traitCollection.userInterfaceStyle {
         case .light: //light mode
             print("Light mode")
@@ -58,6 +52,18 @@ class SummaryViewController: UIViewController {
             print("Unknown mode")
         }
         overrideUserInterfaceStyle = SettingsStruct.isDarkMode ? .dark : .light
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // func for small init setup
+        initialSetup()
+        // User Interface style
+        userInterfaceStyle()
+        // Healthkit permissions
+        healthAuthorization()
+        // Settings Aspect fit for Chart View
+        circularChartView.contentMode = .scaleAspectFit
     }
     
     
@@ -87,6 +93,10 @@ class SummaryViewController: UIViewController {
                 print("Error in healthkit access \(error)")
             }
             print("Was healthkit successful? \(success)")
+            DispatchQueue.main.async {
+                // Profile data call
+                self.readProfileData()
+            }
         }
     }
     
@@ -102,6 +112,7 @@ class SummaryViewController: UIViewController {
         
         if let displayName = UserStruct.displayName {
             userTitle.text = "Welcome \(displayName)"
+            UserStruct.firstName = UserStruct.displayName
         }
     }
     
@@ -116,7 +127,7 @@ class SummaryViewController: UIViewController {
         
         // Profile Gender function call
         let gender = ReadProfile.sharedInstance.getGender()
-        chartLabel.text = "Gender: \(gender)"
+        genderLabel.text = "Gender: \(gender)"
         
 //        generateGreetings() // Calling in viewWill appear
         
@@ -126,10 +137,9 @@ class SummaryViewController: UIViewController {
         bodyObj.readBodyMassWithComp { (quantity, error) in
             guard error == nil else { return print("Error in: \(String(describing: error))") }
             if let bodyWeight = quantity {
-                let usersWeight: Double = bodyWeight.doubleValue(for: HKUnit.pound())
-                UserStruct.weight = usersWeight
+                let usersWeight: Double = bodyWeight.doubleValue(for: SettingsStruct.isMetric ? HKUnit.gramUnit(with: .kilo) : HKUnit.pound())
                 DispatchQueue.main.async {
-                    self.chartLabel.text = "Weight: \(String(describing: usersWeight))"
+                    self.weightLabel.text = SettingsStruct.isMetric ? usersWeight.formatWeightKg() : usersWeight.formatWeightLb()
                 }
             }
         }

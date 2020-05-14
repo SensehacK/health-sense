@@ -216,6 +216,8 @@ enum HSUserDefaults: String {
     case kSecurity = "Authentication"
     case kDarkMode = "DarkMode"
     case kAnalytics = "Analytics"
+    case kMetric = "Metric"
+    
 }
 
 // MARK: Misc UserNames

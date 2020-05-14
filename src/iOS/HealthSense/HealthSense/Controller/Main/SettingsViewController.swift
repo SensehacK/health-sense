@@ -119,13 +119,11 @@ class SettingsViewController: UIViewController {
     @IBAction func toggleDarkMode(_ sender: UISwitch) {
         print("toggleDarkMode")
         if sender.isOn {
-            SettingsStruct.isDarkMode = true
-            overrideUserInterfaceStyle = .dark
+            SettingsStruct.isMetric = true
         } else {
-            SettingsStruct.isDarkMode = false
-            overrideUserInterfaceStyle = .light
+            SettingsStruct.isMetric = false
         }
-        Settings.sharedInstance.setDarkMode()
+        Settings.sharedInstance.setMetrics()
     }
     
     @IBAction func toggleAnalytics(_ sender: UISwitch) {
@@ -201,7 +199,7 @@ class SettingsViewController: UIViewController {
     fileprivate func uiSwitch() {
         isRandomUserName.isOn = SettingsStruct.isRandomUserName
         isSecurityEnabled.isOn = SettingsStruct.isSecurity
-        isColorMode.isOn = SettingsStruct.isColorMode
+        isColorMode.isOn = SettingsStruct.isMetric
         isAnalyticsEnabled.isOn = !SettingsStruct.isAnalytics
         appearanceSegment.selectedSegmentIndex  = SettingsStruct.isDarkMode ? 1 : 0
     }
