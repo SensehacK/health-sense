@@ -46,18 +46,34 @@ class SummaryViewController: UIViewController {
         // Profile data calls
         readProfileData()
         circularChartView.contentMode = .scaleAspectFit
+        
+        switch UIScreen.main.traitCollection.userInterfaceStyle {
+        case .light: //light mode
+            print("Light mode")
+        case .dark: //dark mode
+            print("dark mode")
+        case .unspecified: //the user interface style is not specified
+            print("unspecified mode")
+        @unknown default:
+            print("Unknown mode")
+        }
+        overrideUserInterfaceStyle = SettingsStruct.isDarkMode ? .dark : .light
     }
     
     
+    override func viewWillAppear(_ animated: Bool) {
+        print("Summary View will Appear")
+        overrideUserInterfaceStyle = SettingsStruct.isDarkMode ? .dark : .light
+        generateGreetings()
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         print("Summary View did Appear")
-        overrideUserInterfaceStyle = SettingsStruct.isDarkMode ? .dark : .light
     }
     
     
     @IBAction func chartButtonPressed(_ sender: Any) {
         print("Button Chart Button pressed")
-        
         // Navigate to
         segueToSummaryChildVC()  // Child VC
         // navigateToCustomVCStoryboard() // Macaw VC
@@ -67,11 +83,25 @@ class SummaryViewController: UIViewController {
     fileprivate func healthAuthorization() {
         // Do any additional setup after loading the view.
         healthKitManager.authorizeHealthKit { (success, error) in
-            
             if let error = error {
                 print("Error in healthkit access \(error)")
             }
             print("Was healthkit successful? \(success)")
+        }
+    }
+    
+    fileprivate func generateGreetings() {
+        // Profile Device Name logic
+        if SettingsStruct.isRandomUserName {
+            // Profile preselected array Random user name generator function call
+            UserStruct.displayName = ReadProfile.sharedInstance.getRandomUserName()
+        } else {
+            // Profile Device Name function call
+            UserStruct.displayName = ReadProfile.sharedInstance.getProfileName()
+        }
+        
+        if let displayName = UserStruct.displayName {
+            userTitle.text = "Welcome \(displayName)"
         }
     }
     
@@ -88,18 +118,7 @@ class SummaryViewController: UIViewController {
         let gender = ReadProfile.sharedInstance.getGender()
         chartLabel.text = "Gender: \(gender)"
         
-        // Profile Device Name logic
-        if SettingsStruct.isRandomUserName {
-            // Profile preselected array Random user name generator function call
-            UserStruct.displayName = ReadProfile.sharedInstance.getRandomUserName()
-        } else {
-            // Profile Device Name function call
-            UserStruct.displayName = ReadProfile.sharedInstance.getProfileName()
-        }
-        
-        if let displayName = UserStruct.displayName {
-            userTitle.text = "Welcome \(displayName)"
-        }
+//        generateGreetings() // Calling in viewWill appear
         
         
         // Body Weight function call

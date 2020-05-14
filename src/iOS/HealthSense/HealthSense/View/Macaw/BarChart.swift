@@ -27,7 +27,7 @@ class BarChart: MacawView {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(node: BarChart.createChart(), coder: aDecoder)
-        backgroundColor = .lightGray
+        backgroundColor = UIColor(named: "Container")
     }
 
     private static func createChart() -> Group {

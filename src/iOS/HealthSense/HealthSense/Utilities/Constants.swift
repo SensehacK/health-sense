@@ -124,13 +124,66 @@ enum HSSenseMotivationQuotes: String, CaseIterable {
     case kSensehack7 = "You're unique!"
 }
 
+
+// MARK: Error Enumerations
+enum HSErrorMsg: String, CaseIterable {
+    // Error strings
+    case kErrorNetwork = "Unable to fetch data"
+    case kErrorProcessing = "Can't process data"
+    case kErrorData = "Incorrect data"
+    case kErrorFormat = "Incorrect format"
+    case kErrorSystem = "System error occurred"
+    case kErrorSend = "Couldn't send data"
+    case kErrorAck = "Server didn't respond to the request"
+}
+
+enum HSFunnyErrorMsg: String, CaseIterable {
+    // Error strings
+    case kErrorFun1 = "Servers bill weren't paid"
+    case kErrorFun2 = "It’s time to get a life."
+    case kErrorFun3 = "Our developers weren't paid enough to fix this bug."
+    case kErrorFun4 = "Windows not activated!"
+    case kErrorFun5 = "No error occured"
+    case kErrorFun6 = "PAGE_FAULT_IN_NONPAGED_AREA"
+    case kErrorFun7 = "Blue Screen of DEATH!"
+    case kErrorFun8 = "Error terminating child"
+}
+
+
+// MARK: API Endpoints Enumerations
+enum HSAPI: String {
+    // App Links strings
+    case kAPIProgrammerQuote = "https://programming-quotes-api.herokuapp.com/quotes/random/lang/en"
+    case kAPI1 = "https://sensehack.github.io/health-sense/"
+    case kAPI2 = "https://github.com/SensehacK/health-sense/projects"
+    case kAPI3 = "https://github.com/SensehacK/health-sense/pulse"
+    case kAPI4 = "https://github.com/SensehacK/health-sense/wiki"
+    case kAPI5 = "https://github.com/SensehacK/health-sense/issues"
+    case kAPI6 = "https://github.com/SensehacK/health-sense/graphs/contributors"
+    case kAPI7 = "https://sensehack.github.io/health-sense/#team"
+}
+
+
+// MARK: App Information Enumerations
+enum HSAppLinks: String {
+    // App Links strings
+    case kAppCode = "https://github.com/SensehacK/health-sense"
+    case kAppWeb = "https://sensehack.github.io/health-sense/"
+    case kAppProject = "https://github.com/SensehacK/health-sense/projects"
+    case kAppPulse = "https://github.com/SensehacK/health-sense/pulse"
+    case kAppWiki = "https://github.com/SensehacK/health-sense/wiki"
+    case kAppBug = "https://github.com/SensehacK/health-sense/issues"
+    case kAppContributors = "https://github.com/SensehacK/health-sense/graphs/contributors"
+    case kAppTeam = "https://sensehack.github.io/health-sense/#team"
+}
+
 enum HSTeam: String, CaseIterable {
     // Team strings
-    case kTeam1 = "Abbas Shamshi"
-    case kTeam2 = "Endri Zylali"
-    case kTeam3 = "Kautilya Save"
-    case kTeam4 = "Manasi Tayade"
-    case kTeam5 = "Rushikesh Nage"
+    case kTeam1 = "Abbas"
+    case kTeam2 = "Endri"
+    case kTeam3 = "Kautilya"
+    case kTeam4 = "Manasi"
+    case kTeam5 = "Rushikesh"
 }
 
 enum HSTeamRole: String, CaseIterable {
@@ -142,7 +195,7 @@ enum HSTeamRole: String, CaseIterable {
     case kTeamD5 = "Project Manager"
 }
 
-enum HSEmoji: String, CaseIterable {
+enum HSHeartEmoji: String, CaseIterable {
     // Emoji strings
     case kEmoji1 = "\u{1F49B}"
     case kEmoji2 = "\u{1F9E1}"
@@ -168,12 +221,15 @@ enum HSUserDefaults: String {
 // MARK: Misc UserNames
 struct HSUserName {
     // Username strings
-    static let kUserName1 = ["Goku", "Luffy", "Ichigo", "L", "Zoro", "Spike", "Edward", "Inuyasha", "Eren", "Saitama"]
-    static let kUserName2 = ["Alicia Keys", "Bruno Mars", "Daft Punk", "Ed Sheeran", "Imagine Dragons", "Juicy J", "Queen", "The Chainsmokers", "The Rolling Stones", "Tyga"]
+    static let kAnime = ["Goku", "Luffy", "Ichigo", "L", "Zoro", "Spike", "Edward", "Inuyasha", "Eren", "Saitama"]
+    static let kMusic = ["Alicia Keys", "Bruno Mars", "Daft Punk", "Ed Sheeran", "Imagine Dragons", "Juicy J", "Queen", "The Chainsmokers", "The Rolling Stones", "Tyga"]
     static let kUserName3 = ["Basenji Dog", "Bombay", "Carolina Dog", "Chow Chow", "Dog", "Fire-Bellied Toad", "Gar", "Giant Clam", "Saint Bernard", "Shrimp"]
     static let kUserName4 = ["Clauncher", "Druddigon", "Ferrothorn", "Gloom", "Hawlucha", "Hippopotas", "Honchkrow", "Leafeon", "Porygon-Z", "Wurmple"]
     static let kUserName5 = ["Green Arrow", "Jean Grey", "Kitty Pryde", "Raphael", "The Atom", "The Tick", "Wally West (The Flash)", "Wolverine"]
-    static let kUserName6 = ["Bill", "Warren", "Jeff", "Steve", "Bill", "Warren", "Jeff", "Steve"]
-    static let kUserName7 = ["Marshall", "J.Cole", "Kendrick", "Dr. Dre", "Notorious BIG", "Tupac", "50 Cent", "Snoop" ]
-    static let kUserNameArr = [kUserName1, kUserName2, kUserName3, kUserName4, kUserName5, kUserName6, kUserName7]
+    static let kBillionaires = ["Bill", "Warren", "Jeff", "Steve", "Bill", "Warren", "Jeff", "Steve"]
+    static let kRapper = ["Marshall", "J.Cole", "Kendrick", "Dr. Dre", "Notorious BIG", "Tupac", "50 Cent", "Snoop" ]
+    static let kUserName8 = ["Bill", "Warren", "Jeff", "Steve", "Bill", "Warren", "Jeff", "Steve"] // duplicate
+    static let kUserName9 = ["Marshall", "J.Cole", "Kendrick", "Dr. Dre", "Notorious BIG", "Tupac", "50 Cent", "Snoop" ] // duplicate
+    static let kUserName10 = ["Marshall", "J.Cole", "Kendrick", "Dr. Dre", "Notorious BIG", "Tupac", "50 Cent", "Snoop" ] // duplicate
+    static let kUserNameArr = [kAnime, kMusic, kUserName3, kUserName4, kUserName5, kBillionaires, kRapper, kUserName8, kUserName9, kUserName10]
 }

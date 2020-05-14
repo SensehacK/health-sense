@@ -25,6 +25,11 @@ class HealthBookViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        print("HealthBook View will Appear")
+        overrideUserInterfaceStyle = SettingsStruct.isDarkMode ? .dark : .light
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         print("HealthBook View did Appear")
         overrideUserInterfaceStyle = SettingsStruct.isDarkMode ? .dark : .light
