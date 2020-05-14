@@ -170,10 +170,10 @@
     <resources>
         <image name="Onboard" width="288" height="424"/>
         <namedColor name="FontOnboarding">
-            <color red="0.011973505839705467" green="0.038468070328235626" blue="0.075832204974215958" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.012000000104308128" green="0.037999998778104782" blue="0.075999997556209564" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Onboard">
-            <color red="0.066491171717643738" green="0.68423062562942505" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.065999999642372131" green="0.68400001525878906" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

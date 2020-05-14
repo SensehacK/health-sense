@@ -223,13 +223,20 @@ struct HSUserName {
     // Username strings
     static let kAnime = ["Goku", "Luffy", "Ichigo", "L", "Zoro", "Spike", "Edward", "Inuyasha", "Eren", "Saitama"]
     static let kMusic = ["Alicia Keys", "Bruno Mars", "Daft Punk", "Ed Sheeran", "Imagine Dragons", "Juicy J", "Queen", "The Chainsmokers", "The Rolling Stones", "Tyga"]
-    static let kUserName3 = ["Basenji Dog", "Bombay", "Carolina Dog", "Chow Chow", "Dog", "Fire-Bellied Toad", "Gar", "Giant Clam", "Saint Bernard", "Shrimp"]
-    static let kUserName4 = ["Clauncher", "Druddigon", "Ferrothorn", "Gloom", "Hawlucha", "Hippopotas", "Honchkrow", "Leafeon", "Porygon-Z", "Wurmple"]
-    static let kUserName5 = ["Green Arrow", "Jean Grey", "Kitty Pryde", "Raphael", "The Atom", "The Tick", "Wally West (The Flash)", "Wolverine"]
+    static let kDog = ["Basenji Dog", "Bombay", "Carolina Dog", "Chow Chow", "Dog", "Fire Toad", "Gar", "Giant Clam", "Saint Bernard", "Shrimp"]
+    static let kGaming = ["John Marston", "Master Chief", "Link", "Mario", "Solid Snake", "Princess Peach", "Lara Croft",
+                          "Geralt", "Cloud Strife", "Pacman", "Kratos", "Megaman", "Marcus Fenix", "Cortana", "Sonic", "Donkey Kong", "Agent 47", "Ezio" ]
+    static let kSuperHero = ["Batman", "Spiderman", "Ironman", "Dr.Strange", "Superman", "Wonder Woman", "Flash", "Wolverine", "Captain America"]
+    static let kVillain = ["The Joker", "Darth Vader", "V", "Bane", "Hal", "Wonder Woman", "Flash", "Wolverine",
+                            "Thanos", "Madara", "T-1000", "Freddy Krueger", "Agent Smith", "Gollum", "Voldemort",
+                            "Hans Landa", "Hannibal Lecter", "Loki"]
     static let kBillionaires = ["Bill", "Warren", "Jeff", "Steve", "Bill", "Warren", "Jeff", "Steve"]
     static let kRapper = ["Marshall", "J.Cole", "Kendrick", "Dr. Dre", "Notorious BIG", "Tupac", "50 Cent", "Snoop" ]
-    static let kUserName8 = ["Bill", "Warren", "Jeff", "Steve", "Bill", "Warren", "Jeff", "Steve"] // duplicate
-    static let kUserName9 = ["Marshall", "J.Cole", "Kendrick", "Dr. Dre", "Notorious BIG", "Tupac", "50 Cent", "Snoop" ] // duplicate
-    static let kUserName10 = ["Marshall", "J.Cole", "Kendrick", "Dr. Dre", "Notorious BIG", "Tupac", "50 Cent", "Snoop" ] // duplicate
-    static let kUserNameArr = [kAnime, kMusic, kUserName3, kUserName4, kUserName5, kBillionaires, kRapper, kUserName8, kUserName9, kUserName10]
+    static let kPokemon = ["Pikachu", "Mewtwo", "Bulbasaur", "Eevee", "Charizard", "Dragonite", "Blastoise", "Gengar", "Snorlax", "Squirtle", "Charmander", "Jigglypuff" ]
+    static let kStarWars = ["Luke Skywalker", "Yoda", "Han Solo", "Obi-Wan", "Anakin Skywalker ", "Princess Leia", "Chewbacca", "Emperor", "R2-D2", "Boba Fett", "C-3PO"]
+    static let kMovieCharacters = ["Indiana Jones", "James Bond", "Katniss", "Ellen Ripley", "John McClane",
+                                   "Michael Corleone", "Captain Jack Sparrow", "Aragorn", "Doc Brown", "The Terminator" ,
+                                   "Gandalf", "Rocky", "Sarah Connor", "E.T.", "Neo", "Ethan Hunt"]
+    static let kWorldPeople = ["Ermir", "Joe", "Arjun", "Ahmed", "Santiago", "James", "Gang, 国 ", "Ben", "Gabriel", "Leonardo"]
+    static let kUserNameArr = [kAnime, kMusic, kDog, kGaming, kSuperHero, kVillain, kBillionaires, kRapper, kPokemon, kStarWars, kMovieCharacters, kWorldPeople]
 }
