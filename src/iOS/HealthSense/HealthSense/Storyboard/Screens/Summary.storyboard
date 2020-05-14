@@ -41,7 +41,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p5Z-dE-Up2">
                                                         <rect key="frame" x="0.0" y="0.0" width="358" height="30"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Kautilya!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iks-Zg-otS">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Kautilya!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iks-Zg-otS" userLabel="Weight Label">
                                                                 <rect key="frame" x="0.0" y="0.0" width="358" height="30"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" name="FontContainer"/>
@@ -49,17 +49,23 @@
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="116" translatesAutoresizingMaskIntoConstraints="NO" id="WOu-4c-4h9">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="WOu-4c-4h9">
                                                         <rect key="frame" x="0.0" y="30" width="358" height="30"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEB-36-ZQ6">
-                                                                <rect key="frame" x="0.0" y="0.0" width="121" height="30"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="101" height="30"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" name="FontContainer"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XnB-7T-Bwi" userLabel="Gender Label">
+                                                                <rect key="frame" x="101" y="0.0" width="137" height="30"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" name="FontContainer"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blood Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORq-FZ-7v3" userLabel="Blood Label">
-                                                                <rect key="frame" x="237" y="0.0" width="121" height="30"/>
+                                                                <rect key="frame" x="238" y="0.0" width="120" height="30"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" name="FontContainer"/>
                                                                 <nil key="highlightedColor"/>
@@ -131,12 +137,13 @@
                     <connections>
                         <outlet property="ageLabel" destination="vEB-36-ZQ6" id="Tbz-O6-qUE"/>
                         <outlet property="bloodType" destination="ORq-FZ-7v3" id="9Uy-N6-kVi"/>
-                        <outlet property="chartLabel" destination="Iks-Zg-otS" id="LAE-G0-jZk"/>
                         <outlet property="chartView" destination="4MM-l6-v2R" id="xxM-aB-0EK"/>
                         <outlet property="circularChartView" destination="g6l-Sx-M1s" id="DZw-Oo-t5m"/>
+                        <outlet property="genderLabel" destination="XnB-7T-Bwi" id="nDl-to-xqT"/>
                         <outlet property="heightLabel" destination="FMe-VL-EdD" id="sUX-y2-oNe"/>
                         <outlet property="userTitle" destination="ePy-3C-QC1" id="WhT-bA-ujh"/>
                         <outlet property="viewChartButton" destination="0m6-2E-J5E" id="JEy-wM-IOj"/>
+                        <outlet property="weightLabel" destination="Iks-Zg-otS" id="lKV-KG-45c"/>
                         <segue destination="ih1-ga-9gB" kind="show" identifier="SummaryChildSegue" id="IWL-gW-bO4"/>
                     </connections>
                 </viewController>
@@ -272,13 +279,13 @@
             <color red="1" green="1" blue="0.95899999141693115" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Container">
-            <color red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.75400000810623169" green="0.75400000810623169" blue="0.75400000810623169" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Font">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="FontContainer">
-            <color red="0.12939286229999999" green="0.12942266459999999" blue="0.12939092520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.1289999932050705" green="0.1289999932050705" blue="0.1289999932050705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Link">
             <color red="0.0" green="0.4779999852180481" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

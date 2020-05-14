@@ -38,6 +38,7 @@ class Settings: NSObject {
         setSecurity() // Set Security settings
         setDarkMode() // Set Dark Mode settings
         setAnalytics() // Set Analytics settings
+        setMetrics() // Set Metrics settings
     }
     
     
@@ -49,6 +50,7 @@ class Settings: NSObject {
         retrieveSecurity() // Refresh Security settings
         retrieveDarkMode() // Refresh Dark Mode settings
         retrieveAnalytics() // Refresh Analytics settings
+        retrieveMetrics() // Refresh Metrics settings
     }
     
 
@@ -92,6 +94,16 @@ class Settings: NSObject {
         defaults.set(SettingsStruct.isAnalytics, forKey: HSUserDefaults.kAnalytics.rawValue)
     }
     
+    // func for retrieving isRandomUserName User Default setting
+    func retrieveMetrics() {
+        SettingsStruct.isMetric = defaults.bool(forKey: HSUserDefaults.kMetric.rawValue)
+    }
+    
+    // func for Saving RandomUser preference to User Defaults
+    func setMetrics() {
+        defaults.set(SettingsStruct.isMetric, forKey: HSUserDefaults.kMetric.rawValue)
+    }
+    
 }
 
 enum HSRouter: String {
@@ -119,6 +131,7 @@ struct SettingsStruct {
     static var isSecurity = false
     static var isAnalytics = true
     static var isColorMode = false
+    static var isMetric = false
 }
 
 struct AnalyticsStruct {

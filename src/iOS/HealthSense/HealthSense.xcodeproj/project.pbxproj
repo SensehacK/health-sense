@@ -67,6 +67,7 @@
 		FBE338F92452234200B56A53 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE338F82452234200B56A53 /* Profile.swift */; };
 		FBE338FB245239D500B56A53 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE338FA245239D500B56A53 /* Settings.swift */; };
 		FBE5CA0F245BC4A3001D8C03 /* Custom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE5CA0D245BC2CD001D8C03 /* Custom.storyboard */; };
+		FBF6E1AE246DC565000D3094 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF6E1AD246DC565000D3094 /* Extension.swift */; };
 		FBFA6D64245136A7000A4592 /* Summary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFA6D63245136A7000A4592 /* Summary.storyboard */; };
 		FBFA6D6924513F08000A4592 /* HealthBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFA6D6724513F08000A4592 /* HealthBook.storyboard */; };
 		FBFA6D6B24513F71000A4592 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFA6D6A24513F71000A4592 /* Settings.storyboard */; };
@@ -208,6 +209,7 @@
 		FBE338F82452234200B56A53 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		FBE338FA245239D500B56A53 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		FBE5CA0D245BC2CD001D8C03 /* Custom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Custom.storyboard; path = HealthSense/Storyboard/Custom/Custom.storyboard; sourceTree = SOURCE_ROOT; };
+		FBF6E1AD246DC565000D3094 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		FBFA6D63245136A7000A4592 /* Summary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Summary.storyboard; sourceTree = "<group>"; };
 		FBFA6D6824513F08000A4592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HealthBook.storyboard; sourceTree = "<group>"; };
 		FBFA6D6A24513F71000A4592 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Settings.storyboard; path = HealthSense/Storyboard/Screens/Settings.storyboard; sourceTree = SOURCE_ROOT; };
@@ -368,6 +370,7 @@
 			children = (
 				FB0C36D72469D84100B3C438 /* HSHelper.swift */,
 				FB3EC3BF24562098003318DF /* Healthkit */,
+				FBF6E1AD246DC565000D3094 /* Extension.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -1017,6 +1020,7 @@
 				FBD0EA14245F449E005877FB /* BarChart.swift in Sources */,
 				FB2FC37A245C9128005AD169 /* SummaryViewController.swift in Sources */,
 				FB3EC3C1245620C3003318DF /* ReadProfile.swift in Sources */,
+				FBF6E1AE246DC565000D3094 /* Extension.swift in Sources */,
 				FBD0EA1A245F5785005877FB /* BarChartViewController.swift in Sources */,
 				FBD385E4245362E900983106 /* ThirdOnboardingViewController.swift in Sources */,
 				FB51DBC9242A789100FD0B7B /* SceneDelegate.swift in Sources */,
