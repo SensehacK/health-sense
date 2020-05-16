@@ -163,6 +163,19 @@ enum HSAPI: String {
     case kAPI7 = "https://sensehack.github.io/health-sense/#team"
 }
 
+// MARK: iOS App URL schemes
+enum HSiOSURL: String {
+    // App Links strings
+    case kSettings = "App-Prefs:root=General"
+    case kPrivacy = "App-Prefs:root=Privacy"
+    case kPrivacyHealth = "App-Prefs:root=Privacy&path=HEALTH"
+    case kAppPulse = "https://github.com/SensehacK/health-sense/pulse"
+    case kAppWiki = "https://github.com/SensehacK/health-sense/wiki"
+    case kAppBug = "https://github.com/SensehacK/health-sense/issues"
+    case kAppContributors = "https://github.com/SensehacK/health-sense/graphs/contributors"
+    case kAppTeam = "https://sensehack.github.io/health-sense/#team"
+}
+
 
 // MARK: App Information Enumerations
 enum HSAppLinks: String {

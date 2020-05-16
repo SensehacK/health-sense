@@ -25,6 +25,9 @@ class ReadProfile {
             age = currentYear - (birthday.year != nil ? birthday.year!: currentYear )
         } catch {
            print("Error in catching Date of Birth.")
+            healthKitManager.authorizeHealthKit { (success, error) in
+                print("getDOB error \(success), \(error)")
+            }
         }
         UserStruct.age = age
         return age ?? 0

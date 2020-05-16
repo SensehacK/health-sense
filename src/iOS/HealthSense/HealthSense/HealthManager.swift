@@ -38,6 +38,7 @@ class HealthKitManager: NSObject {
         
         healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead) { (success, error) in
             print("Was authorization succesful \(success)")
+            print("Was authorization Error \(String(describing: error))")
             completion(success, error)
         }
         

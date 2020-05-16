@@ -75,11 +75,13 @@ class SummaryViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         print("Summary View did Appear")
+        readProfileData() // Profile data call
     }
     
     
     @IBAction func chartButtonPressed(_ sender: Any) {
         print("Button Chart Button pressed")
+//        displayAlert()
         // Navigate to
         segueToSummaryChildVC()  // Child VC
         // navigateToCustomVCStoryboard() // Macaw VC
@@ -91,6 +93,7 @@ class SummaryViewController: UIViewController {
         healthKitManager.authorizeHealthKit { (success, error) in
             if let error = error {
                 print("Error in healthkit access \(error)")
+                self.displayAlert()
             }
             print("Was healthkit successful? \(success)")
             DispatchQueue.main.async {
@@ -98,6 +101,37 @@ class SummaryViewController: UIViewController {
                 self.readProfileData()
             }
         }
+    }
+    
+    func displayAlert() {
+        
+        let permissionMessage = """
+        The App won't function properly without permissions, Please open Settings app -> Privacy and allow Health Permissions?
+        """
+        
+        // create the alert
+        let alert = UIAlertController(title: "HealthKit Permission", message: permissionMessage, preferredStyle: UIAlertController.Style.alert)
+
+        // add the actions (buttons)
+        alert.addAction(UIAlertAction(title: "Open Settings", style: UIAlertAction.Style.default, handler: { (_) in
+            print("Continue settings")
+            self.openSettings()
+        }))
+        alert.addAction(UIAlertAction(title: "Deny", style: UIAlertAction.Style.cancel, handler: nil))
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    
+    func openSettings() {
+        
+//        if let url = URL(string: "App-Prefs:root=General") {
+//            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+//        }
+        UIApplication.shared.open(URL(string: "App-prefs:Privacy&path=HEALTH")!)
+//        if let appSettings = URL(string: UIApplication.openSettingsURLString) {
+//            UIApplication.shared.open(appSettings, options: [:], completionHandler: nil)
+//        }
     }
     
     fileprivate func generateGreetings() {
@@ -119,6 +153,10 @@ class SummaryViewController: UIViewController {
     fileprivate func readProfileData() {
         // Profile Age function call
         let dob = ReadProfile.sharedInstance.getDOB()
+        if dob == 0 {
+            print("DOB = 0")
+            Alert.displayHealthPermissionAlert2(viewC: self)
+        }
         ageLabel.text = "Age: \(dob)"
         
         // Profile Blood group function call

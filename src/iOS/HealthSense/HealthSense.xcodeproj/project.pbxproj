@@ -71,6 +71,7 @@
 		FBFA6D64245136A7000A4592 /* Summary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFA6D63245136A7000A4592 /* Summary.storyboard */; };
 		FBFA6D6924513F08000A4592 /* HealthBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFA6D6724513F08000A4592 /* HealthBook.storyboard */; };
 		FBFA6D6B24513F71000A4592 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFA6D6A24513F71000A4592 /* Settings.storyboard */; };
+		FBFE4E6D246F55AC007B4421 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFE4E6C246F55AC007B4421 /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -213,6 +214,7 @@
 		FBFA6D63245136A7000A4592 /* Summary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Summary.storyboard; sourceTree = "<group>"; };
 		FBFA6D6824513F08000A4592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HealthBook.storyboard; sourceTree = "<group>"; };
 		FBFA6D6A24513F71000A4592 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Settings.storyboard; path = HealthSense/Storyboard/Screens/Settings.storyboard; sourceTree = SOURCE_ROOT; };
+		FBFE4E6C246F55AC007B4421 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -368,6 +370,7 @@
 		FB3EC3C42456708E003318DF /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				FBFE4E6C246F55AC007B4421 /* Alert.swift */,
 				FB0C36D72469D84100B3C438 /* HSHelper.swift */,
 				FB3EC3BF24562098003318DF /* Healthkit */,
 				FBF6E1AD246DC565000D3094 /* Extension.swift */,
@@ -1025,6 +1028,7 @@
 				FBD385E4245362E900983106 /* ThirdOnboardingViewController.swift in Sources */,
 				FB51DBC9242A789100FD0B7B /* SceneDelegate.swift in Sources */,
 				FB3EC3BE24561DB2003318DF /* User.swift in Sources */,
+				FBFE4E6D246F55AC007B4421 /* Alert.swift in Sources */,
 				FB0C36DA2469DA4B00B3C438 /* ReadBody.swift in Sources */,
 				FB2FC38F245CC079005AD169 /* SettingsChildVC.swift in Sources */,
 				FBE338FB245239D500B56A53 /* Settings.swift in Sources */,
