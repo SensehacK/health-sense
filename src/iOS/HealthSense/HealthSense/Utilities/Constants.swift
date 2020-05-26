@@ -26,17 +26,30 @@ struct HSFonts {
 }
 
 
-struct HSHealthKit {
+enum HSHealthKit: String {
     // HealthKit data types
-    static let kHeartRate = "HKHeartRate"
-    static let kPulseRate = "HKPulseRate"
-    static let kCalories = "HKCalories"
-    static let kWater = "HKHydration"
-    static let kSleep = "HKSleep"
-    static let kWorkout = "HKWorkout"
-    static let kHeight = "HKHeight"
-    static let kWeight = "HKWeight"
-    static let kDob = "HKDateOfBirth"
+    case kHeartRate = "HKHeartRate"
+    case kPulseRate = "HKPulseRate"
+    case kCalories = "HKCalories"
+    case kWater = "HKHydration"
+    case kSleep = "HKSleep"
+    case kWorkout = "HKWorkout"
+    case kHeight = "HKHeight"
+    case kWeight = "HKWeight"
+    case kDob = "HKDateOfBirth"
+}
+
+enum HSHealthKitUnits: String {
+    // HealthKit data types
+    case kHeartRate = "count/min"
+    case kPulseRate = "beats/min"
+    case kCalories = "cal"
+    case kWater = "ml"
+    case kSleep = "hours"
+    case kWorkout = "HKWorkout"
+    case kHeight = "meters"
+    case kWeight = "kg"
+    case kDob = "date"
 }
 
 
