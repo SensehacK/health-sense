@@ -194,6 +194,23 @@ class SummaryViewController: UIViewController {
                 }
             }
         }
+        
+        // Heart Rate function call
+        let heartObj = ReadHeart()
+        heartObj.readHeartRate { (quantity, error) in
+            guard error == nil else {
+                return print("Error in \(String(describing: error))")
+            }
+            let unit = HKUnit(from: HSHealthKitUnits.kHeartRate.rawValue)
+            let latestHeartRate = (quantity?.doubleValue(for: unit))!
+            print("Latest HR: \(latestHeartRate)")
+            UserStruct.heartRate = latestHeartRate
+            DispatchQueue.main.async {
+                self.heightLabel.text = "Heart Rate: \(String(describing: latestHeartRate))counts/min"
+            }
+        }
+        
+        
     }
     
     

@@ -66,6 +66,8 @@
 		FBE338F7245220C000B56A53 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE338F6245220C000B56A53 /* OnboardingViewController.swift */; };
 		FBE338F92452234200B56A53 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE338F82452234200B56A53 /* Profile.swift */; };
 		FBE338FB245239D500B56A53 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE338FA245239D500B56A53 /* Settings.swift */; };
+		FBE4F7C9247C924100782449 /* ReadHeart.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE4F7C8247C924100782449 /* ReadHeart.swift */; };
+		FBE4F7CB247CA35700782449 /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE4F7CA247CA35700782449 /* TypeAlias.swift */; };
 		FBE5CA0F245BC4A3001D8C03 /* Custom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE5CA0D245BC2CD001D8C03 /* Custom.storyboard */; };
 		FBF6E1AE246DC565000D3094 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF6E1AD246DC565000D3094 /* Extension.swift */; };
 		FBFA6D64245136A7000A4592 /* Summary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFA6D63245136A7000A4592 /* Summary.storyboard */; };
@@ -209,6 +211,8 @@
 		FBE338F6245220C000B56A53 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnboardingViewController.swift; path = HealthSense/Controller/Onboarding/OnboardingViewController.swift; sourceTree = SOURCE_ROOT; };
 		FBE338F82452234200B56A53 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		FBE338FA245239D500B56A53 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		FBE4F7C8247C924100782449 /* ReadHeart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadHeart.swift; sourceTree = "<group>"; };
+		FBE4F7CA247CA35700782449 /* TypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAlias.swift; sourceTree = "<group>"; };
 		FBE5CA0D245BC2CD001D8C03 /* Custom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Custom.storyboard; path = HealthSense/Storyboard/Custom/Custom.storyboard; sourceTree = SOURCE_ROOT; };
 		FBF6E1AD246DC565000D3094 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		FBFA6D63245136A7000A4592 /* Summary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Summary.storyboard; sourceTree = "<group>"; };
@@ -363,6 +367,7 @@
 			children = (
 				FB0C36D92469DA4B00B3C438 /* ReadBody.swift */,
 				FB3EC3C0245620C3003318DF /* ReadProfile.swift */,
+				FBE4F7C8247C924100782449 /* ReadHeart.swift */,
 			);
 			path = Healthkit;
 			sourceTree = "<group>";
@@ -488,6 +493,7 @@
 				FBE338FA245239D500B56A53 /* Settings.swift */,
 				FB3EC3BD24561DB2003318DF /* User.swift */,
 				FBB3D5AD24551F25007DE952 /* Analytics.swift */,
+				FBE4F7CA247CA35700782449 /* TypeAlias.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -1010,6 +1016,7 @@
 			files = (
 				FB2FC38B245CA900005AD169 /* SummaryChildVC.swift in Sources */,
 				FB6DA845244E73360086A030 /* UITabBarViewController.swift in Sources */,
+				FBE4F7C9247C924100782449 /* ReadHeart.swift in Sources */,
 				FB6DA843244E716C0086A030 /* Constants.swift in Sources */,
 				FB0C36D82469D84100B3C438 /* HSHelper.swift in Sources */,
 				FB2FC38D245CC067005AD169 /* HealthBookChildVC.swift in Sources */,
@@ -1037,6 +1044,7 @@
 				FB2FC388245C9B26005AD169 /* HealthBookViewController.swift in Sources */,
 				FB2FC386245C96A2005AD169 /* CustomViewController.swift in Sources */,
 				FBC3EE91242C29FE006DCE06 /* HealthManager.swift in Sources */,
+				FBE4F7CB247CA35700782449 /* TypeAlias.swift in Sources */,
 				FBE338F7245220C000B56A53 /* OnboardingViewController.swift in Sources */,
 				FB2FC374245C875E005AD169 /* MacawViewUI.swift in Sources */,
 				FBE338F92452234200B56A53 /* Profile.swift in Sources */,

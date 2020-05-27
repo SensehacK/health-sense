@@ -19,10 +19,10 @@ class ReadHeart {
         print("### Heart class")
     }
     
-    func readHeartRate() -> Double {
+    func readHeartRate(completion: @escaping CompletionHKQuantity) {
         
         var latestHeartRate = 0.0
-        guard let sampleType = HKObjectType.quantityType(forIdentifier: .heartRate) else { return 0 }
+        guard let sampleType = HKObjectType.quantityType(forIdentifier: .heartRate) else { return }
         
         let startDate = Calendar.current.date(byAdding: .month, value: -1, to: Date())
         
@@ -35,15 +35,18 @@ class ReadHeart {
             
             guard error == nil else { return }
             
-                
-            guard let result = results else { return }
+            if let result = results {
+                let lastResult = result.last as? HKQuantitySample
+                let unit = HKUnit(from: HSHealthKitUnits.kHeartRate.rawValue)
+                latestHeartRate = (lastResult?.quantity.doubleValue(for: unit))!
+                print("Latest HR: \(latestHeartRate)")
+                completion(lastResult?.quantity, nil)
+            } else {
+                print("Couldn't get Heart Rate data \(String(describing: error))")
+                completion(nil, error)
+            }
             
-            let lastResult = result[0] as? HKQuantitySample
-            let unit = HKUnit(from: HSHealthKitUnits.kHeartRate.rawValue)
-            latestHeartRate = (lastResult?.quantity.doubleValue(for: unit))!
-            print("Latest HR: \(latestHeartRate)")
             
-            return latestHeartRate
 //            return 24.24
             
             
