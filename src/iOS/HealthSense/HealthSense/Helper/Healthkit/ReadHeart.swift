@@ -45,24 +45,11 @@ class ReadHeart {
                 print("Couldn't get Heart Rate data \(String(describing: error))")
                 completion(nil, error)
             }
-            
-            
-//            return 24.24
-            
-            
+
 //            print(results)
         }
         healthKitManager.healthStore.execute(query)
         
-        
-        
     }
-    
-    
-    
-    
-    
-    
-    
-    
+
 }
