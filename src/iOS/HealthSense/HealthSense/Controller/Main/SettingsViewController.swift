@@ -171,7 +171,7 @@ class SettingsViewController: UIViewController {
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard error == nil else { return }
             
-            guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == HSHttpStatusCode.kStatusSuccess.rawValue else {
+            guard let httpResponse = (response as? HTTPURLResponse)?.statusCode, httpResponse == HSHttpStatusCode.kStatusSuccess.rawValue else {
                 print("Error in retrieving text")
                 DispatchQueue.main.async {
                     self.programmerQuote.text = HSErrorMsg.kErrorNetwork.rawValue
