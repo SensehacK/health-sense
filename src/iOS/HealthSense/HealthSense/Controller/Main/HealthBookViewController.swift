@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import HealthKit
+import HealthKitUI
 
 class HealthBookViewController: UIViewController {
 
@@ -14,6 +16,8 @@ class HealthBookViewController: UIViewController {
     @IBOutlet weak var mainButton: UIButton!
     @IBOutlet weak var macawViewBtn: UIButton!
     @IBOutlet weak var barChartView: BarChart!
+    @IBOutlet weak var activityView: HKActivityRingView!
+    
     
     
     override func viewDidLoad() {
@@ -22,6 +26,7 @@ class HealthBookViewController: UIViewController {
         // Invoking Bar Chart View with Scaling
         barChartView.contentMode = .scaleAspectFit
         BarChart.playAnimations()
+//        retrieveActivitySummary()
         
     }
     
@@ -32,11 +37,12 @@ class HealthBookViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         print("HealthBook View did Appear")
-        overrideUserInterfaceStyle = SettingsStruct.isDarkMode ? .dark : .light
+//        overrideUserInterfaceStyle = SettingsStruct.isDarkMode ? .dark : .light
     }
     
     @IBAction func macawViewButton(_ sender: Any) {
          setupMacawStoryboard() // Calling Macaw VC
+//        setupActivityStoryboard()
 //         setupUI()
     }
     
@@ -64,10 +70,57 @@ class HealthBookViewController: UIViewController {
         self.present(customVC, animated: true, completion: nil)
     }
     
+    func retrieveActivitySummary() {
+        
+        // Heart Rate function call
+        let activityObj = ReadActivity()
+        activityObj.readActivity{(quantity, error) in
+            
+            print("activityObj.readActivityin")
+            guard error == nil else {
+                return print("Error in \(String(describing: error))")
+            }
+            
+            guard let summary = quantity?.first else { return }
+            
+            DispatchQueue.main.async {
+//                if let activityView = self.activityView{
+//                    activityView.setActivitySummary(summary, animated: false)
+//                }
+                self.activityView.setActivitySummary(summary, animated: true)
+            }
+        }
+        
+        /*
+        // Heart Rate function call
+        let heartObj = ReadHeart()
+        heartObj.readHeartRate { (quantity, error) in
+            guard error == nil else {
+                return print("Error in \(String(describing: error))")
+            }
+            let unit = HKUnit(from: HSHealthKitUnits.kHeartRate.rawValue)
+            let latestHeartRate = (quantity?.doubleValue(for: unit))!
+            print("Latest HR: \(latestHeartRate)")
+            UserStruct.heartRate = latestHeartRate
+            DispatchQueue.main.async {
+                self.heightLabel.text = "Heart Rate: \(String(describing: latestHeartRate))counts/min"
+            }
+        }
+         */
+    }
+    
+    
     // function to invoke Macaw UIView for some reason manual setupUI() can't invoke Macaw in CustomViewController() class customUIInvoke() function
     func setupMacawStoryboard() {
         let onboardStoryboard = UIStoryboard(name: HSStoryboard.kCustomVC.rawValue, bundle: nil)
         let viewC = onboardStoryboard.instantiateViewController(identifier: HSCustomViewController.kCustomVC.rawValue)
+        viewC.modalPresentationStyle = .fullScreen
+        self.present(viewC, animated: true)
+    }
+    
+    func setupActivityStoryboard() {
+        let onboardStoryboard = UIStoryboard(name: HSStoryboard.kActivity.rawValue, bundle: nil)
+        let viewC = onboardStoryboard.instantiateViewController(identifier: HSCustomViewController.kActivityVC.rawValue)
         viewC.modalPresentationStyle = .fullScreen
         self.present(viewC, animated: true)
     }

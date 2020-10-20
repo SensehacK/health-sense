@@ -25,16 +25,17 @@ class HealthKitManager: NSObject {
         guard let dateOfBirth: HKObjectType = HKObjectType.characteristicType(forIdentifier: .dateOfBirth) else { return }
         guard let bloodType: HKObjectType = HKObjectType.characteristicType(forIdentifier: .bloodType)  else { return }
         guard let gender: HKObjectType = HKObjectType.characteristicType(forIdentifier: .biologicalSex)  else { return }
-        
+        let activityRing: HKObjectType = HKObjectType.activitySummaryType()
         
         // HKQuantity Types
         guard let heartRateType: HKQuantityType = HKQuantityType.quantityType(forIdentifier: .heartRate) else { return }
         guard let bodyMass: HKQuantityType = HKQuantityType.quantityType(forIdentifier: .bodyMass)  else { return }
         guard let heightData: HKQuantityType = HKQuantityType.quantityType(forIdentifier: .height) else { return }
+        
        
         // Sets of Read and Write
         let typesToShare = Set([HKObjectType.workoutType(), heartRateType, heightData, bodyMass])
-        let typesToRead = Set([HKObjectType.workoutType(), heartRateType, heightData, dateOfBirth, bloodType, gender, bodyMass])
+        let typesToRead = Set([HKObjectType.workoutType(), heartRateType, heightData, dateOfBirth, bloodType, gender, bodyMass, activityRing])
         
         healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead) { (success, error) in
             print("Authorization successful \(success)")
@@ -44,3 +45,5 @@ class HealthKitManager: NSObject {
         
     }
 }
+
+//extension

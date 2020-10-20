@@ -10,3 +10,6 @@ import Foundation
 import HealthKit
 
 public typealias CompletionHKQuantity = ((HKQuantity?, Error?) -> Void)
+public typealias CompletionHKQuery = ((HKQuery?, Error?) -> Void)
+public typealias CompletionHKActivity = (([HKActivitySummary]?, Error?) -> Void)
+

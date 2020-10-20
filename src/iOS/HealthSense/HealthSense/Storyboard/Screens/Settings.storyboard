@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NAk-qj-Y0L">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NAk-qj-Y0L">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -154,14 +156,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bkH-g5-zi7">
                                         <rect key="frame" x="0.0" y="24" width="314" height="25"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Psy-o0-X9H" userLabel="Issue">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Psy-o0-X9H" userLabel="Issue">
                                                 <rect key="frame" x="0.0" y="0.0" width="157" height="25"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="submitIssue:" destination="NAk-qj-Y0L" eventType="touchUpInside" id="xCj-k1-3c8"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojr-i0-pWa" userLabel="Code Link">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojr-i0-pWa" userLabel="Code Link">
                                                 <rect key="frame" x="157" y="0.0" width="157" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="Gp4-nc-5ty"/>
@@ -185,9 +187,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0b-dl-IOT">
-                                        <rect key="frame" x="169" y="29" width="14" height="29"/>
+                                        <rect key="frame" x="169.5" y="29" width="13.5" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="systemPinkColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -216,6 +218,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ih3-HA-ZBi"/>
                         <color key="backgroundColor" name="Color"/>
                         <constraints>
                             <constraint firstItem="Ih3-HA-ZBi" firstAttribute="trailing" secondItem="xyE-pC-W7e" secondAttribute="trailing" constant="20" id="4Do-LF-8Vo"/>
@@ -234,7 +237,6 @@
                             <constraint firstItem="Ih3-HA-ZBi" firstAttribute="trailing" secondItem="eSd-BB-MfG" secondAttribute="trailing" constant="20" id="uxC-mJ-ZgL"/>
                             <constraint firstItem="Ih3-HA-ZBi" firstAttribute="trailing" secondItem="mLN-Kc-ioA" secondAttribute="trailing" constant="31" id="z00-em-8c4"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Ih3-HA-ZBi"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="settings" id="nIJ-pS-uWM"/>
                     <navigationItem key="navigationItem" id="5bk-En-Iue"/>
@@ -277,5 +279,8 @@
         <namedColor name="SubTitle">
             <color red="0.33300000429153442" green="0.33300000429153442" blue="0.33300000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

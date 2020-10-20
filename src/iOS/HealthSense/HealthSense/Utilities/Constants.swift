@@ -64,6 +64,7 @@ enum HSStoryboard: String {
     case kHomeVC = "Main"
     case kTabBarVC = "UITabBar"
     case kCustomVC = "Custom"
+    case kActivity = "ActivityRing"
     case kBarChart = "BarChart"
     case kCircularPieChart = "CircularPieChart"
 }
@@ -79,6 +80,7 @@ enum HSCustomViewController: String {
     case kHomeVC = "ViewController"
     case kTabBarVC = "UITabBarViewController"
     case kCustomVC = "CustomViewController"
+    case kActivityVC = "ActivityViewController"
     case kCircularPieVC = "CircularPieChartViewController"
     case kBarChartVC = "BarChartViewController"
 }

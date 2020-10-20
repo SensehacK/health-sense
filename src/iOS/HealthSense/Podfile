@@ -8,7 +8,7 @@ target 'HealthSense' do
   # Pods for HealthSense
 
   pod 'SwiftLint'
-  pod "Macaw", "0.9.6"
+  pod "Macaw", "0.9.7"
 
   target 'HealthSenseTests' do
     inherit! :search_paths
