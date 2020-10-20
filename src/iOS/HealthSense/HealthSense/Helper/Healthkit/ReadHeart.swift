@@ -35,14 +35,16 @@ class ReadHeart {
             
             guard error == nil else { return }
             
-            if let result = results {
-                let lastResult = result.last as? HKQuantitySample
+            if let lastResult = results?.last as? HKQuantitySample {
+//                let lastResult = result.last as? HKQuantitySample
+
                 let unit = HKUnit(from: HSHealthKitUnits.kHeartRate.rawValue)
-                latestHeartRate = (lastResult?.quantity.doubleValue(for: unit))!
+                latestHeartRate = (lastResult.quantity.doubleValue(for: unit))
                 print("Latest HR: \(latestHeartRate)")
-                completion(lastResult?.quantity, nil)
+                completion(lastResult.quantity, nil)
             } else {
                 print("Couldn't get Heart Rate data \(String(describing: error))")
+//                let errorCustom : Error = Error()
                 completion(nil, error)
             }
 

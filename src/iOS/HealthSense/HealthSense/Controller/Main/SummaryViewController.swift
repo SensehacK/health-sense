@@ -201,6 +201,9 @@ class SummaryViewController: UIViewController {
             guard error == nil else {
                 return print("Error in \(String(describing: error))")
             }
+            guard quantity != nil else {
+                return print("Error in quantity heartObj.readHeartRate \(String(describing: quantity))")
+            }
             let unit = HKUnit(from: HSHealthKitUnits.kHeartRate.rawValue)
             let latestHeartRate = (quantity?.doubleValue(for: unit))!
             print("Latest HR: \(latestHeartRate)")
