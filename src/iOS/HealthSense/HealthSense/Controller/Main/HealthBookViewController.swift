@@ -26,7 +26,7 @@ class HealthBookViewController: UIViewController {
         // Invoking Bar Chart View with Scaling
         barChartView.contentMode = .scaleAspectFit
         BarChart.playAnimations()
-//        retrieveActivitySummary()
+        retrieveActivitySummary()
         
     }
     
@@ -74,7 +74,7 @@ class HealthBookViewController: UIViewController {
         
         // Heart Rate function call
         let activityObj = ReadActivity()
-        activityObj.readActivity{(quantity, error) in
+        activityObj.readActivity {(quantity, error) in
             
             print("activityObj.readActivityin")
             guard error == nil else {
@@ -84,29 +84,13 @@ class HealthBookViewController: UIViewController {
             guard let summary = quantity?.first else { return }
             
             DispatchQueue.main.async {
-//                if let activityView = self.activityView{
+//                if let activityView = self.activityView {
 //                    activityView.setActivitySummary(summary, animated: false)
 //                }
                 self.activityView.setActivitySummary(summary, animated: true)
             }
         }
         
-        /*
-        // Heart Rate function call
-        let heartObj = ReadHeart()
-        heartObj.readHeartRate { (quantity, error) in
-            guard error == nil else {
-                return print("Error in \(String(describing: error))")
-            }
-            let unit = HKUnit(from: HSHealthKitUnits.kHeartRate.rawValue)
-            let latestHeartRate = (quantity?.doubleValue(for: unit))!
-            print("Latest HR: \(latestHeartRate)")
-            UserStruct.heartRate = latestHeartRate
-            DispatchQueue.main.async {
-                self.heightLabel.text = "Heart Rate: \(String(describing: latestHeartRate))counts/min"
-            }
-        }
-         */
     }
     
     
