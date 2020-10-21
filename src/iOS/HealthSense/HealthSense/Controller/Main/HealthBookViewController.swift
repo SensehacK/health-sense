@@ -27,7 +27,6 @@ class HealthBookViewController: UIViewController {
         barChartView.contentMode = .scaleAspectFit
         BarChart.playAnimations()
         retrieveActivitySummary()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -37,7 +36,7 @@ class HealthBookViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         print("HealthBook View did Appear")
-//        overrideUserInterfaceStyle = SettingsStruct.isDarkMode ? .dark : .light
+        overrideUserInterfaceStyle = SettingsStruct.isDarkMode ? .dark : .light
     }
     
     @IBAction func macawViewButton(_ sender: Any) {
@@ -70,9 +69,10 @@ class HealthBookViewController: UIViewController {
         self.present(customVC, animated: true, completion: nil)
     }
     
+    // Constraints should be perfect, I have wasted or learn't for past 2 hours on why the Activity View was not displaying and giving me a specific error.
     func retrieveActivitySummary() {
         
-        // Heart Rate function call
+        // Activity function call
         let activityObj = ReadActivity()
         activityObj.readActivity {(quantity, error) in
             
@@ -84,9 +84,6 @@ class HealthBookViewController: UIViewController {
             guard let summary = quantity?.first else { return }
             
             DispatchQueue.main.async {
-//                if let activityView = self.activityView {
-//                    activityView.setActivitySummary(summary, animated: false)
-//                }
                 self.activityView.setActivitySummary(summary, animated: true)
             }
         }

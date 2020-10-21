@@ -31,12 +31,11 @@ class ReadHeart {
         let sortDescriptor = NSSortDescriptor(key: HKSampleSortIdentifierStartDate, ascending: false)
         
         
-        let query = HKSampleQuery(sampleType: sampleType, predicate: predicate, limit: HKObjectQueryNoLimit, sortDescriptors: [sortDescriptor]) { (sample, results, error) in
+        let query = HKSampleQuery(sampleType: sampleType, predicate: predicate, limit: HKObjectQueryNoLimit, sortDescriptors: [sortDescriptor]) { (_, results, error) in
             
             guard error == nil else { return }
             
             if let lastResult = results?.last as? HKQuantitySample {
-//                let lastResult = result.last as? HKQuantitySample
 
                 let unit = HKUnit(from: HSHealthKitUnits.kHeartRate.rawValue)
                 latestHeartRate = (lastResult.quantity.doubleValue(for: unit))
@@ -44,11 +43,9 @@ class ReadHeart {
                 completion(lastResult.quantity, nil)
             } else {
                 print("Couldn't get Heart Rate data \(String(describing: error))")
-//                let errorCustom : Error = Error()
                 completion(nil, error)
             }
 
-//            print(results)
         }
         healthKitManager.healthStore.execute(query)
         
