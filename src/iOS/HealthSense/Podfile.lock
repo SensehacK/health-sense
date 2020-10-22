@@ -1,11 +1,11 @@
 PODS:
-  - Macaw (0.9.6):
+  - Macaw (0.9.7):
     - SWXMLHash
-  - SwiftLint (0.39.2)
+  - SwiftLint (0.40.3)
   - SWXMLHash (5.0.1)
 
 DEPENDENCIES:
-  - Macaw (= 0.9.6)
+  - Macaw (= 0.9.7)
   - SwiftLint
 
 SPEC REPOS:
@@ -15,10 +15,10 @@ SPEC REPOS:
     - SWXMLHash
 
 SPEC CHECKSUMS:
-  Macaw: 8306d775625ba003beee4186b9533fd7cf284024
-  SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
+  Macaw: 4a931baf9a9826b06d0d8ecf300014c962ab9d50
+  SwiftLint: dfd554ff0dff17288ee574814ccdd5cea85d76f7
   SWXMLHash: 9cc0c2e4807926c74377724aa8722ee5707a0485
 
-PODFILE CHECKSUM: 01e2241b2f0ae3af1deeb4f7cec1a07d12b66825
+PODFILE CHECKSUM: 07d5e07d947b87a44730d0e83030b4f8a5b137a2
 
 COCOAPODS: 1.9.1

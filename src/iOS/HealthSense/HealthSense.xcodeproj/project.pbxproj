@@ -73,6 +73,9 @@
 		FBFA6D64245136A7000A4592 /* Summary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFA6D63245136A7000A4592 /* Summary.storyboard */; };
 		FBFA6D6924513F08000A4592 /* HealthBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFA6D6724513F08000A4592 /* HealthBook.storyboard */; };
 		FBFA6D6B24513F71000A4592 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFA6D6A24513F71000A4592 /* Settings.storyboard */; };
+		FBFBD5DC253E319100BC4259 /* ReadActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFBD5DB253E319100BC4259 /* ReadActivity.swift */; };
+		FBFBD5FD253E5BE400BC4259 /* ActivityRing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFBD5FC253E5BE400BC4259 /* ActivityRing.storyboard */; };
+		FBFBD604253E5D3E00BC4259 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFBD603253E5D3E00BC4259 /* ActivityViewController.swift */; };
 		FBFE4E6D246F55AC007B4421 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFE4E6C246F55AC007B4421 /* Alert.swift */; };
 /* End PBXBuildFile section */
 
@@ -218,6 +221,9 @@
 		FBFA6D63245136A7000A4592 /* Summary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Summary.storyboard; sourceTree = "<group>"; };
 		FBFA6D6824513F08000A4592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HealthBook.storyboard; sourceTree = "<group>"; };
 		FBFA6D6A24513F71000A4592 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Settings.storyboard; path = HealthSense/Storyboard/Screens/Settings.storyboard; sourceTree = SOURCE_ROOT; };
+		FBFBD5DB253E319100BC4259 /* ReadActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadActivity.swift; sourceTree = "<group>"; };
+		FBFBD5FC253E5BE400BC4259 /* ActivityRing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ActivityRing.storyboard; sourceTree = "<group>"; };
+		FBFBD603253E5D3E00BC4259 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		FBFE4E6C246F55AC007B4421 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -320,6 +326,7 @@
 				FB2FC385245C96A2005AD169 /* CustomViewController.swift */,
 				FBD0EA19245F5785005877FB /* BarChartViewController.swift */,
 				FB6B45D6245F8FC900B9AD96 /* CircularPieChartViewController.swift */,
+				FBFBD603253E5D3E00BC4259 /* ActivityViewController.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -348,6 +355,7 @@
 				FBE5CA0D245BC2CD001D8C03 /* Custom.storyboard */,
 				FBD0EA17245F56C0005877FB /* BarChart.storyboard */,
 				FB6B45D8245F8FE100B9AD96 /* CircularPieChart.storyboard */,
+				FBFBD5FC253E5BE400BC4259 /* ActivityRing.storyboard */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -368,6 +376,7 @@
 				FB0C36D92469DA4B00B3C438 /* ReadBody.swift */,
 				FB3EC3C0245620C3003318DF /* ReadProfile.swift */,
 				FBE4F7C8247C924100782449 /* ReadHeart.swift */,
+				FBFBD5DB253E319100BC4259 /* ReadActivity.swift */,
 			);
 			path = Healthkit;
 			sourceTree = "<group>";
@@ -758,6 +767,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBFBD5FD253E5BE400BC4259 /* ActivityRing.storyboard in Resources */,
 				FB51DBD3242A789500FD0B7B /* LaunchScreen.storyboard in Resources */,
 				FB6DA849244E97DD0086A030 /* InfoBak.plist in Resources */,
 				FB51DBD0242A789500FD0B7B /* Assets.xcassets in Resources */,
@@ -1019,6 +1029,7 @@
 				FBE4F7C9247C924100782449 /* ReadHeart.swift in Sources */,
 				FB6DA843244E716C0086A030 /* Constants.swift in Sources */,
 				FB0C36D82469D84100B3C438 /* HSHelper.swift in Sources */,
+				FBFBD5DC253E319100BC4259 /* ReadActivity.swift in Sources */,
 				FB2FC38D245CC067005AD169 /* HealthBookChildVC.swift in Sources */,
 				FB6B45D7245F8FC900B9AD96 /* CircularPieChartViewController.swift in Sources */,
 				FB2FC384245C9631005AD169 /* SettingsViewController.swift in Sources */,
@@ -1048,6 +1059,7 @@
 				FBE338F7245220C000B56A53 /* OnboardingViewController.swift in Sources */,
 				FB2FC374245C875E005AD169 /* MacawViewUI.swift in Sources */,
 				FBE338F92452234200B56A53 /* Profile.swift in Sources */,
+				FBFBD604253E5D3E00BC4259 /* ActivityViewController.swift in Sources */,
 				FBD0EA16245F4516005877FB /* DummyData.swift in Sources */,
 				FBD385E2245362DA00983106 /* SecondOnboardingViewController.swift in Sources */,
 			);

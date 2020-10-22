@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import HealthKit
+import HealthKitUI
 
 class HealthBookViewController: UIViewController {
 
@@ -14,6 +16,8 @@ class HealthBookViewController: UIViewController {
     @IBOutlet weak var mainButton: UIButton!
     @IBOutlet weak var macawViewBtn: UIButton!
     @IBOutlet weak var barChartView: BarChart!
+    @IBOutlet weak var activityView: HKActivityRingView!
+    
     
     
     override func viewDidLoad() {
@@ -22,7 +26,7 @@ class HealthBookViewController: UIViewController {
         // Invoking Bar Chart View with Scaling
         barChartView.contentMode = .scaleAspectFit
         BarChart.playAnimations()
-        
+        retrieveActivitySummary()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -37,6 +41,7 @@ class HealthBookViewController: UIViewController {
     
     @IBAction func macawViewButton(_ sender: Any) {
          setupMacawStoryboard() // Calling Macaw VC
+//        setupActivityStoryboard()
 //         setupUI()
     }
     
@@ -64,10 +69,39 @@ class HealthBookViewController: UIViewController {
         self.present(customVC, animated: true, completion: nil)
     }
     
+    // Constraints should be perfect, I have wasted or learn't for past 2 hours on why the Activity View was not displaying and giving me a specific error.
+    func retrieveActivitySummary() {
+        
+        // Activity function call
+        let activityObj = ReadActivity()
+        activityObj.readActivity {(quantity, error) in
+            
+            print("activityObj.readActivityin")
+            guard error == nil else {
+                return print("Error in \(String(describing: error))")
+            }
+            
+            guard let summary = quantity?.first else { return }
+            
+            DispatchQueue.main.async {
+                self.activityView.setActivitySummary(summary, animated: true)
+            }
+        }
+        
+    }
+    
+    
     // function to invoke Macaw UIView for some reason manual setupUI() can't invoke Macaw in CustomViewController() class customUIInvoke() function
     func setupMacawStoryboard() {
         let onboardStoryboard = UIStoryboard(name: HSStoryboard.kCustomVC.rawValue, bundle: nil)
         let viewC = onboardStoryboard.instantiateViewController(identifier: HSCustomViewController.kCustomVC.rawValue)
+        viewC.modalPresentationStyle = .fullScreen
+        self.present(viewC, animated: true)
+    }
+    
+    func setupActivityStoryboard() {
+        let onboardStoryboard = UIStoryboard(name: HSStoryboard.kActivity.rawValue, bundle: nil)
+        let viewC = onboardStoryboard.instantiateViewController(identifier: HSCustomViewController.kActivityVC.rawValue)
         viewC.modalPresentationStyle = .fullScreen
         self.present(viewC, animated: true)
     }

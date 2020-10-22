@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zBp-71-a3T">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zBp-71-a3T">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,16 +18,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZC-At-YaQ" customClass="MacawViewUI" customModule="HealthSense" customModuleProvider="target">
-                                <rect key="frame" x="20" y="80" width="374" height="386"/>
+                                <rect key="frame" x="20" y="80" width="374" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="bNm-9U-HKT"/>
+                                </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Macaw View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3c-pP-r8D">
-                                <rect key="frame" x="159" y="612" width="96" height="21"/>
+                                <rect key="frame" x="159.5" y="426" width="95" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXp-Su-Vtq">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXp-Su-Vtq">
                                 <rect key="frame" x="353" y="42" width="37" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Done"/>
@@ -33,19 +38,32 @@
                                     <action selector="doneButton:" destination="zBp-71-a3T" eventType="touchUpInside" id="Skg-dJ-qIe"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RyM-e7-TbT" customClass="HKActivityRingView">
+                                <rect key="frame" x="157" y="288" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="88r-AC-m71"/>
+                                    <constraint firstAttribute="height" constant="100" id="iPc-Gz-ccB"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ojh-o7-7oe"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
-                            <constraint firstItem="ojh-o7-7oe" firstAttribute="bottom" secondItem="g3c-pP-r8D" secondAttribute="bottom" constant="229" id="7PU-PE-3qz"/>
+                            <constraint firstItem="RyM-e7-TbT" firstAttribute="centerX" secondItem="ojh-o7-7oe" secondAttribute="centerX" id="E5B-PK-nCq"/>
                             <constraint firstItem="hZC-At-YaQ" firstAttribute="top" secondItem="ojh-o7-7oe" secondAttribute="top" constant="36" id="Fef-1O-nC9"/>
                             <constraint firstItem="g3c-pP-r8D" firstAttribute="centerX" secondItem="hZC-At-YaQ" secondAttribute="centerX" id="GP1-dF-aVv"/>
                             <constraint firstItem="hZC-At-YaQ" firstAttribute="leading" secondItem="mzP-wb-P6G" secondAttribute="leadingMargin" id="HXP-lA-d4m"/>
-                            <constraint firstItem="ojh-o7-7oe" firstAttribute="bottom" secondItem="hZC-At-YaQ" secondAttribute="bottom" constant="396" id="QbJ-vV-1Pz"/>
+                            <constraint firstItem="g3c-pP-r8D" firstAttribute="top" secondItem="RyM-e7-TbT" secondAttribute="bottom" constant="38" id="ZOK-dp-Qab"/>
+                            <constraint firstItem="hZC-At-YaQ" firstAttribute="leading" secondItem="ojh-o7-7oe" secondAttribute="leading" constant="20" id="htO-n0-7Ne"/>
+                            <constraint firstItem="ojh-o7-7oe" firstAttribute="trailing" secondItem="hZC-At-YaQ" secondAttribute="trailing" constant="20" id="kkl-ZO-n3O"/>
+                            <constraint firstItem="RyM-e7-TbT" firstAttribute="top" secondItem="hZC-At-YaQ" secondAttribute="bottom" constant="8" symbolic="YES" id="nno-oN-7xG"/>
                             <constraint firstItem="hZC-At-YaQ" firstAttribute="trailing" secondItem="mzP-wb-P6G" secondAttribute="trailingMargin" id="opS-EK-hDm"/>
+                            <constraint firstItem="g3c-pP-r8D" firstAttribute="centerX" secondItem="mzP-wb-P6G" secondAttribute="centerX" id="td2-eW-oX7"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="ojh-o7-7oe"/>
                     </view>
                     <connections>
+                        <outlet property="activityView" destination="RyM-e7-TbT" id="4hN-b7-Lq8"/>
                         <outlet property="doneButton" destination="ZXp-Su-Vtq" id="Ubh-o0-3dA"/>
                         <outlet property="macawViewUI" destination="hZC-At-YaQ" id="XIb-vL-VIg"/>
                     </connections>
@@ -55,4 +73,12 @@
             <point key="canvasLocation" x="-71.014492753623188" y="-48.214285714285715"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
