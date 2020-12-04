@@ -22,7 +22,8 @@ class SummaryViewController: UIViewController {
     @IBOutlet weak var genderLabel: UILabel!
     @IBOutlet weak var bloodType: UILabel!
     @IBOutlet weak var heightLabel: UILabel!
-   
+    @IBOutlet weak var heartLabel: UILabel!
+    
     @IBOutlet weak var viewChartButton: UIButton!
     
     
@@ -209,7 +210,7 @@ class SummaryViewController: UIViewController {
             print("Latest HR: \(latestHeartRate)")
             UserStruct.heartRate = latestHeartRate
             DispatchQueue.main.async {
-                self.heightLabel.text = "Heart Rate: \(String(describing: latestHeartRate))counts/min"
+                self.heartLabel.text = "Heart Rate: \(String(describing: latestHeartRate))counts/min"
             }
         }
         
