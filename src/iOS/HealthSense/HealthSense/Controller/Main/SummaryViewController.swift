@@ -8,6 +8,7 @@
 
 import UIKit
 import HealthKit
+import LocalAuthentication
 
 class SummaryViewController: UIViewController {
 
@@ -61,8 +62,16 @@ class SummaryViewController: UIViewController {
         initialSetup()
         // User Interface style
         userInterfaceStyle()
-        // Healthkit permissions
-        healthAuthorization()
+        if SettingsStruct.isSecurity {
+            // Authenticate user
+            authenticate()
+        } else {
+            // HealthKit permissions
+            healthAuthorization()
+        }
+        
+        // HealthKit permissions
+//        healthAuthorization()
         // Settings Aspect fit for Chart View
         circularChartView.contentMode = .scaleAspectFit
     }
@@ -133,6 +142,50 @@ class SummaryViewController: UIViewController {
 //        if let appSettings = URL(string: UIApplication.openSettingsURLString) {
 //            UIApplication.shared.open(appSettings, options: [:], completionHandler: nil)
 //        }
+    }
+    
+    func authenticate() {
+        let context = LAContext()
+        var error: NSError?
+        
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            let reason = "Identify yourself stranger!"
+            
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { [weak self] success, authError in
+                DispatchQueue.main.async {
+                    if success {
+                        // HealthKit permissions
+                        self?.healthAuthorization()
+                    } else {
+                        print("Error")
+                        
+                        // create the alert
+                        let alert = UIAlertController(title: "Authentication failed", message: "You couldn't be verified by authorization services. Please try again.", preferredStyle: UIAlertController.Style.alert)
+
+                        // add the actions (buttons)
+                        alert.addAction(UIAlertAction(title: "Exit App", style: .default, handler: { (_) in
+                            UIControl().sendAction(#selector(NSXPCConnection.suspend),
+                                                   to: UIApplication.shared, for: nil)
+                        }))
+                        // show the alert
+                        self?.present(alert, animated: true, completion: nil)
+                    }
+                }
+            }
+        } else {
+            print("No biometric authentication possible")
+            // create the alert
+            let alert = UIAlertController(title: "Biometric Unavailable failed", message: "Your device doesn't support biometric authentication.", preferredStyle: UIAlertController.Style.alert)
+
+            // add the actions (buttons)
+            alert.addAction(UIAlertAction(title: "Close App", style: .default, handler: { (_) in
+                UIControl().sendAction(#selector(NSXPCConnection.suspend),
+                                       to: UIApplication.shared, for: nil)
+            }))
+            // show the alert
+            self.present(alert, animated: true, completion: nil)
+        }
+        
     }
     
     fileprivate func generateGreetings() {
