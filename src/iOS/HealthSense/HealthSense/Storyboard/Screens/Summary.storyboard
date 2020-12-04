@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JL4-bz-0PJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JL4-bz-0PJ">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -118,17 +118,29 @@
                                     <constraint firstAttribute="height" constant="150" id="Tej-Rx-avL"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Heart Rate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mS7-Hz-3Cm">
+                                <rect key="frame" x="20" y="615" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="q0H-qO-vvD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="FontContainer"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xIM-XQ-1vc"/>
                         <color key="backgroundColor" name="Color"/>
                         <constraints>
                             <constraint firstItem="g6l-Sx-M1s" firstAttribute="top" secondItem="ePy-3C-QC1" secondAttribute="bottom" constant="5.5" id="3kb-WB-c7m"/>
                             <constraint firstItem="2QO-ky-84M" firstAttribute="top" secondItem="g6l-Sx-M1s" secondAttribute="bottom" constant="22" id="6Nh-Ch-mkK"/>
+                            <constraint firstItem="xIM-XQ-1vc" firstAttribute="trailing" secondItem="mS7-Hz-3Cm" secondAttribute="trailing" constant="20" id="8oJ-up-jdG"/>
                             <constraint firstItem="ePy-3C-QC1" firstAttribute="leading" secondItem="xIM-XQ-1vc" secondAttribute="leading" constant="20" id="9pH-2x-S1H"/>
+                            <constraint firstItem="mS7-Hz-3Cm" firstAttribute="leading" secondItem="xIM-XQ-1vc" secondAttribute="leading" constant="20" id="W6v-FS-Zk6"/>
                             <constraint firstItem="g6l-Sx-M1s" firstAttribute="centerX" secondItem="lz0-Zz-cy5" secondAttribute="centerX" id="X8n-vP-y37"/>
                             <constraint firstItem="ePy-3C-QC1" firstAttribute="top" secondItem="xIM-XQ-1vc" secondAttribute="top" constant="2" id="XZn-PD-TKa"/>
                             <constraint firstItem="xIM-XQ-1vc" firstAttribute="trailing" secondItem="2QO-ky-84M" secondAttribute="trailing" constant="20" id="pNm-jJ-wqy"/>
                             <constraint firstItem="2QO-ky-84M" firstAttribute="leading" secondItem="g6l-Sx-M1s" secondAttribute="leading" id="phE-Qm-Qpl"/>
+                            <constraint firstItem="mS7-Hz-3Cm" firstAttribute="top" secondItem="2QO-ky-84M" secondAttribute="bottom" constant="7.6699999999999999" id="urf-MM-dyl"/>
                             <constraint firstItem="2QO-ky-84M" firstAttribute="leading" secondItem="xIM-XQ-1vc" secondAttribute="leading" constant="20" id="y4h-4t-Z6f"/>
                         </constraints>
                     </view>
@@ -142,6 +154,7 @@
                         <outlet property="chartView" destination="4MM-l6-v2R" id="xxM-aB-0EK"/>
                         <outlet property="circularChartView" destination="g6l-Sx-M1s" id="DZw-Oo-t5m"/>
                         <outlet property="genderLabel" destination="XnB-7T-Bwi" id="nDl-to-xqT"/>
+                        <outlet property="heartLabel" destination="mS7-Hz-3Cm" id="DIY-F3-Yk7"/>
                         <outlet property="heightLabel" destination="FMe-VL-EdD" id="sUX-y2-oNe"/>
                         <outlet property="userTitle" destination="ePy-3C-QC1" id="WhT-bA-ujh"/>
                         <outlet property="viewChartButton" destination="0m6-2E-J5E" id="JEy-wM-IOj"/>
@@ -151,7 +164,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AxO-vH-esn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1239.1304347826087" y="740.625"/>
+            <point key="canvasLocation" x="-1239.2" y="740.39408866995075"/>
         </scene>
         <!--Summary ChildVC-->
         <scene sceneID="sa9-bS-vSZ">
