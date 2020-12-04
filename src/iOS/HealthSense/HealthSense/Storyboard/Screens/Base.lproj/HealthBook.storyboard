@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bJS-wJ-ixd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bJS-wJ-ixd">
     <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--HealthBook-->
+        <!--Health Summary-->
         <scene sceneID="Eof-6O-kY5">
             <objects>
                 <viewController id="RYs-eV-hX0" customClass="HealthBookViewController" customModule="HealthSense" customModuleProvider="target" sceneMemberID="viewController">
@@ -23,14 +23,6 @@
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="qw1-7z-bkP"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RZD-dC-uJd" customClass="HKActivityRingView">
-                                <rect key="frame" x="157" y="346" width="100" height="100"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="hMl-vy-Fck"/>
-                                    <constraint firstAttribute="height" constant="100" id="tda-sh-hhK"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="b1a-va-rdg">
@@ -77,6 +69,14 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="OyU-aM-s8C"/>
                                 </constraints>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RZD-dC-uJd" customClass="HKActivityRingView">
+                                <rect key="frame" x="157" y="398" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="hMl-vy-Fck"/>
+                                    <constraint firstAttribute="height" constant="100" id="tda-sh-hhK"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="omz-db-0K3"/>
                         <color key="backgroundColor" name="Color"/>
@@ -85,14 +85,14 @@
                             <constraint firstItem="b1a-va-rdg" firstAttribute="centerX" secondItem="4bS-Se-KoL" secondAttribute="centerX" id="97s-pi-zve"/>
                             <constraint firstItem="RZD-dC-uJd" firstAttribute="centerX" secondItem="omz-db-0K3" secondAttribute="centerX" id="FP0-ky-JNh"/>
                             <constraint firstItem="LcV-Dl-iTB" firstAttribute="top" secondItem="omz-db-0K3" secondAttribute="top" constant="50" id="Iob-OC-GLe"/>
-                            <constraint firstItem="RZD-dC-uJd" firstAttribute="top" secondItem="LcV-Dl-iTB" secondAttribute="bottom" constant="8" symbolic="YES" id="Jgz-vB-lJB"/>
+                            <constraint firstItem="RZD-dC-uJd" firstAttribute="top" secondItem="LcV-Dl-iTB" secondAttribute="bottom" constant="60" id="Jgz-vB-lJB"/>
                             <constraint firstItem="omz-db-0K3" firstAttribute="bottom" secondItem="b1a-va-rdg" secondAttribute="bottom" id="MXp-Bd-CZY"/>
                             <constraint firstItem="LcV-Dl-iTB" firstAttribute="leading" secondItem="omz-db-0K3" secondAttribute="leading" constant="20" id="aFe-9n-BeR"/>
                             <constraint firstItem="omz-db-0K3" firstAttribute="trailing" secondItem="LcV-Dl-iTB" secondAttribute="trailing" constant="20" id="h7e-1v-qhE"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="HealthBook" image="browse" id="NfT-7d-RLm"/>
-                    <navigationItem key="navigationItem" id="sOh-cL-gJO"/>
+                    <navigationItem key="navigationItem" title="Health Summary" id="sOh-cL-gJO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="activityView" destination="RZD-dC-uJd" id="1WG-4C-S9f"/>

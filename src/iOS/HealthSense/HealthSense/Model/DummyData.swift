@@ -20,13 +20,15 @@ class DummyData {
     
     ///*
     public static func createDummyData2() -> [DummyData] {
-        let one = DummyData(number: "242", count: 15)
-        let two = DummyData(number: "35", count: 21)
-        let three = DummyData(number: "11", count: 74)
-        let four = DummyData(number: "56", count: 57)
-        let five = DummyData(number: "46", count: 24)
+        let one = DummyData(number: "Mon", count: 57)
+        let two = DummyData(number: "Tue", count: 70)
+        let three = DummyData(number: "Wed", count: 74)
+        let four = DummyData(number: "Thur", count: 89)
+        let five = DummyData(number: "Fri", count: 70)
+        let six = DummyData(number: "Sat", count: 69)
+        let seven = DummyData(number: "Sun", count: 65)
         
-        return [one, two, three, four, five]
+        return [one, two, three, four, five, six, seven]
     }
 //     */
 }
