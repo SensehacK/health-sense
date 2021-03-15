@@ -1,0 +1,31 @@
+.navContainer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "logoContainer  linkConatiner";
+    justify-content: center;
+    align-items: center;
+    color: #0d324d;
+  }
+ 
+  .links {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+  }
+  .links a{
+    color: #0d324d;
+    text-decoration: none;
+    font-size: 1.3em;
+  }
+  .links a:hover{
+    -webkit-transform: scale(1.2); 
+    -moz-transform: scale(1.2);
+  }
+ 
+  .logoContainer {
+    margin-left: 10px;
+    font-size: 1.2em;
+  }
+  .links > li:hover {
+    color: #84848a;
+  }
