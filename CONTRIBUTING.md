@@ -107,7 +107,7 @@ How you write this is up to you, but some things you may want to include:
 
 At bare minimum, include this sentence:
 
-> If you find a security vulnerability, do NOT open an issue. Email our project manager Rushikesh Nage instead.
+> If you find a security vulnerability, do NOT open an issue. Email our project manager instead.
 
 If you don’t want to use your personal contact information, set up a “security@” email address. Larger projects might have more formal processes for disclosing security, including encrypted communication. (Disclosure: I am not a security expert.)
 
